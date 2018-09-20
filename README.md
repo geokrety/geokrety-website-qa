@@ -24,9 +24,11 @@ This project includes automated tests -Quality Assurance (QA)- for  GeoKrety.org
 - install python+pip
 - run the following commands:
 
-    pip install --upgrade pip
-    pip install -r requirements.txt
-    pybot.bat -V acceptance/vars/rec-dev.py acceptance/GK_welcome.robot
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+pybot -V acceptance/vars/rec-dev.py acceptance/GK_welcome.robot
+```
 
 # Contribute
 - Pull request need to embed use case definitions, and pass Travis checks.
