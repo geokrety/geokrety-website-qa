@@ -1,7 +1,7 @@
 
 # GeoKrety.org QA
 
-This project includes automated tests -Quality Assurance (QA)- for  GeoKrety.org website:
+This project includes automated tests -Quality Assurance (QA)- for  GeoKrety.org website ([source code](https://github.com/geokrety/geokrety-website), [service](https://geokrety.org)):
 - Tests rely on Python, RobotFramework, Selenium Frameworks
 - Instance tested is https://rec.geokrety.org (pre-production like environment)
 
