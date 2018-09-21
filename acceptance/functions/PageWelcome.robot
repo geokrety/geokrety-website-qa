@@ -2,8 +2,6 @@
 Resource        FunctionsGlobal.robot
 
 *** Keywords ***
-Welcome WaitForPage
-  !WaitForTop
 Welcome ShouldShow Geokrety
   Page Should Contain  Welcome to GeoKrety.org!
 Welcome ShouldShow News
