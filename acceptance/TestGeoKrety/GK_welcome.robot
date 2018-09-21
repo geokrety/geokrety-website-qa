@@ -1,6 +1,6 @@
 *** Settings ***
 Library         SeleniumLibrary  timeout=10  implicit_wait=0
-Resource        ./functions/PageWelcome.robot
+Resource        ../functions/PageWelcome.robot
 Test Teardown   Close Browser
 Force Tags      Welcome
 
@@ -10,19 +10,20 @@ Welcome: (EN)
   [Documentation]    Default english welcome page
   [Tags]             EN
   !Go To GeoKrety
-  Welcome WaitForPage
+  Page WaitForPage
   Welcome ShouldShow Geokrety
   Welcome ShouldShow News
   Welcome ShouldShow RecentLogs
   Welcome ShouldShow RecentImages
   Welcome ShouldShow RecentGK
+  Page ShouldShow Footer
 
 Welcome: (FR)
   [Documentation]    Welcome page in french
   [Tags]             FR
   !Go To GeoKrety
   !Click On FR Flag
-  Welcome WaitForPage
+  Page WaitForPage
   Welcome ShouldShow GeokretyFR
   Welcome ShouldShow NewsFR
   Welcome ShouldShow RecentLogsFR

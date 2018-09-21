@@ -17,7 +17,7 @@ before_script:
   - unzip chromedriver_linux64.zip
   - sudo mv chromedriver /usr/local/bin
 script:
-  - pybot -Vacceptance/vars/rec-dev.py acceptance/GK_welcome.robot
+  - pybot -Vacceptance/vars/rec-dev.py acceptance/TestGeoKrety/
 notifications:
   email:
     - boly38@gmail.com
