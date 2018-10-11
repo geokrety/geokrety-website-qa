@@ -35,4 +35,4 @@ if [ ! -f ${ENV_VARS_FILE} ]; then
   exit 1;
 fi
 rm -f selenium-screenshot-*.png
-pybot.bat -V ${ENV_VARS_FILE} acceptance/TestGeoKrety/
+pybot.bat -d docs/${ENV} -V ${ENV_VARS_FILE} acceptance/TestGeoKrety/
