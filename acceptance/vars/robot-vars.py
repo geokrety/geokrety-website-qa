@@ -1,7 +1,7 @@
 import os
 
 BROWSER = "headlesschrome"
-GK_URL = "https://rec.geokrety.org/"
+GK_URL = os.environ['GEOKRETY_URL']
 GK_URL_RUCHY = GK_URL + "ruchy.php"
 
 TEST_GEOKRET_REF = "GK10BCD"
