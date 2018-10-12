@@ -13,6 +13,8 @@ This project includes automated tests -Quality Assurance (QA)- for  GeoKrety.org
    - structure basis
    - search waypoint
 
+<ul><li><a href="https://geokrety.github.io/geokrety-website-qa/">Last Test reports</a></li></ul> 
+
 # Badges
 
 [![Travis Status](https://travis-ci.org/geokrety/geokrety-website-qa.svg?branch=master)](https://travis-ci.org/geokrety/geokrety-website-qa)
@@ -23,22 +25,11 @@ This project includes automated tests -Quality Assurance (QA)- for  GeoKrety.org
 
 # HowTo run QA
 
-Quality Assurance tests are executed against default configuration located in `acceptance/vars/rec-dev.py`.
+Quality Assurance tests are executed against default configuration located in `acceptance/vars/robot-vars.py`.
 
-## Windows
-- clone me
-- on windows with python+pip, just execute `tests.win.sh`
-
-## Linux
 - clone me
 - install python+pip
-- run the following commands:
-
-```
-pip install --upgrade pip
-pip install -r requirements.txt
-pybot -V acceptance/vars/rec-dev.py acceptance/TestGeoKrety/
-```
+- just execute `runTests.sh`
 
 # Contribute
 - [Wiki page](https://github.com/geokrety/geokrety-website-qa/wiki) includes good practices and tips,

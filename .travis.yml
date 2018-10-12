@@ -2,6 +2,9 @@ language: python
 python:
   - 2.7.15
 dist: trusty
+env:
+# QA Tests target environments: allowed value are 'boly38' or 'master'
+  - TARGET_ENV=master
 addons:
   apt:
     sources:
@@ -13,11 +16,13 @@ install:
   - pip -V
   - pip install -r requirements.txt
 before_script:
+  - echo ${OS}
   - wget "http://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip"
   - unzip chromedriver_linux64.zip
   - sudo mv chromedriver /usr/local/bin
+  - touch ./.requirements_checked
 script:
-  - pybot -d docs/rec -Vacceptance/vars/rec-dev.py acceptance/TestGeoKrety/
+  - bash ./runTests.sh
 notifications:
   email:
     - boly38@gmail.com
