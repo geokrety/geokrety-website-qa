@@ -22,6 +22,7 @@ before_script:
   - sudo mv chromedriver /usr/local/bin
   - touch ./.requirements_checked
 script:
+  - bash ./getPreviousReport.sh
   - bash ./runTests.sh
 notifications:
   email:
