@@ -55,4 +55,11 @@ fi
 #
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} buildDir=${BUILD_DIR}"
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
-${PYBOT} -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
+${PYBOT} -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/GK_welcome.robot
+PYBOT_RESULT=$?
+if [ "${PYBOT_RESULT}" == "0" ]; then
+  echo "tests SUCCESS";
+else
+  echo "tests FAILED";
+fi
+echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE
