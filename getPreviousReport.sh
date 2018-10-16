@@ -1,11 +1,14 @@
 #!/bin/bash
-PREVIOUS_DOCS=./previous_docs
-echo " * get previous report"
-rm -rf ${PREVIOUS_DOCS} || echo ""
-git clone https://github.com/geokrety/geokrety-website-qa.git --branch gh-pages --single-branch ${PREVIOUS_DOCS}
-rm -rf ${PREVIOUS_DOCS}/.git || echo "not a git repo"
+PUBLICATION_BRANCH=gh-pages
+REPO_PATH=$PWD
+echo " * get previous report (from $HOME)"
+# work from HOME
+pushd $HOME > /dev/null
+git clone --quiet --branch ${PUBLICATION_BRANCH} --single-branch \
+  https://github.com/geokrety/geokrety-website-qa.git publish 2>&1 >/dev/null
+pushd $HOME/publish > /dev/null
 echo " * imported previous reports:"
-ls -d ${PREVIOUS_DOCS}/*/ || echo "nothing to import"
-# get copy of latest reports
-cp -rf ${PREVIOUS_DOCS}/boly38 docs/ 2>/dev/null || echo "no previous docs for boly38"
-cp -rf ${PREVIOUS_DOCS}/master docs/ 2>/dev/null || echo "no previous docs for master"
+ls -lad ./*/ | awk '{print $5, $6, $7, $8, $9}'
+cp -r ./*/ "${REPO_PATH}/docs/"
+popd > /dev/null
+popd > /dev/null

@@ -35,4 +35,5 @@ deploy:
   target_branch: gh-pages
   keep-history: true
   on:
-    branch: master
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^master|feature\/report$
