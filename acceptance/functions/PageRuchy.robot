@@ -80,6 +80,10 @@ Ruchy 3Name ShouldBe
   Wait Until Element Is Visible  ${TXT_RUCHY_CACHENAME}
   Textfield Should Contain       ${TXT_RUCHY_CACHENAME}  ${txt}  Ruchy waypoint name expect to be >${txt}<
 
+Ruchy 3Context WaitResult
+  Wait Until Page Contains Element  ${ELT_RUCHY_CONTEXT}
+  Wait Until Element Does Not Contain  ${ELT_RUCHY_CONTEXT}  Retrieving...
+
 Ruchy 3Context OKChecked
   Page Should Contain Element  ${ELT_RUCHY_CONTEXT_IMGOK}
 
