@@ -21,26 +21,21 @@ before_script:
   - unzip chromedriver_linux64.zip
   - sudo mv chromedriver /usr/local/bin
   - touch ./.requirements_checked
-script:
-  - bash ./getPreviousReport.sh
-  - bash ./runTests.sh
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: docs/
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  target_branch: gh-pages
-  keep-history: true
-  on:
-    all_branches: true
-    condition: $TRAVIS_BRANCH =~ ^master|feature\/report$
+jobs:
+  include:
+  - stage: qaTests
+    name: "execute tests"
+    script:
+    - bash ./getPreviousReport.sh
+    - bash ./runTests.sh
+    - bash ./publishReport.sh
+    - bash ./checkResults.sh
+
 notifications:
-  email:
-    - boly38@gmail.com
   irc:
       channels:
           - "chat.freenode.net#geokrety"
-      on_success: change
+      on_success: always
       on_failure: always
       template:
-          - "%{branch} / %{result} / %{build_url}"
+          - "%{build_url} / %{branch} / %{result} "
