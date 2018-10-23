@@ -8,6 +8,7 @@ Library           SeleniumLibrary
 
 !Go To GeoKrety
     Open Browser               ${GK_URL}    ${BROWSER}
+    Set Selenium Timeout       30 s
     Set Window Size            1919    1079
     Location Should Contain    ${GK_URL}
 
