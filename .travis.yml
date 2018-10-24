@@ -24,9 +24,6 @@ before_script:
 script:
   - bash ./getPreviousReport.sh
   - bash ./runTests.sh
-notifications:
-  email:
-    - boly38@gmail.com
 deploy:
   provider: pages
   skip_cleanup: true
@@ -37,3 +34,13 @@ deploy:
   on:
     all_branches: true
     condition: $TRAVIS_BRANCH =~ ^master|feature\/report$
+notifications:
+  email:
+    - boly38@gmail.com
+  irc:
+      channels:
+          - "chat.freenode.net#geokrety"
+      on_success: change
+      on_failure: always
+      template:
+          - "%{branch} / %{result} / %{build_url}"
