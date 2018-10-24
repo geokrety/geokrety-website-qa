@@ -17,7 +17,7 @@ Welcome ShouldShow RecentGK
   Page should contain  Recently registered GeoKrets
 
 Welcome ShouldShow GeokretyFR
-  Page should contain  Bienvenue sur GeoKrety!
+  Page should contain  Bienvenue sur GeoKrety !
 Welcome ShouldShow NewsFR
   Page should contain  Actualités
   Page should contain  Commentaires
