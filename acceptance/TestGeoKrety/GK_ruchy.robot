@@ -85,7 +85,7 @@ Ruchy: search waypoint by code with invalid prefix
   Ruchy 3Waypoint ShouldBe      XX_C100N_AHV
   Ruchy 3Context WaitResult
   Ruchy 3Context KOChecked
-  Ruchy 3Context ShouldInclude  No cache found
+  Ruchy 3Context ShouldInclude  Missing or invalid coordinates
   Ruchy 3Name Disabled
 
 Ruchy: search waypoint by code with unknown GC
@@ -96,6 +96,6 @@ Ruchy: search waypoint by code with unknown GC
   Ruchy 3Waypoint ShouldBe      GC120999
   Ruchy 3Context WaitResult
   Ruchy 3Context KOChecked
-  Ruchy 3Context ShouldInclude  No cache found
+  Ruchy 3Context ShouldInclude  Missing or invalid coordinates
   Ruchy 3Name Disabled
 
