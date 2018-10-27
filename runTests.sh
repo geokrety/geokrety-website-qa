@@ -55,7 +55,7 @@ fi
 #
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} buildDir=${BUILD_DIR}"
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
-${PYBOT} -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
+${PYBOT} --dotted -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
 PYBOT_RESULT=$?
 echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE
 if [ "${PYBOT_RESULT}" == "0" ]; then
