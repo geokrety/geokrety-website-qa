@@ -3,8 +3,9 @@ PUBLICATION_BRANCH=gh-pages
 # go to already cloned repo
 REPO_PATH=$PWD
 pushd $HOME/publish
-#Update pages
-cp -r $REPO_PATH/docs .
+# update pages
+rm -rf docs/
+cp -r $REPO_PATH/docs/* .
 # Commit and push latest version
 git add .
 git config user.name  "Travis"
