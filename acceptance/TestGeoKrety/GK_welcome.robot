@@ -3,6 +3,7 @@ Library         SeleniumLibrary  timeout=10  implicit_wait=0
 Resource        ../functions/PageWelcome.robot
 Test Teardown   Close Browser
 Force Tags      Welcome
+Test Timeout    1 minutes
 
 *** Test Cases ***
 
