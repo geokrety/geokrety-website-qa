@@ -38,4 +38,4 @@ notifications:
       on_success: always
       on_failure: always
       template:
-          - "%{build_url} / %{branch} / %{result} "
+          - "%{build_url} QA %{build_number} | %{branch} >test> ${TARGET_ENV} | %{result}"
