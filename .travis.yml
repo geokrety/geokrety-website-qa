@@ -11,6 +11,7 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
+      - xvfb
 install:
   - pip install --upgrade pip
   - pip -V
@@ -20,16 +21,13 @@ before_script:
   - wget "http://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip"
   - unzip chromedriver_linux64.zip
   - sudo mv chromedriver /usr/local/bin
-  - touch ./.requirements_checked
+  - touch ./scripts/.requirements_checked
 jobs:
   include:
   - stage: qaTests
     name: "execute tests"
     script:
-    - bash ./getPreviousReport.sh
-    - bash ./runTests.sh
-    - bash ./publishReport.sh
-    - bash ./checkResults.sh
+    - ./scripts/getPreviousReport.sh && ./scripts/runTests.sh && ./scripts/publishReport.sh && ./scripts/checkResults.sh
 
 notifications:
   irc:

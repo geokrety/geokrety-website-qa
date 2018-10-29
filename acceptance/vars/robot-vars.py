@@ -1,7 +1,10 @@
 import os
 
 BROWSER = "headlesschrome"
-GK_URL = os.environ['GEOKRETY_URL']
+
+GK_URL      = os.environ['GEOKRETY_URL']
+TRAVIS_FLAG = os.environ['TRAVIS_FLAG']
+
 GK_URL_RUCHY = GK_URL + "ruchy.php"
 
 TEST_GEOKRET_REF = "GK10BCD"
