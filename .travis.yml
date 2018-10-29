@@ -38,4 +38,4 @@ notifications:
       on_success: always
       on_failure: always
       template:
-          - "%{build_url} QA %{build_number} | %{branch} | %{message} | %{result}"
+          - "%{build_url} QA %{build_number} | %{branch} | %{commit_subject} | %{result}"
