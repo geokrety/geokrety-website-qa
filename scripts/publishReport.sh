@@ -1,8 +1,11 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+pushd "${DIR}/.." > /dev/null
+
 PUBLICATION_BRANCH=gh-pages
 # go to already cloned repo
 REPO_PATH=$PWD
-pushd $HOME/publish
+pushd "$HOME/publish" > /dev/null
 # update pages
 rm -rf docs/
 cp -r $REPO_PATH/docs/* .
@@ -13,7 +16,7 @@ git config user.email "travis@travis-ci.org"
 git commit -m "Updated QA tests "
 git push -fq origin $PUBLICATION_BRANCH 2>&1 > /dev/null
 PUSH_RESULT=$?
-popd
+popd > /dev/null
 if [ "${PUSH_RESULT}" == "0" ]; then
   echo "push $PUBLICATION_BRANCH SUCCESS";
 else
@@ -21,3 +24,5 @@ else
   exit 1
 fi
 echo " * done"
+
+popd > /dev/null

@@ -2,6 +2,18 @@
 # Execute robot framework tests
 # assume python/pip is already installed
 #
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+
+if [[ "${DIR}" == *"/travis/"* ]]; then
+    export TRAVIS_FLAG=true
+else
+    export TRAVIS_FLAG=false
+fi
+
+echo " * scripts directory is ${DIR} (TRAVIS_FLAG:${TRAVIS_FLAG})"
+pushd "${DIR}" > /dev/null
+
 # requirements
 REQUIREMENT_CHECK=.requirements_checked
 if [ -f ${REQUIREMENT_CHECK} ]; then
@@ -45,7 +57,10 @@ if [ "${ENV_URL}" == "" ]; then
    echo "Unsupported env ${ENV}";
    exit 1
 fi
+
+# prepare tests
 export GEOKRETY_URL=${ENV_URL}
+pushd "${DIR}/.." >/dev/null
 BUILD_DIR=docs/${ENV}
 #
 echo " * clean images"
@@ -55,7 +70,10 @@ fi
 #
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} buildDir=${BUILD_DIR}"
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
-${PYBOT} --dotted -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
+# pybot arg doc:  https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/Appendices/CommandLineOptions.rst
+# CONSOLE_ARG=--dotted
+CONSOLE_ARG="--console verbose"
+${PYBOT} ${CONSOLE_ARG} -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
 PYBOT_RESULT=$?
 echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE
 if [ "${PYBOT_RESULT}" == "0" ]; then
@@ -63,3 +81,5 @@ if [ "${PYBOT_RESULT}" == "0" ]; then
 else
   echo "tests FAILED";
 fi
+popd > /dev/null
+popd > /dev/null

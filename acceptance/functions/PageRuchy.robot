@@ -8,7 +8,6 @@ Resource        FunctionsGlobal.robot
     Wait Until Page Contains       Log a GeoKret
     Click Link                     ${LINK_LOG_A_GK}
     Location Should Be             ${GK_URL}ruchy.php
-    Capture Page Screenshot
 
 Ruchy ShouldShow LogType
   Page Should Contain  Choose log type
