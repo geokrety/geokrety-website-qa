@@ -5,22 +5,22 @@ dist: trusty
 env:
 # QA Tests target environments: allowed value are 'boly38' or 'master'
   - TARGET_ENV=master
+sudo: required
 addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
-      - xvfb
+  chrome: stable
+  firefox: latest
 install:
   - pip install --upgrade pip
   - pip -V
   - pip install -r requirements.txt
 before_script:
-  - echo ${OS}
-  - wget "http://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip"
-  - unzip chromedriver_linux64.zip
-  - sudo mv chromedriver /usr/local/bin
+#  - wget --quiet "http://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip"
+#  - unzip chromedriver_linux64.zip
+#  - sudo mv chromedriver /usr/local/bin
+#  - ./scripts/makeChromeDriverVerbose.sh
+  - wget --quiet "https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz"
+  - tar -xzvf geckodriver-v0.23.0-linux64.tar.gz
+  - sudo mv geckodriver /usr/local/bin
   - touch ./scripts/.requirements_checked
 jobs:
   include:

@@ -1,0 +1,7 @@
+#!/bin/bash
+DATETIME=$(date '+%Y%m%d_%Hh%Mm%S')
+VERBOSE_FILE=/tmp/chromedriver_${DATETIME}.log
+VERBOSE_ACTION_FILE=/tmp/chromedriver_${DATETIME}_action.log
+echo "running chromedriver verbose file:${VERBOSE_FILE} args:$*"
+echo "running chromedriver verbose file:${VERBOSE_FILE} args:$*"> ${VERBOSE_ACTION_FILE}
+/usr/local/bin/chromedriversilent --verbose --log-path=${VERBOSE_FILE} $*
