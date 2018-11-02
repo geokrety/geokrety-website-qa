@@ -1,7 +1,7 @@
 *** Settings ***
 Library         SeleniumLibrary  timeout=10  implicit_wait=0
 Resource        ../functions/PageRuchy.robot
-Test Teardown   Close Browser
+Test Teardown   Close All Browsers
 Force Tags      Ruchy
 Test Timeout    2 minutes
 

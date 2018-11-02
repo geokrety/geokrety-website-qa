@@ -6,6 +6,7 @@
 ################
 ${ELT_TOP}        id=top
 ${LINK_LOG_A_GK}  xpath=//*[@id='lewo']/ul[1]/li[2]/a
+${BTN_FLAG_EN}    xpath=//span[@class='flag-icon flag-icon-gb']
 ${BTN_FLAG_FR}    xpath=//span[@class='flag-icon flag-icon-fr']
 
 ################

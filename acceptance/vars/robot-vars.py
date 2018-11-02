@@ -1,6 +1,7 @@
 import os
 
-BROWSER = "headlesschrome"
+GK_TIMEOUT_MINUTES = 2
+BROWSER = "Firefox"
 
 GK_URL      = os.environ['GEOKRETY_URL']
 TRAVIS_FLAG = os.environ['TRAVIS_FLAG']

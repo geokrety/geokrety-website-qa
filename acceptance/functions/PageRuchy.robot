@@ -4,6 +4,7 @@ Resource        FunctionsGlobal.robot
 *** Keywords ***
 !Go To Ruchy
     !Go To GeoKrety
+    !Click On EN Flag
     Wait Until Element Is Visible  ${LINK_LOG_A_GK}
     Wait Until Page Contains       Log a GeoKret
     Click Link                     ${LINK_LOG_A_GK}

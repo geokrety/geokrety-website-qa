@@ -1,6 +1,6 @@
 *** Settings ***
-Resource          ComponentsLocator.robot
-Library           SeleniumLibrary
+Resource   ComponentsLocator.robot
+Library    SeleniumLibrary
 # doc: http://robotframework.org/Selenium2Library/Selenium2Library.html
 #      http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html
 # NB: check without capture on travis side
@@ -8,18 +8,41 @@ Library           SeleniumLibrary
 # import Xvfb for travis only
 Resource        travis_${TRAVIS_FLAG}/Xvbf.robot
 
+*** Variables ***
+# ${FF_PROFILE}      ff_profile
+
 *** Keywords ***
-!Open GeoKrety Browser
-# OLD ONE #  Open Browser               ${GK_URL}    ${BROWSER}
+!Open GeoKrety Browser Firefox
+  Log    Open Browser Firefox
+  ${firefox_options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
+  Call Method    ${firefox_options}   add_argument    headless
+#  Call Method    ${firefox_options}   add_argument    marionette
+  ${options}=     Call Method     ${firefox_options}    to_capabilities
+  Open Browser    url=${GK_URL}   browser=ff     desired_capabilities=${options}
+# ff_profile_dir=${FF_PROFILE}
+  Go To           ${GK_URL}
+  Maximize Browser Window
+
+!Open GeoKrety Browser Chrome
+  Log    Open Browser Chrome
   ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
   Call Method    ${chrome_options}   add_argument    headless
   Call Method    ${chrome_options}   add_argument    disable-gpu
+  Call Method    ${chrome_options}   add_argument    dns-prefetch-disable
+  Call Method    ${chrome_options}   add_argument    disable-web-security
+  Call Method    ${chrome_options}   add_argument    allow-running-insecure-content
+  Call Method    ${chrome_options}   add_argument    disable-browser-side-navigation
   ${options}=     Call Method     ${chrome_options}    to_capabilities
   Open Browser    ${GK_URL}    browser=chrome     desired_capabilities=${options}
 
+!Open GeoKrety Browser
+  [Arguments]    ${browser}
+  Run Keyword If    "${browser}"=="Firefox"    !Open GeoKrety Browser Firefox
+  Run Keyword If    "${browser}"=="Chrome"     !Open GeoKrety Browser Chrome
+
 !Go To GeoKrety
   Run keyword if             '${TRAVIS_FLAG}' == 'true'    Start Virtual Display    1920    1080
-  !Open GeoKrety Browser
+  !Open GeoKrety Browser     ${BROWSER}
   Set Selenium Timeout       30 s
   Set Window Size            1919    1079
   Location Should Contain    ${GK_URL}
@@ -34,6 +57,11 @@ Page ShouldShow Footer
   Page Should Contain  Report abuse
   Page Should Contain  Terms of use
   Page Should Contain  version:
+
+!Click On EN Flag
+  Wait Until Element Is Visible  ${BTN_FLAG_EN}
+  Click Element                  ${BTN_FLAG_EN}
+  Location Should Be             ${GK_URL}
 
 !Click On FR Flag
   Wait Until Element Is Visible  ${BTN_FLAG_FR}

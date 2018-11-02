@@ -7,7 +7,7 @@ PUBLICATION_BRANCH=gh-pages
 REPO_PATH=$PWD
 pushd "$HOME/publish" > /dev/null
 # update pages
-rm -rf docs/
+git rm --quiet -rf boly38/* master/*
 cp -r $REPO_PATH/docs/* .
 # Commit and push latest version
 git add .

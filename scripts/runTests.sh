@@ -47,6 +47,11 @@ function getEnvUrl() {
   done
   echo ${resultUrl}
 }
+function listListeningPorts() {
+  echo " * list used ports"
+  netstat -an|grep LISTEN
+}
+
 #
 # target env : os.env("TARGET_ENV"), or else first argument, or else 'master'
 DEFAULT_ENV=${TARGET_ENV:-$1}
@@ -63,23 +68,40 @@ export GEOKRETY_URL=${ENV_URL}
 pushd "${DIR}/.." >/dev/null
 BUILD_DIR=docs/${ENV}
 #
-echo " * clean images"
-if [ ! -f ${BUILD_DIR}/selenium-screenshot-0.png ]; then
-  rm -f ${BUILD_DIR}/selenium-screenshot-*.png
+echo " * clean old run"
+if ls ${BUILD_DIR}/* 1> /dev/null 2>&1; then
+  rm -f ${BUILD_DIR}/*
 fi
+
+# listListeningPorts
+
 #
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} buildDir=${BUILD_DIR}"
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
 # pybot arg doc:  https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/Appendices/CommandLineOptions.rst
 # CONSOLE_ARG=--dotted
-CONSOLE_ARG="--console verbose"
+# CONSOLE_ARG="--console verbose"
+CONSOLE_ARG="-T --loglevel DEBUG"
+
 ${PYBOT} ${CONSOLE_ARG} -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
+
 PYBOT_RESULT=$?
 echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE
-if [ "${PYBOT_RESULT}" == "0" ]; then
-  echo "tests SUCCESS";
-else
-  echo "tests FAILED";
+
+if ls /tmp/chromedriver_*.log 1> /dev/null 2>&1; then
+  echo " * getting chrome driver logs"
+  cp /tmp/chromedriver_*.log ${BUILD_DIR}
+  ls -la ${BUILD_DIR}/chromedriver_*.log | wc -l
 fi
+
+if [ "${PYBOT_RESULT}" == "0" ]; then
+  echo " * tests SUCCESS";
+else
+  echo " * tests FAILED";
+fi
+
+echo " * ${BUILD_DIR} :"
+ls -la ${BUILD_DIR}
+
 popd > /dev/null
 popd > /dev/null
