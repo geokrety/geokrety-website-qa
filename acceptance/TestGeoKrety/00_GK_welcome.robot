@@ -6,7 +6,6 @@ Force Tags      Welcome
 Test Timeout    2 minutes
 
 *** Test Cases ***
-
 Welcome: (EN)
   [Documentation]    Default english welcome page
   [Tags]             EN

@@ -25,8 +25,7 @@ Ruchy: search waypoint by GC code
   Page WaitForPage
   Ruchy 3Waypoint Enter     GC1AQ2N
   Ruchy 3Waypoint ShouldBe  GC1AQ2N
-  Ruchy 3Context WaitResult
-  Ruchy 3Context OKChecked
+  Ruchy 3Context WaitOKResult
   Ruchy 3Context ShouldInclude  waypoint GC1AQ2N
   Ruchy 3Name Disabled
   Ruchy 3Coordinates ShouldBe   52.1534 21.0539
@@ -49,7 +48,7 @@ Ruchy: search waypoint by name with more than 1 result
   Ruchy 3Waypoint ShouldBe  GA1781
   Ruchy 3Name ShouldBe      voyage
   Ruchy 3Name Disabled
-  Ruchy 3Context OKChecked
+  Ruchy 3Context WaitOKResult
   Ruchy 3Context ShouldInclude  Bon Voyage Swampy!!
 
 Ruchy: search waypoint by name with exactly 1 result
@@ -62,8 +61,7 @@ Ruchy: search waypoint by name with exactly 1 result
   Ruchy 3Name ShouldBe      Bon Voyage Swampy
   Ruchy 3Waypoint ShouldBe  GA1781
   Ruchy 3Waypoint Disabled
-  Ruchy 3Context WaitResult
-  Ruchy 3Context OKChecked
+  Ruchy 3Context WaitOKResult
   Ruchy 3Context ShouldInclude  Bon Voyage Swampy!!
 
 Ruchy: search waypoint by name with no result
@@ -74,8 +72,7 @@ Ruchy: search waypoint by name with no result
   Ruchy ClickOn Check
 
   Ruchy 3Name ShouldBe      glogloglo
-  Ruchy 3Context WaitResult
-  Ruchy 3Context KOChecked
+  Ruchy 3Context WaitKONoCache
   Ruchy 3Context ShouldInclude  No cache found
 
 Ruchy: search waypoint by code with invalid prefix
@@ -84,8 +81,7 @@ Ruchy: search waypoint by code with invalid prefix
   Page WaitForPage
   Ruchy 3Waypoint Enter         XX_C100N_AHV
   Ruchy 3Waypoint ShouldBe      XX_C100N_AHV
-  Ruchy 3Context WaitResult
-  Ruchy 3Context KOChecked
+  Ruchy 3Context WaitKOMissing
   Ruchy 3Context ShouldInclude  Missing or invalid coordinates
   Ruchy 3Name Disabled
 
@@ -95,8 +91,7 @@ Ruchy: search waypoint by code with unknown GC
   Page WaitForPage
   Ruchy 3Waypoint Enter         GC120999
   Ruchy 3Waypoint ShouldBe      GC120999
-  Ruchy 3Context WaitResult
-  Ruchy 3Context KOChecked
+  Ruchy 3Context WaitKOMissing
   Ruchy 3Context ShouldInclude  Missing or invalid coordinates
   Ruchy 3Name Disabled
 

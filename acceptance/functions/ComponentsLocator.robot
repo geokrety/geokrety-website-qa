@@ -18,17 +18,18 @@ ${BTN_WELCOME_GO}    xpath=//form[@name='formularz']/input[@type='submit']
 ################
 # RUCHY PAGE
 ################
-${TXT_RUCHY_TRACKING_CODE}  id=nr
+${TXT_RUCHY_TRACKING_CODE}   id=nr
 
-${TXT_RUCHY_WAYPOINT}       id=wpt
-${TXT_RUCHY_CACHENAME}      id=NazwaSkrzynki
-${BTN_RUCHY_CHECK}          id=btn_sprawdzskrzynke
-${TXT_RUCHY_LATLON}         id=latlon
-${BTN_RUCHY_LOGATHOME}      id=logAtHome
-${BTN_RUCHY_GETGEOLOC}      id=getGeoLocation
-${ELT_RUCHY_CONTEXT}        id=wynikWpt
-${ELT_RUCHY_CONTEXT_IMG_OK}  xpath=//*[@id="wynikWpt"]/img[@src="https://cdn.geokrety.org/images/icons/ok.png"]
-${ELT_RUCHY_CONTEXT_IMG_KO}  xpath=//*[@id="wynikWpt"]/img[@src="https://cdn.geokrety.org/images/icons/error.png"]
+${TXT_RUCHY_WAYPOINT}        id=wpt
+${TXT_RUCHY_CACHENAME}       id=NazwaSkrzynki
+${BTN_RUCHY_CHECK}           id=btn_sprawdzskrzynke
+${TXT_RUCHY_LATLON}          id=latlon
+${BTN_RUCHY_LOGATHOME}       id=logAtHome
+${BTN_RUCHY_GETGEOLOC}       id=getGeoLocation
+${ELT_RUCHY_CONTEXT}         id=wynikWpt
+${ELT_RUCHY_CONTEXT_IMG_OK}  id=szukaj_img_ok
+${ELT_RUCHY_CONTEXT_IMG_KO_NOCACHE}  id=szukaj_img_error_no_cache
+${ELT_RUCHY_CONTEXT_IMG_KO_MISSING}  id=szukaj_img_error_missing
 ${ELT_RUCHY_CONTEXT_FIRSTRESULT}  xpath=//*[@id="wynikWpt"]/a[1]
 
 ${TXT_RUCHY_USERNAME}        id=username
