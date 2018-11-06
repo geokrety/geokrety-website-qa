@@ -76,14 +76,22 @@ fi
 # listListeningPorts
 
 #
-echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} buildDir=${BUILD_DIR}"
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
 # pybot arg doc:  https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/Appendices/CommandLineOptions.rst
-# CONSOLE_ARG=--dotted
-# CONSOLE_ARG="--console verbose"
-CONSOLE_ARG="-T --loglevel DEBUG"
+# PYBOT_ARGS=--dotted
+# PYBOT_ARGS="--console verbose"
+PYBOT_ARGS="--loglevel DEBUG"
+PYBOT_ARGS="${PYBOT_ARGS} --output output.xml"
+PYBOT_ARGS="${PYBOT_ARGS} --debugfile debugfile.log"
+PYBOT_ARGS="${PYBOT_ARGS} --log log.html"
+PYBOT_ARGS="${PYBOT_ARGS} --report report.html"
+PYBOT_ARGS="${PYBOT_ARGS} --xunit xUnit.xml"
+PYBOT_ARGS="${PYBOT_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
 
-${PYBOT} ${CONSOLE_ARG} -d ${BUILD_DIR} ${ENV_VARS_FILE} acceptance/TestGeoKrety/
+echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL}"
+echo "   PYBOT_ARGS:${PYBOT_ARGS}"
+
+${PYBOT} ${PYBOT_ARGS} acceptance/TestGeoKrety/
 
 PYBOT_RESULT=$?
 echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE

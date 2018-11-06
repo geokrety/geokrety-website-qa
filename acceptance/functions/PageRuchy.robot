@@ -62,12 +62,14 @@ Ruchy 3Waypoint Enter
   [Arguments]    ${wptcode}
   Wait Until Element Is Visible  ${TXT_RUCHY_WAYPOINT}
   Input Text                     ${TXT_RUCHY_WAYPOINT}  ${wptcode}
+  Simulate Event                 ${TXT_RUCHY_WAYPOINT}  blur
   Sleep                          1s
 
 Ruchy 3Name Enter
   [Arguments]    ${wptname}
   Wait Until Element Is Visible  ${TXT_RUCHY_CACHENAME}
   Input Text                     ${TXT_RUCHY_CACHENAME}  ${wptname}
+  Simulate Event                 ${TXT_RUCHY_CACHENAME}  blur
   Sleep                          1s
 
 Ruchy 3Waypoint ShouldBe
@@ -82,13 +84,20 @@ Ruchy 3Name ShouldBe
 
 Ruchy 3Context WaitResult
   Wait Until Page Contains Element  ${ELT_RUCHY_CONTEXT}
+  Wait For Condition	                                     return $("#wynikWpt").html() != ""
   Wait Until Element Does Not Contain  ${ELT_RUCHY_CONTEXT}  Retrieving...
+
+Ruchy 3Context WaitOKResult
+  Wait Until Page Contains Element  ${ELT_RUCHY_CONTEXT_IMG_OK}
+
+Ruchy 3Context WaitKONoCache
+  Wait Until Page Contains Element  ${ELT_RUCHY_CONTEXT_IMG_KO_NOCACHE}
+
+Ruchy 3Context WaitKOMissing
+  Wait Until Page Contains Element  ${ELT_RUCHY_CONTEXT_IMG_KO_MISSING}
 
 Ruchy 3Context OKChecked
   Page Should Contain Element  ${ELT_RUCHY_CONTEXT_IMGOK}
-
-Ruchy 3Context KOChecked
-  Page Should Contain Element  ${ELT_RUCHY_CONTEXT_IMGKO}
 
 Ruchy 3Context ShouldInclude
   [Arguments]    ${expectedText}

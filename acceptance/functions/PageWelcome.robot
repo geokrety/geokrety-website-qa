@@ -40,4 +40,5 @@ Welcome ShouldShow RecentGKFR
     [Arguments]    ${code}
     Wait Until Element Is Visible  ${TXT_WELCOME_CODE}
     Input Text                     ${TXT_WELCOME_CODE}  ${code}
+    Simulate Event                 ${TXT_WELCOME_CODE}  blur
     Sleep    1s
