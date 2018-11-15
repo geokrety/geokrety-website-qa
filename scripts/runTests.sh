@@ -91,7 +91,7 @@ PYBOT_ARGS="${PYBOT_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL}"
 echo "   PYBOT_ARGS:${PYBOT_ARGS}"
 
-${PYBOT} ${PYBOT_ARGS} acceptance/TestGeoKrety/
+${PYBOT} ${PYBOT_ARGS} acceptance/TestGeoKrety/${TARGET_TEST}
 
 PYBOT_RESULT=$?
 echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE
