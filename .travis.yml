@@ -1,27 +1,30 @@
 language: python
 python:
-  - 2.7.15
+- 2.7.15
 dist: trusty
 env:
-# QA Tests target environments: allowed value are 'boly38' or 'master'
-  - TARGET_ENV=master
+# QA Tests
+# https://docs.travis-ci.com/user/environment-variables/#defining-multiple-variables-per-item
+# TARGET_ENV: allowed value are 'boly38' or 'master' (default)
+# TARGET_TEST: empty means execute all tests(default), or set robot filename to execute single test
+- TARGET_ENV=master TARGET_TEST=
 sudo: required
 addons:
   chrome: stable
   firefox: latest
 install:
-  - pip install --upgrade pip
-  - pip -V
-  - pip install -r requirements.txt
+- pip install --upgrade pip
+- pip -V
+- pip install -r requirements.txt
 before_script:
 #  - wget --quiet "http://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip"
 #  - unzip chromedriver_linux64.zip
 #  - sudo mv chromedriver /usr/local/bin
 #  - ./scripts/makeChromeDriverVerbose.sh
-  - wget --quiet "https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz"
-  - tar -xzvf geckodriver-v0.23.0-linux64.tar.gz
-  - sudo mv geckodriver /usr/local/bin
-  - touch ./scripts/.requirements_checked
+- wget --quiet "https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz"
+- tar -xzvf geckodriver-v0.23.0-linux64.tar.gz
+- sudo mv geckodriver /usr/local/bin
+- touch ./scripts/.requirements_checked
 jobs:
   include:
   - stage: qaTests
@@ -31,9 +34,9 @@ jobs:
 
 notifications:
   irc:
-      channels:
-          - "chat.freenode.net#geokrety"
-      on_success: always
-      on_failure: always
-      template:
-          - "%{build_url} QA %{build_number} | %{branch} | %{commit_subject} | %{result}"
+    channels:
+    - "chat.freenode.net#geokrety"
+    on_success: always
+    on_failure: always
+    template:
+    - "%{build_url} QA %{build_number} | %{branch} | %{commit_subject} | %{result}"

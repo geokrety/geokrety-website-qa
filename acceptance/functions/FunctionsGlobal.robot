@@ -50,6 +50,11 @@ Resource        travis_${TRAVIS_FLAG}/Xvbf.robot
 Page WaitForPage
   Wait Until Page Contains Element  ${ELT_TOP}
 
+Page WithoutWarningOrFailure
+  Page Should Not Contain  Warning:
+  Page Should Not Contain  Failed
+
+
 Page ShouldShow Footer
   Page Should Contain  Made in Poland
   Page Should Contain  by filips

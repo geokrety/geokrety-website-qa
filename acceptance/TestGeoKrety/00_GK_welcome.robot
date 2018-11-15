@@ -12,6 +12,7 @@ Welcome: (EN)
   !Go To GeoKrety
   !Click On EN Flag
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Welcome ShouldShow Geokrety
   Welcome ShouldShow News
   Welcome ShouldShow RecentLogs
@@ -25,6 +26,7 @@ Welcome: (FR)
   !Go To GeoKrety
   !Click On FR Flag
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Welcome ShouldShow GeokretyFR
   Welcome ShouldShow NewsFR
   Welcome ShouldShow RecentLogsFR
@@ -35,6 +37,8 @@ Welcome: input geokret code
   [Tags]             RUCHY
   !Go To GeoKrety
   !Click On EN Flag
+  Page WaitForPage
+  Page WithoutWarningOrFailure
   !Enter TrackingCode  ${TEST_GEOKRET_CODE}
   !Click On FoundGeokretGo
   Location Should Be   ${GK_URL_RUCHY}?nr=${TEST_GEOKRET_CODE}

@@ -12,6 +12,7 @@ Ruchy: (EN)
   [Tags]             EN
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy ShouldShow LogType
   Ruchy ShouldShow IdentifyGeokret
   Ruchy ShouldShow NewLocation
@@ -23,6 +24,7 @@ Ruchy: search waypoint by GC code
   [Tags]             EN  search  waypoint
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy 3Waypoint Enter     GC1AQ2N
   Ruchy 3Waypoint ShouldBe  GC1AQ2N
   Ruchy 3Context WaitOKResult
@@ -35,6 +37,7 @@ Ruchy: search waypoint by name with more than 1 result
   [Tags]             EN  search  waypoint
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy 3Name Enter             voyage
   Ruchy ClickOn Check
 
@@ -55,6 +58,7 @@ Ruchy: search waypoint by name with exactly 1 result
   [Tags]             EN  search  waypoint
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy 3Name Enter         Bon Voyage Swampy
   Ruchy ClickOn Check
 
@@ -68,6 +72,7 @@ Ruchy: search waypoint by name with no result
   [Tags]             EN  search  waypoint
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy 3Name Enter         glogloglo
   Ruchy ClickOn Check
 
@@ -79,6 +84,7 @@ Ruchy: search waypoint by code with invalid prefix
   [Tags]             EN  search  waypoint
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy 3Waypoint Enter         XX_C100N_AHV
   Ruchy 3Waypoint ShouldBe      XX_C100N_AHV
   Ruchy 3Context WaitKOMissing
@@ -89,6 +95,7 @@ Ruchy: search waypoint by code with unknown GC
   [Tags]             EN  search  waypoint
   !Go To Ruchy
   Page WaitForPage
+  Page WithoutWarningOrFailure
   Ruchy 3Waypoint Enter         GC120999
   Ruchy 3Waypoint ShouldBe      GC120999
   Ruchy 3Context WaitKOMissing
