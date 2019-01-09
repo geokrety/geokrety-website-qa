@@ -30,8 +30,8 @@ fi
 #
 # allowed target environments : don't forget trailing slash
 ALLOWED_ENV=(
-    "master|https://rec.geokrety.org/"
-    "boly38|https://boly38.gk.kumy.org/"
+    "master|https://staging.geokrety.org/"
+    "boly38|https://boly38.staging.geokrety.org/"
 )
 #
 function getEnvUrl() {
