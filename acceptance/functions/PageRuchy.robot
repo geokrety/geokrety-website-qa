@@ -2,13 +2,16 @@
 Resource        FunctionsGlobal.robot
 
 *** Keywords ***
-!Go To Ruchy
+!Open browser onto ruchy
     !Go To GeoKrety
     !Click On EN Flag
     Wait Until Element Is Visible  ${LINK_LOG_A_GK}
     Wait Until Page Contains       Log a GeoKret
     Click Link                     ${LINK_LOG_A_GK}
     Location Should Be             ${GK_URL}ruchy.php
+
+!Go To Ruchy
+    Go To                          ${GK_URL}ruchy.php
 
 Ruchy ShouldShow LogType
   Page Should Contain  Choose log type
