@@ -1,11 +1,12 @@
 *** Settings ***
 Library         SeleniumLibrary  timeout=10  implicit_wait=0
 Resource        ../functions/PageRuchy.robot
-Test Teardown   Close All Browsers
 Force Tags      Ruchy
 Test Timeout    2 minutes
 
 *** Test Cases ***
+Ruchy: start
+  !Open browser onto ruchy
 
 Ruchy: (EN)
   [Documentation]    default page
@@ -101,4 +102,7 @@ Ruchy: search waypoint by code with unknown GC
   Ruchy 3Context WaitKOMissing
   Ruchy 3Context ShouldInclude  Missing or invalid coordinates
   Ruchy 3Name Disabled
+
+Ruchy: end
+  Close All Browsers
 
