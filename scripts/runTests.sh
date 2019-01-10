@@ -23,9 +23,9 @@ else
 fi
 #
 # commands
-PYBOT=pybot
+ROBOT_CMD=robot
 if [ "${OS}" == "Windows_NT" ]; then
-   PYBOT=pybot.bat
+   ROBOT_CMD=robot.exe
 fi
 #
 # allowed target environments : don't forget trailing slash
@@ -77,24 +77,22 @@ fi
 
 #
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
-# pybot arg doc:  https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/Appendices/CommandLineOptions.rst
-# PYBOT_ARGS=--dotted
-# PYBOT_ARGS="--console verbose"
-PYBOT_ARGS="--loglevel DEBUG"
-PYBOT_ARGS="${PYBOT_ARGS} --output output.xml"
-PYBOT_ARGS="${PYBOT_ARGS} --debugfile debugfile.log"
-PYBOT_ARGS="${PYBOT_ARGS} --log log.html"
-PYBOT_ARGS="${PYBOT_ARGS} --report report.html"
-PYBOT_ARGS="${PYBOT_ARGS} --xunit xUnit.xml"
-PYBOT_ARGS="${PYBOT_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
+# doc:  https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/Appendices/CommandLineOptions.rst
+ROBOT_CMD_ARGS="--loglevel DEBUG"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --output output.xml"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --debugfile debugfile.log"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --log log.html"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --report report.html"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --xunit xUnit.xml"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} acceptance/TestGeoKrety/${TARGET_TEST}"
 
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL}"
-echo "   PYBOT_ARGS:${PYBOT_ARGS}"
+echo "   ${ROBOT_CMD} ${ROBOT_CMD_ARGS}"
+${ROBOT_CMD} ${ROBOT_CMD_ARGS}
 
-${PYBOT} ${PYBOT_ARGS} acceptance/TestGeoKrety/${TARGET_TEST}
-
-PYBOT_RESULT=$?
-echo "${PYBOT_RESULT}">${BUILD_DIR}/EXIT_CODE
+ROBOT_CMD_RESULT=$?
+echo "${ROBOT_CMD_RESULT}">${BUILD_DIR}/EXIT_CODE
 
 if ls /tmp/chromedriver_*.log 1> /dev/null 2>&1; then
   echo " * getting chrome driver logs"
@@ -102,7 +100,7 @@ if ls /tmp/chromedriver_*.log 1> /dev/null 2>&1; then
   ls -la ${BUILD_DIR}/chromedriver_*.log | wc -l
 fi
 
-if [ "${PYBOT_RESULT}" == "0" ]; then
+if [ "${ROBOT_CMD_RESULT}" == "0" ]; then
   echo " * tests SUCCESS";
 else
   echo " * tests FAILED";
