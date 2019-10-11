@@ -32,7 +32,7 @@ Quality Assurance tests are executed against default configuration located in `a
 
 - clone me
 - install python+pip
-- just execute `./scripts/runTests.sh`
+- just execute `make help`
 
 # Contribute
 - [Wiki page](https://github.com/geokrety/geokrety-website-qa/wiki) includes good practices and tips,

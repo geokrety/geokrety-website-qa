@@ -16,7 +16,7 @@ pushd "${DIR}" > /dev/null
 
 # requirements
 REQUIREMENT_CHECK=.requirements_checked
-if [ -f ${REQUIREMENT_CHECK} ]; then
+if [[ -f ${REQUIREMENT_CHECK} ]]; then
   echo " * Requirement OK (remove ${REQUIREMENT_CHECK} to enforce check step)"
 else
   . requirements.sh && touch ${REQUIREMENT_CHECK}
@@ -24,14 +24,25 @@ fi
 #
 # commands
 ROBOT_CMD=robot
-if [ "${OS}" == "Windows_NT" ]; then
+if [[ "${OS}" == "Windows_NT" ]]; then
    ROBOT_CMD=robot.exe
 fi
 #
 # allowed target environments : don't forget trailing slash
+# "master|https://staging.geokrety.org/"
 ALLOWED_ENV=(
     "master|https://staging.geokrety.org/"
     "boly38|https://boly38.staging.geokrety.org/"
+    "local|http://localhost:8000/"
+    "newtheme|https://new-theme.staging.geokrety.org/"
+)
+# allowed target test version: don't forget trailing slash
+# "master|TestGeokrety"
+ALLOWED_TEST_VERSION=(
+    "master|TestGeoKrety"
+    "boly38|TestGeoKretyV2"
+    "local|TestGeoKretyV2"
+    "newtheme|TestGeoKretyV2"
 )
 #
 function getEnvUrl() {
@@ -41,25 +52,43 @@ function getEnvUrl() {
   do
     env_name=$(echo "${envItem}"|awk -F "|" '{print $1}')
     env_url=$(echo "${envItem}"|awk -F "|" '{print $2}')
-    if [ "$wantedEnv" == "$env_name" ]; then
+    if [[ "$wantedEnv" == "$env_name" ]]; then
       resultUrl=${env_url}
     fi;
   done
   echo ${resultUrl}
+}
+function getTestVersion() {
+  wantedEnv=$1
+  resultVersion=""
+  for testItem in "${ALLOWED_TEST_VERSION[@]}"
+  do
+    env_name=$(echo "${testItem}"|awk -F "|" '{print $1}')
+    test_version=$(echo "${testItem}"|awk -F "|" '{print $2}')
+    if [[ "$wantedEnv" == "$env_name" ]]; then
+      resultVersion=${test_version}
+    fi;
+  done
+  echo ${resultVersion}
 }
 function listListeningPorts() {
   echo " * list used ports"
   netstat -an|grep LISTEN
 }
 
-#
 # target env : os.env("TARGET_ENV"), or else first argument, or else 'master'
 DEFAULT_ENV=${TARGET_ENV:-$1}
 ENV=${DEFAULT_ENV:-master}
 # get conf associated to env
 ENV_URL=$(getEnvUrl ${ENV})
-if [ "${ENV_URL}" == "" ]; then
-   echo "Unsupported env ${ENV}";
+if [[ "${ENV_URL}" == "" ]]; then
+   echo "Unsupported env ${ENV} (no url)";
+   exit 1
+fi
+
+TEST_VERSION=$(getTestVersion ${ENV})
+if [[ "${TEST_VERSION}" == "" ]]; then
+   echo "Unsupported env ${ENV} (no test version)";
    exit 1
 fi
 
@@ -73,8 +102,10 @@ if ls ${BUILD_DIR}/* 1> /dev/null 2>&1; then
   rm -f ${BUILD_DIR}/*
 fi
 
-# listListeningPorts
+# DEBUG # to enforce a single test, uncomment the next line
+# TARGET_TEST=00_GK_welcome.robot
 
+TARGET_TESTS=acceptance/${TEST_VERSION}/${TARGET_TEST}
 #
 ENV_VARS_FILE="-V acceptance/vars/robot-vars.py"
 # doc:  https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/Appendices/CommandLineOptions.rst
@@ -85,9 +116,9 @@ ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --log log.html"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --report report.html"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --xunit xUnit.xml"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
-ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} acceptance/TestGeoKrety/${TARGET_TEST}"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} ${TARGET_TESTS}"
 
-echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL}"
+echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} - targetTests=${TARGET_TESTS}"
 echo "   ${ROBOT_CMD} ${ROBOT_CMD_ARGS}"
 ${ROBOT_CMD} ${ROBOT_CMD_ARGS}
 

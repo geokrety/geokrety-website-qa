@@ -1,17 +1,24 @@
 SHELL := /bin/bash
 CURRENT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+PTY_PREFIX=
+ifeq (Windows_NT, ${OS})
+	PTY_PREFIX=winpty
+endif
 
-all: clean build test
+# HELP
+# This will output the help for each task
+# thanks to https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
+.PHONY: help
 
-clean:
-	@echo "Clean"
-	rm -rf .py27
+help: ## This help.
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-build:
-	@echo "Build"
-	virtualenv-2.7 .py27 || virtualenv .py27
-	.py27/bin/pip install -r requirements.txt
-
-test:
+test: ## run robot framework tests (master env)
 	@echo "Run Tests"
-	.py27/bin/pybot test.robot
+	./scripts/runTests.sh
+testlocal: ## run robot framework tests (local env)
+	@echo "Run Tests"
+	./scripts/runTests.sh local
+testv2: ## run robot framework tests (newtheme env)
+	@echo "Run Tests"
+	./scripts/runTests.sh newtheme

@@ -73,3 +73,18 @@ Page ShouldShow Footer
   Click Element                  ${BTN_FLAG_FR}
   Location Should Be             ${GK_URL}
 
+## V2
+!Click On EN Lang
+  Wait Until Element Is Visible  ${DROPDOWN_LANG}
+  Click Element                  ${DROPDOWN_LANG}
+  Wait Until Element Is Visible  ${DROPDOWN_LANG_EN}
+  Click Element                  ${DROPDOWN_LANG_EN}
+  Location Should Be             ${GK_URL}en?
+
+!Click On FR Lang
+  Wait Until Element Is Visible  ${DROPDOWN_LANG}
+  Click Element                  ${DROPDOWN_LANG}
+  Wait Until Element Is Visible  ${DROPDOWN_LANG_FR}
+  Click Element                  ${DROPDOWN_LANG_FR}
+  Location Should Be             ${GK_URL}fr?
+
