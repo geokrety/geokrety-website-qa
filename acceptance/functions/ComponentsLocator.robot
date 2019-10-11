@@ -44,3 +44,10 @@ ${BTN_RUCHY_TIME_NOW}        xpath=//*[@id="prawo"]/form/div[6]/div[3]/div/butto
 ${ELT_RUCHY_COMMENT}         id=poledoliczenia
 
 ${BTN_RUCHY_GO}              xpath=//*[@id="prawo"]/form/div[8]/div/input[1]
+
+################
+#   COMMON V2
+################
+${DROPDOWN_LANG}     id=navbar-lang
+${DROPDOWN_LANG_EN}  id=navbar-lang-en
+${DROPDOWN_LANG_FR}  id=navbar-lang-fr

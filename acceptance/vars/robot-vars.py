@@ -10,3 +10,5 @@ GK_URL_RUCHY = GK_URL + "ruchy.php"
 
 TEST_GEOKRET_REF = "GK10BCD"
 TEST_GEOKRET_CODE = "673CI2"
+
+print(" starting robot test - target {}".format(GK_URL))
