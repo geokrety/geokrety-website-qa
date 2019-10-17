@@ -83,7 +83,9 @@ Page ShouldShow Footer
   Click Element                  ${BTN_FLAG_FR}
   Location Should Be             ${GK_URL}
 
+####################################################
 ## V2
+####################################################
 !Click On EN Lang
   Wait Until Element Is Visible  ${DROPDOWN_LANG}
   Click Element                  ${DROPDOWN_LANG}
@@ -98,3 +100,16 @@ Page ShouldShow Footer
   Click Element                  ${DROPDOWN_LANG_FR}
   Location Should Be             ${GK_URL}fr?
 
+Page WaitForFooterHome
+  Wait Until Page Contains Element  ${FOOTER_HOME}
+
+Page ShouldShow FooterElements
+  Wait Until Page Contains Element  ${FOOTER_HOME}
+  Wait Until Page Contains Element  ${FOOTER_HELP}
+  Wait Until Page Contains Element  ${FOOTER_NEWS}
+  Wait Until Page Contains Element  ${FOOTER_CONTACT}
+  Wait Until Page Contains Element  ${FOOTER_LICENSE}
+  Wait Until Page Contains Element  ${FOOTER_FACEBOOK}
+  Wait Until Page Contains Element  ${FOOTER_TWITTER}
+  Wait Until Page Contains Element  ${FOOTER_INSTAGRAM}
+  # TODO FOOTER_APPVERSION
