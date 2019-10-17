@@ -51,3 +51,18 @@ ${BTN_RUCHY_GO}              xpath=//*[@id="prawo"]/form/div[8]/div/input[1]
 ${DROPDOWN_LANG}     id=navbar-lang
 ${DROPDOWN_LANG_EN}  id=navbar-lang-en
 ${DROPDOWN_LANG_FR}  id=navbar-lang-fr
+
+${FOOTER_HOME}       id=footer-home
+${FOOTER_HELP}       id=footer-help
+${FOOTER_NEWS}       id=footer-news
+${FOOTER_CONTACT}    id=footer-contact
+${FOOTER_LICENSE}    id=footer-license
+${FOOTER_FACEBOOK}   id=footer-facebook
+${FOOTER_TWITTER}    id=footer-twitter
+${FOOTER_INSTAGRAM}  id=footer-instagram
+
+################
+# V2 WELCOME PAGE
+################
+${V2_TXT_WELCOME_CODE}  id=tracking_code
+${V2_BTN_WELCOME_GO}    id=found-geokret-submit
