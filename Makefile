@@ -22,3 +22,6 @@ testlocal: ## run robot framework tests (local env)
 testv2: ## run robot framework tests (feature/new-theme env)
 	@echo "Run Tests"
 	./scripts/runTests.sh feature/new-theme
+testv2bs: ## run robot framework browserstack tests (feature/new-theme env)
+	@echo "Run BrowserStack tests with username:${BS_USERNAME} (and BS_TOKEN must be set)"
+	BS_ENABLED=1 ./scripts/runTests.sh feature/new-theme

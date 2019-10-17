@@ -36,6 +36,31 @@ Quality Assurance tests are executed against default configuration located in `a
 - install python+pip
 - just execute `make help`
 
+## HowTo run QA BrowserStack stage (Experimental)
+
+To run BrowserStack tests locally, you will need : 
+- a BrowserStack username,
+- a BrowserStack token.
+ 
+They could be retrieved from  https://automate.browserstack.com/
+
+````
+export BS_USERNAME=jojo
+export BS_TOKEN=ThisIsVerySecretToken
+make testv2bs
+````
+
+Now, from [travis](https://travis-ci.org/geokrety/geokrety-website-qa/requests) point of view,
+ you had to enforce this stage via `TARGET_BS`. 
+
+You could [trigger a custom build](https://blog.travis-ci.com/2017-08-24-trigger-custom-build) using for example this config:
+
+```
+env:
+- TARGET_BS=1 TARGET_ENV=feature/new-theme
+```
+
+
 # Contribute
 - [Wiki page](https://github.com/geokrety/geokrety-website-qa/wiki) includes good practices and tips,
 - Pull request need to embed use case definitions, and pass Travis checks.

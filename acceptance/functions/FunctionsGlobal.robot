@@ -10,6 +10,16 @@ Resource        travis_${TRAVIS_FLAG}/Xvbf.robot
 
 *** Variables ***
 # ${FF_PROFILE}      ff_profile
+##############
+# BrowserStack desired capabilities
+# https://www.browserstack.com/automate/capabilities
+# default - when DC is not set : available windows (ex. 7 or 10) and Firefox 70
+##############
+# Usecase: galaxy tab
+## Capture Page Screenshot' could not be run
+${DC_GalaxyTab}	     "os_version:8.1,device:Samsung Galaxy Tab S4,real_mobile:true,browserstack.local:false,tunnel:false" BrowserStack.robot
+# Usecase: windows 10 and chrome
+${DC_Win10Chrome}	 "os:Windows,os_version:10,browser:Chrome,browser_version:62.0,browserstack.local:false,tunnel:false" BrowserStack.robot
 
 *** Keywords ***
 !Open GeoKrety Browser Firefox
