@@ -34,7 +34,7 @@ ALLOWED_ENV=(
     "master|https://staging.geokrety.org/"
     "boly38|https://boly38.staging.geokrety.org/"
     "local|http://localhost:8000/"
-    "newtheme|https://new-theme.staging.geokrety.org/"
+    "feature/new-theme|https://new-theme.staging.geokrety.org/"
 )
 # allowed target test version: don't forget trailing slash
 # "master|TestGeokrety"
@@ -42,7 +42,7 @@ ALLOWED_TEST_VERSION=(
     "master|TestGeoKrety"
     "boly38|TestGeoKretyV2"
     "local|TestGeoKretyV2"
-    "newtheme|TestGeoKretyV2"
+    "feature/new-theme|TestGeoKretyV2"
 )
 #
 function getEnvUrl() {
