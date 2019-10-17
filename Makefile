@@ -19,6 +19,6 @@ test: ## run robot framework tests (master env)
 testlocal: ## run robot framework tests (local env)
 	@echo "Run Tests"
 	./scripts/runTests.sh local
-testv2: ## run robot framework tests (newtheme env)
+testv2: ## run robot framework tests (feature/new-theme env)
 	@echo "Run Tests"
-	./scripts/runTests.sh newtheme
+	./scripts/runTests.sh feature/new-theme
