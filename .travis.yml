@@ -5,9 +5,10 @@ dist: trusty
 env:
 # QA Tests
 # https://docs.travis-ci.com/user/environment-variables/#defining-multiple-variables-per-item
-# TARGET_ENV: allowed value are 'boly38' or 'master' (default)
+# TARGET_ENV: allowed value are 'boly38' or 'master' (default) or 'feature/new-theme'
 # TARGET_TEST: empty means execute all tests(default), or set robot filename to execute single test
-- TARGET_ENV=master TARGET_TEST=
+# TARGET_BS: 0 means skip BrowserStack test stage (default), and 1 means execute browserStackTests stage
+- TARGET_ENV=master TARGET_BS=0 TARGET_TEST=
 sudo: required
 addons:
   chrome: stable
@@ -25,12 +26,22 @@ before_script:
 - tar -xzvf geckodriver-v0.23.0-linux64.tar.gz
 - sudo mv geckodriver /usr/local/bin
 - touch ./scripts/.requirements_checked
+
+stages:
+  - name: qaTests
+  - name: browserStackTests
+    if: env(TARGET_BS) = "1"
+
 jobs:
   include:
   - stage: qaTests
     name: "execute tests"
     script:
     - ./scripts/getPreviousReport.sh && ./scripts/runTests.sh && ./scripts/publishReport.sh && ./scripts/checkResults.sh
+  - stage: browserStackTests
+    name: "execute browser stack tests"
+    script:
+    - BS_ENABLED=1 ./scripts/runTests.sh
 
 notifications:
   irc:

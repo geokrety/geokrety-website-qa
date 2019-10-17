@@ -45,6 +45,11 @@ ALLOWED_TEST_VERSION=(
     "feature/new-theme|TestGeoKretyV2"
 )
 #
+# allowed BrowserStack target test version: don't forget trailing slash
+ALLOWED_BS_TEST_VERSION=(
+    "feature/new-theme|TestBSGeoKretyV2"
+)
+#
 function getEnvUrl() {
   wantedEnv=$1
   resultUrl=""
@@ -71,6 +76,19 @@ function getTestVersion() {
   done
   echo ${resultVersion}
 }
+function getBSTestVersion() {
+  wantedEnv=$1
+  resultVersion=""
+  for testItem in "${ALLOWED_BS_TEST_VERSION[@]}"
+  do
+    env_name=$(echo "${testItem}"|awk -F "|" '{print $1}')
+    test_version=$(echo "${testItem}"|awk -F "|" '{print $2}')
+    if [[ "$wantedEnv" == "$env_name" ]]; then
+      resultVersion=${test_version}
+    fi;
+  done
+  echo ${resultVersion}
+}
 function listListeningPorts() {
   echo " * list used ports"
   netstat -an|grep LISTEN
@@ -79,16 +97,21 @@ function listListeningPorts() {
 # target env : os.env("TARGET_ENV"), or else first argument, or else 'master'
 DEFAULT_ENV=${TARGET_ENV:-$1}
 ENV=${DEFAULT_ENV:-master}
+BS_ENABLED=${BS_ENABLED:0}
 # get conf associated to env
 ENV_URL=$(getEnvUrl ${ENV})
 if [[ "${ENV_URL}" == "" ]]; then
-   echo "Unsupported env ${ENV} (no url)";
+   echo " XXX Unsupported environment '${ENV}' (no target url)";
    exit 1
 fi
 
-TEST_VERSION=$(getTestVersion ${ENV})
+if [[ "${BS_ENABLED}" == "1" ]]; then
+    TEST_VERSION=$(getBSTestVersion ${ENV})
+else
+    TEST_VERSION=$(getTestVersion ${ENV})
+fi
 if [[ "${TEST_VERSION}" == "" ]]; then
-   echo "Unsupported env ${ENV} (no test version)";
+   echo " XXX Unsupported environment '${ENV}' (no test version - bs:${BS_ENABLED})";
    exit 1
 fi
 
@@ -120,6 +143,7 @@ ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} ${TARGET_TESTS}"
 
 echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} - targetTests=${TARGET_TESTS}"
 echo "   ${ROBOT_CMD} ${ROBOT_CMD_ARGS}"
+mkdir -p docs/${ENV}
 ${ROBOT_CMD} ${ROBOT_CMD_ARGS}
 
 ROBOT_CMD_RESULT=$?
@@ -131,7 +155,7 @@ if ls /tmp/chromedriver_*.log 1> /dev/null 2>&1; then
   ls -la ${BUILD_DIR}/chromedriver_*.log | wc -l
 fi
 
-if [ "${ROBOT_CMD_RESULT}" == "0" ]; then
+if [[ "${ROBOT_CMD_RESULT}" == "0" ]]; then
   echo " * tests SUCCESS";
 else
   echo " * tests FAILED";
