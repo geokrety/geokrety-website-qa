@@ -8,6 +8,8 @@
 
 [![Travis Status](https://travis-ci.org/geokrety/geokrety-website-qa.svg?branch=master)](https://travis-ci.org/geokrety/geokrety-website-qa)<br/>
 
+[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=SGZSTjVSc2d0d1FSRDg4c1c3bE80akFPVVk3anBySFQ0REk5SVBkbWxaOD0tLXIrL3FRMjFVcFZtZzJEV1VITVJ1ZVE9PQ%3D%3D--3680a826bcdde55a8dec3a3d1a086bcac9a48fd8)](https://automate.browserstack.com/public-build/SGZSTjVSc2d0d1FSRDg4c1c3bE80akFPVVk3anBySFQ0REk5SVBkbWxaOD0tLXIrL3FRMjFVcFZtZzJEV1VITVJ1ZVE9PQ%3D%3D--3680a826bcdde55a8dec3a3d1a086bcac9a48fd8)
+
 <a href="https://geokrety.github.io/geokrety-website-qa/"><img src="https://image.flaticon.com/icons/svg/203/203165.svg" width="50" alt="QA Tests reports"/> <small>QA Tests reports</small></a>
 
 </p>
