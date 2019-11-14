@@ -30,13 +30,27 @@ This project includes automated tests -Quality Assurance (QA)- for  GeoKrety.org
 
 # HowTo run QA
 
+### From command line
+
 Quality Assurance tests are executed against default configuration located in `acceptance/vars/robot-vars.py`.
 
 - clone me
 - install python+pip
 - just execute `make help`
 
-## HowTo run QA BrowserStack stage (Experimental)
+### From Travis
+
+From [travis](https://travis-ci.org/geokrety/geokrety-website-qa/requests) point of view,
+ you could select target environment via `TARGET_ENV`. 
+
+You could [trigger a custom build](https://blog.travis-ci.com/2017-08-24-trigger-custom-build) using for example this config:
+
+```
+env:
+- TARGET_ENV=feature/new-theme
+```
+
+### HowTo run QA BrowserStack stage (Experimental)
 
 To run BrowserStack tests locally, you will need : 
 - a BrowserStack username,
