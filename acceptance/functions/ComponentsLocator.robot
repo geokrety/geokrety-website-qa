@@ -52,6 +52,8 @@ ${DROPDOWN_LANG}     id=navbar-lang
 ${DROPDOWN_LANG_EN}  id=navbar-lang-en
 ${DROPDOWN_LANG_FR}  id=navbar-lang-fr
 
+${NAVBAR_MOVE}       id=navbar-move
+
 ${FOOTER_HOME}       id=footer-home
 ${FOOTER_HELP}       id=footer-help
 ${FOOTER_NEWS}       id=footer-news
