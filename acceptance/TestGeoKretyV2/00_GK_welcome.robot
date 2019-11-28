@@ -19,7 +19,7 @@ Welcome: (EN)
   Welcome ShouldShow LatestMoves
   Welcome ShouldShow RecentPictures
   Welcome ShouldShow RecentlyCreatedGK
-  Page ShouldShow FooterElements
+  Page ShouldShow V2Footer
 
 Welcome: (FR)
   [Documentation]    Welcome page in french
@@ -34,7 +34,7 @@ Welcome: (FR)
   Welcome ShouldShow LatestMovesFR
   Welcome ShouldShow RecentPicturesFR
   Welcome ShouldShow RecentlyCreatedGKFR
-  Page ShouldShow FooterElements
+  Page ShouldShow V2Footer
 
 Welcome: (EN) input geokret code
   [Documentation]    Tracking code should redirect to ruchy

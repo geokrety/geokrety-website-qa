@@ -100,10 +100,14 @@ Page ShouldShow Footer
   Click Element                  ${DROPDOWN_LANG_FR}
   Location Should Be             ${GK_URL}fr?
 
+!Click On NavBar Move
+  Wait Until Element Is Visible  ${NAVBAR_MOVE}
+  Click Element                  ${NAVBAR_MOVE}
+
 Page WaitForFooterHome
   Wait Until Page Contains Element  ${FOOTER_HOME}
 
-Page ShouldShow FooterElements
+Page ShouldShow V2Footer
   Wait Until Page Contains Element  ${FOOTER_HOME}
   Wait Until Page Contains Element  ${FOOTER_HELP}
   Wait Until Page Contains Element  ${FOOTER_NEWS}
