@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="13" errors="0" name="TestGeoKrety" skipped="0" time="169.845" failures="2">
-<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (EN)" time="19.249">
+<testsuite tests="13" errors="0" name="TestGeoKrety" skipped="0" time="144.324" failures="1">
+<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (EN)" time="18.914">
 </testcase>
-<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (FR)" time="15.832">
+<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (FR)" time="15.828">
 </testcase>
-<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: input geokret code" time="21.136">
+<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: input geokret code" time="20.850">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: start" time="11.669">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: start" time="12.650">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: (EN)" time="1.319">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: (EN)" time="1.273">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by GC code" time="31.790">
-<failure message="Element 'id=szukaj_img_ok' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by GC code" time="1.721">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with more than 1 result" time="6.325">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with more than 1 result" time="6.349">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with exactly 1 result" time="3.931">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with exactly 1 result" time="3.950">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with no result" time="3.916">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with no result" time="3.857">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with invalid prefix" time="1.651">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with invalid prefix" time="1.661">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with unknown GC" time="1.700">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with unknown GC" time="31.753">
+<failure message="Element 'id=szukaj_img_error_missing' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: end" time="0.582">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: end" time="0.590">
 </testcase>
-<testcase classname="TestGeoKrety.02 GK konkret" name="Konkret: (EN)" time="50.552">
-<failure message="Element 'id=top' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="TestGeoKrety.02 GK konkret" name="Konkret: (EN)" time="24.721">
 </testcase>
 </testsuite>
