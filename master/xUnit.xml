@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="13" errors="0" name="TestGeoKrety" skipped="0" time="114.878" failures="0">
-<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (EN)" time="22.934">
+<testsuite tests="13" errors="0" name="TestGeoKrety" skipped="0" time="136.852" failures="1">
+<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (EN)" time="17.284">
 </testcase>
-<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (FR)" time="16.961">
+<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: (FR)" time="16.754">
 </testcase>
-<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: input geokret code" time="20.886">
+<testcase classname="TestGeoKrety.00 GK welcome" name="Welcome: input geokret code" time="20.255">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: start" time="12.608">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: start" time="13.108">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: (EN)" time="1.140">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: (EN)" time="1.237">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by GC code" time="1.592">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by GC code" time="31.712">
+<failure message="Element 'id=szukaj_img_ok' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with more than 1 result" time="6.264">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with more than 1 result" time="6.315">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with exactly 1 result" time="3.834">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with exactly 1 result" time="3.916">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with no result" time="3.789">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by name with no result" time="3.845">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with invalid prefix" time="1.568">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with invalid prefix" time="1.606">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with unknown GC" time="1.576">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: search waypoint by code with unknown GC" time="1.648">
 </testcase>
-<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: end" time="4.427">
+<testcase classname="TestGeoKrety.01 GK ruchy" name="Ruchy: end" time="0.506">
 </testcase>
-<testcase classname="TestGeoKrety.02 GK konkret" name="Konkret: (EN)" time="17.091">
+<testcase classname="TestGeoKrety.02 GK konkret" name="Konkret: (EN)" time="18.447">
 </testcase>
 </testsuite>
