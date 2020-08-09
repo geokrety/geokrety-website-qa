@@ -1,19 +1,19 @@
 ==============================================================================
-20200809 13:12:35.624 - INFO - + START SUITE: TestGeoKrety [ ]
+20200809 13:28:23.878 - INFO - + START SUITE: TestGeoKrety [ ]
 ==============================================================================
-20200809 13:12:35.773 - INFO - +- START SUITE: TestGeoKrety.00 GK welcome [ ]
+20200809 13:28:24.021 - INFO - +- START SUITE: TestGeoKrety.00 GK welcome [ ]
 ==============================================================================
-20200809 13:12:35.776 - INFO - +-- START TEST: Welcome: (EN) [ ]
+20200809 13:28:24.023 - INFO - +-- START TEST: Welcome: (EN) [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.777 - INFO - +--- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200809 13:12:35.778 - INFO - +---- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200809 13:12:35.778 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.778 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
-20200809 13:12:35.778 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.778 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.778 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
-20200809 13:12:35.779 - FAIL - No browser is open.
-20200809 13:12:35.779 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.025 - INFO - +--- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200809 13:28:24.026 - INFO - +---- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200809 13:28:24.027 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.028 - DEBUG - Test timeout 2 minutes active. 119.995 seconds left.
+20200809 13:28:24.028 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.028 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200809 13:28:24.027 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
+20200809 13:28:24.029 - FAIL - No browser is open.
+20200809 13:28:24.029 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -26,26 +26,26 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.779 - INFO - +---- END KW: SeleniumLibrary.Location Should Contain (1)
-20200809 13:12:35.780 - INFO - +--- END KW: FunctionsGlobal.!Go To GeoKrety (3)
+20200809 13:28:24.029 - INFO - +---- END KW: SeleniumLibrary.Location Should Contain (3)
+20200809 13:28:24.029 - INFO - +--- END KW: FunctionsGlobal.!Go To GeoKrety (4)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200809 13:12:35.780 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
-20200809 13:12:35.780 - DEBUG - Closing all browsers.
-20200809 13:12:35.780 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (0)
+20200809 13:28:24.030 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
+20200809 13:28:24.030 - DEBUG - Closing all browsers.
+20200809 13:28:24.030 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (0)
 ------------------------------------------------------------------------------
-20200809 13:12:35.781 - INFO - +-- END TEST: Welcome: (EN) (6)
+20200809 13:28:24.030 - INFO - +-- END TEST: Welcome: (EN) (8)
 ------------------------------------------------------------------------------
-20200809 13:12:35.782 - INFO - +-- START TEST: Welcome: (FR) [ ]
+20200809 13:28:24.031 - INFO - +-- START TEST: Welcome: (FR) [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.783 - INFO - +--- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200809 13:12:35.783 - INFO - +---- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200809 13:12:35.784 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.784 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.784 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.784 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.783 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.784 - FAIL - No browser is open.
-20200809 13:12:35.784 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.032 - INFO - +--- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200809 13:28:24.033 - INFO - +---- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200809 13:28:24.034 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.034 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200809 13:28:24.034 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.035 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200809 13:28:24.033 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.035 - FAIL - No browser is open.
+20200809 13:28:24.035 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -58,26 +58,26 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.785 - INFO - +---- END KW: SeleniumLibrary.Location Should Contain (1)
-20200809 13:12:35.785 - INFO - +--- END KW: FunctionsGlobal.!Go To GeoKrety (2)
+20200809 13:28:24.036 - INFO - +---- END KW: SeleniumLibrary.Location Should Contain (3)
+20200809 13:28:24.036 - INFO - +--- END KW: FunctionsGlobal.!Go To GeoKrety (4)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200809 13:12:35.785 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
-20200809 13:12:35.785 - DEBUG - Closing all browsers.
-20200809 13:12:35.785 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (0)
+20200809 13:28:24.037 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
+20200809 13:28:24.040 - DEBUG - Closing all browsers.
+20200809 13:28:24.040 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (3)
 ------------------------------------------------------------------------------
-20200809 13:12:35.786 - INFO - +-- END TEST: Welcome: (FR) (3)
+20200809 13:28:24.043 - INFO - +-- END TEST: Welcome: (FR) (9)
 ------------------------------------------------------------------------------
-20200809 13:12:35.787 - INFO - +-- START TEST: Welcome: input geokret code [ ]
+20200809 13:28:24.044 - INFO - +-- START TEST: Welcome: input geokret code [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.788 - INFO - +--- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200809 13:12:35.788 - INFO - +---- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200809 13:12:35.788 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.788 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.789 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.789 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200809 13:12:35.788 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.789 - FAIL - No browser is open.
-20200809 13:12:35.789 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.045 - INFO - +--- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200809 13:28:24.045 - INFO - +---- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200809 13:28:24.046 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.046 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.046 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.046 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200809 13:28:24.046 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.046 - FAIL - No browser is open.
+20200809 13:28:24.046 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -90,31 +90,31 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.789 - INFO - +---- END KW: SeleniumLibrary.Location Should Contain (1)
-20200809 13:12:35.789 - INFO - +--- END KW: FunctionsGlobal.!Go To GeoKrety (1)
+20200809 13:28:24.047 - INFO - +---- END KW: SeleniumLibrary.Location Should Contain (1)
+20200809 13:28:24.047 - INFO - +--- END KW: FunctionsGlobal.!Go To GeoKrety (2)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200809 13:12:35.790 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
-20200809 13:12:35.790 - DEBUG - Closing all browsers.
-20200809 13:12:35.790 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (0)
+20200809 13:28:24.047 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
+20200809 13:28:24.047 - DEBUG - Closing all browsers.
+20200809 13:28:24.047 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (0)
 ------------------------------------------------------------------------------
-20200809 13:12:35.791 - INFO - +-- END TEST: Welcome: input geokret code (4)
+20200809 13:28:24.048 - INFO - +-- END TEST: Welcome: input geokret code (4)
 ------------------------------------------------------------------------------
-20200809 13:12:35.797 - INFO - +- END SUITE: TestGeoKrety.00 GK welcome (166)
+20200809 13:28:24.052 - INFO - +- END SUITE: TestGeoKrety.00 GK welcome (170)
 ==============================================================================
-20200809 13:12:35.810 - INFO - +- START SUITE: TestGeoKrety.01 GK ruchy [ ]
+20200809 13:28:24.067 - INFO - +- START SUITE: TestGeoKrety.01 GK ruchy [ ]
 ==============================================================================
-20200809 13:12:35.812 - INFO - +-- START TEST: Ruchy: start [ ]
+20200809 13:28:24.070 - INFO - +-- START TEST: Ruchy: start [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.813 - INFO - +--- START KW: PageRuchy.!Open browser onto ruchy [ ]
-20200809 13:12:35.813 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200809 13:12:35.814 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200809 13:12:35.815 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.815 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.815 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.816 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200809 13:12:35.814 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.816 - FAIL - No browser is open.
-20200809 13:12:35.816 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.070 - INFO - +--- START KW: PageRuchy.!Open browser onto ruchy [ ]
+20200809 13:28:24.071 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200809 13:28:24.072 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200809 13:28:24.074 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.074 - DEBUG - Test timeout 2 minutes active. 119.994 seconds left.
+20200809 13:28:24.074 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.075 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (2)
+20200809 13:28:24.073 - DEBUG - Test timeout 2 minutes active. 119.995 seconds left.
+20200809 13:28:24.075 - FAIL - No browser is open.
+20200809 13:28:24.075 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -127,24 +127,24 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.816 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (2)
-20200809 13:12:35.816 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (3)
-20200809 13:12:35.816 - INFO - +--- END KW: PageRuchy.!Open browser onto ruchy (3)
+20200809 13:28:24.075 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (3)
+20200809 13:28:24.075 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (4)
+20200809 13:28:24.075 - INFO - +--- END KW: PageRuchy.!Open browser onto ruchy (5)
 ------------------------------------------------------------------------------
-20200809 13:12:35.817 - INFO - +-- END TEST: Ruchy: start (5)
+20200809 13:28:24.076 - INFO - +-- END TEST: Ruchy: start (8)
 ------------------------------------------------------------------------------
-20200809 13:12:35.818 - INFO - +-- START TEST: Ruchy: (EN) [ ]
+20200809 13:28:24.077 - INFO - +-- START TEST: Ruchy: (EN) [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.818 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.818 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.819 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.819 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.819 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.820 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200809 13:12:35.819 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.819 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.822 - FAIL - No browser is open.
-20200809 13:12:35.822 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.078 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.079 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.080 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.081 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
+20200809 13:28:24.081 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.082 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200809 13:28:24.080 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200809 13:28:24.080 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.083 - FAIL - No browser is open.
+20200809 13:28:24.083 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -155,23 +155,23 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.822 - INFO - +---- END KW: SeleniumLibrary.Go To (4)
-20200809 13:12:35.823 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (4)
+20200809 13:28:24.083 - INFO - +---- END KW: SeleniumLibrary.Go To (4)
+20200809 13:28:24.084 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (5)
 ------------------------------------------------------------------------------
-20200809 13:12:35.824 - INFO - +-- END TEST: Ruchy: (EN) (6)
+20200809 13:28:24.085 - INFO - +-- END TEST: Ruchy: (EN) (7)
 ------------------------------------------------------------------------------
-20200809 13:12:35.825 - INFO - +-- START TEST: Ruchy: search waypoint by GC code [ ]
+20200809 13:28:24.088 - INFO - +-- START TEST: Ruchy: search waypoint by GC code [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.826 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.827 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.827 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.827 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.827 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.827 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.827 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.827 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.828 - FAIL - No browser is open.
-20200809 13:12:35.828 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.089 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.090 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.090 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.090 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.090 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.091 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200809 13:28:24.090 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.090 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.091 - FAIL - No browser is open.
+20200809 13:28:24.091 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -182,23 +182,23 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.828 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
-20200809 13:12:35.828 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
+20200809 13:28:24.091 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
+20200809 13:28:24.091 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
 ------------------------------------------------------------------------------
-20200809 13:12:35.831 - INFO - +-- END TEST: Ruchy: search waypoint by GC code (3)
+20200809 13:28:24.092 - INFO - +-- END TEST: Ruchy: search waypoint by GC code (3)
 ------------------------------------------------------------------------------
-20200809 13:12:35.831 - INFO - +-- START TEST: Ruchy: search waypoint by name with more than 1 result [ ]
+20200809 13:28:24.094 - INFO - +-- START TEST: Ruchy: search waypoint by name with more than 1 result [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.832 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.833 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.833 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.833 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.833 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.833 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.833 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.833 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.834 - FAIL - No browser is open.
-20200809 13:12:35.834 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.095 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.096 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.096 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.096 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200809 13:28:24.096 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.097 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200809 13:28:24.096 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200809 13:28:24.096 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.097 - FAIL - No browser is open.
+20200809 13:28:24.097 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -209,23 +209,23 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.834 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
-20200809 13:12:35.834 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
+20200809 13:28:24.097 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
+20200809 13:28:24.097 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
 ------------------------------------------------------------------------------
-20200809 13:12:35.835 - INFO - +-- END TEST: Ruchy: search waypoint by name with more than 1 result (3)
+20200809 13:28:24.098 - INFO - +-- END TEST: Ruchy: search waypoint by name with more than 1 result (5)
 ------------------------------------------------------------------------------
-20200809 13:12:35.836 - INFO - +-- START TEST: Ruchy: search waypoint by name with exactly 1 result [ ]
+20200809 13:28:24.099 - INFO - +-- START TEST: Ruchy: search waypoint by name with exactly 1 result [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.838 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.839 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.839 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.839 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.839 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.840 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200809 13:12:35.839 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.839 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.840 - FAIL - No browser is open.
-20200809 13:12:35.840 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.100 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.101 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.101 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.101 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.101 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.101 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200809 13:28:24.101 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.101 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.102 - FAIL - No browser is open.
+20200809 13:28:24.102 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -236,23 +236,23 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.840 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
-20200809 13:12:35.841 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (3)
+20200809 13:28:24.102 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
+20200809 13:28:24.102 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
 ------------------------------------------------------------------------------
-20200809 13:12:35.841 - INFO - +-- END TEST: Ruchy: search waypoint by name with exactly 1 result (5)
+20200809 13:28:24.102 - INFO - +-- END TEST: Ruchy: search waypoint by name with exactly 1 result (3)
 ------------------------------------------------------------------------------
-20200809 13:12:35.842 - INFO - +-- START TEST: Ruchy: search waypoint by name with no result [ ]
+20200809 13:28:24.104 - INFO - +-- START TEST: Ruchy: search waypoint by name with no result [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.843 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.844 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.845 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.845 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.845 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.845 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.844 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.844 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.845 - FAIL - No browser is open.
-20200809 13:12:35.846 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.105 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.106 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.106 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.106 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.106 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.106 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200809 13:28:24.106 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.106 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.107 - FAIL - No browser is open.
+20200809 13:28:24.107 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -263,23 +263,23 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.846 - INFO - +---- END KW: SeleniumLibrary.Go To (2)
-20200809 13:12:35.848 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (5)
+20200809 13:28:24.107 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
+20200809 13:28:24.107 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
 ------------------------------------------------------------------------------
-20200809 13:12:35.849 - INFO - +-- END TEST: Ruchy: search waypoint by name with no result (7)
+20200809 13:28:24.108 - INFO - +-- END TEST: Ruchy: search waypoint by name with no result (3)
 ------------------------------------------------------------------------------
-20200809 13:12:35.851 - INFO - +-- START TEST: Ruchy: search waypoint by code with invalid prefix [ ]
+20200809 13:28:24.109 - INFO - +-- START TEST: Ruchy: search waypoint by code with invalid prefix [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.852 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.853 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.853 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.853 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
-20200809 13:12:35.854 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.854 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200809 13:12:35.853 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.853 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.854 - FAIL - No browser is open.
-20200809 13:12:35.854 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.110 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.110 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.111 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.111 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.111 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.112 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200809 13:28:24.111 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.111 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.113 - FAIL - No browser is open.
+20200809 13:28:24.113 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -290,23 +290,23 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.854 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
-20200809 13:12:35.854 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
+20200809 13:28:24.113 - INFO - +---- END KW: SeleniumLibrary.Go To (3)
+20200809 13:28:24.113 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (3)
 ------------------------------------------------------------------------------
-20200809 13:12:35.855 - INFO - +-- END TEST: Ruchy: search waypoint by code with invalid prefix (5)
+20200809 13:28:24.114 - INFO - +-- END TEST: Ruchy: search waypoint by code with invalid prefix (4)
 ------------------------------------------------------------------------------
-20200809 13:12:35.857 - INFO - +-- START TEST: Ruchy: search waypoint by code with unknown GC [ ]
+20200809 13:28:24.115 - INFO - +-- START TEST: Ruchy: search waypoint by code with unknown GC [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.858 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
-20200809 13:12:35.859 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
-20200809 13:12:35.859 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.859 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.859 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.859 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.859 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200809 13:12:35.859 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
-20200809 13:12:35.860 - FAIL - No browser is open.
-20200809 13:12:35.860 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.117 - INFO - +--- START KW: PageRuchy.!Go To Ruchy [ ]
+20200809 13:28:24.117 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${GK_URL}ruchy.php ]
+20200809 13:28:24.118 - INFO - +----- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.118 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200809 13:28:24.118 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.118 - INFO - +----- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200809 13:28:24.117 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.118 - INFO - Opening url 'https://staging.geokrety.org/ruchy.php'
+20200809 13:28:24.118 - FAIL - No browser is open.
+20200809 13:28:24.118 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -317,36 +317,36 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.860 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
-20200809 13:12:35.860 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
+20200809 13:28:24.118 - INFO - +---- END KW: SeleniumLibrary.Go To (1)
+20200809 13:28:24.119 - INFO - +--- END KW: PageRuchy.!Go To Ruchy (2)
 ------------------------------------------------------------------------------
-20200809 13:12:35.861 - INFO - +-- END TEST: Ruchy: search waypoint by code with unknown GC (5)
+20200809 13:28:24.119 - INFO - +-- END TEST: Ruchy: search waypoint by code with unknown GC (4)
 ------------------------------------------------------------------------------
-20200809 13:12:35.863 - INFO - +-- START TEST: Ruchy: end [ ]
+20200809 13:28:24.121 - INFO - +-- START TEST: Ruchy: end [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.864 - INFO - +--- START KW: SeleniumLibrary.Close All Browsers [ ]
-20200809 13:12:35.864 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200809 13:12:35.865 - DEBUG - Closing all browsers.
-20200809 13:12:35.865 - INFO - +--- END KW: SeleniumLibrary.Close All Browsers (1)
+20200809 13:28:24.122 - INFO - +--- START KW: SeleniumLibrary.Close All Browsers [ ]
+20200809 13:28:24.122 - DEBUG - Test timeout 2 minutes active. 119.999 seconds left.
+20200809 13:28:24.122 - DEBUG - Closing all browsers.
+20200809 13:28:24.122 - INFO - +--- END KW: SeleniumLibrary.Close All Browsers (0)
 ------------------------------------------------------------------------------
-20200809 13:12:35.866 - INFO - +-- END TEST: Ruchy: end (4)
+20200809 13:28:24.123 - INFO - +-- END TEST: Ruchy: end (2)
 ------------------------------------------------------------------------------
-20200809 13:12:35.869 - INFO - +- END SUITE: TestGeoKrety.01 GK ruchy (69)
+20200809 13:28:24.128 - INFO - +- END SUITE: TestGeoKrety.01 GK ruchy (72)
 ==============================================================================
-20200809 13:12:35.882 - INFO - +- START SUITE: TestGeoKrety.02 GK konkret [ ]
+20200809 13:28:24.138 - INFO - +- START SUITE: TestGeoKrety.02 GK konkret [ ]
 ==============================================================================
-20200809 13:12:35.884 - INFO - +-- START TEST: Konkret: (EN) [ ]
+20200809 13:28:24.140 - INFO - +-- START TEST: Konkret: (EN) [ ]
 ------------------------------------------------------------------------------
-20200809 13:12:35.886 - INFO - +--- START KW: PageKonkret.!Go To Konkret [ ]
-20200809 13:12:35.887 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200809 13:12:35.887 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200809 13:12:35.888 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200809 13:12:35.888 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
-20200809 13:12:35.888 - INFO - Cannot capture screenshot because no browser is open.
-20200809 13:12:35.888 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200809 13:12:35.888 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
-20200809 13:12:35.889 - FAIL - No browser is open.
-20200809 13:12:35.889 - DEBUG - Traceback (most recent call last):
+20200809 13:28:24.142 - INFO - +--- START KW: PageKonkret.!Go To Konkret [ ]
+20200809 13:28:24.142 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200809 13:28:24.142 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200809 13:28:24.143 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200809 13:28:24.143 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200809 13:28:24.143 - INFO - Cannot capture screenshot because no browser is open.
+20200809 13:28:24.143 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200809 13:28:24.143 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200809 13:28:24.143 - FAIL - No browser is open.
+20200809 13:28:24.144 - DEBUG - Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -359,17 +359,17 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')
-20200809 13:12:35.889 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (2)
-20200809 13:12:35.889 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (2)
-20200809 13:12:35.889 - INFO - +--- END KW: PageKonkret.!Go To Konkret (3)
+20200809 13:28:24.144 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (2)
+20200809 13:28:24.144 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (2)
+20200809 13:28:24.144 - INFO - +--- END KW: PageKonkret.!Go To Konkret (2)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200809 13:12:35.889 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
-20200809 13:12:35.889 - DEBUG - Closing all browsers.
-20200809 13:12:35.890 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (0)
+20200809 13:28:24.144 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close All Browsers [ ]
+20200809 13:28:24.144 - DEBUG - Closing all browsers.
+20200809 13:28:24.145 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close All Browsers (1)
 ------------------------------------------------------------------------------
-20200809 13:12:35.890 - INFO - +-- END TEST: Konkret: (EN) (7)
+20200809 13:28:24.146 - INFO - +-- END TEST: Konkret: (EN) (5)
 ------------------------------------------------------------------------------
-20200809 13:12:35.893 - INFO - +- END SUITE: TestGeoKrety.02 GK konkret (22)
+20200809 13:28:24.150 - INFO - +- END SUITE: TestGeoKrety.02 GK konkret (17)
 ==============================================================================
-20200809 13:12:35.896 - INFO - + END SUITE: TestGeoKrety (285)
+20200809 13:28:24.155 - INFO - + END SUITE: TestGeoKrety (288)
 ==============================================================================

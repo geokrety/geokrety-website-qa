@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200809 13:12:35.607" generator="Robot 3.2.1 (Python 2.7.15 on linux2)">
+<robot rpa="false" generated="20200809 13:28:23.861" generator="Robot 3.2.1 (Python 2.7.15 on linux2)">
 <suite source="/home/travis/build/geokrety/geokrety-website-qa/acceptance/TestGeoKrety" id="s1" name="TestGeoKrety">
 <suite source="/home/travis/build/geokrety/geokrety-website-qa/acceptance/TestGeoKrety/00_GK_welcome.robot" id="s1-s1" name="00 GK welcome">
 <test id="s1-s1-t1" name="Welcome: (EN)">
@@ -11,13 +11,13 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.778" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.778" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.778" starttime="20200809 13:12:35.778"></status>
+<msg timestamp="20200809 13:28:24.028" level="DEBUG">Test timeout 2 minutes active. 119.995 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.028" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.028" starttime="20200809 13:28:24.027"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.778" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.779" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.779" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.027" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.029" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.029" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -30,14 +30,14 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.779" starttime="20200809 13:12:35.778"></status>
+<status status="FAIL" endtime="20200809 13:28:24.029" starttime="20200809 13:28:24.026"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.780" starttime="20200809 13:12:35.777"></status>
+<status status="FAIL" endtime="20200809 13:28:24.029" starttime="20200809 13:28:24.025"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<msg timestamp="20200809 13:12:35.780" level="DEBUG">Closing all browsers.</msg>
-<status status="PASS" endtime="20200809 13:12:35.780" starttime="20200809 13:12:35.780"></status>
+<msg timestamp="20200809 13:28:24.030" level="DEBUG">Closing all browsers.</msg>
+<status status="PASS" endtime="20200809 13:28:24.030" starttime="20200809 13:28:24.030"></status>
 </kw>
 <doc>Default english welcome page</doc>
 <tags>
@@ -45,7 +45,7 @@
 <tag>Welcome</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.780" critical="yes" starttime="20200809 13:12:35.774">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.030" critical="yes" starttime="20200809 13:28:24.022">No browser is open.</status>
 </test>
 <test id="s1-s1-t2" name="Welcome: (FR)">
 <kw name="!Go To GeoKrety" library="FunctionsGlobal">
@@ -56,13 +56,13 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.784" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.784" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.784" starttime="20200809 13:12:35.784"></status>
+<msg timestamp="20200809 13:28:24.034" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.034" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.035" starttime="20200809 13:28:24.034"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.783" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.784" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.784" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.033" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.035" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.035" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -75,14 +75,14 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.784" starttime="20200809 13:12:35.783"></status>
+<status status="FAIL" endtime="20200809 13:28:24.036" starttime="20200809 13:28:24.033"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.785" starttime="20200809 13:12:35.783"></status>
+<status status="FAIL" endtime="20200809 13:28:24.036" starttime="20200809 13:28:24.032"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<msg timestamp="20200809 13:12:35.785" level="DEBUG">Closing all browsers.</msg>
-<status status="PASS" endtime="20200809 13:12:35.785" starttime="20200809 13:12:35.785"></status>
+<msg timestamp="20200809 13:28:24.040" level="DEBUG">Closing all browsers.</msg>
+<status status="PASS" endtime="20200809 13:28:24.040" starttime="20200809 13:28:24.037"></status>
 </kw>
 <doc>Welcome page in french</doc>
 <tags>
@@ -90,7 +90,7 @@
 <tag>Welcome</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.785" critical="yes" starttime="20200809 13:12:35.782">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.040" critical="yes" starttime="20200809 13:28:24.031">No browser is open.</status>
 </test>
 <test id="s1-s1-t3" name="Welcome: input geokret code">
 <kw name="!Go To GeoKrety" library="FunctionsGlobal">
@@ -101,13 +101,13 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.788" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.789" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.789" starttime="20200809 13:12:35.788"></status>
+<msg timestamp="20200809 13:28:24.046" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.046" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.046" starttime="20200809 13:28:24.046"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.788" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.789" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.789" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.046" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.046" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.046" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -120,14 +120,14 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.789" starttime="20200809 13:12:35.788"></status>
+<status status="FAIL" endtime="20200809 13:28:24.046" starttime="20200809 13:28:24.045"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.789" starttime="20200809 13:12:35.788"></status>
+<status status="FAIL" endtime="20200809 13:28:24.047" starttime="20200809 13:28:24.045"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<msg timestamp="20200809 13:12:35.790" level="DEBUG">Closing all browsers.</msg>
-<status status="PASS" endtime="20200809 13:12:35.790" starttime="20200809 13:12:35.790"></status>
+<msg timestamp="20200809 13:28:24.047" level="DEBUG">Closing all browsers.</msg>
+<status status="PASS" endtime="20200809 13:28:24.047" starttime="20200809 13:28:24.047"></status>
 </kw>
 <doc>Tracking code should redirect to ruchy</doc>
 <tags>
@@ -135,9 +135,9 @@
 <tag>Welcome</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.790" critical="yes" starttime="20200809 13:12:35.786">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.047" critical="yes" starttime="20200809 13:28:24.043">No browser is open.</status>
 </test>
-<status status="FAIL" endtime="20200809 13:12:35.791" starttime="20200809 13:12:35.625"></status>
+<status status="FAIL" endtime="20200809 13:28:24.049" starttime="20200809 13:28:23.879"></status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website-qa/acceptance/TestGeoKrety/01_GK_ruchy.robot" id="s1-s2" name="01 GK ruchy">
 <test id="s1-s2-t1" name="Ruchy: start">
@@ -150,13 +150,13 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.815" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.815" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.816" starttime="20200809 13:12:35.815"></status>
+<msg timestamp="20200809 13:28:24.074" level="DEBUG">Test timeout 2 minutes active. 119.994 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.074" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.075" starttime="20200809 13:28:24.073"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.814" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.816" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.816" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.073" level="DEBUG">Test timeout 2 minutes active. 119.995 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.075" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.075" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -169,17 +169,17 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.816" starttime="20200809 13:12:35.814"></status>
+<status status="FAIL" endtime="20200809 13:28:24.075" starttime="20200809 13:28:24.072"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.816" starttime="20200809 13:12:35.813"></status>
+<status status="FAIL" endtime="20200809 13:28:24.075" starttime="20200809 13:28:24.071"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.816" starttime="20200809 13:12:35.813"></status>
+<status status="FAIL" endtime="20200809 13:28:24.075" starttime="20200809 13:28:24.070"></status>
 </kw>
 <tags>
 <tag>Ruchy</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.817" critical="yes" starttime="20200809 13:12:35.812">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.076" critical="yes" starttime="20200809 13:28:24.068">No browser is open.</status>
 </test>
 <test id="s1-s2-t2" name="Ruchy: (EN)">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -190,14 +190,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.819" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.819" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.820" starttime="20200809 13:12:35.819"></status>
+<msg timestamp="20200809 13:28:24.081" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.081" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.081" starttime="20200809 13:28:24.080"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.819" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.819" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.822" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.822" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.080" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.080" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.083" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.083" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -208,9 +208,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.822" starttime="20200809 13:12:35.818"></status>
+<status status="FAIL" endtime="20200809 13:28:24.083" starttime="20200809 13:28:24.079"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.822" starttime="20200809 13:12:35.818"></status>
+<status status="FAIL" endtime="20200809 13:28:24.083" starttime="20200809 13:28:24.078"></status>
 </kw>
 <doc>default page</doc>
 <tags>
@@ -218,7 +218,7 @@
 <tag>Ruchy</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.823" critical="yes" starttime="20200809 13:12:35.817">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.084" critical="yes" starttime="20200809 13:28:24.077">No browser is open.</status>
 </test>
 <test id="s1-s2-t3" name="Ruchy: search waypoint by GC code">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -229,14 +229,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.827" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.827" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.827" starttime="20200809 13:12:35.827"></status>
+<msg timestamp="20200809 13:28:24.090" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.090" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.091" starttime="20200809 13:28:24.090"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.827" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.827" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.828" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.828" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.090" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.090" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.091" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.091" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -247,9 +247,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.828" starttime="20200809 13:12:35.827"></status>
+<status status="FAIL" endtime="20200809 13:28:24.091" starttime="20200809 13:28:24.090"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.828" starttime="20200809 13:12:35.826"></status>
+<status status="FAIL" endtime="20200809 13:28:24.091" starttime="20200809 13:28:24.089"></status>
 </kw>
 <tags>
 <tag>EN</tag>
@@ -258,7 +258,7 @@
 <tag>waypoint</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.828" critical="yes" starttime="20200809 13:12:35.825">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.091" critical="yes" starttime="20200809 13:28:24.088">No browser is open.</status>
 </test>
 <test id="s1-s2-t4" name="Ruchy: search waypoint by name with more than 1 result">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -269,14 +269,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.833" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.833" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.833" starttime="20200809 13:12:35.833"></status>
+<msg timestamp="20200809 13:28:24.096" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.096" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.097" starttime="20200809 13:28:24.096"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.833" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.833" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.834" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.834" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.096" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.096" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.097" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.097" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -287,9 +287,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.834" starttime="20200809 13:12:35.833"></status>
+<status status="FAIL" endtime="20200809 13:28:24.097" starttime="20200809 13:28:24.096"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.834" starttime="20200809 13:12:35.832"></status>
+<status status="FAIL" endtime="20200809 13:28:24.097" starttime="20200809 13:28:24.095"></status>
 </kw>
 <tags>
 <tag>EN</tag>
@@ -298,7 +298,7 @@
 <tag>waypoint</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.834" critical="yes" starttime="20200809 13:12:35.831">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.097" critical="yes" starttime="20200809 13:28:24.092">No browser is open.</status>
 </test>
 <test id="s1-s2-t5" name="Ruchy: search waypoint by name with exactly 1 result">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -309,14 +309,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.839" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.839" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.840" starttime="20200809 13:12:35.839"></status>
+<msg timestamp="20200809 13:28:24.101" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.101" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.101" starttime="20200809 13:28:24.101"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.839" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.839" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.840" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.840" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.101" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.101" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.102" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.102" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -327,9 +327,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.840" starttime="20200809 13:12:35.839"></status>
+<status status="FAIL" endtime="20200809 13:28:24.102" starttime="20200809 13:28:24.101"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.841" starttime="20200809 13:12:35.838"></status>
+<status status="FAIL" endtime="20200809 13:28:24.102" starttime="20200809 13:28:24.100"></status>
 </kw>
 <tags>
 <tag>EN</tag>
@@ -338,7 +338,7 @@
 <tag>waypoint</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.841" critical="yes" starttime="20200809 13:12:35.836">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.102" critical="yes" starttime="20200809 13:28:24.099">No browser is open.</status>
 </test>
 <test id="s1-s2-t6" name="Ruchy: search waypoint by name with no result">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -349,14 +349,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.845" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.845" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.845" starttime="20200809 13:12:35.845"></status>
+<msg timestamp="20200809 13:28:24.106" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.106" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.106" starttime="20200809 13:28:24.106"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.844" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.844" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.845" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.846" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.106" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.106" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.107" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.107" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -367,9 +367,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.846" starttime="20200809 13:12:35.844"></status>
+<status status="FAIL" endtime="20200809 13:28:24.107" starttime="20200809 13:28:24.106"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.848" starttime="20200809 13:12:35.843"></status>
+<status status="FAIL" endtime="20200809 13:28:24.107" starttime="20200809 13:28:24.105"></status>
 </kw>
 <tags>
 <tag>EN</tag>
@@ -378,7 +378,7 @@
 <tag>waypoint</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.848" critical="yes" starttime="20200809 13:12:35.841">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.107" critical="yes" starttime="20200809 13:28:24.104">No browser is open.</status>
 </test>
 <test id="s1-s2-t7" name="Ruchy: search waypoint by code with invalid prefix">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -389,14 +389,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.853" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.854" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.854" starttime="20200809 13:12:35.853"></status>
+<msg timestamp="20200809 13:28:24.111" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.111" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.111" starttime="20200809 13:28:24.111"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.853" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.853" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.854" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.854" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.111" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.111" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.113" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.113" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -407,9 +407,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.854" starttime="20200809 13:12:35.853"></status>
+<status status="FAIL" endtime="20200809 13:28:24.113" starttime="20200809 13:28:24.110"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.854" starttime="20200809 13:12:35.852"></status>
+<status status="FAIL" endtime="20200809 13:28:24.113" starttime="20200809 13:28:24.110"></status>
 </kw>
 <tags>
 <tag>EN</tag>
@@ -418,7 +418,7 @@
 <tag>waypoint</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.854" critical="yes" starttime="20200809 13:12:35.849">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.113" critical="yes" starttime="20200809 13:28:24.109">No browser is open.</status>
 </test>
 <test id="s1-s2-t8" name="Ruchy: search waypoint by code with unknown GC">
 <kw name="!Go To Ruchy" library="PageRuchy">
@@ -429,14 +429,14 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.859" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.859" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.859" starttime="20200809 13:12:35.859"></status>
+<msg timestamp="20200809 13:28:24.118" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.118" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.118" starttime="20200809 13:28:24.118"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.859" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.859" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
-<msg timestamp="20200809 13:12:35.860" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.860" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.117" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.118" level="INFO">Opening url 'https://staging.geokrety.org/ruchy.php'</msg>
+<msg timestamp="20200809 13:28:24.118" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.118" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -447,9 +447,9 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.860" starttime="20200809 13:12:35.859"></status>
+<status status="FAIL" endtime="20200809 13:28:24.118" starttime="20200809 13:28:24.117"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.860" starttime="20200809 13:12:35.858"></status>
+<status status="FAIL" endtime="20200809 13:28:24.119" starttime="20200809 13:28:24.117"></status>
 </kw>
 <tags>
 <tag>EN</tag>
@@ -458,22 +458,22 @@
 <tag>waypoint</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.860" critical="yes" starttime="20200809 13:12:35.855">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.119" critical="yes" starttime="20200809 13:28:24.115">No browser is open.</status>
 </test>
 <test id="s1-s2-t9" name="Ruchy: end">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<msg timestamp="20200809 13:12:35.864" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.865" level="DEBUG">Closing all browsers.</msg>
-<status status="PASS" endtime="20200809 13:12:35.865" starttime="20200809 13:12:35.864"></status>
+<msg timestamp="20200809 13:28:24.122" level="DEBUG">Test timeout 2 minutes active. 119.999 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.122" level="DEBUG">Closing all browsers.</msg>
+<status status="PASS" endtime="20200809 13:28:24.122" starttime="20200809 13:28:24.122"></status>
 </kw>
 <tags>
 <tag>Ruchy</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="PASS" endtime="20200809 13:12:35.865" critical="yes" starttime="20200809 13:12:35.861"></status>
+<status status="PASS" endtime="20200809 13:28:24.123" critical="yes" starttime="20200809 13:28:24.121"></status>
 </test>
-<status status="FAIL" endtime="20200809 13:12:35.866" starttime="20200809 13:12:35.797"></status>
+<status status="FAIL" endtime="20200809 13:28:24.124" starttime="20200809 13:28:24.052"></status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website-qa/acceptance/TestGeoKrety/02_GK_konkret.robot" id="s1-s3" name="02 GK konkret">
 <test id="s1-s3-t1" name="Konkret: (EN)">
@@ -486,13 +486,13 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200809 13:12:35.888" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.888" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200809 13:12:35.888" starttime="20200809 13:12:35.888"></status>
+<msg timestamp="20200809 13:28:24.143" level="DEBUG">Test timeout 2 minutes active. 119.997 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.143" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200809 13:28:24.143" starttime="20200809 13:28:24.143"></status>
 </kw>
-<msg timestamp="20200809 13:12:35.888" level="DEBUG">Test timeout 2 minutes active. 119.996 seconds left.</msg>
-<msg timestamp="20200809 13:12:35.889" level="FAIL">No browser is open.</msg>
-<msg timestamp="20200809 13:12:35.889" level="DEBUG">Traceback (most recent call last):
+<msg timestamp="20200809 13:28:24.143" level="DEBUG">Test timeout 2 minutes active. 119.998 seconds left.</msg>
+<msg timestamp="20200809 13:28:24.143" level="FAIL">No browser is open.</msg>
+<msg timestamp="20200809 13:28:24.144" level="DEBUG">Traceback (most recent call last):
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -505,16 +505,16 @@
     return self.ctx.driver
   File "/home/travis/virtualenv/python2.7.15/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 547, in driver
     raise NoOpenBrowser('No browser is open.')</msg>
-<status status="FAIL" endtime="20200809 13:12:35.889" starttime="20200809 13:12:35.887"></status>
+<status status="FAIL" endtime="20200809 13:28:24.144" starttime="20200809 13:28:24.142"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.889" starttime="20200809 13:12:35.887"></status>
+<status status="FAIL" endtime="20200809 13:28:24.144" starttime="20200809 13:28:24.142"></status>
 </kw>
-<status status="FAIL" endtime="20200809 13:12:35.889" starttime="20200809 13:12:35.886"></status>
+<status status="FAIL" endtime="20200809 13:28:24.144" starttime="20200809 13:28:24.142"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<msg timestamp="20200809 13:12:35.889" level="DEBUG">Closing all browsers.</msg>
-<status status="PASS" endtime="20200809 13:12:35.889" starttime="20200809 13:12:35.889"></status>
+<msg timestamp="20200809 13:28:24.144" level="DEBUG">Closing all browsers.</msg>
+<status status="PASS" endtime="20200809 13:28:24.145" starttime="20200809 13:28:24.144"></status>
 </kw>
 <doc>default page</doc>
 <tags>
@@ -522,11 +522,11 @@
 <tag>Konkret</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200809 13:12:35.890" critical="yes" starttime="20200809 13:12:35.883">No browser is open.</status>
+<status status="FAIL" endtime="20200809 13:28:24.145" critical="yes" starttime="20200809 13:28:24.140">No browser is open.</status>
 </test>
-<status status="FAIL" endtime="20200809 13:12:35.891" starttime="20200809 13:12:35.869"></status>
+<status status="FAIL" endtime="20200809 13:28:24.146" starttime="20200809 13:28:24.129"></status>
 </suite>
-<status status="FAIL" endtime="20200809 13:12:35.894" starttime="20200809 13:12:35.609"></status>
+<status status="FAIL" endtime="20200809 13:28:24.151" starttime="20200809 13:28:23.863"></status>
 </suite>
 <statistics>
 <total>
