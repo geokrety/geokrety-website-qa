@@ -45,4 +45,4 @@ Welcome: (EN) input geokret code
   Page WithoutWarningOrFailure
   !V2 Enter TrackingCode            ${TEST_GEOKRET_CODE}
   !V2 Click On FoundGeokretLogIt
-  Location Should Be                ${GK_URL}en/move?tracking_code=${TEST_GEOKRET_CODE}
+  Location Should Be                ${GK_URL}en/moves?tracking_code=${TEST_GEOKRET_CODE}
