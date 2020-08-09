@@ -37,7 +37,7 @@ Welcome: (FR)
 
 Welcome: (EN) input geokret code
   [Documentation]    Tracking code should redirect to ruchy
-  [Tags]             RUCHY
+  [Tags]             MOVEMENTS
   !Go To GeoKrety
   !Click On EN Lang
   Page WaitForFooterHome
