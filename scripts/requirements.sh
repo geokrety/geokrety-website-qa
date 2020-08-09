@@ -20,9 +20,16 @@ function requirement_chromedriver() {
 
 function requirement_geckodriver() {
     echo " * Requirement Geckodriver"
-    GECKODRIVER_VERSION=v0.23.0
-    GECKODRIVER_FILE=geckodriver-${GECKODRIVER_VERSION}-win64.zip
-    GECKODRIVER_BIN=geckodriver.exe
+    GECKODRIVER_VERSION=v0.27.0
+    GECKODRIVER_FILE=geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+    GECKODRIVER_BIN=geckodriver
+    GECKODRIVER_EXTRACT="tar xf"
+
+    if [ "${OS}" == "Windows_NT" ]; then
+        GECKODRIVER_FILE=geckodriver-${GECKODRIVER_VERSION}-win64.zip
+        GECKODRIVER_BIN=geckodriver.exe
+        GECKODRIVER_EXTRACT="unzip"
+    fi
     GECKODRIVER_URL=https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/${GECKODRIVER_FILE}
 
     if [ ! -f ${GECKODRIVER_FILE} ]; then
@@ -30,7 +37,7 @@ function requirement_geckodriver() {
       curl -L ${GECKODRIVER_URL} --output ${GECKODRIVER_FILE} || exit 1
     fi
     if [ ! -f ${GECKODRIVER_BIN} ]; then
-      unzip ${GECKODRIVER_FILE} || exit 1
+      ${GECKODRIVER_EXTRACT} ${GECKODRIVER_FILE} || exit 1
     fi
 }
 
@@ -44,8 +51,8 @@ function requirement_pip() {
     ${PIPCMD}  install -r requirements.txt || exit 1
 }
 
-if [ ! "${OS}" == "Windows_NT" ]; then
-   echo "unsupported OS ${OS}"
+if [ ! "${OS}" == "Windows_NT" -a ! "${$OSTYPE}" == "linux-gnu" ]; then
+   echo "unsupported OS"
    exit 1
 fi
 pushd "${DIR}/.." > /dev/null

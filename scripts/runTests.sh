@@ -3,7 +3,7 @@
 # assume python/pip is already installed
 #
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-
+export PATH=$PATH:${DIR}/..
 
 if [[ "${DIR}" == *"/travis/"* ]]; then
     export TRAVIS_FLAG=true
@@ -141,7 +141,7 @@ ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --xunit xUnit.xml"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} ${TARGET_TESTS}"
 
-echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} - targetTests=${TARGET_TESTS}"
+echo " * Execute robot framework tests |>>>${ENV}<<<| targetUrl=${ENV_URL} - targetTests=${TARGET_TESTS}"
 echo "   ${ROBOT_CMD} ${ROBOT_CMD_ARGS}"
 mkdir -p docs/${ENV}
 ${ROBOT_CMD} ${ROBOT_CMD_ARGS}
