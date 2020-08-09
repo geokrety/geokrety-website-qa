@@ -1,9 +1,10 @@
 *** Settings ***
 Library         SeleniumLibrary  timeout=10  implicit_wait=0
 Resource        ../functions/PageWelcome.robot
-Test Teardown   Close All Browsers
 Force Tags      Welcome
 Test Timeout    2 minutes
+Suite Setup         !Open GeoKrety Browser     ${browser}    # which browser? the one that's the value of the variable
+Suite Teardown      Close Browser   # and closed when the suite finishes
 
 *** Test Cases ***
 Welcome: (EN)
@@ -14,7 +15,6 @@ Welcome: (EN)
   Page WaitForFooterHome
   Page WithoutWarningOrFailure
   Welcome ShouldShow WelcomeToGeokrety
-  Welcome ShouldShow News
   Welcome ShouldShow SomeStatistics
   Welcome ShouldShow LatestMoves
   Welcome ShouldShow RecentPictures
@@ -29,7 +29,6 @@ Welcome: (FR)
   Page WaitForFooterHome
   Page WithoutWarningOrFailure
   Welcome ShouldShow WelcomeToGeokretyFR
-  Welcome ShouldShow NewsFR
   Welcome ShouldShow SomeStatisticsFR
   Welcome ShouldShow LatestMovesFR
   Welcome ShouldShow RecentPicturesFR

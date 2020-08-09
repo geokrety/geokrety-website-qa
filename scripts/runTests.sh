@@ -47,7 +47,7 @@ ALLOWED_TEST_VERSION=(
 #
 # allowed BrowserStack target test version: don't forget trailing slash
 ALLOWED_BS_TEST_VERSION=(
-    "feature/new-theme|TestBSGeoKretyV2"
+    "feature/new-theme|TestGeoKretyV2"
 )
 #
 function getEnvUrl() {
@@ -142,6 +142,7 @@ ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --debugfile debugfile.log"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --log log.html"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --report report.html"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --xunit xUnit.xml"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --variable browser:${BROWSER:-Firefox}"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} ${TARGET_TESTS}"
 
