@@ -25,8 +25,8 @@ TC001_BrowserStack_DC_Windows10_Chrome
   Open Browser    ${GK_URL}    ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DC_Win10Chrome}
   Maximize Browser Window
   !Click On EN Lang
-TC001_BrowserStack_DC_GalaxyTab_
-  Log    Open Browserstack
-  Open Browser    ${GK_URL}    ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DC_GalaxyTab}
-  Maximize Browser Window
-  !Click On FR Lang
+#TC001_BrowserStack_DC_GalaxyTab_
+#  Log    Open Browserstack
+#  Open Browser    ${GK_URL}    ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DC_GalaxyTab}
+#  Maximize Browser Window
+#  !Click On FR Lang
