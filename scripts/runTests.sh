@@ -51,6 +51,10 @@ ALLOWED_BS_TEST_VERSION=(
 )
 #
 function getEnvUrl() {
+  if [ "${GK_URL}" != "" ]; then
+      echo ${GK_URL}
+      return 0
+  fi
   wantedEnv=$1
   resultUrl=""
   for envItem in "${ALLOWED_ENV[@]}"
