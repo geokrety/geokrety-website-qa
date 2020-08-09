@@ -9,6 +9,7 @@ Library    SeleniumLibrary
 Resource        travis_${TRAVIS_FLAG}/Xvbf.robot
 
 *** Variables ***
+${PROJECT_NAME}    GeoKrety
 # ${FF_PROFILE}      ff_profile
 ##############
 # BrowserStack desired capabilities
@@ -17,11 +18,19 @@ Resource        travis_${TRAVIS_FLAG}/Xvbf.robot
 ##############
 # Usecase: galaxy tab
 ## Capture Page Screenshot' could not be run
-${DC_GalaxyTab}	     "os_version:8.1,device:Samsung Galaxy Tab S4,real_mobile:true,browserstack.local:false,tunnel:false" BrowserStack.robot
+${DC_GalaxyTab}	     "os_version:8.1,device:Samsung Galaxy Tab S4,real_mobile:true,browserstack.local:false,tunnel:false,project:${PROJECT_NAME}"
 # Usecase: windows 10 and chrome
-${DC_Win10Chrome}	 "os:Windows,os_version:10,browser:Chrome,browser_version:62.0,browserstack.local:false,tunnel:false" BrowserStack.robot
+${DC_Win10Chrome}	 "os:Windows,os_version:10,browser:Chrome,browser_version:84.0,browserstack.local:false,tunnel:false,project:${PROJECT_NAME}"
+# Usecase: windows 10 and firefox
+${DC_Win10Firefox}	 "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:false,tunnel:false,project:${PROJECT_NAME}"
 
 *** Keywords ***
+
+!Open GeoKrety Browser Local
+  [Arguments]    ${browser}
+  Run Keyword If    "${browser}"=="Firefox"    !Open GeoKrety Browser Firefox
+  Run Keyword If    "${browser}"=="Chrome"     !Open GeoKrety Browser Chrome
+
 !Open GeoKrety Browser Firefox
   Log    Open Browser Firefox
   ${firefox_options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
@@ -31,7 +40,6 @@ ${DC_Win10Chrome}	 "os:Windows,os_version:10,browser:Chrome,browser_version:62.0
   Open Browser    url=${GK_URL}   browser=ff     desired_capabilities=${options}
 # ff_profile_dir=${FF_PROFILE}
   Go To           ${GK_URL}
-  Maximize Browser Window
 
 !Open GeoKrety Browser Chrome
   Log    Open Browser Chrome
@@ -45,16 +53,30 @@ ${DC_Win10Chrome}	 "os:Windows,os_version:10,browser:Chrome,browser_version:62.0
   ${options}=     Call Method     ${chrome_options}    to_capabilities
   Open Browser    ${GK_URL}    browser=chrome     desired_capabilities=${options}
 
+!Open GeoKrety BrowserStack
+  [Arguments]    ${browser}
+  Run Keyword If    "${browser}"=="Firefox"    !Open GeoKrety BrowserStack Windows10 Firefox
+  Run Keyword If    "${browser}"=="Chrome"     !Open GeoKrety BrowserStack Windows10 Chrome
+
+!Open GeoKrety BrowserStack Windows10 Firefox
+  Log    Open Browserstack Windows10 Firefox
+  Open Browser    ${GK_URL}    remote_url=${BS_HUB}  desired_capabilities=${DC_Win10Firefox}
+
+!Open GeoKrety BrowserStack Windows10 Chrome
+  Log    Open Browserstack Windows10 Chrome
+  Open Browser    ${GK_URL}    remote_url=${BS_HUB}  desired_capabilities=${DC_Win10Chrome}
+
 !Open GeoKrety Browser
   [Arguments]    ${browser}
-  Run Keyword If    "${browser}"=="Firefox"    !Open GeoKrety Browser Firefox
-  Run Keyword If    "${browser}"=="Chrome"     !Open GeoKrety Browser Chrome
+  Run keyword if             '${TRAVIS_FLAG}' == 'true'    Start Virtual Display    1920    1080
+  Run Keyword If    '${BS_ENABLED}' != 'false'    !Open GeoKrety BrowserStack    ${browser}
+  ...    ELSE    !Open GeoKrety Browser Local    ${browser}
+#  Maximize Browser Window
+#  Set Window Size            1919    1079
+  # Set Selenium Timeout       30 s
+  Set Selenium Timeout    0.45
 
 !Go To GeoKrety
-  Run keyword if             '${TRAVIS_FLAG}' == 'true'    Start Virtual Display    1920    1080
-  !Open GeoKrety Browser     ${BROWSER}
-  Set Selenium Timeout       30 s
-  Set Window Size            1919    1079
   Location Should Contain    ${GK_URL}
 
 Page WaitForPage

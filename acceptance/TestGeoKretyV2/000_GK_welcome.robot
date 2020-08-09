@@ -1,9 +1,10 @@
 *** Settings ***
 Library         SeleniumLibrary  timeout=10  implicit_wait=0
 Resource        ../functions/PageWelcome.robot
-Test Teardown   Close All Browsers
 Force Tags      Welcome
 Test Timeout    2 minutes
+Suite Setup         !Open GeoKrety Browser     ${browser}    # which browser? the one that's the value of the variable
+Suite Teardown      Close Browser   # and closed when the suite finishes
 
 *** Test Cases ***
 Welcome: (EN)
@@ -14,7 +15,6 @@ Welcome: (EN)
   Page WaitForFooterHome
   Page WithoutWarningOrFailure
   Welcome ShouldShow WelcomeToGeokrety
-  Welcome ShouldShow News
   Welcome ShouldShow SomeStatistics
   Welcome ShouldShow LatestMoves
   Welcome ShouldShow RecentPictures
@@ -29,7 +29,6 @@ Welcome: (FR)
   Page WaitForFooterHome
   Page WithoutWarningOrFailure
   Welcome ShouldShow WelcomeToGeokretyFR
-  Welcome ShouldShow NewsFR
   Welcome ShouldShow SomeStatisticsFR
   Welcome ShouldShow LatestMovesFR
   Welcome ShouldShow RecentPicturesFR
@@ -38,11 +37,11 @@ Welcome: (FR)
 
 Welcome: (EN) input geokret code
   [Documentation]    Tracking code should redirect to ruchy
-  [Tags]             RUCHY
+  [Tags]             MOVEMENTS
   !Go To GeoKrety
   !Click On EN Lang
   Page WaitForFooterHome
   Page WithoutWarningOrFailure
   !V2 Enter TrackingCode            ${TEST_GEOKRET_CODE}
   !V2 Click On FoundGeokretLogIt
-  Location Should Be                ${GK_URL}en/move?tracking_code=${TEST_GEOKRET_CODE}
+  Location Should Be                ${GK_URL}en/moves?tracking_code=${TEST_GEOKRET_CODE}

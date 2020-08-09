@@ -1,20 +1,27 @@
 import os
+import sys
 
 GK_TIMEOUT_MINUTES = 2
 BROWSER = "Firefox"
 
-GK_URL      = os.getenv('GEOKRETY_URL')
+GK_URL = os.getenv('GEOKRETY_URL')
 TRAVIS_FLAG = os.getenv('TRAVIS_FLAG')
+BS_ENABLED = os.getenv('BS_ENABLED')
 BS_USERNAME = os.getenv('BS_USERNAME')
-BS_TOKEN    = os.getenv('BS_TOKEN')
+BS_TOKEN = os.getenv('BS_TOKEN')
 
 if TRAVIS_FLAG is None:
     TRAVIS_FLAG = "false"
 
-if BS_USERNAME is None:
-    BS_HUB      = None
+if BS_ENABLED is None:
+    BS_ENABLED = "false"
+
+BS_HUB = None
+if BS_ENABLED and (BS_USERNAME is None or BS_TOKEN is None):
+    print('BrowserStack enabled, but it need BS_USERNAME and BS_TOKEN')
+    sys.exit()
 else:
-    BS_HUB      = "http://" + BS_USERNAME + ":" + BS_TOKEN + "@hub.browserstack.com:80/wd/hub"
+    BS_HUB = "http://" + BS_USERNAME + ":" + BS_TOKEN + "@hub.browserstack.com:80/wd/hub"
 
 GK_URL_RUCHY = GK_URL + "ruchy.php"
 

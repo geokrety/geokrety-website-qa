@@ -22,11 +22,11 @@ TC001_BrowserStack_DC_Windows10_Chrome
   Log    Open Browserstack
   Set Selenium Timeout    ${SELENIUM_TIME_OUT}
   Set Selenium Speed    ${SELENIUM_SPEED}
-  Open Browser    ${GK_URL}    ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DC_Win10Chrome}
-  Maximize Browser Window
+  !Go To GeoKrety
   !Click On EN Lang
-TC001_BrowserStack_DC_GalaxyTab_
-  Log    Open Browserstack
-  Open Browser    ${GK_URL}    ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DC_GalaxyTab}
-  Maximize Browser Window
-  !Click On FR Lang
+
+#TC001_BrowserStack_DC_GalaxyTab_
+#  Log    Open Browserstack
+#  Open Browser    ${GK_URL}    ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DC_GalaxyTab}
+#  Maximize Browser Window
+#  !Click On FR Lang

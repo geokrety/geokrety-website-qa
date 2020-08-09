@@ -3,7 +3,7 @@
 # assume python/pip is already installed
 #
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-
+export PATH=$PATH:${DIR}/..
 
 if [[ "${DIR}" == *"/travis/"* ]]; then
     export TRAVIS_FLAG=true
@@ -47,10 +47,14 @@ ALLOWED_TEST_VERSION=(
 #
 # allowed BrowserStack target test version: don't forget trailing slash
 ALLOWED_BS_TEST_VERSION=(
-    "feature/new-theme|TestBSGeoKretyV2"
+    "feature/new-theme|TestGeoKretyV2"
 )
 #
 function getEnvUrl() {
+  if [ "${GK_URL}" != "" ]; then
+      echo ${GK_URL}
+      return 0
+  fi
   wantedEnv=$1
   resultUrl=""
   for envItem in "${ALLOWED_ENV[@]}"
@@ -138,10 +142,11 @@ ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --debugfile debugfile.log"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --log log.html"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --report report.html"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --xunit xUnit.xml"
+ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} --variable browser:${BROWSER:-Firefox}"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} -d ${BUILD_DIR} ${ENV_VARS_FILE}"
 ROBOT_CMD_ARGS="${ROBOT_CMD_ARGS} ${TARGET_TESTS}"
 
-echo " * Execute robot framework tests |>>${ENV}<<<| targetUrl=${ENV_URL} - targetTests=${TARGET_TESTS}"
+echo " * Execute robot framework tests |>>>${ENV}<<<| targetUrl=${ENV_URL} - targetTests=${TARGET_TESTS}"
 echo "   ${ROBOT_CMD} ${ROBOT_CMD_ARGS}"
 mkdir -p docs/${ENV}
 ${ROBOT_CMD} ${ROBOT_CMD_ARGS}
