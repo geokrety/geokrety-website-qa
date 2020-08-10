@@ -1,92 +1,92 @@
 ==============================================================================
-20200810 17:32:29.773 - INFO - + START SUITE: Acceptance [ ]
+20200810 18:01:27.650 - INFO - + START SUITE: Acceptance [ ]
 ==============================================================================
-20200810 17:32:29.781 - INFO - +- START SUITE: Acceptance.HomePage [ ]
+20200810 18:01:27.654 - INFO - +- START SUITE: Acceptance.HomePage [ ]
 ==============================================================================
-20200810 17:32:29.953 - INFO - +-- START SUITE: Acceptance.HomePage.000 Languages [ ]
+20200810 18:01:27.815 - INFO - +-- START SUITE: Acceptance.HomePage.000 Languages [ ]
 ==============================================================================
-20200810 17:32:29.954 - INFO - +--- START SETUP: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200810 17:32:29.955 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200810 17:32:29.956 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200810 17:32:29.957 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200810 17:32:29.958 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200810 17:32:29.958 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200810 17:32:29.959 - INFO - Open Browserstack Windows10 Firefox
-20200810 17:32:29.959 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200810 17:32:29.959 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200810 17:32:29.960 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6404,project:GeoKrety"
-20200810 17:32:29.960 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200810 17:32:29.960 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${GK_URL} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200810 17:32:29.962 - INFO - Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200810 17:32:43.841 - DEBUG - Opened browser with session id c66fea445af1cd92a7bd1fd095177c256606aa80.
-20200810 17:32:43.842 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (13882)
-20200810 17:32:43.842 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (13884)
-20200810 17:32:43.842 - INFO - +------ END KW: BuiltIn.Run Keyword If (13885)
-20200810 17:32:43.843 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety BrowserStack Windows10 Chrome ]
-20200810 17:32:43.843 - INFO - +------ END KW: BuiltIn.Run Keyword If (0)
-20200810 17:32:43.844 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (13888)
-20200810 17:32:43.844 - INFO - +---- END KW: BuiltIn.Run Keyword If (13889)
-20200810 17:32:43.844 - INFO - +---- START KW: SeleniumLibrary.Set Selenium Timeout [ 0.45 ]
-20200810 17:32:44.095 - INFO - +---- END KW: SeleniumLibrary.Set Selenium Timeout (251)
-20200810 17:32:44.095 - INFO - +--- END SETUP: FunctionsGlobal.!Open GeoKrety Browser (14141)
+20200810 18:01:27.816 - INFO - +--- START SETUP: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200810 18:01:27.817 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200810 18:01:27.818 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200810 18:01:27.819 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200810 18:01:27.820 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200810 18:01:27.820 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200810 18:01:27.821 - INFO - Open Browserstack Windows10 Firefox
+20200810 18:01:27.821 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200810 18:01:27.821 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200810 18:01:27.821 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6405,project:GeoKrety"
+20200810 18:01:27.822 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200810 18:01:27.822 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${GK_URL} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200810 18:01:27.823 - INFO - Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200810 18:01:36.931 - DEBUG - Opened browser with session id b49f711f092503e3c9455fe9e68f6b385331d16f.
+20200810 18:01:36.931 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (9109)
+20200810 18:01:36.932 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (9112)
+20200810 18:01:36.932 - INFO - +------ END KW: BuiltIn.Run Keyword If (9113)
+20200810 18:01:36.932 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety BrowserStack Windows10 Chrome ]
+20200810 18:01:36.933 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
+20200810 18:01:36.933 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (9115)
+20200810 18:01:36.933 - INFO - +---- END KW: BuiltIn.Run Keyword If (9116)
+20200810 18:01:36.933 - INFO - +---- START KW: SeleniumLibrary.Set Selenium Timeout [ 0.45 ]
+20200810 18:01:37.114 - INFO - +---- END KW: SeleniumLibrary.Set Selenium Timeout (180)
+20200810 18:01:37.114 - INFO - +--- END SETUP: FunctionsGlobal.!Open GeoKrety Browser (9298)
 ------------------------------------------------------------------------------
-20200810 17:32:44.096 - INFO - +--- START TEST: Welcome: (EN) [ ]
+20200810 18:01:37.115 - INFO - +--- START TEST: Welcome: (EN) [ ]
 ------------------------------------------------------------------------------
-20200810 17:32:44.098 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200810 17:32:44.098 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200810 17:32:44.099 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20200810 17:32:44.295 - INFO - Current location contains 'http://bs-local.com:3000/'.
-20200810 17:32:44.296 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (198)
-20200810 17:32:44.296 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (198)
+20200810 18:01:37.118 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200810 18:01:37.119 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200810 18:01:37.119 - DEBUG - Test timeout 2 minutes active. 119.995 seconds left.
+20200810 18:01:37.318 - INFO - Current location contains 'http://bs-local.com:3000/'.
+20200810 18:01:37.319 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (200)
+20200810 18:01:37.319 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (201)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200810 17:32:44.296 - INFO - +---- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20200810 17:32:44.297 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20200810 17:32:44.297 - DEBUG - Test timeout 2 minutes active. 119.799 seconds left.
-20200810 17:32:44.714 - DEBUG - Current frame has 0 subframes.
-20200810 17:32:44.714 - INFO - Current page does not contain text 'Warning:'.
-20200810 17:32:44.714 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (417)
-20200810 17:32:44.714 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20200810 17:32:44.715 - DEBUG - Test timeout 2 minutes active. 119.381 seconds left.
-20200810 17:32:45.237 - DEBUG - Current frame has 0 subframes.
-20200810 17:32:45.237 - INFO - Current page does not contain text 'Failed'.
-20200810 17:32:45.238 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (523)
-20200810 17:32:45.238 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20200810 17:32:45.714 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200810 17:32:45.714 - DEBUG - Test timeout 2 minutes active. 118.381 seconds left.
-20200810 17:32:46.069 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-1.png"><img src="selenium-screenshot-1.png" width="800px"></a>
-20200810 17:32:46.070 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (356)
-20200810 17:32:45.238 - DEBUG - Test timeout 2 minutes active. 118.858 seconds left.
-20200810 17:32:46.071 - FAIL - Page should not have contained text 'Internal Server Error'.
-20200810 17:32:46.071 - DEBUG - Traceback (most recent call last):
+20200810 18:01:37.319 - INFO - +---- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200810 18:01:37.320 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200810 18:01:37.320 - DEBUG - Test timeout 2 minutes active. 119.794 seconds left.
+20200810 18:01:38.018 - DEBUG - Current frame has 0 subframes.
+20200810 18:01:38.018 - INFO - Current page does not contain text 'Warning:'.
+20200810 18:01:38.019 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (699)
+20200810 18:01:38.019 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200810 18:01:38.020 - DEBUG - Test timeout 2 minutes active. 119.095 seconds left.
+20200810 18:01:38.905 - DEBUG - Current frame has 0 subframes.
+20200810 18:01:38.906 - INFO - Current page does not contain text 'Failed'.
+20200810 18:01:38.906 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (887)
+20200810 18:01:38.906 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200810 18:01:39.633 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200810 18:01:39.633 - DEBUG - Test timeout 2 minutes active. 117.481 seconds left.
+20200810 18:01:40.122 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-1.png"><img src="selenium-screenshot-1.png" width="800px"></a>
+20200810 18:01:40.122 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (489)
+20200810 18:01:38.907 - DEBUG - Test timeout 2 minutes active. 118.208 seconds left.
+20200810 18:01:40.123 - FAIL - Page should not have contained text 'Internal Server Error'.
+20200810 18:01:40.123 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
     return self.keywords[name](*args, **(kwargs or {}))
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/keywords/element.py", line 194, in page_should_not_contain
     % text)
-20200810 17:32:46.071 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (833)
-20200810 17:32:46.071 - INFO - +---- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (1775)
+20200810 18:01:40.123 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (1217)
+20200810 18:01:40.123 - INFO - +---- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (2804)
 ------------------------------------------------------------------------------
-20200810 17:32:46.072 - INFO - +--- END TEST: Welcome: (EN) (1976)
+20200810 18:01:40.124 - INFO - +--- END TEST: Welcome: (EN) (3010)
 ------------------------------------------------------------------------------
-20200810 17:32:46.073 - INFO - +--- START TEST: Welcome: (FR) [ ]
+20200810 18:01:40.125 - INFO - +--- START TEST: Welcome: (FR) [ ]
 ------------------------------------------------------------------------------
-20200810 17:32:46.073 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200810 17:32:46.074 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200810 17:32:46.074 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200810 17:32:46.317 - INFO - Current location contains 'http://bs-local.com:3000/'.
-20200810 17:32:46.318 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (243)
-20200810 17:32:46.318 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (245)
+20200810 18:01:40.126 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200810 18:01:40.126 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200810 18:01:40.127 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200810 18:01:40.360 - INFO - Current location contains 'http://bs-local.com:3000/'.
+20200810 18:01:40.361 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (235)
+20200810 18:01:40.361 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (235)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200810 17:32:46.319 - INFO - +---- START KW: FunctionsGlobal.!Click On FR Lang [ ]
-20200810 17:32:46.319 - INFO - +----- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${DROPDOWN_LANG} ]
-20200810 17:32:46.998 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200810 17:32:46.999 - DEBUG - Test timeout 2 minutes active. 119.074 seconds left.
-20200810 17:32:47.350 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-2.png"><img src="selenium-screenshot-2.png" width="800px"></a>
-20200810 17:32:47.351 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (352)
-20200810 17:32:46.319 - DEBUG - Test timeout 2 minutes active. 119.753 seconds left.
-20200810 17:32:47.351 - FAIL - Element '//*[@id="navbar-lang"]' not visible after 450 milliseconds.
-20200810 17:32:47.351 - DEBUG - Traceback (most recent call last):
+20200810 18:01:40.361 - INFO - +---- START KW: FunctionsGlobal.!Click On FR Lang [ ]
+20200810 18:01:40.362 - INFO - +----- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${DROPDOWN_LANG} ]
+20200810 18:01:41.251 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200810 18:01:41.251 - DEBUG - Test timeout 2 minutes active. 118.874 seconds left.
+20200810 18:01:41.730 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-2.png"><img src="selenium-screenshot-2.png" width="800px"></a>
+20200810 18:01:41.730 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (480)
+20200810 18:01:40.362 - DEBUG - Test timeout 2 minutes active. 119.763 seconds left.
+20200810 18:01:41.731 - FAIL - Element '//*[@id="navbar-lang"]' not visible after 450 milliseconds.
+20200810 18:01:41.731 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -97,62 +97,62 @@
     self._wait_until_worker(condition, timeout, error)
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/keywords/waiting.py", line 348, in _wait_until_worker
     raise AssertionError(not_found or error)
-20200810 17:32:47.351 - INFO - +----- END KW: SeleniumLibrary.Wait Until Element Is Visible (1032)
-20200810 17:32:47.352 - INFO - +---- END KW: FunctionsGlobal.!Click On FR Lang (1033)
+20200810 18:01:41.731 - INFO - +----- END KW: SeleniumLibrary.Wait Until Element Is Visible (1369)
+20200810 18:01:41.731 - INFO - +---- END KW: FunctionsGlobal.!Click On FR Lang (1370)
 ------------------------------------------------------------------------------
-20200810 17:32:47.352 - INFO - +--- END TEST: Welcome: (FR) (1280)
+20200810 18:01:41.732 - INFO - +--- END TEST: Welcome: (FR) (1606)
 ------------------------------------------------------------------------------
-20200810 17:32:47.353 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close Browser [ ]
-20200810 17:32:47.354 - DEBUG - Closing browser with session id c66fea445af1cd92a7bd1fd095177c256606aa80.
-20200810 17:32:48.779 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close Browser (1426)
+20200810 18:01:41.734 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close Browser [ ]
+20200810 18:01:41.734 - DEBUG - Closing browser with session id b49f711f092503e3c9455fe9e68f6b385331d16f.
+20200810 18:01:42.847 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close Browser (1113)
 ==============================================================================
-20200810 17:32:48.781 - INFO - +-- END SUITE: Acceptance.HomePage.000 Languages (18998)
+20200810 18:01:42.849 - INFO - +-- END SUITE: Acceptance.HomePage.000 Languages (15193)
 ==============================================================================
-20200810 17:32:48.794 - INFO - +-- START SUITE: Acceptance.HomePage.010 Found GeoKret [ ]
+20200810 18:01:42.861 - INFO - +-- START SUITE: Acceptance.HomePage.010 Found GeoKret [ ]
 ==============================================================================
-20200810 17:32:48.795 - INFO - +--- START SETUP: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200810 17:32:48.796 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200810 17:32:48.798 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200810 17:32:48.798 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200810 17:32:48.798 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200810 17:32:48.799 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200810 17:32:48.799 - INFO - Open Browserstack Windows10 Firefox
-20200810 17:32:48.799 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200810 17:32:48.799 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200810 17:32:48.799 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6404,project:GeoKrety"
-20200810 17:32:48.799 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200810 17:32:48.800 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${GK_URL} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200810 17:32:48.800 - INFO - Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200810 17:32:59.605 - DEBUG - Opened browser with session id 0287ce8ccdf62bb294f9d6d00088ed86e801fb3d.
-20200810 17:32:59.606 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (10806)
-20200810 17:32:59.606 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (10808)
-20200810 17:32:59.606 - INFO - +------ END KW: BuiltIn.Run Keyword If (10808)
-20200810 17:32:59.607 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety BrowserStack Windows10 Chrome ]
-20200810 17:32:59.607 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
-20200810 17:32:59.607 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (10809)
-20200810 17:32:59.607 - INFO - +---- END KW: BuiltIn.Run Keyword If (10811)
-20200810 17:32:59.607 - INFO - +---- START KW: SeleniumLibrary.Set Selenium Timeout [ 0.45 ]
-20200810 17:32:59.738 - INFO - +---- END KW: SeleniumLibrary.Set Selenium Timeout (131)
-20200810 17:32:59.738 - INFO - +--- END SETUP: FunctionsGlobal.!Open GeoKrety Browser (10943)
+20200810 18:01:42.862 - INFO - +--- START SETUP: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200810 18:01:42.863 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200810 18:01:42.864 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200810 18:01:42.865 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200810 18:01:42.865 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200810 18:01:42.866 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200810 18:01:42.866 - INFO - Open Browserstack Windows10 Firefox
+20200810 18:01:42.866 - INFO - +-------- END KW: BuiltIn.Log (0)
+20200810 18:01:42.867 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200810 18:01:42.867 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6405,project:GeoKrety"
+20200810 18:01:42.867 - INFO - +-------- END KW: BuiltIn.Log (0)
+20200810 18:01:42.868 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${GK_URL} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200810 18:01:42.869 - INFO - Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200810 18:01:56.011 - DEBUG - Opened browser with session id cce8137e870b58a0e4840185e9c9ed4f261c85fe.
+20200810 18:01:56.012 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (13143)
+20200810 18:01:56.012 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (13147)
+20200810 18:01:56.012 - INFO - +------ END KW: BuiltIn.Run Keyword If (13147)
+20200810 18:01:56.012 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety BrowserStack Windows10 Chrome ]
+20200810 18:01:56.013 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
+20200810 18:01:56.013 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (13149)
+20200810 18:01:56.013 - INFO - +---- END KW: BuiltIn.Run Keyword If (13150)
+20200810 18:01:56.013 - INFO - +---- START KW: SeleniumLibrary.Set Selenium Timeout [ 0.45 ]
+20200810 18:01:56.200 - INFO - +---- END KW: SeleniumLibrary.Set Selenium Timeout (187)
+20200810 18:01:56.200 - INFO - +--- END SETUP: FunctionsGlobal.!Open GeoKrety Browser (13338)
 ------------------------------------------------------------------------------
-20200810 17:32:59.739 - INFO - +--- START TEST: Welcome: (EN) input geokret code [ ]
+20200810 18:01:56.201 - INFO - +--- START TEST: Welcome: (EN) input geokret code [ ]
 ------------------------------------------------------------------------------
-20200810 17:32:59.740 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
-20200810 17:32:59.740 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
-20200810 17:32:59.741 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
-20200810 17:32:59.880 - INFO - Current location contains 'http://bs-local.com:3000/'.
-20200810 17:32:59.880 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (140)
-20200810 17:32:59.881 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (141)
+20200810 18:01:56.202 - INFO - +---- START KW: FunctionsGlobal.!Go To GeoKrety [ ]
+20200810 18:01:56.202 - INFO - +----- START KW: SeleniumLibrary.Location Should Contain [ ${GK_URL} ]
+20200810 18:01:56.203 - DEBUG - Test timeout 2 minutes active. 119.998 seconds left.
+20200810 18:01:56.465 - INFO - Current location contains 'http://bs-local.com:3000/'.
+20200810 18:01:56.466 - INFO - +----- END KW: SeleniumLibrary.Location Should Contain (263)
+20200810 18:01:56.466 - INFO - +---- END KW: FunctionsGlobal.!Go To GeoKrety (264)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20200810 17:32:59.881 - INFO - +---- START KW: PageHome.!V2 Enter TrackingCode [ ${TEST_GEOKRET_CODE} ]
-20200810 17:32:59.882 - INFO - +----- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${HOME_FOUND_GK_TRACKING_CODE_INPUT} ]
-20200810 17:33:00.578 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200810 17:33:00.579 - DEBUG - Test timeout 2 minutes active. 119.16 seconds left.
-20200810 17:33:01.028 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-3.png"><img src="selenium-screenshot-3.png" width="800px"></a>
-20200810 17:33:01.029 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (451)
-20200810 17:32:59.882 - DEBUG - Test timeout 2 minutes active. 119.856 seconds left.
-20200810 17:33:01.029 - FAIL - Element '//*[@id="tracking_code"]' not visible after 450 milliseconds.
-20200810 17:33:01.029 - DEBUG - Traceback (most recent call last):
+20200810 18:01:56.466 - INFO - +---- START KW: PageHome.!V2 Enter TrackingCode [ ${TEST_GEOKRET_CODE} ]
+20200810 18:01:56.467 - INFO - +----- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${HOME_FOUND_GK_TRACKING_CODE_INPUT} ]
+20200810 18:01:57.082 - INFO - +------ START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200810 18:01:57.082 - DEBUG - Test timeout 2 minutes active. 119.119 seconds left.
+20200810 18:01:57.797 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-3.png"><img src="selenium-screenshot-3.png" width="800px"></a>
+20200810 18:01:57.797 - INFO - +------ END KW: SeleniumLibrary.Capture Page Screenshot (715)
+20200810 18:01:56.467 - DEBUG - Test timeout 2 minutes active. 119.734 seconds left.
+20200810 18:01:57.798 - FAIL - Element '//*[@id="tracking_code"]' not visible after 450 milliseconds.
+20200810 18:01:57.798 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -163,18 +163,18 @@
     self._wait_until_worker(condition, timeout, error)
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/keywords/waiting.py", line 348, in _wait_until_worker
     raise AssertionError(not_found or error)
-20200810 17:33:01.029 - INFO - +----- END KW: SeleniumLibrary.Wait Until Element Is Visible (1147)
-20200810 17:33:01.029 - INFO - +---- END KW: PageHome.!V2 Enter TrackingCode (1148)
+20200810 18:01:57.798 - INFO - +----- END KW: SeleniumLibrary.Wait Until Element Is Visible (1331)
+20200810 18:01:57.798 - INFO - +---- END KW: PageHome.!V2 Enter TrackingCode (1332)
 ------------------------------------------------------------------------------
-20200810 17:33:01.030 - INFO - +--- END TEST: Welcome: (EN) input geokret code (1291)
+20200810 18:01:57.799 - INFO - +--- END TEST: Welcome: (EN) input geokret code (1598)
 ------------------------------------------------------------------------------
-20200810 17:33:01.031 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close Browser [ ]
-20200810 17:33:01.031 - DEBUG - Closing browser with session id 0287ce8ccdf62bb294f9d6d00088ed86e801fb3d.
-20200810 17:33:02.576 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close Browser (1545)
+20200810 18:01:57.799 - INFO - +--- START TEARDOWN: SeleniumLibrary.Close Browser [ ]
+20200810 18:01:57.800 - DEBUG - Closing browser with session id cce8137e870b58a0e4840185e9c9ed4f261c85fe.
+20200810 18:02:01.924 - INFO - +--- END TEARDOWN: SeleniumLibrary.Close Browser (4125)
 ==============================================================================
-20200810 17:33:02.578 - INFO - +-- END SUITE: Acceptance.HomePage.010 Found GeoKret (13794)
+20200810 18:02:01.926 - INFO - +-- END SUITE: Acceptance.HomePage.010 Found GeoKret (19074)
 ==============================================================================
-20200810 17:33:02.580 - INFO - +- END SUITE: Acceptance.HomePage (32799)
+20200810 18:02:01.928 - INFO - +- END SUITE: Acceptance.HomePage (34275)
 ==============================================================================
-20200810 17:33:02.584 - INFO - + END SUITE: Acceptance (32824)
+20200810 18:02:01.931 - INFO - + END SUITE: Acceptance (34293)
 ==============================================================================
