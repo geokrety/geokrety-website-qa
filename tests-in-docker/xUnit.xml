@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="3" errors="0" name="Acceptance" skipped="0" time="32.824" failures="3">
+<testcase classname="Acceptance.HomePage.000 Languages" name="Welcome: (EN)" time="1.976">
+<failure message="Page should not have contained text 'Internal Server Error'." type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.HomePage.000 Languages" name="Welcome: (FR)" time="1.280">
+<failure message="Element '//*[@id=&quot;navbar-lang&quot;]' not visible after 450 milliseconds." type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="1.291">
+<failure message="Element '//*[@id=&quot;tracking_code&quot;]' not visible after 450 milliseconds." type="AssertionError"></failure>
+</testcase>
+</testsuite>
