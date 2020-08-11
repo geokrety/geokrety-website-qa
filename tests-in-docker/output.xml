@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200810 19:56:53.111" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
+<robot rpa="false" generated="20200811 22:38:27.614" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance" id="s1" name="Acceptance">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/HomePage" id="s1-s1" name="HomePage">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/HomePage/000_Languages.robot" id="s1-s1-s1" name="000 Languages">
@@ -33,16 +33,16 @@
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200810 19:56:53.278" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200810 19:56:53.278" starttime="20200810 19:56:53.278"></status>
+<msg timestamp="20200811 22:38:27.805" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200811 22:38:27.805" starttime="20200811 22:38:27.804"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200810 19:56:53.279" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6406,project:GeoKrety"</msg>
-<status status="PASS" endtime="20200810 19:56:53.279" starttime="20200810 19:56:53.279"></status>
+<msg timestamp="20200811 22:38:27.806" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6407,project:GeoKrety"</msg>
+<status status="PASS" endtime="20200811 22:38:27.806" starttime="20200811 22:38:27.805"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -51,12 +51,12 @@
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200810 19:56:53.280" level="INFO">Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
-<status status="PASS" endtime="20200810 19:57:02.357" starttime="20200810 19:56:53.279"></status>
+<msg timestamp="20200811 22:38:27.808" level="INFO">Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<status status="PASS" endtime="20200811 22:38:37.526" starttime="20200811 22:38:27.806"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:02.357" starttime="20200810 19:56:53.278"></status>
+<status status="PASS" endtime="20200811 22:38:37.526" starttime="20200811 22:38:27.804"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:02.357" starttime="20200810 19:56:53.277"></status>
+<status status="PASS" endtime="20200811 22:38:37.526" starttime="20200811 22:38:27.803"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -64,20 +64,20 @@
 <arg>"${browser}"=="Chrome"</arg>
 <arg>!Open GeoKrety BrowserStack Windows10 Chrome</arg>
 </arguments>
-<status status="PASS" endtime="20200810 19:57:02.358" starttime="20200810 19:57:02.358"></status>
+<status status="PASS" endtime="20200811 22:38:37.527" starttime="20200811 22:38:37.527"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:02.358" starttime="20200810 19:56:53.276"></status>
+<status status="PASS" endtime="20200811 22:38:37.527" starttime="20200811 22:38:27.802"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:02.358" starttime="20200810 19:56:53.276"></status>
+<status status="PASS" endtime="20200811 22:38:37.528" starttime="20200811 22:38:27.800"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <doc>Sets the timeout that is used by various keywords.</doc>
 <arguments>
 <arg>0.45</arg>
 </arguments>
-<status status="PASS" endtime="20200810 19:57:02.611" starttime="20200810 19:57:02.359"></status>
+<status status="PASS" endtime="20200811 22:38:37.659" starttime="20200811 22:38:37.528"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:02.612" starttime="20200810 19:56:53.275"></status>
+<status status="PASS" endtime="20200811 22:38:37.660" starttime="20200811 22:38:27.799"></status>
 </kw>
 <test id="s1-s1-s1-t1" name="Welcome: (EN)">
 <kw name="!Go To GeoKrety" library="FunctionsGlobal">
@@ -86,10 +86,10 @@
 <arguments>
 <arg>${GK_URL}</arg>
 </arguments>
-<msg timestamp="20200810 19:57:02.745" level="INFO">Current location contains 'http://bs-local.com:3000/'.</msg>
-<status status="PASS" endtime="20200810 19:57:02.746" starttime="20200810 19:57:02.614"></status>
+<msg timestamp="20200811 22:38:37.808" level="INFO">Current location contains 'http://bs-local.com:3000/'.</msg>
+<status status="PASS" endtime="20200811 22:38:37.808" starttime="20200811 22:38:37.662"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:02.746" starttime="20200810 19:57:02.613"></status>
+<status status="PASS" endtime="20200811 22:38:37.808" starttime="20200811 22:38:37.662"></status>
 </kw>
 <kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
@@ -97,31 +97,74 @@
 <arguments>
 <arg>Warning:</arg>
 </arguments>
-<msg timestamp="20200810 19:57:03.201" level="INFO">Current page does not contain text 'Warning:'.</msg>
-<status status="PASS" endtime="20200810 19:57:03.201" starttime="20200810 19:57:02.747"></status>
+<msg timestamp="20200811 22:38:38.233" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20200811 22:38:38.233" starttime="20200811 22:38:37.809"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Failed</arg>
 </arguments>
-<msg timestamp="20200810 19:57:03.714" level="INFO">Current page does not contain text 'Failed'.</msg>
-<status status="PASS" endtime="20200810 19:57:03.714" starttime="20200810 19:57:03.202"></status>
+<msg timestamp="20200811 22:38:38.708" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20200811 22:38:38.709" starttime="20200811 22:38:38.233"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Internal Server Error</arg>
 </arguments>
+<msg timestamp="20200811 22:38:39.105" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20200811 22:38:39.105" starttime="20200811 22:38:38.709"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:39.106" starttime="20200811 22:38:37.808"></status>
+</kw>
+<kw name="Page WaitForFooterHome" library="FunctionsGlobal">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${FOOTER_HOME}</arg>
+</arguments>
+<status status="PASS" endtime="20200811 22:38:39.238" starttime="20200811 22:38:39.107"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:39.238" starttime="20200811 22:38:39.106"></status>
+</kw>
+<kw name="Welcome ShouldShow WelcomeToGeokrety" library="PageHome">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Welcome to GeoKrety.org!</arg>
+</arguments>
+<msg timestamp="20200811 22:38:39.494" level="INFO">Current page contains text 'Welcome to GeoKrety.org!'.</msg>
+<status status="PASS" endtime="20200811 22:38:39.494" starttime="20200811 22:38:39.239"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:39.494" starttime="20200811 22:38:39.239"></status>
+</kw>
+<kw name="Welcome ShouldShow SomeStatistics" library="PageHome">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Some statistics</arg>
+</arguments>
+<msg timestamp="20200811 22:38:39.756" level="INFO">Current page contains text 'Some statistics'.</msg>
+<status status="PASS" endtime="20200811 22:38:39.756" starttime="20200811 22:38:39.495"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:39.756" starttime="20200811 22:38:39.494"></status>
+</kw>
+<kw name="Welcome ShouldShow LatestMoves" library="PageHome">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Latest moves</arg>
+</arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200810 19:57:04.597" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200810 19:57:04.598" starttime="20200810 19:57:04.171"></status>
+<msg timestamp="20200811 22:38:40.801" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200811 22:38:40.801" starttime="20200811 22:38:40.371"></status>
 </kw>
-<msg timestamp="20200810 19:57:04.598" level="FAIL">Page should not have contained text 'Internal Server Error'.</msg>
-<status status="FAIL" endtime="20200810 19:57:04.598" starttime="20200810 19:57:03.714"></status>
+<msg timestamp="20200811 22:38:40.802" level="FAIL">Page should have contained text 'Latest moves' but did not.</msg>
+<status status="FAIL" endtime="20200811 22:38:40.802" starttime="20200811 22:38:39.757"></status>
 </kw>
-<status status="FAIL" endtime="20200810 19:57:04.599" starttime="20200810 19:57:02.746"></status>
+<status status="FAIL" endtime="20200811 22:38:40.803" starttime="20200811 22:38:39.756"></status>
 </kw>
 <doc>Default english welcome page</doc>
 <tags>
@@ -129,7 +172,7 @@
 <tag>Languages</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200810 19:57:04.599" critical="yes" starttime="20200810 19:57:02.612">Page should not have contained text 'Internal Server Error'.</status>
+<status status="FAIL" endtime="20200811 22:38:40.803" critical="yes" starttime="20200811 22:38:37.660">Page should have contained text 'Latest moves' but did not.</status>
 </test>
 <test id="s1-s1-s1-t2" name="Welcome: (FR)">
 <kw name="!Go To GeoKrety" library="FunctionsGlobal">
@@ -138,10 +181,10 @@
 <arguments>
 <arg>${GK_URL}</arg>
 </arguments>
-<msg timestamp="20200810 19:57:04.798" level="INFO">Current location contains 'http://bs-local.com:3000/'.</msg>
-<status status="PASS" endtime="20200810 19:57:04.798" starttime="20200810 19:57:04.602"></status>
+<msg timestamp="20200811 22:38:40.939" level="INFO">Current location contains 'http://bs-local.com:3000/'.</msg>
+<status status="PASS" endtime="20200811 22:38:40.939" starttime="20200811 22:38:40.806"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:04.799" starttime="20200810 19:57:04.602"></status>
+<status status="PASS" endtime="20200811 22:38:40.939" starttime="20200811 22:38:40.805"></status>
 </kw>
 <kw name="!Click On FR Lang" library="FunctionsGlobal">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -149,15 +192,115 @@
 <arguments>
 <arg>${DROPDOWN_LANG}</arg>
 </arguments>
+<status status="PASS" endtime="20200811 22:38:41.283" starttime="20200811 22:38:40.940"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${DROPDOWN_LANG}</arg>
+</arguments>
+<msg timestamp="20200811 22:38:41.284" level="INFO">Clicking element '//*[@id="navbar-lang"]'.</msg>
+<status status="PASS" endtime="20200811 22:38:41.954" starttime="20200811 22:38:41.284"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${DROPDOWN_LANG_FR}</arg>
+</arguments>
+<status status="PASS" endtime="20200811 22:38:42.268" starttime="20200811 22:38:41.954"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${DROPDOWN_LANG_FR}</arg>
+</arguments>
+<msg timestamp="20200811 22:38:42.269" level="INFO">Clicking element '//*[@id="navbar-lang-fr"]'.</msg>
+<status status="PASS" endtime="20200811 22:38:43.321" starttime="20200811 22:38:42.268"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${GK_URL}fr?</arg>
+</arguments>
+<msg timestamp="20200811 22:38:43.455" level="INFO">Current location is 'http://bs-local.com:3000/fr?'.</msg>
+<status status="PASS" endtime="20200811 22:38:43.456" starttime="20200811 22:38:43.322"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:43.456" starttime="20200811 22:38:40.940"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20200811 22:38:43.877" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20200811 22:38:43.877" starttime="20200811 22:38:43.457"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20200811 22:38:44.297" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20200811 22:38:44.298" starttime="20200811 22:38:43.877"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20200811 22:38:44.718" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20200811 22:38:44.718" starttime="20200811 22:38:44.298"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:44.719" starttime="20200811 22:38:43.456"></status>
+</kw>
+<kw name="Page WaitForFooterHome" library="FunctionsGlobal">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${FOOTER_HOME}</arg>
+</arguments>
+<status status="PASS" endtime="20200811 22:38:44.849" starttime="20200811 22:38:44.719"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:44.850" starttime="20200811 22:38:44.719"></status>
+</kw>
+<kw name="Welcome ShouldShow WelcomeToGeokretyFR" library="PageHome">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Bienvenue sur GeoKrety.org !</arg>
+</arguments>
+<msg timestamp="20200811 22:38:45.178" level="INFO">Current page contains text 'Bienvenue sur GeoKrety.org !'.</msg>
+<status status="PASS" endtime="20200811 22:38:45.178" starttime="20200811 22:38:44.851"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:45.178" starttime="20200811 22:38:44.850"></status>
+</kw>
+<kw name="Welcome ShouldShow SomeStatisticsFR" library="PageHome">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Quelques statistiques</arg>
+</arguments>
+<msg timestamp="20200811 22:38:45.449" level="INFO">Current page contains text 'Quelques statistiques'.</msg>
+<status status="PASS" endtime="20200811 22:38:45.449" starttime="20200811 22:38:45.179"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:38:45.449" starttime="20200811 22:38:45.178"></status>
+</kw>
+<kw name="Welcome ShouldShow LatestMovesFR" library="PageHome">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Derniers mouvements</arg>
+</arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200810 19:57:05.857" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200810 19:57:05.857" starttime="20200810 19:57:05.475"></status>
+<msg timestamp="20200811 22:38:46.454" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200811 22:38:46.454" starttime="20200811 22:38:46.044"></status>
 </kw>
-<msg timestamp="20200810 19:57:05.858" level="FAIL">Element '//*[@id="navbar-lang"]' not visible after 450 milliseconds.</msg>
-<status status="FAIL" endtime="20200810 19:57:05.858" starttime="20200810 19:57:04.800"></status>
+<msg timestamp="20200811 22:38:46.455" level="FAIL">Page should have contained text 'Derniers mouvements' but did not.</msg>
+<status status="FAIL" endtime="20200811 22:38:46.455" starttime="20200811 22:38:45.450"></status>
 </kw>
-<status status="FAIL" endtime="20200810 19:57:05.858" starttime="20200810 19:57:04.799"></status>
+<status status="FAIL" endtime="20200811 22:38:46.455" starttime="20200811 22:38:45.449"></status>
 </kw>
 <doc>Welcome page in french</doc>
 <tags>
@@ -165,13 +308,13 @@
 <tag>Languages</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200810 19:57:05.858" critical="yes" starttime="20200810 19:57:04.600">Element '//*[@id="navbar-lang"]' not visible after 450 milliseconds.</status>
+<status status="FAIL" endtime="20200811 22:38:46.455" critical="yes" starttime="20200811 22:38:40.804">Page should have contained text 'Derniers mouvements' but did not.</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200810 19:57:08.380" starttime="20200810 19:57:05.860"></status>
+<status status="PASS" endtime="20200811 22:38:47.659" starttime="20200811 22:38:46.456"></status>
 </kw>
-<status status="FAIL" endtime="20200810 19:57:08.380" starttime="20200810 19:56:53.130"></status>
+<status status="FAIL" endtime="20200811 22:38:47.659" starttime="20200811 22:38:27.641"></status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/HomePage/010_Found_GeoKret.robot" id="s1-s1-s2" name="010 Found GeoKret">
 <kw type="setup" name="!Open GeoKrety Browser" library="FunctionsGlobal">
@@ -204,16 +347,16 @@
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200810 19:57:08.391" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200810 19:57:08.391" starttime="20200810 19:57:08.390"></status>
+<msg timestamp="20200811 22:38:47.675" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200811 22:38:47.675" starttime="20200811 22:38:47.675"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200810 19:57:08.391" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6406,project:GeoKrety"</msg>
-<status status="PASS" endtime="20200810 19:57:08.391" starttime="20200810 19:57:08.391"></status>
+<msg timestamp="20200811 22:38:47.675" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6407,project:GeoKrety"</msg>
+<status status="PASS" endtime="20200811 22:38:47.675" starttime="20200811 22:38:47.675"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -222,12 +365,12 @@
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200810 19:57:08.392" level="INFO">Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
-<status status="PASS" endtime="20200810 19:57:16.922" starttime="20200810 19:57:08.391"></status>
+<msg timestamp="20200811 22:38:47.676" level="INFO">Opening browser 'firefox' to base url 'http://bs-local.com:3000/' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<status status="PASS" endtime="20200811 22:39:00.119" starttime="20200811 22:38:47.676"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:16.922" starttime="20200810 19:57:08.390"></status>
+<status status="PASS" endtime="20200811 22:39:00.121" starttime="20200811 22:38:47.675"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:16.923" starttime="20200810 19:57:08.390"></status>
+<status status="PASS" endtime="20200811 22:39:00.121" starttime="20200811 22:38:47.674"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -235,20 +378,20 @@
 <arg>"${browser}"=="Chrome"</arg>
 <arg>!Open GeoKrety BrowserStack Windows10 Chrome</arg>
 </arguments>
-<status status="PASS" endtime="20200810 19:57:16.923" starttime="20200810 19:57:16.923"></status>
+<status status="PASS" endtime="20200811 22:39:00.122" starttime="20200811 22:39:00.122"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:16.923" starttime="20200810 19:57:08.390"></status>
+<status status="PASS" endtime="20200811 22:39:00.123" starttime="20200811 22:38:47.674"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:16.923" starttime="20200810 19:57:08.389"></status>
+<status status="PASS" endtime="20200811 22:39:00.123" starttime="20200811 22:38:47.673"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <doc>Sets the timeout that is used by various keywords.</doc>
 <arguments>
 <arg>0.45</arg>
 </arguments>
-<status status="PASS" endtime="20200810 19:57:17.404" starttime="20200810 19:57:16.924"></status>
+<status status="PASS" endtime="20200811 22:39:00.258" starttime="20200811 22:39:00.123"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:17.404" starttime="20200810 19:57:08.388"></status>
+<status status="PASS" endtime="20200811 22:39:00.258" starttime="20200811 22:38:47.672"></status>
 </kw>
 <test id="s1-s1-s2-t1" name="Welcome: (EN) input geokret code">
 <kw name="!Go To GeoKrety" library="FunctionsGlobal">
@@ -257,10 +400,10 @@
 <arguments>
 <arg>${GK_URL}</arg>
 </arguments>
-<msg timestamp="20200810 19:57:17.563" level="INFO">Current location contains 'http://bs-local.com:3000/'.</msg>
-<status status="PASS" endtime="20200810 19:57:17.563" starttime="20200810 19:57:17.407"></status>
+<msg timestamp="20200811 22:39:00.432" level="INFO">Current location contains 'http://bs-local.com:3000/'.</msg>
+<status status="PASS" endtime="20200811 22:39:00.433" starttime="20200811 22:39:00.260"></status>
 </kw>
-<status status="PASS" endtime="20200810 19:57:17.563" starttime="20200810 19:57:17.406"></status>
+<status status="PASS" endtime="20200811 22:39:00.433" starttime="20200811 22:39:00.260"></status>
 </kw>
 <kw name="!V2 Enter TrackingCode" library="PageHome">
 <arguments>
@@ -271,15 +414,52 @@
 <arguments>
 <arg>${HOME_FOUND_GK_TRACKING_CODE_INPUT}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200810 19:57:18.730" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20200810 19:57:18.731" starttime="20200810 19:57:18.289"></status>
+<status status="PASS" endtime="20200811 22:39:00.802" starttime="20200811 22:39:00.434"></status>
 </kw>
-<msg timestamp="20200810 19:57:18.731" level="FAIL">Element '//*[@id="tracking_code"]' not visible after 450 milliseconds.</msg>
-<status status="FAIL" endtime="20200810 19:57:18.731" starttime="20200810 19:57:17.564"></status>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${HOME_FOUND_GK_TRACKING_CODE_INPUT}</arg>
+<arg>${code}</arg>
+</arguments>
+<msg timestamp="20200811 22:39:00.803" level="INFO">Typing text '673CI2' into text field '//*[@id="tracking_code"]'.</msg>
+<status status="PASS" endtime="20200811 22:39:01.343" starttime="20200811 22:39:00.803"></status>
 </kw>
-<status status="FAIL" endtime="20200810 19:57:18.731" starttime="20200810 19:57:17.563"></status>
+<kw name="Simulate Event" library="SeleniumLibrary">
+<doc>Simulates ``event`` on the element identified by ``locator``.</doc>
+<arguments>
+<arg>${HOME_FOUND_GK_TRACKING_CODE_INPUT}</arg>
+<arg>blur</arg>
+</arguments>
+<status status="PASS" endtime="20200811 22:39:01.591" starttime="20200811 22:39:01.343"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:39:01.591" starttime="20200811 22:39:00.433"></status>
+</kw>
+<kw name="!V2 Click On FoundGeokretLogIt" library="PageHome">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${HOME_FOUND_GK_TRACKING_CODE_BUTTON}</arg>
+</arguments>
+<status status="PASS" endtime="20200811 22:39:01.929" starttime="20200811 22:39:01.593"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${HOME_FOUND_GK_TRACKING_CODE_BUTTON}</arg>
+</arguments>
+<msg timestamp="20200811 22:39:01.930" level="INFO">Clicking button '//*[@id="found-geokret-submit"]'.</msg>
+<status status="PASS" endtime="20200811 22:39:04.488" starttime="20200811 22:39:01.930"></status>
+</kw>
+<status status="PASS" endtime="20200811 22:39:04.489" starttime="20200811 22:39:01.592"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${GK_URL}en/moves?tracking_code=${TEST_GEOKRET_CODE}</arg>
+</arguments>
+<msg timestamp="20200811 22:39:04.617" level="INFO">Current location is 'http://bs-local.com:3000/en/moves?tracking_code=673CI2'.</msg>
+<status status="PASS" endtime="20200811 22:39:04.617" starttime="20200811 22:39:04.489"></status>
 </kw>
 <doc>Tracking code should redirect to moves</doc>
 <tags>
@@ -287,35 +467,35 @@
 <tag>MOVEMENTS</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200810 19:57:18.732" critical="yes" starttime="20200810 19:57:17.405">Element '//*[@id="tracking_code"]' not visible after 450 milliseconds.</status>
+<status status="PASS" endtime="20200811 22:39:04.618" critical="yes" starttime="20200811 22:39:00.259"></status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200810 19:57:21.930" starttime="20200810 19:57:18.733"></status>
+<status status="PASS" endtime="20200811 22:39:06.360" starttime="20200811 22:39:04.619"></status>
 </kw>
-<status status="FAIL" endtime="20200810 19:57:21.930" starttime="20200810 19:57:08.382"></status>
+<status status="PASS" endtime="20200811 22:39:06.360" starttime="20200811 22:38:47.665"></status>
 </suite>
-<status status="FAIL" endtime="20200810 19:57:21.932" starttime="20200810 19:56:53.128"></status>
+<status status="FAIL" endtime="20200811 22:39:06.363" starttime="20200811 22:38:27.632"></status>
 </suite>
-<status status="FAIL" endtime="20200810 19:57:21.934" starttime="20200810 19:56:53.113"></status>
+<status status="FAIL" endtime="20200811 22:39:06.366" starttime="20200811 22:38:27.616"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="3" pass="0">Critical Tests</stat>
-<stat fail="3" pass="0">All Tests</stat>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
 </total>
 <tag>
 <stat fail="1" pass="0">EN</stat>
 <stat fail="1" pass="0">FR</stat>
 <stat fail="2" pass="0">Languages</stat>
-<stat fail="1" pass="0">Movement</stat>
-<stat fail="1" pass="0">MOVEMENTS</stat>
+<stat fail="0" pass="1">Movement</stat>
+<stat fail="0" pass="1">MOVEMENTS</stat>
 </tag>
 <suite>
-<stat fail="3" id="s1" name="Acceptance" pass="0">Acceptance</stat>
-<stat fail="3" id="s1-s1" name="HomePage" pass="0">Acceptance.HomePage</stat>
+<stat fail="2" id="s1" name="Acceptance" pass="1">Acceptance</stat>
+<stat fail="2" id="s1-s1" name="HomePage" pass="1">Acceptance.HomePage</stat>
 <stat fail="2" id="s1-s1-s1" name="000 Languages" pass="0">Acceptance.HomePage.000 Languages</stat>
-<stat fail="1" id="s1-s1-s2" name="010 Found GeoKret" pass="0">Acceptance.HomePage.010 Found GeoKret</stat>
+<stat fail="0" id="s1-s1-s2" name="010 Found GeoKret" pass="1">Acceptance.HomePage.010 Found GeoKret</stat>
 </suite>
 </statistics>
 <errors>
