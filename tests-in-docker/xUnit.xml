@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="3" errors="0" name="Acceptance" skipped="0" time="38.750" failures="2">
-<testcase classname="Acceptance.HomePage.000 Languages" name="Welcome: (EN)" time="3.143">
-<failure message="Page should have contained text 'Latest moves' but did not." type="AssertionError"></failure>
+<testsuite tests="32" errors="0" name="Acceptance" skipped="0" time="303.060" failures="0">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="4.888">
 </testcase>
-<testcase classname="Acceptance.HomePage.000 Languages" name="Welcome: (FR)" time="5.651">
-<failure message="Page should have contained text 'Derniers mouvements' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="7.257">
 </testcase>
-<testcase classname="Acceptance.HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="4.359">
+<testcase classname="Acceptance.001 HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="5.913">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="13.520">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="7.044">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="4.291">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="5.589">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="3.297">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Seed an account" time="2.680">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="16.652">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Seed an account" time="2.727">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="8.473">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="4.620">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="2.721">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check username" time="12.222">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="10.876">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="7.264">
+</testcase>
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="3.714">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="11.649">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="4.145">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.673">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="10.026">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Seed an account" time="2.386">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="5.800">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="4.383">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="4.398">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="8.027">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="22.045">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="8.439">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Seed" time="2.845">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="5.806">
+</testcase>
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="17.935">
 </testcase>
 </testsuite>
