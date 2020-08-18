@@ -1,336 +1,392 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="149" errors="0" name="Acceptance" skipped="0" time="2203.296" failures="35">
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="9.004">
+<testsuite tests="177" errors="0" name="Acceptance" skipped="0" time="2435.276" failures="35">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="6.529">
 </testcase>
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="12.290">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="8.449">
 </testcase>
-<testcase classname="Acceptance.001 HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="6.708">
+<testcase classname="Acceptance.001 HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="6.430">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="16.020">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="15.316">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="12.906">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="12.130">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="8.585">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="9.284">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="8.219">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="7.298">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="5.276">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="5.127">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Seed an account" time="6.590">
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Seed an account" time="6.211">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="24.231">
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="23.082">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Seed an account" time="6.445">
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Seed an account" time="7.408">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="11.827">
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="11.075">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="6.083">
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="5.009">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="6.018">
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="5.847">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check username" time="19.592">
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check username" time="19.647">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="18.580">
+<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="17.464">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="11.705">
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="11.958">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="4.575">
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="8.248">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="22.363">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="18.096">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="7.586">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="7.025">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="3.090">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="2.151">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="18.827">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="17.527">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Seed an account" time="6.401">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Seed an account" time="5.854">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="11.090">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="9.585">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="8.067">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="7.405">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="7.756">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="9.558">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel login" time="5.902">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel login" time="5.516">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel logout" time="7.470">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel logout" time="6.409">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="15.880">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="14.351">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="33.597">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="37.860">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="15.701">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="14.280">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Seed" time="5.842">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Seed" time="6.425">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="9.273">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="9.452">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="29.604">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="25.964">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Seed" time="6.513">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Seed" time="5.848">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in navbar for anonymous users" time="3.852">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in navbar for anonymous users" time="3.210">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in profile actions for signed in users" time="3.035">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in profile actions for signed in users" time="2.677">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Forbidden for anonymous users" time="2.948">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Forbidden for anonymous users" time="2.234">
 <failure message="Location should have contained 'http://bs-local.com:3000/en/login' but it was 'http://bs-local.com:3000/en/geokrety/create'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Sign in" time="2.826">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Sign in" time="2.165">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present in navbar for signed in users" time="3.985">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present in navbar for signed in users" time="2.716">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present on user's profile actions for signed in users" time="3.217">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present on user's profile actions for signed in users" time="3.163">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link absent on someone else profile actions" time="3.249">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link absent on someone else profile actions" time="2.869">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use navbar link to access form" time="7.828">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use navbar link to access form" time="6.339">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use profile action link to access form" time="7.205">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use profile action link to access form" time="6.648">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Direct link access to form" time="5.787">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Direct link access to form" time="5.100">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Seed" time="9.356">
+<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Seed" time="8.921">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Create A GeoKret" time="12.880">
+<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Create A GeoKret" time="10.611">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Seed" time="9.322">
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Seed" time="8.318">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid" time="25.703">
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid" time="20.465">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid (check after submit)" time="14.001">
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid (check after submit)" time="11.390">
 <failure message="Page should not have contained text 'Your GeoKret has been created.'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name valid" time="41.629">
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name valid" time="35.746">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Seed" time="9.071">
+<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Seed" time="8.918">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Type valid" time="44.905">
+<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Type valid" time="36.064">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Seed" time="8.832">
+<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Seed" time="9.150">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Text valid" time="73.332">
+<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Text valid" time="64.165">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Seed" time="10.436">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Seed" time="9.757">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - anonymous" time="12.237">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - anonymous" time="10.929">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - anonymous" time="7.114">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - anonymous" time="6.279">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - authenticated" time="19.173">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - authenticated" time="14.377">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Visible - authenticated - owned" time="16.233">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Visible - authenticated - owned" time="7.078">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - authenticated - not owned" time="13.721">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - authenticated - not owned" time="7.317">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Seed" time="32.614">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Seed" time="27.636">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - anonymous" time="6.211">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - anonymous" time="3.983">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - anonymous" time="5.474">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - anonymous" time="3.936">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - owned" time="9.078">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - owned" time="6.429">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - owned" time="8.820">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - owned" time="6.946">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - not owned" time="8.756">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - not owned" time="6.676">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - not owned" time="8.553">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - not owned" time="6.732">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Seed" time="6.319">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Seed" time="5.759">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - anonymous" time="11.127">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - anonymous" time="7.812">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - anonymous" time="11.396">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - anonymous" time="8.431">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - authenticated" time="13.351">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - authenticated" time="10.077">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Visible - authenticated - himself" time="7.581">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Visible - authenticated - himself" time="5.189">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - authenticated - someone else" time="10.325">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - authenticated - someone else" time="5.103">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Seed" time="8.884">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Seed" time="7.023">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Panel should be present" time="6.657">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Panel should be present" time="4.381">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats present" time="4.116">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats present" time="3.127">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats are per user" time="10.549">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats are per user" time="12.496">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stat created incremented" time="34.077">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stat created incremented" time="23.797">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic generated on user create" time="11.515">
+<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic generated on user create" time="10.301">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic updated on geokrety create" time="16.060">
+<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic updated on geokrety create" time="10.859">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Seed" time="6.786">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Seed" time="5.695">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for anonymous users" time="7.289">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for anonymous users" time="4.713">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users" time="8.139">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users" time="5.105">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users - himself" time="7.905">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users - himself" time="5.499">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Seed" time="7.050">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Seed" time="5.759">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="3.171">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="2.466">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="5.496">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="3.950">
 <failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 1" time="11.591">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 1" time="9.031">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 2" time="11.878">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 2" time="9.567">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 3" time="12.327">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 3" time="9.167">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 4" time="11.898">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 4" time="8.898">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 5" time="12.270">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 5" time="9.582">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 6" time="12.098">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 6" time="8.887">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 7" time="12.291">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 7" time="9.268">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 8" time="11.574">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 8" time="8.531">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 9" time="12.045">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 9" time="9.964">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Seed" time="6.929">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Seed" time="5.556">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Anonymous users are refused" time="3.559">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Anonymous users are refused" time="1.894">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Users cannot edit other user observation area" time="5.134">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Users cannot edit other user observation area" time="4.630">
 <failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Move pan should update coordinates field" time="4.779">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Move pan should update coordinates field" time="4.173">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius is set to 0 by default" time="4.351">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius is set to 0 by default" time="3.407">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius between 0-10" time="69.233">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius between 0-10" time="52.135">
 <failure message="Several failures occurred:&#10;&#10;1) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '0' but was '50'.&#10;&#10;2) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '1' but was '51'.&#10;&#10;3) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '2' but was '52'.&#10;&#10;4) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '3' but was '53'.&#10;&#10;5) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '4' but was '54'.&#10;&#10;6) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '5' but was '55'.&#10;&#10;7) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '6' but was '56'.&#10;&#10;8) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '7' but was '57'.&#10;&#10;9) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '8' but was '58'.&#10;&#10;10) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '9' but was '59'.&#10;&#10;11) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '10' but was '510'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius outside range" time="12.084">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius outside range" time="9.194">
 <failure message="Several failures occurred:&#10;&#10;1) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '5' but was ''.&#10;&#10;2) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '5' but was '511'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="9.833">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="9.407">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 0" time="9.408">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 0" time="7.501">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 1" time="9.458">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 1" time="6.698">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 5" time="9.498">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 5" time="6.587">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 10" time="9.255">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 10" time="6.817">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check valid coordinates" time="16.317">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check valid coordinates" time="11.643">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check invalid coordinates" time="16.107">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check invalid coordinates" time="10.894">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="39.453">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="36.627">
 <failure message="Element '//*[@id=&quot;mapid&quot; and @data-map-loaded=&quot;true&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Seed" time="6.305">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Seed" time="6.090">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Anonymous should not see draggable" time="3.114">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Anonymous should not see draggable" time="3.872">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="User himself should see draggable" time="6.345">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="User himself should see draggable" time="7.315">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Authenticated should not see draggable for other users" time="6.416">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Authenticated should not see draggable for other users" time="6.041">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via button" time="42.487">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via button" time="13.175">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via Drag/Drop - same page" time="41.944">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via Drag/Drop - same page" time="41.523">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//span[@class=&quot;picture-message&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="43.431">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="15.089">
+<failure message="WebDriverException: Message: TypeError: rect is undefined&#10;" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="6.207">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="6.874">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Seed" time="6.488">
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Seed" time="6.155">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="36.133">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="35.335">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//span[@class=&quot;picture-message&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete Picture" time="43.518">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete Picture" time="14.188">
+<failure message="WebDriverException: Message: TypeError: rect is undefined&#10;" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete 1 picture should leave other present" time="43.325">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete 1 picture should leave other present" time="41.389">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//span[@class=&quot;picture-message&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="42.931">
-<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="41.483">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//span[@class=&quot;picture-message&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="Seed" time="7.251">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="Seed" time="5.332">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="Anonymous users should not access form" time="5.138">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="Anonymous users should not access form" time="3.617">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Form" time="7.603">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Form" time="5.569">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Modal" time="9.199">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Modal" time="7.316">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="Expired session ask to login" time="8.581">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="Expired session ask to login" time="6.758">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - modal" time="19.136">
+<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - modal" time="14.880">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - page form" time="17.823">
+<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - page form" time="13.969">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Confirmation mail should be sent" time="29.894">
+<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Confirmation mail should be sent" time="20.297">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="Wrong old password" time="19.707">
+<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="Wrong old password" time="14.986">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="New password does not match confirm" time="20.163">
+<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="New password does not match confirm" time="15.146">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Seed" time="6.711">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Seed" time="5.945">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Anonymous users should not access form" time="5.060">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Anonymous users should not access form" time="3.994">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Form" time="6.672">
-<failure message="Element '//div[contains(@class, &quot;panel&quot;)]' did not appear in 450 milliseconds." type="AssertionError"></failure>
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Form" time="5.669">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Modal" time="9.421">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Modal" time="6.576">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Expired session ask to login" time="7.512">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Expired session ask to login" time="5.658">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.020 Change" name="Language should be changed immediately" time="21.120">
+<testcase classname="Acceptance.080 UserLanguageChange.020 Change" name="Language should be changed immediately" time="14.575">
 <failure message="Element '//div[contains(@class, &quot;flash-message&quot;) and text()[contains(., 'Préférences de langue mises à jour.')]]' did not appear in 450 milliseconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.020 Change" name="Language should be changed on sign in" time="18.004">
+<testcase classname="Acceptance.080 UserLanguageChange.020 Change" name="Language should be changed on sign in" time="12.502">
 <failure message="Location should have been 'http://bs-local.com:3000/fr' but was 'http://bs-local.com:3000/en'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.020 Change" name="Language should be changed on root domain access" time="16.138">
+<testcase classname="Acceptance.080 UserLanguageChange.020 Change" name="Language should be changed on root domain access" time="11.550">
 <failure message="Location should have been 'http://bs-local.com:3000/fr' but was 'http://bs-local.com:3000/en'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Seed" time="6.400">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Seed" time="5.546">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Anonymous users should not access form" time="4.652">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Anonymous users should not access form" time="3.577">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Form" time="6.823">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Form" time="5.443">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Modal" time="8.935">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Modal" time="6.977">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Expired session ask to login" time="8.120">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Expired session ask to login" time="6.770">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.020 Change" name="Refresh should display a message" time="15.895">
+<testcase classname="Acceptance.090 UserSecidChange.020 Change" name="Refresh should display a message" time="13.960">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="Seed" time="5.394">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="Anonymous users should not access form" time="3.863">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="User himself can access form - Form" time="6.483">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="User himself can access form - Modal" time="9.098">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="Expired session ask to login" time="6.955">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Valid email change - modal" time="18.169">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Valid email change - page form" time="16.112">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Confirmation mail should be sent" time="23.676">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="OLD mail REFUSE change" time="24.126">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="Once decision taken, token is disabled - old user" time="24.298">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="Once decision taken, token is disabled - new user" time="26.147">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="OLD mail ACCEPT change" time="19.779">
+<failure message="No keyword with name 'Execute Manual Step' found." type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="On accept confirmation mails should be sent" time="32.070">
+<failure message="Page should have contained text 'Your email address has been succesfully changed to: somethingelse+qa@geokrety.org.' but did not." type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="Token is then disabled for old email" time="26.428">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="Token is then disabled for new email" time="28.547">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="NEW mail ACCEPT change" time="25.634">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="Once decision taken, token is disabled - old user" time="25.918">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="Once decision taken, token is disabled - new user" time="27.887">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="NEW mail ACCEPT change" time="23.525">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="Once decision taken, token is disabled - old user" time="26.942">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="Once decision taken, token is disabled - new user" time="25.556">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.070 Dismiss" name="Dismiss button doesn't invalidate the token" time="24.680">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.070 Dismiss" name="Once decision taken, token is disabled - new user" time="25.988">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Disable daily mails" time="25.476">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Enable daily mails" time="23.310">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already PENDING by user himself" time="25.386">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already USED by another user" time="15.067">
+</testcase>
+<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already PENDING by another user" time="25.724">
 </testcase>
 </testsuite>
