@@ -1,1056 +1,1056 @@
 ==============================================================================
-20200818 22:44:08.325 - INFO - + START SUITE: Acceptance [ ]
+20200818 22:55:09.608 - INFO - + START SUITE: Acceptance [ ]
 ==============================================================================
-20200818 22:44:08.807 - INFO - +- START SUITE: Acceptance.001 HomePage [ ]
+20200818 22:55:10.058 - INFO - +- START SUITE: Acceptance.001 HomePage [ ]
 ==============================================================================
-20200818 22:44:08.808 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:08.809 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:08.810 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:08.813 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:08.814 - INFO - +---- END KW: BuiltIn.Run Keyword If (4)
-20200818 22:44:08.814 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
-20200818 22:44:08.815 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (6)
+20200818 22:55:10.059 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:10.060 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:10.060 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:10.062 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:10.063 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
+20200818 22:55:10.063 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (3)
+20200818 22:55:10.063 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (4)
 ==============================================================================
-20200818 22:44:08.815 - INFO - +-- START SUITE: Acceptance.001 HomePage.000 Languages [ ]
+20200818 22:55:10.063 - INFO - +-- START SUITE: Acceptance.001 HomePage.000 Languages [ ]
 ==============================================================================
-20200818 22:44:08.817 - INFO - +--- START TEST: Welcome: (EN) [ ]
+20200818 22:55:10.065 - INFO - +--- START TEST: Welcome: (EN) [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:08.817 - INFO - +--- END TEST: Welcome: (EN) (1)
+20200818 22:55:10.065 - INFO - +--- END TEST: Welcome: (EN) (1)
 ------------------------------------------------------------------------------
-20200818 22:44:08.818 - INFO - +--- START TEST: Welcome: (FR) [ ]
+20200818 22:55:10.066 - INFO - +--- START TEST: Welcome: (FR) [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:08.819 - INFO - +--- END TEST: Welcome: (FR) (1)
+20200818 22:55:10.066 - INFO - +--- END TEST: Welcome: (FR) (1)
 ------------------------------------------------------------------------------
-20200818 22:44:08.821 - INFO - +-- END SUITE: Acceptance.001 HomePage.000 Languages (4)
+20200818 22:55:10.068 - INFO - +-- END SUITE: Acceptance.001 HomePage.000 Languages (4)
 ==============================================================================
-20200818 22:44:08.822 - INFO - +-- START SUITE: Acceptance.001 HomePage.010 Found GeoKret [ ]
+20200818 22:55:10.069 - INFO - +-- START SUITE: Acceptance.001 HomePage.010 Found GeoKret [ ]
 ==============================================================================
-20200818 22:44:08.823 - INFO - +--- START TEST: Welcome: (EN) input geokret code [ ]
+20200818 22:55:10.071 - INFO - +--- START TEST: Welcome: (EN) input geokret code [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:08.823 - INFO - +--- END TEST: Welcome: (EN) input geokret code (1)
+20200818 22:55:10.074 - INFO - +--- END TEST: Welcome: (EN) input geokret code (3)
 ------------------------------------------------------------------------------
-20200818 22:44:08.825 - INFO - +-- END SUITE: Acceptance.001 HomePage.010 Found GeoKret (3)
+20200818 22:55:10.083 - INFO - +-- END SUITE: Acceptance.001 HomePage.010 Found GeoKret (8)
 ==============================================================================
-20200818 22:44:08.827 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:08.828 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:08.830 - INFO - +--- END KW: SeleniumLibrary.Close Browser (2)
-20200818 22:44:08.831 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (3)
+20200818 22:55:10.086 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:10.089 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:10.091 - INFO - +--- END KW: SeleniumLibrary.Close Browser (2)
+20200818 22:55:10.093 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (6)
 ==============================================================================
-20200818 22:44:08.836 - INFO - +- END SUITE: Acceptance.001 HomePage (505)
+20200818 22:55:10.098 - INFO - +- END SUITE: Acceptance.001 HomePage (484)
 ==============================================================================
-20200818 22:44:09.311 - INFO - +- START SUITE: Acceptance.010 UserRegistration [ ]
+20200818 22:55:10.355 - INFO - +- START SUITE: Acceptance.010 UserRegistration [ ]
 ==============================================================================
-20200818 22:44:09.312 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:09.312 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:09.314 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:09.317 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:09.318 - INFO - +---- END KW: BuiltIn.Run Keyword If (5)
-20200818 22:44:09.318 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (6)
-20200818 22:44:09.319 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (7)
+20200818 22:55:10.356 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:10.356 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:10.357 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:10.360 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:10.361 - INFO - +---- END KW: BuiltIn.Run Keyword If (4)
+20200818 22:55:10.361 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
+20200818 22:55:10.361 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (5)
 ==============================================================================
-20200818 22:44:09.320 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.000 Create Account [ ]
+20200818 22:55:10.362 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.000 Create Account [ ]
 ==============================================================================
-20200818 22:44:09.321 - INFO - +--- START TEST: Create first account [ ]
+20200818 22:55:10.363 - INFO - +--- START TEST: Create first account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.322 - INFO - +--- END TEST: Create first account (1)
+20200818 22:55:10.364 - INFO - +--- END TEST: Create first account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.323 - INFO - +--- START TEST: Activate account [ ]
+20200818 22:55:10.365 - INFO - +--- START TEST: Activate account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.323 - INFO - +--- END TEST: Activate account (1)
+20200818 22:55:10.365 - INFO - +--- END TEST: Activate account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.324 - INFO - +--- START TEST: Email activation confirmation received [ ]
+20200818 22:55:10.366 - INFO - +--- START TEST: Email activation confirmation received [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.325 - INFO - +--- END TEST: Email activation confirmation received (1)
+20200818 22:55:10.367 - INFO - +--- END TEST: Email activation confirmation received (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.326 - INFO - +--- START TEST: Sign In user [ ]
+20200818 22:55:10.368 - INFO - +--- START TEST: Sign In user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.327 - INFO - +--- END TEST: Sign In user (1)
+20200818 22:55:10.368 - INFO - +--- END TEST: Sign In user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.328 - INFO - +--- START TEST: Sign Out user [ ]
+20200818 22:55:10.369 - INFO - +--- START TEST: Sign Out user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.328 - INFO - +--- END TEST: Sign Out user (1)
+20200818 22:55:10.369 - INFO - +--- END TEST: Sign Out user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.331 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.000 Create Account (10)
+20200818 22:55:10.372 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.000 Create Account (8)
 ==============================================================================
-20200818 22:44:09.332 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists [ ]
+20200818 22:55:10.373 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists [ ]
 ==============================================================================
-20200818 22:44:09.333 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:55:10.374 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.334 - INFO - +--- END TEST: Seed an account (1)
+20200818 22:55:10.374 - INFO - +--- END TEST: Seed an account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.335 - INFO - +--- START TEST: Check username [ ]
+20200818 22:55:10.375 - INFO - +--- START TEST: Check username [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.335 - INFO - +--- END TEST: Check username (1)
+20200818 22:55:10.375 - INFO - +--- END TEST: Check username (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.337 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists (5)
+20200818 22:55:10.377 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists (4)
 ==============================================================================
-20200818 22:44:09.338 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists [ ]
+20200818 22:55:10.378 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists [ ]
 ==============================================================================
-20200818 22:44:09.339 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:55:10.379 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.340 - INFO - +--- END TEST: Seed an account (1)
+20200818 22:55:10.380 - INFO - +--- END TEST: Seed an account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.341 - INFO - +--- START TEST: Email is already taken [ ]
+20200818 22:55:10.381 - INFO - +--- START TEST: Email is already taken [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.342 - INFO - +--- END TEST: Email is already taken (1)
+20200818 22:55:10.382 - INFO - +--- END TEST: Email is already taken (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.343 - INFO - +--- START TEST: Form content keeped [ ]
+20200818 22:55:10.383 - INFO - +--- START TEST: Form content keeped [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.344 - INFO - +--- END TEST: Form content keeped (1)
+20200818 22:55:10.383 - INFO - +--- END TEST: Form content keeped (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.346 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists (7)
+20200818 22:55:10.385 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists (7)
 ==============================================================================
-20200818 22:44:09.347 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.020 UsernameValid [ ]
+20200818 22:55:10.386 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.020 UsernameValid [ ]
 ==============================================================================
-20200818 22:44:09.348 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:55:10.387 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.349 - INFO - +--- END TEST: Seed an account (0)
+20200818 22:55:10.388 - INFO - +--- END TEST: Seed an account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.350 - INFO - +--- START TEST: Check username [ ]
+20200818 22:55:10.390 - INFO - +--- START TEST: Check username [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.350 - INFO - +--- END TEST: Check username (1)
+20200818 22:55:10.390 - INFO - +--- END TEST: Check username (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.352 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.020 UsernameValid (5)
+20200818 22:55:10.392 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.020 UsernameValid (5)
 ==============================================================================
-20200818 22:44:09.353 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage [ ]
+20200818 22:55:10.393 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage [ ]
 ==============================================================================
-20200818 22:44:09.354 - INFO - +--- START TEST: Create an account [ ]
+20200818 22:55:10.394 - INFO - +--- START TEST: Create an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.355 - INFO - +--- END TEST: Create an account (1)
+20200818 22:55:10.394 - INFO - +--- END TEST: Create an account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.357 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage (3)
+20200818 22:55:10.396 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage (3)
 ==============================================================================
-20200818 22:44:09.358 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory [ ]
+20200818 22:55:10.397 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory [ ]
 ==============================================================================
-20200818 22:44:09.359 - INFO - +--- START TEST: Terms of use unchecked [ ]
+20200818 22:55:10.398 - INFO - +--- START TEST: Terms of use unchecked [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.360 - INFO - +--- END TEST: Terms of use unchecked (1)
+20200818 22:55:10.398 - INFO - +--- END TEST: Terms of use unchecked (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.360 - INFO - +--- START TEST: Terms of use checked [ ]
+20200818 22:55:10.399 - INFO - +--- START TEST: Terms of use checked [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.361 - INFO - +--- END TEST: Terms of use checked (1)
+20200818 22:55:10.400 - INFO - +--- END TEST: Terms of use checked (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.363 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory (5)
+20200818 22:55:10.402 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory (4)
 ==============================================================================
-20200818 22:44:09.364 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:09.365 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:09.366 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:44:09.366 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:55:10.402 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:10.403 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:10.404 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:55:10.404 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:44:09.370 - INFO - +- END SUITE: Acceptance.010 UserRegistration (530)
+20200818 22:55:10.407 - INFO - +- END SUITE: Acceptance.010 UserRegistration (305)
 ==============================================================================
-20200818 22:44:09.784 - INFO - +- START SUITE: Acceptance.020 SignIn.robot [ ]
+20200818 22:55:10.817 - INFO - +- START SUITE: Acceptance.020 SignIn.robot [ ]
 ==============================================================================
-20200818 22:44:09.785 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:09.785 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:09.786 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:09.790 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:09.791 - INFO - +---- END KW: BuiltIn.Run Keyword If (5)
-20200818 22:44:09.791 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (6)
-20200818 22:44:09.792 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (7)
+20200818 22:55:10.818 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:10.819 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:10.820 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:10.825 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:10.825 - INFO - +---- END KW: BuiltIn.Run Keyword If (5)
+20200818 22:55:10.825 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (6)
+20200818 22:55:10.826 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (8)
 ==============================================================================
-20200818 22:44:09.793 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst [ ]
+20200818 22:55:10.826 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst [ ]
 ==============================================================================
-20200818 22:44:09.794 - INFO - +--- START TEST: Create an account [ ]
+20200818 22:55:10.827 - INFO - +--- START TEST: Create an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.795 - INFO - +--- END TEST: Create an account (1)
+20200818 22:55:10.828 - INFO - +--- END TEST: Create an account (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.796 - INFO - +--- START TEST: Account not active [ ]
+20200818 22:55:10.829 - INFO - +--- START TEST: Account not active [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.797 - INFO - +--- END TEST: Account not active (1)
+20200818 22:55:10.830 - INFO - +--- END TEST: Account not active (2)
 ------------------------------------------------------------------------------
-20200818 22:44:09.797 - INFO - +--- START TEST: Confirmation mail sent again [ ]
+20200818 22:55:10.831 - INFO - +--- START TEST: Confirmation mail sent again [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.798 - INFO - +--- END TEST: Confirmation mail sent again (1)
+20200818 22:55:10.832 - INFO - +--- END TEST: Confirmation mail sent again (0)
 ------------------------------------------------------------------------------
-20200818 22:44:09.799 - INFO - +--- START TEST: Validated account can login [ ]
+20200818 22:55:10.833 - INFO - +--- START TEST: Validated account can login [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.800 - INFO - +--- END TEST: Validated account can login (0)
+20200818 22:55:10.834 - INFO - +--- END TEST: Validated account can login (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.802 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst (8)
+20200818 22:55:10.837 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst (9)
 ==============================================================================
-20200818 22:44:09.803 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword [ ]
+20200818 22:55:10.839 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword [ ]
 ==============================================================================
-20200818 22:44:09.804 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:55:10.841 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.805 - INFO - +--- END TEST: Seed an account (1)
+20200818 22:55:10.842 - INFO - +--- END TEST: Seed an account (2)
 ------------------------------------------------------------------------------
-20200818 22:44:09.806 - INFO - +--- START TEST: Sign In user [ ]
+20200818 22:55:10.843 - INFO - +--- START TEST: Sign In user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.807 - INFO - +--- END TEST: Sign In user (1)
+20200818 22:55:10.844 - INFO - +--- END TEST: Sign In user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.808 - INFO - +--- START TEST: Sign In user with wrong password [ ]
+20200818 22:55:10.845 - INFO - +--- START TEST: Sign In user with wrong password [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.809 - INFO - +--- END TEST: Sign In user with wrong password (1)
+20200818 22:55:10.846 - INFO - +--- END TEST: Sign In user with wrong password (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.809 - INFO - +--- START TEST: Sign In user with non existent username [ ]
+20200818 22:55:10.846 - INFO - +--- START TEST: Sign In user with non existent username [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.810 - INFO - +--- END TEST: Sign In user with non existent username (1)
+20200818 22:55:10.847 - INFO - +--- END TEST: Sign In user with non existent username (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.811 - INFO - +--- START TEST: Fast devel login [ ]
+20200818 22:55:10.848 - INFO - +--- START TEST: Fast devel login [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.812 - INFO - +--- END TEST: Fast devel login (1)
+20200818 22:55:10.849 - INFO - +--- END TEST: Fast devel login (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.813 - INFO - +--- START TEST: Fast devel logout [ ]
+20200818 22:55:10.850 - INFO - +--- START TEST: Fast devel logout [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.814 - INFO - +--- END TEST: Fast devel logout (1)
+20200818 22:55:10.851 - INFO - +--- END TEST: Fast devel logout (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.816 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword (12)
+20200818 22:55:10.855 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword (15)
 ==============================================================================
-20200818 22:44:09.817 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse [ ]
+20200818 22:55:10.857 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse [ ]
 ==============================================================================
-20200818 22:44:09.818 - INFO - +--- START TEST: Seeded are fully valid [ ]
+20200818 22:55:10.859 - INFO - +--- START TEST: Seeded are fully valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.819 - INFO - +--- END TEST: Seeded are fully valid (1)
+20200818 22:55:10.861 - INFO - +--- END TEST: Seeded are fully valid (3)
 ------------------------------------------------------------------------------
-20200818 22:44:09.820 - INFO - +--- START TEST: Freshly created accounts are fully valid [ ]
+20200818 22:55:10.863 - INFO - +--- START TEST: Freshly created accounts are fully valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.821 - INFO - +--- END TEST: Freshly created accounts are fully valid (1)
+20200818 22:55:10.865 - INFO - +--- END TEST: Freshly created accounts are fully valid (3)
 ------------------------------------------------------------------------------
-20200818 22:44:09.878 - INFO - +--- START TEST: Legacy accounts are asked for terms of use [ ]
+20200818 22:55:10.947 - INFO - +--- START TEST: Legacy accounts are asked for terms of use [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.880 - INFO - +--- END TEST: Legacy accounts are asked for terms of use (58)
+20200818 22:55:10.949 - INFO - +--- END TEST: Legacy accounts are asked for terms of use (82)
 ------------------------------------------------------------------------------
-20200818 22:44:09.882 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse (64)
+20200818 22:55:10.954 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse (95)
 ==============================================================================
-20200818 22:44:09.883 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin [ ]
+20200818 22:55:10.957 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin [ ]
 ==============================================================================
-20200818 22:44:09.884 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:10.958 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.885 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:10.959 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.886 - INFO - +--- START TEST: Redirects to last page [ ]
+20200818 22:55:10.960 - INFO - +--- START TEST: Redirects to last page [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.887 - INFO - +--- END TEST: Redirects to last page (1)
+20200818 22:55:10.961 - INFO - +--- END TEST: Redirects to last page (1)
 ------------------------------------------------------------------------------
-20200818 22:44:09.888 - INFO - +--- START TEST: No redirect urls [ ]
+20200818 22:55:10.963 - INFO - +--- START TEST: No redirect urls [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:09.888 - INFO - +--- END TEST: No redirect urls (1)
+20200818 22:55:10.964 - INFO - +--- END TEST: No redirect urls (2)
 ------------------------------------------------------------------------------
-20200818 22:44:09.891 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin (7)
+20200818 22:55:10.970 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin (11)
 ==============================================================================
-20200818 22:44:09.892 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:09.893 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:09.893 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:44:09.894 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:55:10.972 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:10.973 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:10.974 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
+20200818 22:55:10.974 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:44:09.898 - INFO - +- END SUITE: Acceptance.020 SignIn.robot (524)
+20200818 22:55:10.981 - INFO - +- END SUITE: Acceptance.020 SignIn.robot (567)
 ==============================================================================
-20200818 22:44:10.291 - INFO - +- START SUITE: Acceptance.030 GeokretyCreation [ ]
+20200818 22:55:11.284 - INFO - +- START SUITE: Acceptance.030 GeokretyCreation [ ]
 ==============================================================================
-20200818 22:44:10.292 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:10.293 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:10.294 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:10.297 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:10.298 - INFO - +---- END KW: BuiltIn.Run Keyword If (4)
-20200818 22:44:10.298 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
-20200818 22:44:10.298 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (6)
+20200818 22:55:11.285 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:11.285 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:11.286 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:11.288 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:11.288 - INFO - +---- END KW: BuiltIn.Run Keyword If (2)
+20200818 22:55:11.288 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (3)
+20200818 22:55:11.288 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (3)
 ==============================================================================
-20200818 22:44:10.298 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.010 FormAccess [ ]
+20200818 22:55:11.289 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.010 FormAccess [ ]
 ==============================================================================
-20200818 22:44:10.300 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.290 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.300 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:11.290 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.302 - INFO - +--- START TEST: No link present in navbar for anonymous users [ ]
+20200818 22:55:11.291 - INFO - +--- START TEST: No link present in navbar for anonymous users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.303 - INFO - +--- END TEST: No link present in navbar for anonymous users (1)
+20200818 22:55:11.292 - INFO - +--- END TEST: No link present in navbar for anonymous users (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.304 - INFO - +--- START TEST: No link present in profile actions for signed in users [ ]
+20200818 22:55:11.292 - INFO - +--- START TEST: No link present in profile actions for signed in users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.305 - INFO - +--- END TEST: No link present in profile actions for signed in users (2)
+20200818 22:55:11.293 - INFO - +--- END TEST: No link present in profile actions for signed in users (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.306 - INFO - +--- START TEST: Forbidden for anonymous users [ ]
+20200818 22:55:11.293 - INFO - +--- START TEST: Forbidden for anonymous users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.308 - INFO - +--- END TEST: Forbidden for anonymous users (1)
+20200818 22:55:11.294 - INFO - +--- END TEST: Forbidden for anonymous users (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.309 - INFO - +--- START TEST: Sign in [ ]
+20200818 22:55:11.295 - INFO - +--- START TEST: Sign in [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.310 - INFO - +--- END TEST: Sign in (1)
+20200818 22:55:11.295 - INFO - +--- END TEST: Sign in (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.312 - INFO - +--- START TEST: Link present in navbar for signed in users [ ]
+20200818 22:55:11.295 - INFO - +--- START TEST: Link present in navbar for signed in users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.313 - INFO - +--- END TEST: Link present in navbar for signed in users (2)
+20200818 22:55:11.296 - INFO - +--- END TEST: Link present in navbar for signed in users (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.314 - INFO - +--- START TEST: Link present on user's profile actions for signed in users [ ]
+20200818 22:55:11.297 - INFO - +--- START TEST: Link present on user's profile actions for signed in users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.315 - INFO - +--- END TEST: Link present on user's profile actions for signed in users (2)
+20200818 22:55:11.298 - INFO - +--- END TEST: Link present on user's profile actions for signed in users (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.317 - INFO - +--- START TEST: Link absent on someone else profile actions [ ]
+20200818 22:55:11.302 - INFO - +--- START TEST: Link absent on someone else profile actions [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.318 - INFO - +--- END TEST: Link absent on someone else profile actions (2)
+20200818 22:55:11.307 - INFO - +--- END TEST: Link absent on someone else profile actions (5)
 ------------------------------------------------------------------------------
-20200818 22:44:10.320 - INFO - +--- START TEST: Use navbar link to access form [ ]
+20200818 22:55:11.308 - INFO - +--- START TEST: Use navbar link to access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.321 - INFO - +--- END TEST: Use navbar link to access form (1)
+20200818 22:55:11.308 - INFO - +--- END TEST: Use navbar link to access form (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.322 - INFO - +--- START TEST: Use profile action link to access form [ ]
+20200818 22:55:11.309 - INFO - +--- START TEST: Use profile action link to access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.324 - INFO - +--- END TEST: Use profile action link to access form (1)
+20200818 22:55:11.310 - INFO - +--- END TEST: Use profile action link to access form (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.325 - INFO - +--- START TEST: Direct link access to form [ ]
+20200818 22:55:11.310 - INFO - +--- START TEST: Direct link access to form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.326 - INFO - +--- END TEST: Direct link access to form (2)
+20200818 22:55:11.311 - INFO - +--- END TEST: Direct link access to form (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.331 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.010 FormAccess (29)
+20200818 22:55:11.313 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.010 FormAccess (23)
 ==============================================================================
-20200818 22:44:10.332 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret [ ]
+20200818 22:55:11.316 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret [ ]
 ==============================================================================
-20200818 22:44:10.334 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.320 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.335 - INFO - +--- END TEST: Seed (2)
+20200818 22:55:11.324 - INFO - +--- END TEST: Seed (4)
 ------------------------------------------------------------------------------
-20200818 22:44:10.336 - INFO - +--- START TEST: Create A GeoKret [ ]
+20200818 22:55:11.326 - INFO - +--- START TEST: Create A GeoKret [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.337 - INFO - +--- END TEST: Create A GeoKret (1)
+20200818 22:55:11.326 - INFO - +--- END TEST: Create A GeoKret (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.341 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret (7)
+20200818 22:55:11.328 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret (13)
 ==============================================================================
-20200818 22:44:10.343 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName [ ]
+20200818 22:55:11.329 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName [ ]
 ==============================================================================
-20200818 22:44:10.346 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.330 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.347 - INFO - +--- END TEST: Seed (2)
+20200818 22:55:11.330 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.348 - INFO - +--- START TEST: Name invalid [ ]
+20200818 22:55:11.331 - INFO - +--- START TEST: Name invalid [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.349 - INFO - +--- END TEST: Name invalid (2)
+20200818 22:55:11.331 - INFO - +--- END TEST: Name invalid (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.351 - INFO - +--- START TEST: Name invalid (check after submit) [ ]
+20200818 22:55:11.332 - INFO - +--- START TEST: Name invalid (check after submit) [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.352 - INFO - +--- END TEST: Name invalid (check after submit) (1)
+20200818 22:55:11.332 - INFO - +--- END TEST: Name invalid (check after submit) (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.353 - INFO - +--- START TEST: Name valid [ ]
+20200818 22:55:11.333 - INFO - +--- START TEST: Name valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.354 - INFO - +--- END TEST: Name valid (2)
+20200818 22:55:11.335 - INFO - +--- END TEST: Name valid (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.358 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName (14)
+20200818 22:55:11.346 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName (11)
 ==============================================================================
-20200818 22:44:10.360 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType [ ]
+20200818 22:55:11.347 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType [ ]
 ==============================================================================
-20200818 22:44:10.362 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.347 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.363 - INFO - +--- END TEST: Seed (2)
+20200818 22:55:11.348 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.365 - INFO - +--- START TEST: Type valid [ ]
+20200818 22:55:11.348 - INFO - +--- START TEST: Type valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.366 - INFO - +--- END TEST: Type valid (1)
+20200818 22:55:11.349 - INFO - +--- END TEST: Type valid (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.369 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType (8)
+20200818 22:55:11.350 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType (3)
 ==============================================================================
-20200818 22:44:10.371 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission [ ]
+20200818 22:55:11.356 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission [ ]
 ==============================================================================
-20200818 22:44:10.373 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.362 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.374 - INFO - +--- END TEST: Seed (2)
+20200818 22:55:11.363 - INFO - +--- END TEST: Seed (3)
 ------------------------------------------------------------------------------
-20200818 22:44:10.376 - INFO - +--- START TEST: Text valid [ ]
+20200818 22:55:11.363 - INFO - +--- START TEST: Text valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.377 - INFO - +--- END TEST: Text valid (1)
+20200818 22:55:11.364 - INFO - +--- END TEST: Text valid (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.380 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission (8)
+20200818 22:55:11.365 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission (14)
 ==============================================================================
-20200818 22:44:10.382 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:10.383 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:10.384 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:44:10.385 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:55:11.366 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:11.367 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:11.367 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:55:11.367 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:44:10.393 - INFO - +- END SUITE: Acceptance.030 GeokretyCreation (487)
+20200818 22:55:11.383 - INFO - +- END SUITE: Acceptance.030 GeokretyCreation (385)
 ==============================================================================
-20200818 22:44:10.800 - INFO - +- START SUITE: Acceptance.040 GeokretyDetails [ ]
+20200818 22:55:11.640 - INFO - +- START SUITE: Acceptance.040 GeokretyDetails [ ]
 ==============================================================================
-20200818 22:44:10.801 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:10.802 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:10.803 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:10.806 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:10.806 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
-20200818 22:44:10.806 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (4)
-20200818 22:44:10.807 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (5)
+20200818 22:55:11.641 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:11.641 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:11.642 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:11.645 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:11.645 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
+20200818 22:55:11.646 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
+20200818 22:55:11.646 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (5)
 ==============================================================================
-20200818 22:44:10.807 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.010 Details [ ]
+20200818 22:55:11.648 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.010 Details [ ]
 ==============================================================================
-20200818 22:44:10.808 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.649 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.809 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:11.649 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.811 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
+20200818 22:55:11.650 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.812 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
+20200818 22:55:11.650 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.813 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
+20200818 22:55:11.651 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.814 - INFO - +--- END TEST: Private Information Not Visible - anonymous (2)
+20200818 22:55:11.652 - INFO - +--- END TEST: Private Information Not Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.815 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
+20200818 22:55:11.653 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.816 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
+20200818 22:55:11.653 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.818 - INFO - +--- START TEST: Private Information Visible - authenticated - owned [ ]
+20200818 22:55:11.654 - INFO - +--- START TEST: Private Information Visible - authenticated - owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.819 - INFO - +--- END TEST: Private Information Visible - authenticated - owned (1)
+20200818 22:55:11.654 - INFO - +--- END TEST: Private Information Visible - authenticated - owned (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.820 - INFO - +--- START TEST: Private Information Not Visible - authenticated - not owned [ ]
+20200818 22:55:11.655 - INFO - +--- START TEST: Private Information Not Visible - authenticated - not owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.821 - INFO - +--- END TEST: Private Information Not Visible - authenticated - not owned (2)
+20200818 22:55:11.656 - INFO - +--- END TEST: Private Information Not Visible - authenticated - not owned (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.825 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.010 Details (15)
+20200818 22:55:11.658 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.010 Details (10)
 ==============================================================================
-20200818 22:44:10.826 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.020 Mission [ ]
+20200818 22:55:11.659 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.020 Mission [ ]
 ==============================================================================
-20200818 22:44:10.828 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.660 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.829 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:11.660 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.830 - INFO - +--- START TEST: Mission is shown - anonymous [ ]
+20200818 22:55:11.661 - INFO - +--- START TEST: Mission is shown - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.831 - INFO - +--- END TEST: Mission is shown - anonymous (2)
+20200818 22:55:11.661 - INFO - +--- END TEST: Mission is shown - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.832 - INFO - +--- START TEST: Placeholder when no mission - anonymous [ ]
+20200818 22:55:11.662 - INFO - +--- START TEST: Placeholder when no mission - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.833 - INFO - +--- END TEST: Placeholder when no mission - anonymous (1)
+20200818 22:55:11.662 - INFO - +--- END TEST: Placeholder when no mission - anonymous (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.835 - INFO - +--- START TEST: Mission is shown - authenticated - owned [ ]
+20200818 22:55:11.663 - INFO - +--- START TEST: Mission is shown - authenticated - owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.836 - INFO - +--- END TEST: Mission is shown - authenticated - owned (1)
+20200818 22:55:11.663 - INFO - +--- END TEST: Mission is shown - authenticated - owned (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.837 - INFO - +--- START TEST: Placeholder when no mission - authenticated - owned [ ]
+20200818 22:55:11.664 - INFO - +--- START TEST: Placeholder when no mission - authenticated - owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.838 - INFO - +--- END TEST: Placeholder when no mission - authenticated - owned (1)
+20200818 22:55:11.665 - INFO - +--- END TEST: Placeholder when no mission - authenticated - owned (0)
 ------------------------------------------------------------------------------
-20200818 22:44:10.839 - INFO - +--- START TEST: Mission is shown - authenticated - not owned [ ]
+20200818 22:55:11.665 - INFO - +--- START TEST: Mission is shown - authenticated - not owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.840 - INFO - +--- END TEST: Mission is shown - authenticated - not owned (2)
+20200818 22:55:11.669 - INFO - +--- END TEST: Mission is shown - authenticated - not owned (2)
 ------------------------------------------------------------------------------
-20200818 22:44:10.841 - INFO - +--- START TEST: Placeholder when no mission - authenticated - not owned [ ]
+20200818 22:55:11.672 - INFO - +--- START TEST: Placeholder when no mission - authenticated - not owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:10.842 - INFO - +--- END TEST: Placeholder when no mission - authenticated - not owned (1)
+20200818 22:55:11.672 - INFO - +--- END TEST: Placeholder when no mission - authenticated - not owned (1)
 ------------------------------------------------------------------------------
-20200818 22:44:10.846 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.020 Mission (18)
+20200818 22:55:11.674 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.020 Mission (15)
 ==============================================================================
-20200818 22:44:10.847 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:10.849 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:10.850 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:44:10.850 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (3)
+20200818 22:55:11.675 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:11.676 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:11.676 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:55:11.676 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:44:10.855 - INFO - +- END SUITE: Acceptance.040 GeokretyDetails (456)
+20200818 22:55:11.687 - INFO - +- END SUITE: Acceptance.040 GeokretyDetails (292)
 ==============================================================================
-20200818 22:44:11.217 - INFO - +- START SUITE: Acceptance.050 UsersDetails [ ]
+20200818 22:55:11.982 - INFO - +- START SUITE: Acceptance.050 UsersDetails [ ]
 ==============================================================================
-20200818 22:44:11.218 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:11.219 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:11.221 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:11.224 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:11.224 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
-20200818 22:44:11.224 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
-20200818 22:44:11.225 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (7)
+20200818 22:55:11.983 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:11.983 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:11.984 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:11.986 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:11.986 - INFO - +---- END KW: BuiltIn.Run Keyword If (2)
+20200818 22:55:11.986 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (3)
+20200818 22:55:11.987 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (4)
 ==============================================================================
-20200818 22:44:11.225 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.010 Details [ ]
+20200818 22:55:11.987 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.010 Details [ ]
 ==============================================================================
-20200818 22:44:11.226 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:11.988 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.227 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:11.989 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.229 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
+20200818 22:55:11.989 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.230 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
+20200818 22:55:11.990 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.231 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
+20200818 22:55:11.991 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.232 - INFO - +--- END TEST: Private Information Not Visible - anonymous (1)
+20200818 22:55:11.991 - INFO - +--- END TEST: Private Information Not Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.233 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
+20200818 22:55:11.992 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.234 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
+20200818 22:55:11.992 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.235 - INFO - +--- START TEST: Private Information Visible - authenticated - himself [ ]
+20200818 22:55:11.995 - INFO - +--- START TEST: Private Information Visible - authenticated - himself [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.236 - INFO - +--- END TEST: Private Information Visible - authenticated - himself (1)
+20200818 22:55:11.996 - INFO - +--- END TEST: Private Information Visible - authenticated - himself (2)
 ------------------------------------------------------------------------------
-20200818 22:44:11.237 - INFO - +--- START TEST: Private Information Not Visible - authenticated - someone else [ ]
+20200818 22:55:11.996 - INFO - +--- START TEST: Private Information Not Visible - authenticated - someone else [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.238 - INFO - +--- END TEST: Private Information Not Visible - authenticated - someone else (2)
+20200818 22:55:11.997 - INFO - +--- END TEST: Private Information Not Visible - authenticated - someone else (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.242 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.010 Details (14)
+20200818 22:55:11.999 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.010 Details (10)
 ==============================================================================
-20200818 22:44:11.247 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.020 Awards [ ]
+20200818 22:55:12.001 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.020 Awards [ ]
 ==============================================================================
-20200818 22:44:11.248 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.006 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.249 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.009 - INFO - +--- END TEST: Seed (5)
 ------------------------------------------------------------------------------
-20200818 22:44:11.250 - INFO - +--- START TEST: Panel should be present [ ]
+20200818 22:55:12.014 - INFO - +--- START TEST: Panel should be present [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.251 - INFO - +--- END TEST: Panel should be present (2)
+20200818 22:55:12.014 - INFO - +--- END TEST: Panel should be present (3)
 ------------------------------------------------------------------------------
-20200818 22:44:11.252 - INFO - +--- START TEST: Stats present [ ]
+20200818 22:55:12.015 - INFO - +--- START TEST: Stats present [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.253 - INFO - +--- END TEST: Stats present (1)
+20200818 22:55:12.015 - INFO - +--- END TEST: Stats present (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.254 - INFO - +--- START TEST: Stats are per user [ ]
+20200818 22:55:12.016 - INFO - +--- START TEST: Stats are per user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.255 - INFO - +--- END TEST: Stats are per user (1)
+20200818 22:55:12.016 - INFO - +--- END TEST: Stats are per user (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.256 - INFO - +--- START TEST: Stat created incremented [ ]
+20200818 22:55:12.017 - INFO - +--- START TEST: Stat created incremented [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.257 - INFO - +--- END TEST: Stat created incremented (1)
+20200818 22:55:12.017 - INFO - +--- END TEST: Stat created incremented (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.260 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.020 Awards (16)
+20200818 22:55:12.019 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.020 Awards (19)
 ==============================================================================
-20200818 22:44:11.261 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.030 Statpic [ ]
+20200818 22:55:12.020 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.030 Statpic [ ]
 ==============================================================================
-20200818 22:44:11.263 - INFO - +--- START TEST: Statpic generated on user create [ ]
+20200818 22:55:12.021 - INFO - +--- START TEST: Statpic generated on user create [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.264 - INFO - +--- END TEST: Statpic generated on user create (2)
+20200818 22:55:12.022 - INFO - +--- END TEST: Statpic generated on user create (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.265 - INFO - +--- START TEST: Statpic updated on geokrety create [ ]
+20200818 22:55:12.026 - INFO - +--- START TEST: Statpic updated on geokrety create [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.266 - INFO - +--- END TEST: Statpic updated on geokrety create (1)
+20200818 22:55:12.029 - INFO - +--- END TEST: Statpic updated on geokrety create (5)
 ------------------------------------------------------------------------------
-20200818 22:44:11.269 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.030 Statpic (7)
+20200818 22:55:12.034 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.030 Statpic (13)
 ==============================================================================
-20200818 22:44:11.271 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.040 ProfileEditable [ ]
+20200818 22:55:12.035 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.040 ProfileEditable [ ]
 ==============================================================================
-20200818 22:44:11.272 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.036 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.273 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.036 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.274 - INFO - +--- START TEST: Buttons shown for anonymous users [ ]
+20200818 22:55:12.037 - INFO - +--- START TEST: Buttons shown for anonymous users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.275 - INFO - +--- END TEST: Buttons shown for anonymous users (1)
+20200818 22:55:12.037 - INFO - +--- END TEST: Buttons shown for anonymous users (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.276 - INFO - +--- START TEST: Buttons shown for authenticated users [ ]
+20200818 22:55:12.038 - INFO - +--- START TEST: Buttons shown for authenticated users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.277 - INFO - +--- END TEST: Buttons shown for authenticated users (1)
+20200818 22:55:12.038 - INFO - +--- END TEST: Buttons shown for authenticated users (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.279 - INFO - +--- START TEST: Buttons shown for authenticated users - himself [ ]
+20200818 22:55:12.039 - INFO - +--- START TEST: Buttons shown for authenticated users - himself [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.280 - INFO - +--- END TEST: Buttons shown for authenticated users - himself (1)
+20200818 22:55:12.039 - INFO - +--- END TEST: Buttons shown for authenticated users - himself (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.283 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.040 ProfileEditable (11)
+20200818 22:55:12.041 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.040 ProfileEditable (6)
 ==============================================================================
-20200818 22:44:11.284 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.050 BanerTemplate [ ]
+20200818 22:55:12.048 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.050 BanerTemplate [ ]
 ==============================================================================
-20200818 22:44:11.286 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.055 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.287 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.058 - INFO - +--- END TEST: Seed (5)
 ------------------------------------------------------------------------------
-20200818 22:44:11.288 - INFO - +--- START TEST: Anonymous users are refused [ ]
+20200818 22:55:12.060 - INFO - +--- START TEST: Anonymous users are refused [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.289 - INFO - +--- END TEST: Anonymous users are refused (1)
+20200818 22:55:12.061 - INFO - +--- END TEST: Anonymous users are refused (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.290 - INFO - +--- START TEST: Users cannot edit other user banner [ ]
+20200818 22:55:12.062 - INFO - +--- START TEST: Users cannot edit other user banner [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.291 - INFO - +--- END TEST: Users cannot edit other user banner (1)
+20200818 22:55:12.062 - INFO - +--- END TEST: Users cannot edit other user banner (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.292 - INFO - +--- START TEST: Select banner [ ]
+20200818 22:55:12.063 - INFO - +--- START TEST: Select banner [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.293 - INFO - +--- END TEST: Select banner (1)
+20200818 22:55:12.063 - INFO - +--- END TEST: Select banner (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.296 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.050 BanerTemplate (11)
+20200818 22:55:12.065 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.050 BanerTemplate (21)
 ==============================================================================
-20200818 22:44:11.300 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.060 ObservationArea [ ]
+20200818 22:55:12.077 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.060 ObservationArea [ ]
 ==============================================================================
-20200818 22:44:11.301 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.079 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.302 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.079 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.303 - INFO - +--- START TEST: Anonymous users are refused [ ]
+20200818 22:55:12.080 - INFO - +--- START TEST: Anonymous users are refused [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.304 - INFO - +--- END TEST: Anonymous users are refused (1)
+20200818 22:55:12.080 - INFO - +--- END TEST: Anonymous users are refused (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.305 - INFO - +--- START TEST: Users cannot edit other user observation area [ ]
+20200818 22:55:12.081 - INFO - +--- START TEST: Users cannot edit other user observation area [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.306 - INFO - +--- END TEST: Users cannot edit other user observation area (1)
+20200818 22:55:12.081 - INFO - +--- END TEST: Users cannot edit other user observation area (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.307 - INFO - +--- START TEST: Move pan should update coordinates field [ ]
+20200818 22:55:12.085 - INFO - +--- START TEST: Move pan should update coordinates field [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.309 - INFO - +--- END TEST: Move pan should update coordinates field (1)
+20200818 22:55:12.089 - INFO - +--- END TEST: Move pan should update coordinates field (4)
 ------------------------------------------------------------------------------
-20200818 22:44:11.310 - INFO - +--- START TEST: Observation radius is set to 0 by default [ ]
+20200818 22:55:12.092 - INFO - +--- START TEST: Observation radius is set to 0 by default [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.311 - INFO - +--- END TEST: Observation radius is set to 0 by default (1)
+20200818 22:55:12.092 - INFO - +--- END TEST: Observation radius is set to 0 by default (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.312 - INFO - +--- START TEST: Observation radius between 0-10 [ ]
+20200818 22:55:12.093 - INFO - +--- START TEST: Observation radius between 0-10 [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.313 - INFO - +--- END TEST: Observation radius between 0-10 (1)
+20200818 22:55:12.097 - INFO - +--- END TEST: Observation radius between 0-10 (2)
 ------------------------------------------------------------------------------
-20200818 22:44:11.314 - INFO - +--- START TEST: Observation radius outside range [ ]
+20200818 22:55:12.098 - INFO - +--- START TEST: Observation radius outside range [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.315 - INFO - +--- END TEST: Observation radius outside range (1)
+20200818 22:55:12.098 - INFO - +--- END TEST: Observation radius outside range (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.316 - INFO - +--- START TEST: Map should reflect manual coordinates input [ ]
+20200818 22:55:12.099 - INFO - +--- START TEST: Map should reflect manual coordinates input [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.317 - INFO - +--- END TEST: Map should reflect manual coordinates input (1)
+20200818 22:55:12.100 - INFO - +--- END TEST: Map should reflect manual coordinates input (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.317 - INFO - +--- START TEST: Map circle should reflect observation radius 0 [ ]
+20200818 22:55:12.100 - INFO - +--- START TEST: Map circle should reflect observation radius 0 [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.318 - INFO - +--- END TEST: Map circle should reflect observation radius 0 (1)
+20200818 22:55:12.101 - INFO - +--- END TEST: Map circle should reflect observation radius 0 (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.318 - INFO - +--- START TEST: Map circle should reflect observation radius 1 [ ]
+20200818 22:55:12.101 - INFO - +--- START TEST: Map circle should reflect observation radius 1 [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.319 - INFO - +--- END TEST: Map circle should reflect observation radius 1 (1)
+20200818 22:55:12.102 - INFO - +--- END TEST: Map circle should reflect observation radius 1 (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.319 - INFO - +--- START TEST: Map circle should reflect observation radius 5 [ ]
+20200818 22:55:12.102 - INFO - +--- START TEST: Map circle should reflect observation radius 5 [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.320 - INFO - +--- END TEST: Map circle should reflect observation radius 5 (1)
+20200818 22:55:12.103 - INFO - +--- END TEST: Map circle should reflect observation radius 5 (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.321 - INFO - +--- START TEST: Map circle should reflect observation radius 10 [ ]
+20200818 22:55:12.103 - INFO - +--- START TEST: Map circle should reflect observation radius 10 [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.321 - INFO - +--- END TEST: Map circle should reflect observation radius 10 (1)
+20200818 22:55:12.104 - INFO - +--- END TEST: Map circle should reflect observation radius 10 (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.322 - INFO - +--- START TEST: Check valid coordinates [ ]
+20200818 22:55:12.105 - INFO - +--- START TEST: Check valid coordinates [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.322 - INFO - +--- END TEST: Check valid coordinates (1)
+20200818 22:55:12.105 - INFO - +--- END TEST: Check valid coordinates (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.323 - INFO - +--- START TEST: Check invalid coordinates [ ]
+20200818 22:55:12.109 - INFO - +--- START TEST: Check invalid coordinates [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.323 - INFO - +--- END TEST: Check invalid coordinates (1)
+20200818 22:55:12.112 - INFO - +--- END TEST: Check invalid coordinates (4)
 ------------------------------------------------------------------------------
-20200818 22:44:11.324 - INFO - +--- START TEST: Save Observation Area Preferences [ ]
+20200818 22:55:12.116 - INFO - +--- START TEST: Save Observation Area Preferences [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.324 - INFO - +--- END TEST: Save Observation Area Preferences (1)
+20200818 22:55:12.117 - INFO - +--- END TEST: Save Observation Area Preferences (3)
 ------------------------------------------------------------------------------
-20200818 22:44:11.328 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.060 ObservationArea (29)
+20200818 22:55:12.120 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.060 ObservationArea (53)
 ==============================================================================
-20200818 22:44:11.329 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:11.330 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:11.330 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:44:11.331 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:55:12.122 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:12.126 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:12.128 - INFO - +--- END KW: SeleniumLibrary.Close Browser (2)
+20200818 22:55:12.130 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (8)
 ==============================================================================
-20200818 22:44:11.340 - INFO - +- END SUITE: Acceptance.050 UsersDetails (475)
+20200818 22:55:12.138 - INFO - +- END SUITE: Acceptance.050 UsersDetails (441)
 ==============================================================================
-20200818 22:44:11.747 - INFO - +- START SUITE: Acceptance.060 UserAvatar.robot [ ]
+20200818 22:55:12.462 - INFO - +- START SUITE: Acceptance.060 UserAvatar.robot [ ]
 ==============================================================================
-20200818 22:44:11.748 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:11.748 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:11.750 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:11.753 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:11.753 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
-20200818 22:44:11.754 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (6)
-20200818 22:44:11.754 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (7)
+20200818 22:55:12.463 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:12.463 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:12.464 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:12.466 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:12.466 - INFO - +---- END KW: BuiltIn.Run Keyword If (2)
+20200818 22:55:12.466 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (3)
+20200818 22:55:12.467 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (4)
 ==============================================================================
-20200818 22:44:11.754 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.010 Access [ ]
+20200818 22:55:12.467 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.010 Access [ ]
 ==============================================================================
-20200818 22:44:11.755 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.468 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.756 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.468 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.758 - INFO - +--- START TEST: Anonymous should not see draggable [ ]
+20200818 22:55:12.469 - INFO - +--- START TEST: Anonymous should not see draggable [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.759 - INFO - +--- END TEST: Anonymous should not see draggable (1)
+20200818 22:55:12.469 - INFO - +--- END TEST: Anonymous should not see draggable (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.760 - INFO - +--- START TEST: User himself should see draggable [ ]
+20200818 22:55:12.470 - INFO - +--- START TEST: User himself should see draggable [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.761 - INFO - +--- END TEST: User himself should see draggable (2)
+20200818 22:55:12.470 - INFO - +--- END TEST: User himself should see draggable (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.762 - INFO - +--- START TEST: Authenticated should not see draggable for other users [ ]
+20200818 22:55:12.471 - INFO - +--- START TEST: Authenticated should not see draggable for other users [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.763 - INFO - +--- END TEST: Authenticated should not see draggable for other users (2)
+20200818 22:55:12.471 - INFO - +--- END TEST: Authenticated should not see draggable for other users (0)
 ------------------------------------------------------------------------------
-20200818 22:44:11.766 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.010 Access (10)
+20200818 22:55:12.474 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.010 Access (5)
 ==============================================================================
-20200818 22:44:11.768 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload [ ]
+20200818 22:55:12.479 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload [ ]
 ==============================================================================
-20200818 22:44:11.770 - INFO - +--- START TEST: Upload image via button [ ]
+20200818 22:55:12.484 - INFO - +--- START TEST: Upload image via button [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.771 - INFO - +--- END TEST: Upload image via button (1)
+20200818 22:55:12.485 - INFO - +--- END TEST: Upload image via button (3)
 ------------------------------------------------------------------------------
-20200818 22:44:11.772 - INFO - +--- START TEST: Upload image via Drag/Drop - same page [ ]
+20200818 22:55:12.485 - INFO - +--- START TEST: Upload image via Drag/Drop - same page [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.773 - INFO - +--- END TEST: Upload image via Drag/Drop - same page (1)
+20200818 22:55:12.486 - INFO - +--- END TEST: Upload image via Drag/Drop - same page (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.776 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload (7)
+20200818 22:55:12.487 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload (11)
 ==============================================================================
-20200818 22:44:11.777 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain [ ]
+20200818 22:55:12.488 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain [ ]
 ==============================================================================
-20200818 22:44:11.779 - INFO - +--- START TEST: Set image as main avatar [ ]
+20200818 22:55:12.489 - INFO - +--- START TEST: Set image as main avatar [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.780 - INFO - +--- END TEST: Set image as main avatar (1)
+20200818 22:55:12.490 - INFO - +--- END TEST: Set image as main avatar (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.781 - INFO - +--- START TEST: Set second image as main avatar [ ]
+20200818 22:55:12.494 - INFO - +--- START TEST: Set second image as main avatar [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.782 - INFO - +--- END TEST: Set second image as main avatar (2)
+20200818 22:55:12.497 - INFO - +--- END TEST: Set second image as main avatar (4)
 ------------------------------------------------------------------------------
-20200818 22:44:11.786 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain (7)
+20200818 22:55:12.501 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain (13)
 ==============================================================================
-20200818 22:44:11.787 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption [ ]
+20200818 22:55:12.502 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption [ ]
 ==============================================================================
-20200818 22:44:11.788 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.503 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.789 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.503 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.791 - INFO - +--- START TEST: Define Picture Caption [ ]
+20200818 22:55:12.504 - INFO - +--- START TEST: Define Picture Caption [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.792 - INFO - +--- END TEST: Define Picture Caption (1)
+20200818 22:55:12.504 - INFO - +--- END TEST: Define Picture Caption (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.795 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption (7)
+20200818 22:55:12.509 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption (3)
 ==============================================================================
-20200818 22:44:11.797 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture [ ]
+20200818 22:55:12.516 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture [ ]
 ==============================================================================
-20200818 22:44:11.799 - INFO - +--- START TEST: Delete Picture [ ]
+20200818 22:55:12.516 - INFO - +--- START TEST: Delete Picture [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.800 - INFO - +--- END TEST: Delete Picture (2)
+20200818 22:55:12.517 - INFO - +--- END TEST: Delete Picture (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.802 - INFO - +--- START TEST: Delete 1 picture should leave other present [ ]
+20200818 22:55:12.521 - INFO - +--- START TEST: Delete 1 picture should leave other present [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.803 - INFO - +--- END TEST: Delete 1 picture should leave other present (2)
+20200818 22:55:12.523 - INFO - +--- END TEST: Delete 1 picture should leave other present (4)
 ------------------------------------------------------------------------------
-20200818 22:44:11.808 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture (9)
+20200818 22:55:12.524 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture (13)
 ==============================================================================
-20200818 22:44:11.810 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage [ ]
+20200818 22:55:12.525 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage [ ]
 ==============================================================================
-20200818 22:44:11.812 - INFO - +--- START TEST: Should be shown on Homepage [ ]
+20200818 22:55:12.526 - INFO - +--- START TEST: Should be shown on Homepage [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:11.814 - INFO - +--- END TEST: Should be shown on Homepage (2)
+20200818 22:55:12.526 - INFO - +--- END TEST: Should be shown on Homepage (1)
 ------------------------------------------------------------------------------
-20200818 22:44:11.818 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage (7)
+20200818 22:55:12.528 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage (3)
 ==============================================================================
-20200818 22:44:11.819 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:11.821 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:11.822 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:44:11.823 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (3)
+20200818 22:55:12.529 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:12.529 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:12.530 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:55:12.530 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:44:11.830 - INFO - +- END SUITE: Acceptance.060 UserAvatar.robot (482)
+20200818 22:55:12.533 - INFO - +- END SUITE: Acceptance.060 UserAvatar.robot (392)
 ==============================================================================
-20200818 22:44:12.203 - INFO - +- START SUITE: Acceptance.070 UserPassword [ ]
+20200818 22:55:12.799 - INFO - +- START SUITE: Acceptance.070 UserPassword [ ]
 ==============================================================================
-20200818 22:44:12.203 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:12.204 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:12.204 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:12.207 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:12.208 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
-20200818 22:44:12.208 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (4)
-20200818 22:44:12.208 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (5)
+20200818 22:55:12.800 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:12.801 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:12.801 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:12.803 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:12.803 - INFO - +---- END KW: BuiltIn.Run Keyword If (2)
+20200818 22:55:12.803 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (2)
+20200818 22:55:12.804 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (4)
 ==============================================================================
-20200818 22:44:12.209 - INFO - +-- START SUITE: Acceptance.070 UserPassword.010 Access [ ]
+20200818 22:55:12.804 - INFO - +-- START SUITE: Acceptance.070 UserPassword.010 Access [ ]
 ==============================================================================
-20200818 22:44:12.210 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:12.805 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.211 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:12.805 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.212 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:55:12.806 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.213 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:55:12.806 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.214 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:55:12.807 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.214 - INFO - +--- END TEST: User himself can access form - Form (1)
+20200818 22:55:12.807 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.215 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:55:12.808 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.216 - INFO - +--- END TEST: User himself can access form - Modal (1)
+20200818 22:55:12.808 - INFO - +--- END TEST: User himself can access form - Modal (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.217 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:55:12.809 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.217 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:55:12.810 - INFO - +--- END TEST: Expired session ask to login (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.220 - INFO - +-- END SUITE: Acceptance.070 UserPassword.010 Access (10)
+20200818 22:55:12.820 - INFO - +-- END SUITE: Acceptance.070 UserPassword.010 Access (9)
 ==============================================================================
-20200818 22:44:12.221 - INFO - +-- START SUITE: Acceptance.070 UserPassword.020 ChangeValid [ ]
+20200818 22:55:12.821 - INFO - +-- START SUITE: Acceptance.070 UserPassword.020 ChangeValid [ ]
 ==============================================================================
-20200818 22:44:12.222 - INFO - +--- START TEST: Valid password change - modal [ ]
+20200818 22:55:12.822 - INFO - +--- START TEST: Valid password change - modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.223 - INFO - +--- END TEST: Valid password change - modal (1)
+20200818 22:55:12.823 - INFO - +--- END TEST: Valid password change - modal (0)
 ------------------------------------------------------------------------------
-20200818 22:44:12.224 - INFO - +--- START TEST: Valid password change - page form [ ]
+20200818 22:55:12.823 - INFO - +--- START TEST: Valid password change - page form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.224 - INFO - +--- END TEST: Valid password change - page form (1)
+20200818 22:55:12.824 - INFO - +--- END TEST: Valid password change - page form (0)
 ------------------------------------------------------------------------------
-20200818 22:44:12.225 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
+20200818 22:55:12.824 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.226 - INFO - +--- END TEST: Confirmation mail should be sent (1)
+20200818 22:55:12.825 - INFO - +--- END TEST: Confirmation mail should be sent (0)
 ------------------------------------------------------------------------------
-20200818 22:44:12.228 - INFO - +-- END SUITE: Acceptance.070 UserPassword.020 ChangeValid (7)
+20200818 22:55:12.833 - INFO - +-- END SUITE: Acceptance.070 UserPassword.020 ChangeValid (5)
 ==============================================================================
-20200818 22:44:12.230 - INFO - +-- START SUITE: Acceptance.070 UserPassword.030 ChangeInvalid [ ]
+20200818 22:55:12.837 - INFO - +-- START SUITE: Acceptance.070 UserPassword.030 ChangeInvalid [ ]
 ==============================================================================
-20200818 22:44:12.231 - INFO - +--- START TEST: Wrong old password [ ]
+20200818 22:55:12.838 - INFO - +--- START TEST: Wrong old password [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.231 - INFO - +--- END TEST: Wrong old password (1)
+20200818 22:55:12.838 - INFO - +--- END TEST: Wrong old password (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.232 - INFO - +--- START TEST: New password does not match confirm [ ]
+20200818 22:55:12.839 - INFO - +--- START TEST: New password does not match confirm [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.233 - INFO - +--- END TEST: New password does not match confirm (1)
+20200818 22:55:12.839 - INFO - +--- END TEST: New password does not match confirm (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.235 - INFO - +-- END SUITE: Acceptance.070 UserPassword.030 ChangeInvalid (5)
+20200818 22:55:12.841 - INFO - +-- END SUITE: Acceptance.070 UserPassword.030 ChangeInvalid (6)
 ==============================================================================
-20200818 22:44:12.236 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:12.237 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:12.238 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:44:12.238 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:55:12.843 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:12.846 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:12.848 - INFO - +--- END KW: SeleniumLibrary.Close Browser (2)
+20200818 22:55:12.851 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (7)
 ==============================================================================
-20200818 22:44:12.241 - INFO - +- END SUITE: Acceptance.070 UserPassword (407)
+20200818 22:55:12.853 - INFO - +- END SUITE: Acceptance.070 UserPassword (318)
 ==============================================================================
-20200818 22:44:12.597 - INFO - +- START SUITE: Acceptance.080 UserLanguageChange [ ]
+20200818 22:55:13.110 - INFO - +- START SUITE: Acceptance.080 UserLanguageChange [ ]
 ==============================================================================
-20200818 22:44:12.598 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:12.599 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:12.600 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:12.604 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:12.604 - INFO - +---- END KW: BuiltIn.Run Keyword If (4)
-20200818 22:44:12.605 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (6)
-20200818 22:44:12.605 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (7)
+20200818 22:55:13.110 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:13.111 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:13.112 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:13.114 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:13.114 - INFO - +---- END KW: BuiltIn.Run Keyword If (2)
+20200818 22:55:13.114 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (3)
+20200818 22:55:13.114 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (4)
 ==============================================================================
-20200818 22:44:12.606 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.010 Access [ ]
+20200818 22:55:13.115 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.010 Access [ ]
 ==============================================================================
-20200818 22:44:12.607 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:13.116 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.608 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:13.116 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.609 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:55:13.117 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.610 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:55:13.118 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.611 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:55:13.118 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.612 - INFO - +--- END TEST: User himself can access form - Form (1)
+20200818 22:55:13.119 - INFO - +--- END TEST: User himself can access form - Form (0)
 ------------------------------------------------------------------------------
-20200818 22:44:12.612 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:55:13.119 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.613 - INFO - +--- END TEST: User himself can access form - Modal (1)
+20200818 22:55:13.120 - INFO - +--- END TEST: User himself can access form - Modal (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.614 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:55:13.120 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.615 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:55:13.121 - INFO - +--- END TEST: Expired session ask to login (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.617 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.010 Access (9)
+20200818 22:55:13.123 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.010 Access (7)
 ==============================================================================
-20200818 22:44:12.618 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.020 Change [ ]
+20200818 22:55:13.123 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.020 Change [ ]
 ==============================================================================
-20200818 22:44:12.619 - INFO - +--- START TEST: Language should be changed immediately [ ]
+20200818 22:55:13.124 - INFO - +--- START TEST: Language should be changed immediately [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.620 - INFO - +--- END TEST: Language should be changed immediately (1)
+20200818 22:55:13.124 - INFO - +--- END TEST: Language should be changed immediately (0)
 ------------------------------------------------------------------------------
-20200818 22:44:12.621 - INFO - +--- START TEST: Language should be changed on sign in [ ]
+20200818 22:55:13.125 - INFO - +--- START TEST: Language should be changed on sign in [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.622 - INFO - +--- END TEST: Language should be changed on sign in (1)
+20200818 22:55:13.128 - INFO - +--- END TEST: Language should be changed on sign in (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.623 - INFO - +--- START TEST: Language should be changed on root domain access [ ]
+20200818 22:55:13.132 - INFO - +--- START TEST: Language should be changed on root domain access [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.624 - INFO - +--- END TEST: Language should be changed on root domain access (1)
+20200818 22:55:13.136 - INFO - +--- END TEST: Language should be changed on root domain access (5)
 ------------------------------------------------------------------------------
-20200818 22:44:12.626 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.020 Change (7)
+20200818 22:55:13.139 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.020 Change (14)
 ==============================================================================
-20200818 22:44:12.627 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:12.628 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:12.628 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:44:12.629 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:55:13.139 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:13.140 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:13.140 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:55:13.140 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:44:12.632 - INFO - +- END SUITE: Acceptance.080 UserLanguageChange (387)
+20200818 22:55:13.143 - INFO - +- END SUITE: Acceptance.080 UserLanguageChange (286)
 ==============================================================================
-20200818 22:44:12.988 - INFO - +- START SUITE: Acceptance.090 UserSecidChange [ ]
+20200818 22:55:13.503 - INFO - +- START SUITE: Acceptance.090 UserSecidChange [ ]
 ==============================================================================
-20200818 22:44:12.989 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:12.990 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:12.991 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:12.995 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:12.995 - INFO - +---- END KW: BuiltIn.Run Keyword If (4)
-20200818 22:44:12.996 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
-20200818 22:44:12.996 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (7)
+20200818 22:55:13.504 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:13.505 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:13.506 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:13.510 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:13.510 - INFO - +---- END KW: BuiltIn.Run Keyword If (4)
+20200818 22:55:13.510 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
+20200818 22:55:13.510 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (6)
 ==============================================================================
-20200818 22:44:12.997 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.010 Access [ ]
+20200818 22:55:13.511 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.010 Access [ ]
 ==============================================================================
-20200818 22:44:12.998 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:13.512 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:12.998 - INFO - +--- END TEST: Seed (1)
+20200818 22:55:13.513 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:12.999 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:55:13.514 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.000 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:55:13.515 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.001 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:55:13.516 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.002 - INFO - +--- END TEST: User himself can access form - Form (1)
+20200818 22:55:13.517 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.003 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:55:13.518 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.003 - INFO - +--- END TEST: User himself can access form - Modal (1)
+20200818 22:55:13.519 - INFO - +--- END TEST: User himself can access form - Modal (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.004 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:55:13.520 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.005 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:55:13.521 - INFO - +--- END TEST: Expired session ask to login (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.008 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.010 Access (10)
+20200818 22:55:13.525 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.010 Access (12)
 ==============================================================================
-20200818 22:44:13.010 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.020 Change [ ]
+20200818 22:55:13.527 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.020 Change [ ]
 ==============================================================================
-20200818 22:44:13.016 - INFO - +--- START TEST: Refresh should display a message [ ]
+20200818 22:55:13.528 - INFO - +--- START TEST: Refresh should display a message [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.021 - INFO - +--- END TEST: Refresh should display a message (6)
+20200818 22:55:13.529 - INFO - +--- END TEST: Refresh should display a message (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.031 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.020 Change (15)
+20200818 22:55:13.532 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.020 Change (5)
 ==============================================================================
-20200818 22:44:13.036 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:13.039 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:13.040 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:44:13.042 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (6)
+20200818 22:55:13.533 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:13.534 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:13.535 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
+20200818 22:55:13.536 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (3)
 ==============================================================================
-20200818 22:44:13.054 - INFO - +- END SUITE: Acceptance.090 UserSecidChange (410)
+20200818 22:55:13.540 - INFO - +- END SUITE: Acceptance.090 UserSecidChange (393)
 ==============================================================================
-20200818 22:44:13.311 - INFO - +- START SUITE: Acceptance.100 UserEmailChange [ ]
+20200818 22:55:13.897 - INFO - +- START SUITE: Acceptance.100 UserEmailChange [ ]
 ==============================================================================
-20200818 22:44:13.312 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:44:13.312 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:44:13.313 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:44:13.316 - FAIL - Variable '${BS_ENABLED}' not found.
-20200818 22:44:13.317 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
-20200818 22:44:13.317 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
-20200818 22:44:13.317 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (5)
+20200818 22:55:13.898 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:55:13.899 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:55:13.900 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:55:13.903 - FAIL - Variable '${BS_ENABLED}' not found.
+20200818 22:55:13.903 - INFO - +---- END KW: BuiltIn.Run Keyword If (3)
+20200818 22:55:13.904 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (5)
+20200818 22:55:13.904 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (6)
 ==============================================================================
-20200818 22:44:13.318 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.010 Access [ ]
+20200818 22:55:13.904 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.010 Access [ ]
 ==============================================================================
-20200818 22:44:13.319 - INFO - +--- START TEST: Seed [ ]
+20200818 22:55:13.905 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.320 - INFO - +--- END TEST: Seed (0)
+20200818 22:55:13.906 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.320 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:55:13.908 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.321 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:55:13.909 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.321 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:55:13.910 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.322 - INFO - +--- END TEST: User himself can access form - Form (1)
+20200818 22:55:13.911 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.323 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:55:13.912 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.323 - INFO - +--- END TEST: User himself can access form - Modal (1)
+20200818 22:55:13.913 - INFO - +--- END TEST: User himself can access form - Modal (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.324 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:55:13.914 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.324 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:55:13.915 - INFO - +--- END TEST: Expired session ask to login (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.326 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.010 Access (8)
+20200818 22:55:13.919 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.010 Access (12)
 ==============================================================================
-20200818 22:44:13.327 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.020 ChangeValid [ ]
+20200818 22:55:13.920 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.020 ChangeValid [ ]
 ==============================================================================
-20200818 22:44:13.328 - INFO - +--- START TEST: Valid email change - modal [ ]
+20200818 22:55:13.922 - INFO - +--- START TEST: Valid email change - modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.328 - INFO - +--- END TEST: Valid email change - modal (1)
+20200818 22:55:13.923 - INFO - +--- END TEST: Valid email change - modal (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.329 - INFO - +--- START TEST: Valid email change - page form [ ]
+20200818 22:55:13.924 - INFO - +--- START TEST: Valid email change - page form [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.329 - INFO - +--- END TEST: Valid email change - page form (1)
+20200818 22:55:13.925 - INFO - +--- END TEST: Valid email change - page form (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.330 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
+20200818 22:55:13.927 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.330 - INFO - +--- END TEST: Confirmation mail should be sent (0)
+20200818 22:55:13.928 - INFO - +--- END TEST: Confirmation mail should be sent (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.332 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.020 ChangeValid (5)
+20200818 22:55:13.931 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.020 ChangeValid (10)
 ==============================================================================
-20200818 22:44:13.333 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse [ ]
+20200818 22:55:13.933 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse [ ]
 ==============================================================================
-20200818 22:44:13.334 - INFO - +--- START TEST: OLD mail REFUSE change [ ]
+20200818 22:55:13.934 - INFO - +--- START TEST: OLD mail REFUSE change [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.334 - INFO - +--- END TEST: OLD mail REFUSE change (1)
+20200818 22:55:13.935 - INFO - +--- END TEST: OLD mail REFUSE change (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.335 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
+20200818 22:55:13.936 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.335 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (0)
+20200818 22:55:13.938 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.336 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:55:13.939 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.337 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (0)
+20200818 22:55:13.940 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.338 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse (5)
+20200818 22:55:13.943 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse (10)
 ==============================================================================
-20200818 22:44:13.339 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept [ ]
+20200818 22:55:13.946 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept [ ]
 ==============================================================================
-20200818 22:44:13.340 - INFO - +--- START TEST: OLD mail ACCEPT change [ ]
+20200818 22:55:13.947 - INFO - +--- START TEST: OLD mail ACCEPT change [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.341 - INFO - +--- END TEST: OLD mail ACCEPT change (0)
+20200818 22:55:13.949 - INFO - +--- END TEST: OLD mail ACCEPT change (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.341 - INFO - +--- START TEST: On accept confirmation mails should be sent [ ]
+20200818 22:55:13.950 - INFO - +--- START TEST: On accept confirmation mails should be sent [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.342 - INFO - +--- END TEST: On accept confirmation mails should be sent (1)
+20200818 22:55:13.952 - INFO - +--- END TEST: On accept confirmation mails should be sent (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.342 - INFO - +--- START TEST: Token is then disabled for old email [ ]
+20200818 22:55:13.953 - INFO - +--- START TEST: Token is then disabled for old email [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.343 - INFO - +--- END TEST: Token is then disabled for old email (1)
+20200818 22:55:13.954 - INFO - +--- END TEST: Token is then disabled for old email (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.344 - INFO - +--- START TEST: Token is then disabled for new email [ ]
+20200818 22:55:13.956 - INFO - +--- START TEST: Token is then disabled for new email [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.344 - INFO - +--- END TEST: Token is then disabled for new email (1)
+20200818 22:55:13.957 - INFO - +--- END TEST: Token is then disabled for new email (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.346 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept (6)
+20200818 22:55:13.962 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept (15)
 ==============================================================================
-20200818 22:44:13.347 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept [ ]
+20200818 22:55:13.964 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept [ ]
 ==============================================================================
-20200818 22:44:13.347 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
+20200818 22:55:13.966 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.348 - INFO - +--- END TEST: NEW mail ACCEPT change (1)
+20200818 22:55:13.967 - INFO - +--- END TEST: NEW mail ACCEPT change (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.349 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
+20200818 22:55:13.969 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.349 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
+20200818 22:55:13.970 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.350 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:55:13.972 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.350 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
+20200818 22:55:13.973 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.352 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept (5)
+20200818 22:55:13.977 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept (12)
 ==============================================================================
-20200818 22:44:13.353 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse [ ]
+20200818 22:55:13.979 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse [ ]
 ==============================================================================
-20200818 22:44:13.354 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
+20200818 22:55:13.981 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.354 - INFO - +--- END TEST: NEW mail ACCEPT change (1)
+20200818 22:55:13.982 - INFO - +--- END TEST: NEW mail ACCEPT change (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.355 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
+20200818 22:55:13.984 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.355 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
+20200818 22:55:13.985 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.356 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:55:13.987 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.356 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
+20200818 22:55:13.988 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.358 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse (5)
+20200818 22:55:13.993 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse (12)
 ==============================================================================
-20200818 22:44:13.359 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.070 Dismiss [ ]
+20200818 22:55:13.995 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.070 Dismiss [ ]
 ==============================================================================
-20200818 22:44:13.360 - INFO - +--- START TEST: Dismiss button doesn't invalidate the token [ ]
+20200818 22:55:13.997 - INFO - +--- START TEST: Dismiss button doesn't invalidate the token [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.360 - INFO - +--- END TEST: Dismiss button doesn't invalidate the token (1)
+20200818 22:55:13.999 - INFO - +--- END TEST: Dismiss button doesn't invalidate the token (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.361 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:55:14.001 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.362 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
+20200818 22:55:14.003 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (2)
 ------------------------------------------------------------------------------
-20200818 22:44:13.364 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.070 Dismiss (5)
+20200818 22:55:14.006 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.070 Dismiss (11)
 ==============================================================================
-20200818 22:44:13.365 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.080 DailyMails [ ]
+20200818 22:55:14.007 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.080 DailyMails [ ]
 ==============================================================================
-20200818 22:44:13.366 - INFO - +--- START TEST: Disable daily mails [ ]
+20200818 22:55:14.007 - INFO - +--- START TEST: Disable daily mails [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.367 - INFO - +--- END TEST: Disable daily mails (1)
+20200818 22:55:14.008 - INFO - +--- END TEST: Disable daily mails (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.368 - INFO - +--- START TEST: Enable daily mails [ ]
+20200818 22:55:14.008 - INFO - +--- START TEST: Enable daily mails [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.368 - INFO - +--- END TEST: Enable daily mails (1)
+20200818 22:55:14.009 - INFO - +--- END TEST: Enable daily mails (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.370 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.080 DailyMails (5)
+20200818 22:55:14.010 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.080 DailyMails (3)
 ==============================================================================
-20200818 22:44:13.371 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken [ ]
+20200818 22:55:14.011 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken [ ]
 ==============================================================================
-20200818 22:44:13.372 - INFO - +--- START TEST: Email address already PENDING by user himself [ ]
+20200818 22:55:14.012 - INFO - +--- START TEST: Email address already PENDING by user himself [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.373 - INFO - +--- END TEST: Email address already PENDING by user himself (1)
+20200818 22:55:14.012 - INFO - +--- END TEST: Email address already PENDING by user himself (0)
 ------------------------------------------------------------------------------
-20200818 22:44:13.374 - INFO - +--- START TEST: Email address already USED by another user [ ]
+20200818 22:55:14.026 - INFO - +--- START TEST: Email address already USED by another user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.375 - INFO - +--- END TEST: Email address already USED by another user (0)
+20200818 22:55:14.030 - INFO - +--- END TEST: Email address already USED by another user (17)
 ------------------------------------------------------------------------------
-20200818 22:44:13.375 - INFO - +--- START TEST: Email address already PENDING by another user [ ]
+20200818 22:55:14.031 - INFO - +--- START TEST: Email address already PENDING by another user [ ]
 ------------------------------------------------------------------------------
-20200818 22:44:13.376 - INFO - +--- END TEST: Email address already PENDING by another user (1)
+20200818 22:55:14.031 - INFO - +--- END TEST: Email address already PENDING by another user (1)
 ------------------------------------------------------------------------------
-20200818 22:44:13.378 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken (6)
+20200818 22:55:14.033 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken (21)
 ==============================================================================
-20200818 22:44:13.379 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:44:13.380 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:44:13.380 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:44:13.380 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
+20200818 22:55:14.044 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:55:14.045 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:55:14.045 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:55:14.046 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:44:13.386 - INFO - +- END SUITE: Acceptance.100 UserEmailChange (326)
+20200818 22:55:14.063 - INFO - +- END SUITE: Acceptance.100 UserEmailChange (506)
 ==============================================================================
-20200818 22:44:13.406 - INFO - + END SUITE: Acceptance (5089)
+20200818 22:55:14.097 - INFO - + END SUITE: Acceptance (4488)
 ==============================================================================
