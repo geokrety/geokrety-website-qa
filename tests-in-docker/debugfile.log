@@ -1,27 +1,27 @@
 ==============================================================================
-20200818 22:04:01.793 - INFO - + START SUITE: Acceptance [ ]
+20200818 22:10:40.107 - INFO - + START SUITE: Acceptance [ ]
 ==============================================================================
-20200818 22:04:01.996 - INFO - +- START SUITE: Acceptance.001 HomePage [ ]
+20200818 22:10:40.281 - INFO - +- START SUITE: Acceptance.001 HomePage [ ]
 ==============================================================================
-20200818 22:04:02.001 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:02.002 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:02.003 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:02.003 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:02.004 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:02.005 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:02.005 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:02.005 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:02.006 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:02.006 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:02.006 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:02.006 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200818 22:04:02.006 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:02.007 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:02.459 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:02.460 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:02.460 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200818 22:04:02.461 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:02.461 - DEBUG - Traceback (most recent call last):
+20200818 22:10:40.282 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:40.283 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:40.284 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:40.285 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:40.286 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:40.287 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:40.287 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:40.288 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:40.288 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:40.288 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:40.289 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:40.289 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:40.289 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:40.290 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:40.692 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:40.693 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:40.693 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200818 22:10:40.694 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:40.694 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -46,62 +46,62 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:02.461 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (455)
-20200818 22:04:02.462 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (458)
-20200818 22:04:02.462 - INFO - +------ END KW: BuiltIn.Run Keyword If (458)
-20200818 22:04:02.462 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (459)
-20200818 22:04:02.462 - INFO - +---- END KW: BuiltIn.Run Keyword If (459)
-20200818 22:04:02.462 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (460)
-20200818 22:04:02.462 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (461)
+20200818 22:10:40.694 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (405)
+20200818 22:10:40.695 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (409)
+20200818 22:10:40.695 - INFO - +------ END KW: BuiltIn.Run Keyword If (409)
+20200818 22:10:40.695 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (410)
+20200818 22:10:40.695 - INFO - +---- END KW: BuiltIn.Run Keyword If (411)
+20200818 22:10:40.695 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (412)
+20200818 22:10:40.695 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (413)
 ==============================================================================
-20200818 22:04:02.463 - INFO - +-- START SUITE: Acceptance.001 HomePage.000 Languages [ ]
+20200818 22:10:40.696 - INFO - +-- START SUITE: Acceptance.001 HomePage.000 Languages [ ]
 ==============================================================================
-20200818 22:04:02.464 - INFO - +--- START TEST: Welcome: (EN) [ ]
+20200818 22:10:40.697 - INFO - +--- START TEST: Welcome: (EN) [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.465 - INFO - +--- END TEST: Welcome: (EN) (1)
+20200818 22:10:40.698 - INFO - +--- END TEST: Welcome: (EN) (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.466 - INFO - +--- START TEST: Welcome: (FR) [ ]
+20200818 22:10:40.698 - INFO - +--- START TEST: Welcome: (FR) [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.466 - INFO - +--- END TEST: Welcome: (FR) (1)
+20200818 22:10:40.699 - INFO - +--- END TEST: Welcome: (FR) (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.468 - INFO - +-- END SUITE: Acceptance.001 HomePage.000 Languages (4)
+20200818 22:10:40.701 - INFO - +-- END SUITE: Acceptance.001 HomePage.000 Languages (5)
 ==============================================================================
-20200818 22:04:02.469 - INFO - +-- START SUITE: Acceptance.001 HomePage.010 Found GeoKret [ ]
+20200818 22:10:40.702 - INFO - +-- START SUITE: Acceptance.001 HomePage.010 Found GeoKret [ ]
 ==============================================================================
-20200818 22:04:02.470 - INFO - +--- START TEST: Welcome: (EN) input geokret code [ ]
+20200818 22:10:40.703 - INFO - +--- START TEST: Welcome: (EN) input geokret code [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.470 - INFO - +--- END TEST: Welcome: (EN) input geokret code (1)
+20200818 22:10:40.704 - INFO - +--- END TEST: Welcome: (EN) input geokret code (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.472 - INFO - +-- END SUITE: Acceptance.001 HomePage.010 Found GeoKret (3)
+20200818 22:10:40.705 - INFO - +-- END SUITE: Acceptance.001 HomePage.010 Found GeoKret (3)
 ==============================================================================
-20200818 22:04:02.472 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:02.473 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:02.473 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:02.474 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:10:40.706 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:40.706 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:40.707 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
+20200818 22:10:40.707 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:04:02.476 - INFO - +- END SUITE: Acceptance.001 HomePage (680)
+20200818 22:10:40.709 - INFO - +- END SUITE: Acceptance.001 HomePage (600)
 ==============================================================================
-20200818 22:04:02.507 - INFO - +- START SUITE: Acceptance.010 UserRegistration [ ]
+20200818 22:10:40.765 - INFO - +- START SUITE: Acceptance.010 UserRegistration [ ]
 ==============================================================================
-20200818 22:04:02.508 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:02.508 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:02.509 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:02.510 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:02.511 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:02.511 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:02.512 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:02.512 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:02.513 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:02.513 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:02.513 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:02.514 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:02.514 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:02.515 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:02.843 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:02.843 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:02.844 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200818 22:04:02.844 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:02.844 - DEBUG - Traceback (most recent call last):
+20200818 22:10:40.767 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:40.768 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:40.770 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:40.772 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:40.774 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:40.776 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:40.777 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:40.777 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:40.778 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:40.778 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:40.778 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:40.778 - INFO - +-------- END KW: BuiltIn.Log (0)
+20200818 22:10:40.778 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:40.779 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:41.068 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:41.068 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:41.068 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200818 22:10:41.069 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:41.069 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -126,126 +126,126 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:02.844 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (330)
-20200818 22:04:02.844 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (333)
-20200818 22:04:02.845 - INFO - +------ END KW: BuiltIn.Run Keyword If (334)
-20200818 22:04:02.845 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (335)
-20200818 22:04:02.845 - INFO - +---- END KW: BuiltIn.Run Keyword If (336)
-20200818 22:04:02.845 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (337)
-20200818 22:04:02.845 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (337)
+20200818 22:10:41.069 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (291)
+20200818 22:10:41.069 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (293)
+20200818 22:10:41.069 - INFO - +------ END KW: BuiltIn.Run Keyword If (295)
+20200818 22:10:41.069 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (297)
+20200818 22:10:41.070 - INFO - +---- END KW: BuiltIn.Run Keyword If (299)
+20200818 22:10:41.070 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (302)
+20200818 22:10:41.070 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (304)
 ==============================================================================
-20200818 22:04:02.846 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.000 Create Account [ ]
+20200818 22:10:41.070 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.000 Create Account [ ]
 ==============================================================================
-20200818 22:04:02.846 - INFO - +--- START TEST: Create first account [ ]
+20200818 22:10:41.071 - INFO - +--- START TEST: Create first account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.847 - INFO - +--- END TEST: Create first account (1)
+20200818 22:10:41.072 - INFO - +--- END TEST: Create first account (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.848 - INFO - +--- START TEST: Activate account [ ]
+20200818 22:10:41.073 - INFO - +--- START TEST: Activate account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.848 - INFO - +--- END TEST: Activate account (1)
+20200818 22:10:41.074 - INFO - +--- END TEST: Activate account (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.849 - INFO - +--- START TEST: Email activation confirmation received [ ]
+20200818 22:10:41.074 - INFO - +--- START TEST: Email activation confirmation received [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.850 - INFO - +--- END TEST: Email activation confirmation received (0)
+20200818 22:10:41.075 - INFO - +--- END TEST: Email activation confirmation received (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.850 - INFO - +--- START TEST: Sign In user [ ]
+20200818 22:10:41.076 - INFO - +--- START TEST: Sign In user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.851 - INFO - +--- END TEST: Sign In user (1)
+20200818 22:10:41.076 - INFO - +--- END TEST: Sign In user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.852 - INFO - +--- START TEST: Sign Out user [ ]
+20200818 22:10:41.077 - INFO - +--- START TEST: Sign Out user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.852 - INFO - +--- END TEST: Sign Out user (1)
+20200818 22:10:41.078 - INFO - +--- END TEST: Sign Out user (0)
 ------------------------------------------------------------------------------
-20200818 22:04:02.854 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.000 Create Account (8)
+20200818 22:10:41.082 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.000 Create Account (8)
 ==============================================================================
-20200818 22:04:02.855 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists [ ]
+20200818 22:10:41.083 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists [ ]
 ==============================================================================
-20200818 22:04:02.856 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:10:41.086 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.856 - INFO - +--- END TEST: Seed an account (1)
+20200818 22:10:41.086 - INFO - +--- END TEST: Seed an account (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.857 - INFO - +--- START TEST: Check username [ ]
+20200818 22:10:41.089 - INFO - +--- START TEST: Check username [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.858 - INFO - +--- END TEST: Check username (0)
+20200818 22:10:41.090 - INFO - +--- END TEST: Check username (3)
 ------------------------------------------------------------------------------
-20200818 22:04:02.859 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists (4)
+20200818 22:10:41.094 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.010 UsernameAlreadyExists (9)
 ==============================================================================
-20200818 22:04:02.863 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists [ ]
+20200818 22:10:41.099 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists [ ]
 ==============================================================================
-20200818 22:04:02.864 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:10:41.103 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.864 - INFO - +--- END TEST: Seed an account (1)
+20200818 22:10:41.104 - INFO - +--- END TEST: Seed an account (1)
 ------------------------------------------------------------------------------
-20200818 22:04:02.865 - INFO - +--- START TEST: Email is already taken [ ]
+20200818 22:10:41.105 - INFO - +--- START TEST: Email is already taken [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.865 - INFO - +--- END TEST: Email is already taken (1)
+20200818 22:10:41.106 - INFO - +--- END TEST: Email is already taken (2)
 ------------------------------------------------------------------------------
-20200818 22:04:02.866 - INFO - +--- START TEST: Form content keeped [ ]
+20200818 22:10:41.108 - INFO - +--- START TEST: Form content keeped [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.867 - INFO - +--- END TEST: Form content keeped (1)
+20200818 22:10:41.110 - INFO - +--- END TEST: Form content keeped (3)
 ------------------------------------------------------------------------------
-20200818 22:04:02.868 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists (8)
+20200818 22:10:41.115 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.011 EmailAlreadyExists (18)
 ==============================================================================
-20200818 22:04:02.869 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.020 UsernameValid [ ]
+20200818 22:10:41.118 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.020 UsernameValid [ ]
 ==============================================================================
-20200818 22:04:02.870 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:10:41.119 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.871 - INFO - +--- END TEST: Seed an account (0)
+20200818 22:10:41.121 - INFO - +--- END TEST: Seed an account (2)
 ------------------------------------------------------------------------------
-20200818 22:04:02.871 - INFO - +--- START TEST: Check username [ ]
+20200818 22:10:41.123 - INFO - +--- START TEST: Check username [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.872 - INFO - +--- END TEST: Check username (1)
+20200818 22:10:41.125 - INFO - +--- END TEST: Check username (2)
 ------------------------------------------------------------------------------
-20200818 22:04:02.874 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.020 UsernameValid (3)
+20200818 22:10:41.129 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.020 UsernameValid (9)
 ==============================================================================
-20200818 22:04:02.874 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage [ ]
+20200818 22:10:41.131 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage [ ]
 ==============================================================================
-20200818 22:04:02.875 - INFO - +--- START TEST: Create an account [ ]
+20200818 22:10:41.135 - INFO - +--- START TEST: Create an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.876 - INFO - +--- END TEST: Create an account (1)
+20200818 22:10:41.137 - INFO - +--- END TEST: Create an account (3)
 ------------------------------------------------------------------------------
-20200818 22:04:02.878 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage (2)
+20200818 22:10:41.145 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage (9)
 ==============================================================================
-20200818 22:04:02.878 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory [ ]
+20200818 22:10:41.147 - INFO - +-- START SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory [ ]
 ==============================================================================
-20200818 22:04:02.879 - INFO - +--- START TEST: Terms of use unchecked [ ]
+20200818 22:10:41.151 - INFO - +--- START TEST: Terms of use unchecked [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.880 - INFO - +--- END TEST: Terms of use unchecked (1)
+20200818 22:10:41.155 - INFO - +--- END TEST: Terms of use unchecked (4)
 ------------------------------------------------------------------------------
-20200818 22:04:02.881 - INFO - +--- START TEST: Terms of use checked [ ]
+20200818 22:10:41.157 - INFO - +--- START TEST: Terms of use checked [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:02.881 - INFO - +--- END TEST: Terms of use checked (1)
+20200818 22:10:41.159 - INFO - +--- END TEST: Terms of use checked (3)
 ------------------------------------------------------------------------------
-20200818 22:04:02.883 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory (4)
+20200818 22:10:41.166 - INFO - +-- END SUITE: Acceptance.010 UserRegistration.040 TermsofUseMandatory (15)
 ==============================================================================
-20200818 22:04:02.884 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:02.884 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:02.885 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:04:02.885 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
+20200818 22:10:41.169 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:41.171 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:41.173 - INFO - +--- END KW: SeleniumLibrary.Close Browser (2)
+20200818 22:10:41.174 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (5)
 ==============================================================================
-20200818 22:04:02.888 - INFO - +- END SUITE: Acceptance.010 UserRegistration (409)
+20200818 22:10:41.186 - INFO - +- END SUITE: Acceptance.010 UserRegistration (464)
 ==============================================================================
-20200818 22:04:02.967 - INFO - +- START SUITE: Acceptance.020 SignIn.robot [ ]
+20200818 22:10:41.349 - INFO - +- START SUITE: Acceptance.020 SignIn.robot [ ]
 ==============================================================================
-20200818 22:04:02.968 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:02.969 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:02.970 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:02.971 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:02.971 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:02.972 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:02.972 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:02.973 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:02.973 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:02.973 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:02.974 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:02.974 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:02.974 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:02.975 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:03.343 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:03.344 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:03.344 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200818 22:04:03.344 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:03.344 - DEBUG - Traceback (most recent call last):
+20200818 22:10:41.350 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:41.351 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:41.352 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:41.353 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:41.354 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:41.354 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:41.355 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:41.355 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:41.356 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:41.356 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:41.357 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:41.358 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:41.358 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:41.360 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:41.676 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:41.676 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:41.676 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200818 22:10:41.676 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:41.677 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -270,122 +270,122 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:03.344 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (370)
-20200818 22:04:03.345 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (373)
-20200818 22:04:03.345 - INFO - +------ END KW: BuiltIn.Run Keyword If (374)
-20200818 22:04:03.345 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (374)
-20200818 22:04:03.345 - INFO - +---- END KW: BuiltIn.Run Keyword If (375)
-20200818 22:04:03.345 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (376)
-20200818 22:04:03.345 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (377)
+20200818 22:10:41.677 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (319)
+20200818 22:10:41.677 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (323)
+20200818 22:10:41.677 - INFO - +------ END KW: BuiltIn.Run Keyword If (323)
+20200818 22:10:41.677 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (324)
+20200818 22:10:41.677 - INFO - +---- END KW: BuiltIn.Run Keyword If (325)
+20200818 22:10:41.677 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (326)
+20200818 22:10:41.677 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (327)
 ==============================================================================
-20200818 22:04:03.346 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst [ ]
+20200818 22:10:41.678 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst [ ]
 ==============================================================================
-20200818 22:04:03.347 - INFO - +--- START TEST: Create an account [ ]
+20200818 22:10:41.679 - INFO - +--- START TEST: Create an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.348 - INFO - +--- END TEST: Create an account (2)
+20200818 22:10:41.680 - INFO - +--- END TEST: Create an account (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.349 - INFO - +--- START TEST: Account not active [ ]
+20200818 22:10:41.680 - INFO - +--- START TEST: Account not active [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.350 - INFO - +--- END TEST: Account not active (0)
+20200818 22:10:41.682 - INFO - +--- END TEST: Account not active (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.350 - INFO - +--- START TEST: Confirmation mail sent again [ ]
+20200818 22:10:41.684 - INFO - +--- START TEST: Confirmation mail sent again [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.351 - INFO - +--- END TEST: Confirmation mail sent again (1)
+20200818 22:10:41.685 - INFO - +--- END TEST: Confirmation mail sent again (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.352 - INFO - +--- START TEST: Validated account can login [ ]
+20200818 22:10:41.687 - INFO - +--- START TEST: Validated account can login [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.352 - INFO - +--- END TEST: Validated account can login (1)
+20200818 22:10:41.689 - INFO - +--- END TEST: Validated account can login (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.354 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst (7)
+20200818 22:10:41.694 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst (12)
 ==============================================================================
-20200818 22:04:03.355 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword [ ]
+20200818 22:10:41.696 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword [ ]
 ==============================================================================
-20200818 22:04:03.356 - INFO - +--- START TEST: Seed an account [ ]
+20200818 22:10:41.697 - INFO - +--- START TEST: Seed an account [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.356 - INFO - +--- END TEST: Seed an account (1)
+20200818 22:10:41.699 - INFO - +--- END TEST: Seed an account (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.357 - INFO - +--- START TEST: Sign In user [ ]
+20200818 22:10:41.701 - INFO - +--- START TEST: Sign In user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.357 - INFO - +--- END TEST: Sign In user (0)
+20200818 22:10:41.702 - INFO - +--- END TEST: Sign In user (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.358 - INFO - +--- START TEST: Sign In user with wrong password [ ]
+20200818 22:10:41.704 - INFO - +--- START TEST: Sign In user with wrong password [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.359 - INFO - +--- END TEST: Sign In user with wrong password (0)
+20200818 22:10:41.706 - INFO - +--- END TEST: Sign In user with wrong password (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.360 - INFO - +--- START TEST: Sign In user with non existent username [ ]
+20200818 22:10:41.710 - INFO - +--- START TEST: Sign In user with non existent username [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.360 - INFO - +--- END TEST: Sign In user with non existent username (1)
+20200818 22:10:41.710 - INFO - +--- END TEST: Sign In user with non existent username (4)
 ------------------------------------------------------------------------------
-20200818 22:04:03.361 - INFO - +--- START TEST: Fast devel login [ ]
+20200818 22:10:41.711 - INFO - +--- START TEST: Fast devel login [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.362 - INFO - +--- END TEST: Fast devel login (0)
+20200818 22:10:41.712 - INFO - +--- END TEST: Fast devel login (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.362 - INFO - +--- START TEST: Fast devel logout [ ]
+20200818 22:10:41.712 - INFO - +--- START TEST: Fast devel logout [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.363 - INFO - +--- END TEST: Fast devel logout (1)
+20200818 22:10:41.715 - INFO - +--- END TEST: Fast devel logout (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.365 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword (10)
+20200818 22:10:41.718 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.020 GoodBadPassword (21)
 ==============================================================================
-20200818 22:04:03.366 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse [ ]
+20200818 22:10:41.719 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse [ ]
 ==============================================================================
-20200818 22:04:03.367 - INFO - +--- START TEST: Seeded are fully valid [ ]
+20200818 22:10:41.722 - INFO - +--- START TEST: Seeded are fully valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.367 - INFO - +--- END TEST: Seeded are fully valid (1)
+20200818 22:10:41.724 - INFO - +--- END TEST: Seeded are fully valid (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.368 - INFO - +--- START TEST: Freshly created accounts are fully valid [ ]
+20200818 22:10:41.726 - INFO - +--- START TEST: Freshly created accounts are fully valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.369 - INFO - +--- END TEST: Freshly created accounts are fully valid (1)
+20200818 22:10:41.728 - INFO - +--- END TEST: Freshly created accounts are fully valid (3)
 ------------------------------------------------------------------------------
-20200818 22:04:03.369 - INFO - +--- START TEST: Legacy accounts are asked for terms of use [ ]
+20200818 22:10:41.730 - INFO - +--- START TEST: Legacy accounts are asked for terms of use [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.370 - INFO - +--- END TEST: Legacy accounts are asked for terms of use (1)
+20200818 22:10:41.731 - INFO - +--- END TEST: Legacy accounts are asked for terms of use (3)
 ------------------------------------------------------------------------------
-20200818 22:04:03.372 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse (6)
+20200818 22:10:41.735 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse (16)
 ==============================================================================
-20200818 22:04:03.373 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin [ ]
+20200818 22:10:41.737 - INFO - +-- START SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin [ ]
 ==============================================================================
-20200818 22:04:03.374 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:41.739 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.374 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:41.740 - INFO - +--- END TEST: Seed (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.375 - INFO - +--- START TEST: Redirects to last page [ ]
+20200818 22:10:41.742 - INFO - +--- START TEST: Redirects to last page [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.375 - INFO - +--- END TEST: Redirects to last page (1)
+20200818 22:10:41.744 - INFO - +--- END TEST: Redirects to last page (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.376 - INFO - +--- START TEST: No redirect urls [ ]
+20200818 22:10:41.745 - INFO - +--- START TEST: No redirect urls [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.377 - INFO - +--- END TEST: No redirect urls (0)
+20200818 22:10:41.747 - INFO - +--- END TEST: No redirect urls (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.378 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin (5)
+20200818 22:10:41.751 - INFO - +-- END SUITE: Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin (13)
 ==============================================================================
-20200818 22:04:03.379 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:03.380 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:03.380 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:03.381 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:10:41.754 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:41.756 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:41.757 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:41.757 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (3)
 ==============================================================================
-20200818 22:04:03.384 - INFO - +- END SUITE: Acceptance.020 SignIn.robot (492)
+20200818 22:10:41.760 - INFO - +- END SUITE: Acceptance.020 SignIn.robot (570)
 ==============================================================================
-20200818 22:04:03.416 - INFO - +- START SUITE: Acceptance.030 GeokretyCreation [ ]
+20200818 22:10:41.856 - INFO - +- START SUITE: Acceptance.030 GeokretyCreation [ ]
 ==============================================================================
-20200818 22:04:03.416 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:03.417 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:03.418 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:03.419 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:03.419 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:03.420 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:03.420 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:03.421 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:03.421 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:03.421 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:03.422 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:03.422 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:03.422 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:03.423 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:03.779 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:03.779 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:03.779 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:03.780 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:03.780 - DEBUG - Traceback (most recent call last):
+20200818 22:10:41.857 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:41.858 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:41.858 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:41.859 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:41.859 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:41.860 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:41.860 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:41.861 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:41.861 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:41.861 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:41.863 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:41.864 - INFO - +-------- END KW: BuiltIn.Log (3)
+20200818 22:10:41.866 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:41.872 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:42.198 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:42.198 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:42.199 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200818 22:10:42.199 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:42.199 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -410,146 +410,146 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:03.780 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (358)
-20200818 22:04:03.780 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (360)
-20200818 22:04:03.780 - INFO - +------ END KW: BuiltIn.Run Keyword If (361)
-20200818 22:04:03.780 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (361)
-20200818 22:04:03.781 - INFO - +---- END KW: BuiltIn.Run Keyword If (362)
-20200818 22:04:03.781 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (364)
-20200818 22:04:03.781 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (365)
+20200818 22:10:42.199 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (333)
+20200818 22:10:42.199 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (339)
+20200818 22:10:42.199 - INFO - +------ END KW: BuiltIn.Run Keyword If (340)
+20200818 22:10:42.200 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (341)
+20200818 22:10:42.200 - INFO - +---- END KW: BuiltIn.Run Keyword If (342)
+20200818 22:10:42.200 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (342)
+20200818 22:10:42.200 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (343)
 ==============================================================================
-20200818 22:04:03.781 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.010 FormAccess [ ]
+20200818 22:10:42.200 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.010 FormAccess [ ]
 ==============================================================================
-20200818 22:04:03.782 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.202 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.783 - INFO - +--- END TEST: Seed (0)
+20200818 22:10:42.202 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.783 - INFO - +--- START TEST: No link present in navbar for anonymous users [ ]
+20200818 22:10:42.203 - INFO - +--- START TEST: No link present in navbar for anonymous users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.784 - INFO - +--- END TEST: No link present in navbar for anonymous users (1)
+20200818 22:10:42.204 - INFO - +--- END TEST: No link present in navbar for anonymous users (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.785 - INFO - +--- START TEST: No link present in profile actions for signed in users [ ]
+20200818 22:10:42.205 - INFO - +--- START TEST: No link present in profile actions for signed in users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.785 - INFO - +--- END TEST: No link present in profile actions for signed in users (1)
+20200818 22:10:42.216 - INFO - +--- END TEST: No link present in profile actions for signed in users (2)
 ------------------------------------------------------------------------------
-20200818 22:04:03.786 - INFO - +--- START TEST: Forbidden for anonymous users [ ]
+20200818 22:10:42.216 - INFO - +--- START TEST: Forbidden for anonymous users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.786 - INFO - +--- END TEST: Forbidden for anonymous users (0)
+20200818 22:10:42.217 - INFO - +--- END TEST: Forbidden for anonymous users (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.787 - INFO - +--- START TEST: Sign in [ ]
+20200818 22:10:42.218 - INFO - +--- START TEST: Sign in [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.787 - INFO - +--- END TEST: Sign in (0)
+20200818 22:10:42.218 - INFO - +--- END TEST: Sign in (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.788 - INFO - +--- START TEST: Link present in navbar for signed in users [ ]
+20200818 22:10:42.219 - INFO - +--- START TEST: Link present in navbar for signed in users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.789 - INFO - +--- END TEST: Link present in navbar for signed in users (0)
+20200818 22:10:42.220 - INFO - +--- END TEST: Link present in navbar for signed in users (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.789 - INFO - +--- START TEST: Link present on user's profile actions for signed in users [ ]
+20200818 22:10:42.220 - INFO - +--- START TEST: Link present on user's profile actions for signed in users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.790 - INFO - +--- END TEST: Link present on user's profile actions for signed in users (1)
+20200818 22:10:42.221 - INFO - +--- END TEST: Link present on user's profile actions for signed in users (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.790 - INFO - +--- START TEST: Link absent on someone else profile actions [ ]
+20200818 22:10:42.222 - INFO - +--- START TEST: Link absent on someone else profile actions [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.791 - INFO - +--- END TEST: Link absent on someone else profile actions (1)
+20200818 22:10:42.222 - INFO - +--- END TEST: Link absent on someone else profile actions (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.791 - INFO - +--- START TEST: Use navbar link to access form [ ]
+20200818 22:10:42.223 - INFO - +--- START TEST: Use navbar link to access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.794 - INFO - +--- END TEST: Use navbar link to access form (1)
+20200818 22:10:42.223 - INFO - +--- END TEST: Use navbar link to access form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.801 - INFO - +--- START TEST: Use profile action link to access form [ ]
+20200818 22:10:42.224 - INFO - +--- START TEST: Use profile action link to access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.802 - INFO - +--- END TEST: Use profile action link to access form (4)
+20200818 22:10:42.224 - INFO - +--- END TEST: Use profile action link to access form (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.802 - INFO - +--- START TEST: Direct link access to form [ ]
+20200818 22:10:42.225 - INFO - +--- START TEST: Direct link access to form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.803 - INFO - +--- END TEST: Direct link access to form (1)
+20200818 22:10:42.226 - INFO - +--- END TEST: Direct link access to form (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.806 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.010 FormAccess (22)
+20200818 22:10:42.228 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.010 FormAccess (26)
 ==============================================================================
-20200818 22:04:03.806 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret [ ]
+20200818 22:10:42.229 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret [ ]
 ==============================================================================
-20200818 22:04:03.807 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.230 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.807 - INFO - +--- END TEST: Seed (0)
+20200818 22:10:42.231 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.810 - INFO - +--- START TEST: Create A GeoKret [ ]
+20200818 22:10:42.231 - INFO - +--- START TEST: Create A GeoKret [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.817 - INFO - +--- END TEST: Create A GeoKret (5)
+20200818 22:10:42.232 - INFO - +--- END TEST: Create A GeoKret (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.822 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret (15)
+20200818 22:10:42.233 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.020 CreateGeoKret (3)
 ==============================================================================
-20200818 22:04:03.824 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName [ ]
+20200818 22:10:42.235 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName [ ]
 ==============================================================================
-20200818 22:04:03.825 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.236 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.825 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:42.236 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.826 - INFO - +--- START TEST: Name invalid [ ]
+20200818 22:10:42.237 - INFO - +--- START TEST: Name invalid [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.827 - INFO - +--- END TEST: Name invalid (1)
+20200818 22:10:42.237 - INFO - +--- END TEST: Name invalid (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.834 - INFO - +--- START TEST: Name invalid (check after submit) [ ]
+20200818 22:10:42.238 - INFO - +--- START TEST: Name invalid (check after submit) [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.838 - INFO - +--- END TEST: Name invalid (check after submit) (9)
+20200818 22:10:42.238 - INFO - +--- END TEST: Name invalid (check after submit) (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.839 - INFO - +--- START TEST: Name valid [ ]
+20200818 22:10:42.239 - INFO - +--- START TEST: Name valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.840 - INFO - +--- END TEST: Name valid (0)
+20200818 22:10:42.239 - INFO - +--- END TEST: Name valid (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.841 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName (18)
+20200818 22:10:42.241 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.030 GeoKretName (7)
 ==============================================================================
-20200818 22:04:03.842 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType [ ]
+20200818 22:10:42.242 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType [ ]
 ==============================================================================
-20200818 22:04:03.843 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.243 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.843 - INFO - +--- END TEST: Seed (0)
+20200818 22:10:42.243 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.847 - INFO - +--- START TEST: Type valid [ ]
+20200818 22:10:42.244 - INFO - +--- START TEST: Type valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.850 - INFO - +--- END TEST: Type valid (4)
+20200818 22:10:42.245 - INFO - +--- END TEST: Type valid (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.863 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType (14)
+20200818 22:10:42.246 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.040 GeoKretType (4)
 ==============================================================================
-20200818 22:04:03.865 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission [ ]
+20200818 22:10:42.247 - INFO - +-- START SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission [ ]
 ==============================================================================
-20200818 22:04:03.865 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.248 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.866 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:42.249 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:04:03.867 - INFO - +--- START TEST: Text valid [ ]
+20200818 22:10:42.249 - INFO - +--- START TEST: Text valid [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:03.867 - INFO - +--- END TEST: Text valid (1)
+20200818 22:10:42.250 - INFO - +--- END TEST: Text valid (1)
 ------------------------------------------------------------------------------
-20200818 22:04:03.875 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission (3)
+20200818 22:10:42.251 - INFO - +-- END SUITE: Acceptance.030 GeokretyCreation.050 GeoKretMission (4)
 ==============================================================================
-20200818 22:04:03.878 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:03.879 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:03.879 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:03.879 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
+20200818 22:10:42.252 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:42.253 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:42.253 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:42.254 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:04:03.883 - INFO - +- END SUITE: Acceptance.030 GeokretyCreation (495)
+20200818 22:10:42.257 - INFO - +- END SUITE: Acceptance.030 GeokretyCreation (493)
 ==============================================================================
-20200818 22:04:03.977 - INFO - +- START SUITE: Acceptance.040 GeokretyDetails [ ]
+20200818 22:10:42.287 - INFO - +- START SUITE: Acceptance.040 GeokretyDetails [ ]
 ==============================================================================
-20200818 22:04:03.978 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:03.978 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:03.979 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:03.980 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:03.981 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:03.981 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:03.982 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:03.982 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:03.983 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:03.983 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:03.983 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:03.984 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:03.984 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:03.985 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:04.340 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:04.340 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:04.340 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:04.341 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:04.341 - DEBUG - Traceback (most recent call last):
+20200818 22:10:42.288 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:42.288 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:42.289 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:42.290 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:42.290 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:42.291 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:42.291 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:42.292 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:42.292 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:42.292 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:42.293 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:42.293 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:42.293 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:42.294 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:42.678 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:42.679 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:42.679 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200818 22:10:42.679 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:42.679 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -574,102 +574,102 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:04.341 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (357)
-20200818 22:04:04.341 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (360)
-20200818 22:04:04.341 - INFO - +------ END KW: BuiltIn.Run Keyword If (360)
-20200818 22:04:04.341 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (361)
-20200818 22:04:04.341 - INFO - +---- END KW: BuiltIn.Run Keyword If (362)
-20200818 22:04:04.341 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (363)
-20200818 22:04:04.342 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (365)
+20200818 22:10:42.679 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (386)
+20200818 22:10:42.680 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (388)
+20200818 22:10:42.680 - INFO - +------ END KW: BuiltIn.Run Keyword If (390)
+20200818 22:10:42.680 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (390)
+20200818 22:10:42.680 - INFO - +---- END KW: BuiltIn.Run Keyword If (391)
+20200818 22:10:42.680 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (392)
+20200818 22:10:42.680 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (392)
 ==============================================================================
-20200818 22:04:04.342 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.010 Details [ ]
+20200818 22:10:42.681 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.010 Details [ ]
 ==============================================================================
-20200818 22:04:04.344 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.682 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.345 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:42.682 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.346 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
+20200818 22:10:42.683 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.347 - INFO - +--- END TEST: Public Information Visible - anonymous (2)
+20200818 22:10:42.683 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.348 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
+20200818 22:10:42.684 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.349 - INFO - +--- END TEST: Private Information Not Visible - anonymous (1)
+20200818 22:10:42.684 - INFO - +--- END TEST: Private Information Not Visible - anonymous (0)
 ------------------------------------------------------------------------------
-20200818 22:04:04.350 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
+20200818 22:10:42.686 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.352 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
+20200818 22:10:42.686 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.353 - INFO - +--- START TEST: Private Information Visible - authenticated - owned [ ]
+20200818 22:10:42.687 - INFO - +--- START TEST: Private Information Visible - authenticated - owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.354 - INFO - +--- END TEST: Private Information Visible - authenticated - owned (1)
+20200818 22:10:42.688 - INFO - +--- END TEST: Private Information Visible - authenticated - owned (0)
 ------------------------------------------------------------------------------
-20200818 22:04:04.355 - INFO - +--- START TEST: Private Information Not Visible - authenticated - not owned [ ]
+20200818 22:10:42.688 - INFO - +--- START TEST: Private Information Not Visible - authenticated - not owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.356 - INFO - +--- END TEST: Private Information Not Visible - authenticated - not owned (2)
+20200818 22:10:42.689 - INFO - +--- END TEST: Private Information Not Visible - authenticated - not owned (0)
 ------------------------------------------------------------------------------
-20200818 22:04:04.360 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.010 Details (15)
+20200818 22:10:42.691 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.010 Details (9)
 ==============================================================================
-20200818 22:04:04.361 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.020 Mission [ ]
+20200818 22:10:42.692 - INFO - +-- START SUITE: Acceptance.040 GeokretyDetails.020 Mission [ ]
 ==============================================================================
-20200818 22:04:04.363 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:42.693 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.364 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:42.694 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.365 - INFO - +--- START TEST: Mission is shown - anonymous [ ]
+20200818 22:10:42.695 - INFO - +--- START TEST: Mission is shown - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.366 - INFO - +--- END TEST: Mission is shown - anonymous (2)
+20200818 22:10:42.695 - INFO - +--- END TEST: Mission is shown - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.369 - INFO - +--- START TEST: Placeholder when no mission - anonymous [ ]
+20200818 22:10:42.697 - INFO - +--- START TEST: Placeholder when no mission - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.370 - INFO - +--- END TEST: Placeholder when no mission - anonymous (3)
+20200818 22:10:42.697 - INFO - +--- END TEST: Placeholder when no mission - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.372 - INFO - +--- START TEST: Mission is shown - authenticated - owned [ ]
+20200818 22:10:42.698 - INFO - +--- START TEST: Mission is shown - authenticated - owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.373 - INFO - +--- END TEST: Mission is shown - authenticated - owned (2)
+20200818 22:10:42.699 - INFO - +--- END TEST: Mission is shown - authenticated - owned (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.375 - INFO - +--- START TEST: Placeholder when no mission - authenticated - owned [ ]
+20200818 22:10:42.700 - INFO - +--- START TEST: Placeholder when no mission - authenticated - owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.376 - INFO - +--- END TEST: Placeholder when no mission - authenticated - owned (2)
+20200818 22:10:42.700 - INFO - +--- END TEST: Placeholder when no mission - authenticated - owned (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.378 - INFO - +--- START TEST: Mission is shown - authenticated - not owned [ ]
+20200818 22:10:42.701 - INFO - +--- START TEST: Mission is shown - authenticated - not owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.380 - INFO - +--- END TEST: Mission is shown - authenticated - not owned (2)
+20200818 22:10:42.702 - INFO - +--- END TEST: Mission is shown - authenticated - not owned (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.381 - INFO - +--- START TEST: Placeholder when no mission - authenticated - not owned [ ]
+20200818 22:10:42.703 - INFO - +--- START TEST: Placeholder when no mission - authenticated - not owned [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.383 - INFO - +--- END TEST: Placeholder when no mission - authenticated - not owned (2)
+20200818 22:10:42.704 - INFO - +--- END TEST: Placeholder when no mission - authenticated - not owned (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.388 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.020 Mission (24)
+20200818 22:10:42.706 - INFO - +-- END SUITE: Acceptance.040 GeokretyDetails.020 Mission (13)
 ==============================================================================
-20200818 22:04:04.390 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:04.391 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:04.392 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:04:04.393 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (3)
+20200818 22:10:42.707 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:42.708 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:42.709 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:42.709 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:04:04.400 - INFO - +- END SUITE: Acceptance.040 GeokretyDetails (510)
+20200818 22:10:42.712 - INFO - +- END SUITE: Acceptance.040 GeokretyDetails (451)
 ==============================================================================
-20200818 22:04:04.492 - INFO - +- START SUITE: Acceptance.050 UsersDetails [ ]
+20200818 22:10:42.752 - INFO - +- START SUITE: Acceptance.050 UsersDetails [ ]
 ==============================================================================
-20200818 22:04:04.494 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:04.495 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:04.497 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:04.499 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:04.501 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:04.503 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:04.504 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:04.505 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:04.505 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:04.506 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:04.507 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:04.507 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:04.508 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:04.510 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:04.813 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:04.813 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:04.814 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:04.814 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:04.814 - DEBUG - Traceback (most recent call last):
+20200818 22:10:42.753 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:42.753 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:42.754 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:42.755 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:42.756 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:42.757 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:42.757 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:42.758 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:42.758 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:42.758 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:42.759 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:42.759 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:42.759 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:42.760 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:43.040 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:43.041 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:43.041 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200818 22:10:43.041 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:43.041 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -694,210 +694,210 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:04.814 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (306)
-20200818 22:04:04.814 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (311)
-20200818 22:04:04.814 - INFO - +------ END KW: BuiltIn.Run Keyword If (313)
-20200818 22:04:04.815 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (316)
-20200818 22:04:04.815 - INFO - +---- END KW: BuiltIn.Run Keyword If (318)
-20200818 22:04:04.815 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (320)
-20200818 22:04:04.815 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (321)
+20200818 22:10:43.041 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (282)
+20200818 22:10:43.042 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (285)
+20200818 22:10:43.042 - INFO - +------ END KW: BuiltIn.Run Keyword If (286)
+20200818 22:10:43.042 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (287)
+20200818 22:10:43.042 - INFO - +---- END KW: BuiltIn.Run Keyword If (288)
+20200818 22:10:43.042 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (289)
+20200818 22:10:43.042 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (289)
 ==============================================================================
-20200818 22:04:04.816 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.010 Details [ ]
+20200818 22:10:43.043 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.010 Details [ ]
 ==============================================================================
-20200818 22:04:04.817 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.046 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.817 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.046 - INFO - +--- END TEST: Seed (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.818 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
+20200818 22:10:43.047 - INFO - +--- START TEST: Public Information Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.818 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
+20200818 22:10:43.048 - INFO - +--- END TEST: Public Information Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.819 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
+20200818 22:10:43.049 - INFO - +--- START TEST: Private Information Not Visible - anonymous [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.820 - INFO - +--- END TEST: Private Information Not Visible - anonymous (0)
+20200818 22:10:43.050 - INFO - +--- END TEST: Private Information Not Visible - anonymous (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.820 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
+20200818 22:10:43.051 - INFO - +--- START TEST: Public Information Visible - authenticated [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.821 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
+20200818 22:10:43.052 - INFO - +--- END TEST: Public Information Visible - authenticated (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.821 - INFO - +--- START TEST: Private Information Visible - authenticated - himself [ ]
+20200818 22:10:43.052 - INFO - +--- START TEST: Private Information Visible - authenticated - himself [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.822 - INFO - +--- END TEST: Private Information Visible - authenticated - himself (1)
+20200818 22:10:43.053 - INFO - +--- END TEST: Private Information Visible - authenticated - himself (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.823 - INFO - +--- START TEST: Private Information Not Visible - authenticated - someone else [ ]
+20200818 22:10:43.054 - INFO - +--- START TEST: Private Information Not Visible - authenticated - someone else [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.823 - INFO - +--- END TEST: Private Information Not Visible - authenticated - someone else (1)
+20200818 22:10:43.055 - INFO - +--- END TEST: Private Information Not Visible - authenticated - someone else (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.825 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.010 Details (9)
+20200818 22:10:43.058 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.010 Details (14)
 ==============================================================================
-20200818 22:04:04.828 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.020 Awards [ ]
+20200818 22:10:43.063 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.020 Awards [ ]
 ==============================================================================
-20200818 22:04:04.829 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.065 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.830 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.066 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.830 - INFO - +--- START TEST: Panel should be present [ ]
+20200818 22:10:43.067 - INFO - +--- START TEST: Panel should be present [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.831 - INFO - +--- END TEST: Panel should be present (1)
+20200818 22:10:43.068 - INFO - +--- END TEST: Panel should be present (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.832 - INFO - +--- START TEST: Stats present [ ]
+20200818 22:10:43.069 - INFO - +--- START TEST: Stats present [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.832 - INFO - +--- END TEST: Stats present (1)
+20200818 22:10:43.070 - INFO - +--- END TEST: Stats present (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.833 - INFO - +--- START TEST: Stats are per user [ ]
+20200818 22:10:43.071 - INFO - +--- START TEST: Stats are per user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.833 - INFO - +--- END TEST: Stats are per user (0)
+20200818 22:10:43.072 - INFO - +--- END TEST: Stats are per user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.834 - INFO - +--- START TEST: Stat created incremented [ ]
+20200818 22:10:43.072 - INFO - +--- START TEST: Stat created incremented [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.834 - INFO - +--- END TEST: Stat created incremented (0)
+20200818 22:10:43.073 - INFO - +--- END TEST: Stat created incremented (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.836 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.020 Awards (10)
+20200818 22:10:43.076 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.020 Awards (16)
 ==============================================================================
-20200818 22:04:04.837 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.030 Statpic [ ]
+20200818 22:10:43.077 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.030 Statpic [ ]
 ==============================================================================
-20200818 22:04:04.838 - INFO - +--- START TEST: Statpic generated on user create [ ]
+20200818 22:10:43.079 - INFO - +--- START TEST: Statpic generated on user create [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.838 - INFO - +--- END TEST: Statpic generated on user create (1)
+20200818 22:10:43.080 - INFO - +--- END TEST: Statpic generated on user create (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.839 - INFO - +--- START TEST: Statpic updated on geokrety create [ ]
+20200818 22:10:43.081 - INFO - +--- START TEST: Statpic updated on geokrety create [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.840 - INFO - +--- END TEST: Statpic updated on geokrety create (0)
+20200818 22:10:43.082 - INFO - +--- END TEST: Statpic updated on geokrety create (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.841 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.030 Statpic (4)
+20200818 22:10:43.085 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.030 Statpic (7)
 ==============================================================================
-20200818 22:04:04.842 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.040 ProfileEditable [ ]
+20200818 22:10:43.087 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.040 ProfileEditable [ ]
 ==============================================================================
-20200818 22:04:04.843 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.089 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.843 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.090 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.844 - INFO - +--- START TEST: Buttons shown for anonymous users [ ]
+20200818 22:10:43.090 - INFO - +--- START TEST: Buttons shown for anonymous users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.845 - INFO - +--- END TEST: Buttons shown for anonymous users (0)
+20200818 22:10:43.091 - INFO - +--- END TEST: Buttons shown for anonymous users (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.845 - INFO - +--- START TEST: Buttons shown for authenticated users [ ]
+20200818 22:10:43.092 - INFO - +--- START TEST: Buttons shown for authenticated users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.846 - INFO - +--- END TEST: Buttons shown for authenticated users (0)
+20200818 22:10:43.093 - INFO - +--- END TEST: Buttons shown for authenticated users (0)
 ------------------------------------------------------------------------------
-20200818 22:04:04.846 - INFO - +--- START TEST: Buttons shown for authenticated users - himself [ ]
+20200818 22:10:43.094 - INFO - +--- START TEST: Buttons shown for authenticated users - himself [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.847 - INFO - +--- END TEST: Buttons shown for authenticated users - himself (1)
+20200818 22:10:43.095 - INFO - +--- END TEST: Buttons shown for authenticated users - himself (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.849 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.040 ProfileEditable (6)
+20200818 22:10:43.098 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.040 ProfileEditable (11)
 ==============================================================================
-20200818 22:04:04.850 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.050 BanerTemplate [ ]
+20200818 22:10:43.100 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.050 BanerTemplate [ ]
 ==============================================================================
-20200818 22:04:04.850 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.102 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.851 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.103 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.852 - INFO - +--- START TEST: Anonymous users are refused [ ]
+20200818 22:10:43.104 - INFO - +--- START TEST: Anonymous users are refused [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.852 - INFO - +--- END TEST: Anonymous users are refused (1)
+20200818 22:10:43.105 - INFO - +--- END TEST: Anonymous users are refused (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.853 - INFO - +--- START TEST: Users cannot edit other user banner [ ]
+20200818 22:10:43.106 - INFO - +--- START TEST: Users cannot edit other user banner [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.854 - INFO - +--- END TEST: Users cannot edit other user banner (1)
+20200818 22:10:43.107 - INFO - +--- END TEST: Users cannot edit other user banner (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.854 - INFO - +--- START TEST: Select banner [ ]
+20200818 22:10:43.108 - INFO - +--- START TEST: Select banner [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.855 - INFO - +--- END TEST: Select banner (1)
+20200818 22:10:43.109 - INFO - +--- END TEST: Select banner (0)
 ------------------------------------------------------------------------------
-20200818 22:04:04.857 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.050 BanerTemplate (7)
+20200818 22:10:43.111 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.050 BanerTemplate (11)
 ==============================================================================
-20200818 22:04:04.860 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.060 ObservationArea [ ]
+20200818 22:10:43.114 - INFO - +-- START SUITE: Acceptance.050 UsersDetails.060 ObservationArea [ ]
 ==============================================================================
-20200818 22:04:04.861 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.116 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.861 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.117 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.862 - INFO - +--- START TEST: Anonymous users are refused [ ]
+20200818 22:10:43.118 - INFO - +--- START TEST: Anonymous users are refused [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.863 - INFO - +--- END TEST: Anonymous users are refused (0)
+20200818 22:10:43.119 - INFO - +--- END TEST: Anonymous users are refused (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.863 - INFO - +--- START TEST: Users cannot edit other user observation area [ ]
+20200818 22:10:43.120 - INFO - +--- START TEST: Users cannot edit other user observation area [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.864 - INFO - +--- END TEST: Users cannot edit other user observation area (1)
+20200818 22:10:43.121 - INFO - +--- END TEST: Users cannot edit other user observation area (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.865 - INFO - +--- START TEST: Move pan should update coordinates field [ ]
+20200818 22:10:43.123 - INFO - +--- START TEST: Move pan should update coordinates field [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.865 - INFO - +--- END TEST: Move pan should update coordinates field (1)
+20200818 22:10:43.124 - INFO - +--- END TEST: Move pan should update coordinates field (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.867 - INFO - +--- START TEST: Observation radius is set to 0 by default [ ]
+20200818 22:10:43.126 - INFO - +--- START TEST: Observation radius is set to 0 by default [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.867 - INFO - +--- END TEST: Observation radius is set to 0 by default (1)
+20200818 22:10:43.127 - INFO - +--- END TEST: Observation radius is set to 0 by default (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.868 - INFO - +--- START TEST: Observation radius between 0-10 [ ]
+20200818 22:10:43.128 - INFO - +--- START TEST: Observation radius between 0-10 [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.868 - INFO - +--- END TEST: Observation radius between 0-10 (1)
+20200818 22:10:43.129 - INFO - +--- END TEST: Observation radius between 0-10 (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.869 - INFO - +--- START TEST: Observation radius outside range [ ]
+20200818 22:10:43.130 - INFO - +--- START TEST: Observation radius outside range [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.870 - INFO - +--- END TEST: Observation radius outside range (0)
+20200818 22:10:43.130 - INFO - +--- END TEST: Observation radius outside range (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.870 - INFO - +--- START TEST: Map should reflect manual coordinates input [ ]
+20200818 22:10:43.131 - INFO - +--- START TEST: Map should reflect manual coordinates input [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.871 - INFO - +--- END TEST: Map should reflect manual coordinates input (1)
+20200818 22:10:43.132 - INFO - +--- END TEST: Map should reflect manual coordinates input (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.872 - INFO - +--- START TEST: Map circle should reflect observation radius 0 [ ]
+20200818 22:10:43.133 - INFO - +--- START TEST: Map circle should reflect observation radius 0 [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.872 - INFO - +--- END TEST: Map circle should reflect observation radius 0 (1)
+20200818 22:10:43.133 - INFO - +--- END TEST: Map circle should reflect observation radius 0 (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.873 - INFO - +--- START TEST: Map circle should reflect observation radius 1 [ ]
+20200818 22:10:43.135 - INFO - +--- START TEST: Map circle should reflect observation radius 1 [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.873 - INFO - +--- END TEST: Map circle should reflect observation radius 1 (1)
+20200818 22:10:43.136 - INFO - +--- END TEST: Map circle should reflect observation radius 1 (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.874 - INFO - +--- START TEST: Map circle should reflect observation radius 5 [ ]
+20200818 22:10:43.137 - INFO - +--- START TEST: Map circle should reflect observation radius 5 [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.875 - INFO - +--- END TEST: Map circle should reflect observation radius 5 (0)
+20200818 22:10:43.138 - INFO - +--- END TEST: Map circle should reflect observation radius 5 (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.876 - INFO - +--- START TEST: Map circle should reflect observation radius 10 [ ]
+20200818 22:10:43.139 - INFO - +--- START TEST: Map circle should reflect observation radius 10 [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.876 - INFO - +--- END TEST: Map circle should reflect observation radius 10 (1)
+20200818 22:10:43.140 - INFO - +--- END TEST: Map circle should reflect observation radius 10 (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.877 - INFO - +--- START TEST: Check valid coordinates [ ]
+20200818 22:10:43.141 - INFO - +--- START TEST: Check valid coordinates [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.877 - INFO - +--- END TEST: Check valid coordinates (1)
+20200818 22:10:43.142 - INFO - +--- END TEST: Check valid coordinates (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.878 - INFO - +--- START TEST: Check invalid coordinates [ ]
+20200818 22:10:43.143 - INFO - +--- START TEST: Check invalid coordinates [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.879 - INFO - +--- END TEST: Check invalid coordinates (0)
+20200818 22:10:43.144 - INFO - +--- END TEST: Check invalid coordinates (1)
 ------------------------------------------------------------------------------
-20200818 22:04:04.879 - INFO - +--- START TEST: Save Observation Area Preferences [ ]
+20200818 22:10:43.145 - INFO - +--- START TEST: Save Observation Area Preferences [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:04.880 - INFO - +--- END TEST: Save Observation Area Preferences (1)
+20200818 22:10:43.146 - INFO - +--- END TEST: Save Observation Area Preferences (2)
 ------------------------------------------------------------------------------
-20200818 22:04:04.883 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.060 ObservationArea (24)
+20200818 22:10:43.151 - INFO - +-- END SUITE: Acceptance.050 UsersDetails.060 ObservationArea (36)
 ==============================================================================
-20200818 22:04:04.884 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:04.885 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:04.885 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:04.886 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:10:43.153 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:43.154 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:43.154 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:43.155 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:04:04.891 - INFO - +- END SUITE: Acceptance.050 UsersDetails (485)
+20200818 22:10:43.164 - INFO - +- END SUITE: Acceptance.050 UsersDetails (442)
 ==============================================================================
-20200818 22:04:04.926 - INFO - +- START SUITE: Acceptance.060 UserAvatar.robot [ ]
+20200818 22:10:43.218 - INFO - +- START SUITE: Acceptance.060 UserAvatar.robot [ ]
 ==============================================================================
-20200818 22:04:04.926 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:04.927 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:04.928 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:04.929 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:04.930 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:04.930 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:04.931 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:04.931 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:04.931 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200818 22:04:04.931 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:04.932 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:04.932 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:04.932 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:04.934 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:05.264 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:05.264 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:05.264 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:05.265 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:05.265 - DEBUG - Traceback (most recent call last):
+20200818 22:10:43.219 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:43.220 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:43.222 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:43.223 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:43.224 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:43.225 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:43.226 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:43.227 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:43.227 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:43.228 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:43.228 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:43.228 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:43.229 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:43.230 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:43.513 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:43.514 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:43.514 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200818 22:10:43.514 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:43.514 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -922,118 +922,118 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:05.265 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (333)
-20200818 22:04:05.265 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (335)
-20200818 22:04:05.265 - INFO - +------ END KW: BuiltIn.Run Keyword If (335)
-20200818 22:04:05.266 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (337)
-20200818 22:04:05.266 - INFO - +---- END KW: BuiltIn.Run Keyword If (338)
-20200818 22:04:05.266 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (339)
-20200818 22:04:05.266 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (340)
+20200818 22:10:43.514 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (285)
+20200818 22:10:43.515 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (290)
+20200818 22:10:43.515 - INFO - +------ END KW: BuiltIn.Run Keyword If (291)
+20200818 22:10:43.515 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (292)
+20200818 22:10:43.515 - INFO - +---- END KW: BuiltIn.Run Keyword If (293)
+20200818 22:10:43.515 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (295)
+20200818 22:10:43.515 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (296)
 ==============================================================================
-20200818 22:04:05.267 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.010 Access [ ]
+20200818 22:10:43.516 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.010 Access [ ]
 ==============================================================================
-20200818 22:04:05.268 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.517 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.268 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.518 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.269 - INFO - +--- START TEST: Anonymous should not see draggable [ ]
+20200818 22:10:43.518 - INFO - +--- START TEST: Anonymous should not see draggable [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.270 - INFO - +--- END TEST: Anonymous should not see draggable (1)
+20200818 22:10:43.519 - INFO - +--- END TEST: Anonymous should not see draggable (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.271 - INFO - +--- START TEST: User himself should see draggable [ ]
+20200818 22:10:43.520 - INFO - +--- START TEST: User himself should see draggable [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.272 - INFO - +--- END TEST: User himself should see draggable (1)
+20200818 22:10:43.521 - INFO - +--- END TEST: User himself should see draggable (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.273 - INFO - +--- START TEST: Authenticated should not see draggable for other users [ ]
+20200818 22:10:43.522 - INFO - +--- START TEST: Authenticated should not see draggable for other users [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.275 - INFO - +--- END TEST: Authenticated should not see draggable for other users (1)
+20200818 22:10:43.522 - INFO - +--- END TEST: Authenticated should not see draggable for other users (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.278 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.010 Access (9)
+20200818 22:10:43.525 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.010 Access (8)
 ==============================================================================
-20200818 22:04:05.279 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload [ ]
+20200818 22:10:43.526 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload [ ]
 ==============================================================================
-20200818 22:04:05.280 - INFO - +--- START TEST: Upload image via button [ ]
+20200818 22:10:43.528 - INFO - +--- START TEST: Upload image via button [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.281 - INFO - +--- END TEST: Upload image via button (1)
+20200818 22:10:43.529 - INFO - +--- END TEST: Upload image via button (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.282 - INFO - +--- START TEST: Upload image via Drag/Drop - same page [ ]
+20200818 22:10:43.530 - INFO - +--- START TEST: Upload image via Drag/Drop - same page [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.283 - INFO - +--- END TEST: Upload image via Drag/Drop - same page (1)
+20200818 22:10:43.531 - INFO - +--- END TEST: Upload image via Drag/Drop - same page (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.285 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload (6)
+20200818 22:10:43.534 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload (7)
 ==============================================================================
-20200818 22:04:05.287 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain [ ]
+20200818 22:10:43.535 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain [ ]
 ==============================================================================
-20200818 22:04:05.288 - INFO - +--- START TEST: Set image as main avatar [ ]
+20200818 22:10:43.536 - INFO - +--- START TEST: Set image as main avatar [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.288 - INFO - +--- END TEST: Set image as main avatar (1)
+20200818 22:10:43.537 - INFO - +--- END TEST: Set image as main avatar (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.290 - INFO - +--- START TEST: Set second image as main avatar [ ]
+20200818 22:10:43.538 - INFO - +--- START TEST: Set second image as main avatar [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.291 - INFO - +--- END TEST: Set second image as main avatar (1)
+20200818 22:10:43.539 - INFO - +--- END TEST: Set second image as main avatar (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.293 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain (5)
+20200818 22:10:43.541 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.030 DefineAsMain (6)
 ==============================================================================
-20200818 22:04:05.295 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption [ ]
+20200818 22:10:43.543 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption [ ]
 ==============================================================================
-20200818 22:04:05.297 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.544 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.298 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:43.545 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:04:05.299 - INFO - +--- START TEST: Define Picture Caption [ ]
+20200818 22:10:43.546 - INFO - +--- START TEST: Define Picture Caption [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.300 - INFO - +--- END TEST: Define Picture Caption (2)
+20200818 22:10:43.547 - INFO - +--- END TEST: Define Picture Caption (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.303 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption (7)
+20200818 22:10:43.549 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.040 UpdateCaption (6)
 ==============================================================================
-20200818 22:04:05.304 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture [ ]
+20200818 22:10:43.551 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture [ ]
 ==============================================================================
-20200818 22:04:05.305 - INFO - +--- START TEST: Delete Picture [ ]
+20200818 22:10:43.552 - INFO - +--- START TEST: Delete Picture [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.306 - INFO - +--- END TEST: Delete Picture (2)
+20200818 22:10:43.553 - INFO - +--- END TEST: Delete Picture (2)
 ------------------------------------------------------------------------------
-20200818 22:04:05.307 - INFO - +--- START TEST: Delete 1 picture should leave other present [ ]
+20200818 22:10:43.554 - INFO - +--- START TEST: Delete 1 picture should leave other present [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.308 - INFO - +--- END TEST: Delete 1 picture should leave other present (1)
+20200818 22:10:43.555 - INFO - +--- END TEST: Delete 1 picture should leave other present (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.311 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture (6)
+20200818 22:10:43.558 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.050 DeletePicture (6)
 ==============================================================================
-20200818 22:04:05.312 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage [ ]
+20200818 22:10:43.559 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage [ ]
 ==============================================================================
-20200818 22:04:05.314 - INFO - +--- START TEST: Should be shown on Homepage [ ]
+20200818 22:10:43.561 - INFO - +--- START TEST: Should be shown on Homepage [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.314 - INFO - +--- END TEST: Should be shown on Homepage (1)
+20200818 22:10:43.561 - INFO - +--- END TEST: Should be shown on Homepage (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.317 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage (4)
+20200818 22:10:43.564 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage (4)
 ==============================================================================
-20200818 22:04:05.318 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:05.319 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:05.320 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:04:05.320 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:10:43.565 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:43.566 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:43.566 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:43.567 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:04:05.326 - INFO - +- END SUITE: Acceptance.060 UserAvatar.robot (429)
+20200818 22:10:43.572 - INFO - +- END SUITE: Acceptance.060 UserAvatar.robot (402)
 ==============================================================================
-20200818 22:04:05.383 - INFO - +- START SUITE: Acceptance.070 UserPassword [ ]
+20200818 22:10:43.628 - INFO - +- START SUITE: Acceptance.070 UserPassword [ ]
 ==============================================================================
-20200818 22:04:05.385 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:05.386 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:05.388 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:05.389 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:05.390 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:05.391 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:05.391 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:05.392 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:05.392 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:05.392 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:05.393 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:05.393 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:05.394 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:05.395 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:05.765 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:05.765 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:05.766 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
-20200818 22:04:05.766 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:05.766 - DEBUG - Traceback (most recent call last):
+20200818 22:10:43.629 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:43.629 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:43.631 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:43.632 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:43.633 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:43.634 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:43.635 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:43.636 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:43.636 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:43.636 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:43.637 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:43.638 - INFO - +-------- END KW: BuiltIn.Log (2)
+20200818 22:10:43.638 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:43.640 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:43.935 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:43.935 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:43.935 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200818 22:10:43.935 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:43.936 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -1058,94 +1058,94 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:05.766 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (372)
-20200818 22:04:05.767 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (376)
-20200818 22:04:05.767 - INFO - +------ END KW: BuiltIn.Run Keyword If (377)
-20200818 22:04:05.767 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (378)
-20200818 22:04:05.767 - INFO - +---- END KW: BuiltIn.Run Keyword If (379)
-20200818 22:04:05.767 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (381)
-20200818 22:04:05.767 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (382)
+20200818 22:10:43.936 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (298)
+20200818 22:10:43.936 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (302)
+20200818 22:10:43.936 - INFO - +------ END KW: BuiltIn.Run Keyword If (303)
+20200818 22:10:43.936 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (304)
+20200818 22:10:43.936 - INFO - +---- END KW: BuiltIn.Run Keyword If (305)
+20200818 22:10:43.936 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (307)
+20200818 22:10:43.936 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (308)
 ==============================================================================
-20200818 22:04:05.768 - INFO - +-- START SUITE: Acceptance.070 UserPassword.010 Access [ ]
+20200818 22:10:43.937 - INFO - +-- START SUITE: Acceptance.070 UserPassword.010 Access [ ]
 ==============================================================================
-20200818 22:04:05.771 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:43.938 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.772 - INFO - +--- END TEST: Seed (2)
+20200818 22:10:43.940 - INFO - +--- END TEST: Seed (3)
 ------------------------------------------------------------------------------
-20200818 22:04:05.775 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:10:43.941 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.776 - INFO - +--- END TEST: Anonymous users should not access form (4)
+20200818 22:10:43.942 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.777 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:10:43.943 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.780 - INFO - +--- END TEST: User himself can access form - Form (0)
+20200818 22:10:43.943 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.783 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:10:43.944 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.784 - INFO - +--- END TEST: User himself can access form - Modal (3)
+20200818 22:10:43.945 - INFO - +--- END TEST: User himself can access form - Modal (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.785 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:10:43.946 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.785 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:10:43.947 - INFO - +--- END TEST: Expired session ask to login (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.789 - INFO - +-- END SUITE: Acceptance.070 UserPassword.010 Access (19)
+20200818 22:10:43.950 - INFO - +-- END SUITE: Acceptance.070 UserPassword.010 Access (11)
 ==============================================================================
-20200818 22:04:05.793 - INFO - +-- START SUITE: Acceptance.070 UserPassword.020 ChangeValid [ ]
+20200818 22:10:43.952 - INFO - +-- START SUITE: Acceptance.070 UserPassword.020 ChangeValid [ ]
 ==============================================================================
-20200818 22:04:05.796 - INFO - +--- START TEST: Valid password change - modal [ ]
+20200818 22:10:43.953 - INFO - +--- START TEST: Valid password change - modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.798 - INFO - +--- END TEST: Valid password change - modal (3)
+20200818 22:10:43.954 - INFO - +--- END TEST: Valid password change - modal (2)
 ------------------------------------------------------------------------------
-20200818 22:04:05.800 - INFO - +--- START TEST: Valid password change - page form [ ]
+20200818 22:10:43.956 - INFO - +--- START TEST: Valid password change - page form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.802 - INFO - +--- END TEST: Valid password change - page form (2)
+20200818 22:10:43.957 - INFO - +--- END TEST: Valid password change - page form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.804 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
+20200818 22:10:43.958 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.806 - INFO - +--- END TEST: Confirmation mail should be sent (2)
+20200818 22:10:43.959 - INFO - +--- END TEST: Confirmation mail should be sent (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.813 - INFO - +-- END SUITE: Acceptance.070 UserPassword.020 ChangeValid (18)
+20200818 22:10:43.961 - INFO - +-- END SUITE: Acceptance.070 UserPassword.020 ChangeValid (9)
 ==============================================================================
-20200818 22:04:05.817 - INFO - +-- START SUITE: Acceptance.070 UserPassword.030 ChangeInvalid [ ]
+20200818 22:10:43.963 - INFO - +-- START SUITE: Acceptance.070 UserPassword.030 ChangeInvalid [ ]
 ==============================================================================
-20200818 22:04:05.820 - INFO - +--- START TEST: Wrong old password [ ]
+20200818 22:10:43.964 - INFO - +--- START TEST: Wrong old password [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.823 - INFO - +--- END TEST: Wrong old password (3)
+20200818 22:10:43.965 - INFO - +--- END TEST: Wrong old password (1)
 ------------------------------------------------------------------------------
-20200818 22:04:05.826 - INFO - +--- START TEST: New password does not match confirm [ ]
+20200818 22:10:43.966 - INFO - +--- START TEST: New password does not match confirm [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:05.828 - INFO - +--- END TEST: New password does not match confirm (3)
+20200818 22:10:43.967 - INFO - +--- END TEST: New password does not match confirm (2)
 ------------------------------------------------------------------------------
-20200818 22:04:05.834 - INFO - +-- END SUITE: Acceptance.070 UserPassword.030 ChangeInvalid (16)
+20200818 22:10:43.970 - INFO - +-- END SUITE: Acceptance.070 UserPassword.030 ChangeInvalid (7)
 ==============================================================================
-20200818 22:04:05.837 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:05.839 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:05.840 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
-20200818 22:04:05.841 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (4)
+20200818 22:10:43.972 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:43.973 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:43.973 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:43.974 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:04:05.850 - INFO - +- END SUITE: Acceptance.070 UserPassword (514)
+20200818 22:10:43.979 - INFO - +- END SUITE: Acceptance.070 UserPassword (401)
 ==============================================================================
-20200818 22:04:05.952 - INFO - +- START SUITE: Acceptance.080 UserLanguageChange [ ]
+20200818 22:10:44.030 - INFO - +- START SUITE: Acceptance.080 UserLanguageChange [ ]
 ==============================================================================
-20200818 22:04:05.953 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:05.953 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:05.954 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:05.955 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:05.955 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:05.956 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:05.956 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:05.956 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:05.956 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200818 22:04:05.956 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:05.957 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:05.957 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:05.957 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:05.957 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:06.310 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:06.310 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:06.310 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:06.311 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:06.311 - DEBUG - Traceback (most recent call last):
+20200818 22:10:44.031 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:44.032 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:44.034 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:44.035 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:44.037 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:44.038 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:44.039 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:44.039 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:44.039 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:44.040 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:44.040 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:44.040 - INFO - +-------- END KW: BuiltIn.Log (0)
+20200818 22:10:44.041 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:44.042 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:44.343 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:44.344 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:44.344 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (1)
+20200818 22:10:44.344 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:44.344 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -1170,82 +1170,82 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:06.311 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (354)
-20200818 22:04:06.311 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (355)
-20200818 22:04:06.311 - INFO - +------ END KW: BuiltIn.Run Keyword If (356)
-20200818 22:04:06.312 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (357)
-20200818 22:04:06.312 - INFO - +---- END KW: BuiltIn.Run Keyword If (358)
-20200818 22:04:06.312 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (359)
-20200818 22:04:06.312 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (359)
+20200818 22:10:44.344 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (303)
+20200818 22:10:44.345 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (307)
+20200818 22:10:44.345 - INFO - +------ END KW: BuiltIn.Run Keyword If (308)
+20200818 22:10:44.345 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (310)
+20200818 22:10:44.345 - INFO - +---- END KW: BuiltIn.Run Keyword If (311)
+20200818 22:10:44.345 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (313)
+20200818 22:10:44.345 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (314)
 ==============================================================================
-20200818 22:04:06.313 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.010 Access [ ]
+20200818 22:10:44.346 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.010 Access [ ]
 ==============================================================================
-20200818 22:04:06.314 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:44.349 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.314 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:44.349 - INFO - +--- END TEST: Seed (2)
 ------------------------------------------------------------------------------
-20200818 22:04:06.315 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:10:44.350 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.315 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:10:44.351 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.316 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:10:44.352 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.317 - INFO - +--- END TEST: User himself can access form - Form (0)
+20200818 22:10:44.352 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.317 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:10:44.353 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.318 - INFO - +--- END TEST: User himself can access form - Modal (1)
+20200818 22:10:44.353 - INFO - +--- END TEST: User himself can access form - Modal (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.319 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:10:44.354 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.319 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:10:44.355 - INFO - +--- END TEST: Expired session ask to login (0)
 ------------------------------------------------------------------------------
-20200818 22:04:06.321 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.010 Access (8)
+20200818 22:10:44.357 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.010 Access (10)
 ==============================================================================
-20200818 22:04:06.322 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.020 Change [ ]
+20200818 22:10:44.358 - INFO - +-- START SUITE: Acceptance.080 UserLanguageChange.020 Change [ ]
 ==============================================================================
-20200818 22:04:06.323 - INFO - +--- START TEST: Language should be changed immediately [ ]
+20200818 22:10:44.359 - INFO - +--- START TEST: Language should be changed immediately [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.323 - INFO - +--- END TEST: Language should be changed immediately (1)
+20200818 22:10:44.359 - INFO - +--- END TEST: Language should be changed immediately (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.324 - INFO - +--- START TEST: Language should be changed on sign in [ ]
+20200818 22:10:44.360 - INFO - +--- START TEST: Language should be changed on sign in [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.325 - INFO - +--- END TEST: Language should be changed on sign in (0)
+20200818 22:10:44.361 - INFO - +--- END TEST: Language should be changed on sign in (0)
 ------------------------------------------------------------------------------
-20200818 22:04:06.325 - INFO - +--- START TEST: Language should be changed on root domain access [ ]
+20200818 22:10:44.362 - INFO - +--- START TEST: Language should be changed on root domain access [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.326 - INFO - +--- END TEST: Language should be changed on root domain access (1)
+20200818 22:10:44.362 - INFO - +--- END TEST: Language should be changed on root domain access (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.328 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.020 Change (5)
+20200818 22:10:44.365 - INFO - +-- END SUITE: Acceptance.080 UserLanguageChange.020 Change (6)
 ==============================================================================
-20200818 22:04:06.328 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:06.329 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:06.329 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:06.330 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
+20200818 22:10:44.365 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:44.366 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:44.367 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
+20200818 22:10:44.367 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
 ==============================================================================
-20200818 22:04:06.332 - INFO - +- END SUITE: Acceptance.080 UserLanguageChange (479)
+20200818 22:10:44.369 - INFO - +- END SUITE: Acceptance.080 UserLanguageChange (387)
 ==============================================================================
-20200818 22:04:06.364 - INFO - +- START SUITE: Acceptance.090 UserSecidChange [ ]
+20200818 22:10:44.406 - INFO - +- START SUITE: Acceptance.090 UserSecidChange [ ]
 ==============================================================================
-20200818 22:04:06.365 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:06.365 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:06.366 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:06.367 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:06.369 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:06.370 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:06.371 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:06.371 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:06.371 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:06.371 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:06.372 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:06.372 - INFO - +-------- END KW: BuiltIn.Log (1)
-20200818 22:04:06.372 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:06.373 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:06.698 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:06.698 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:06.698 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:06.699 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:06.699 - DEBUG - Traceback (most recent call last):
+20200818 22:10:44.407 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:44.408 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:44.409 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:44.410 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:44.410 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:44.411 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:44.411 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:44.412 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:44.412 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:44.412 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:44.413 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:44.413 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:44.413 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:44.415 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:44.732 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:44.732 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:44.732 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200818 22:10:44.732 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:44.732 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -1270,74 +1270,74 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:06.699 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (327)
-20200818 22:04:06.699 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (329)
-20200818 22:04:06.699 - INFO - +------ END KW: BuiltIn.Run Keyword If (330)
-20200818 22:04:06.699 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (332)
-20200818 22:04:06.699 - INFO - +---- END KW: BuiltIn.Run Keyword If (333)
-20200818 22:04:06.700 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (335)
-20200818 22:04:06.700 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (335)
+20200818 22:10:44.733 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (320)
+20200818 22:10:44.733 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (322)
+20200818 22:10:44.733 - INFO - +------ END KW: BuiltIn.Run Keyword If (323)
+20200818 22:10:44.733 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (323)
+20200818 22:10:44.733 - INFO - +---- END KW: BuiltIn.Run Keyword If (324)
+20200818 22:10:44.733 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (325)
+20200818 22:10:44.733 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (326)
 ==============================================================================
-20200818 22:04:06.700 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.010 Access [ ]
+20200818 22:10:44.734 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.010 Access [ ]
 ==============================================================================
-20200818 22:04:06.702 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:44.735 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.703 - INFO - +--- END TEST: Seed (2)
+20200818 22:10:44.736 - INFO - +--- END TEST: Seed (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.704 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:10:44.736 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.704 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:10:44.737 - INFO - +--- END TEST: Anonymous users should not access form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.705 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:10:44.738 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.706 - INFO - +--- END TEST: User himself can access form - Form (1)
+20200818 22:10:44.738 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.707 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:10:44.739 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.707 - INFO - +--- END TEST: User himself can access form - Modal (1)
+20200818 22:10:44.740 - INFO - +--- END TEST: User himself can access form - Modal (0)
 ------------------------------------------------------------------------------
-20200818 22:04:06.708 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:10:44.741 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.708 - INFO - +--- END TEST: Expired session ask to login (1)
+20200818 22:10:44.741 - INFO - +--- END TEST: Expired session ask to login (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.711 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.010 Access (9)
+20200818 22:10:44.744 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.010 Access (8)
 ==============================================================================
-20200818 22:04:06.712 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.020 Change [ ]
+20200818 22:10:44.744 - INFO - +-- START SUITE: Acceptance.090 UserSecidChange.020 Change [ ]
 ==============================================================================
-20200818 22:04:06.713 - INFO - +--- START TEST: Refresh should display a message [ ]
+20200818 22:10:44.745 - INFO - +--- START TEST: Refresh should display a message [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:06.715 - INFO - +--- END TEST: Refresh should display a message (1)
+20200818 22:10:44.746 - INFO - +--- END TEST: Refresh should display a message (1)
 ------------------------------------------------------------------------------
-20200818 22:04:06.717 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.020 Change (4)
+20200818 22:10:44.748 - INFO - +-- END SUITE: Acceptance.090 UserSecidChange.020 Change (3)
 ==============================================================================
-20200818 22:04:06.717 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:06.718 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:06.719 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:06.719 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (2)
+20200818 22:10:44.749 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:44.749 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:44.750 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
+20200818 22:10:44.750 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:04:06.721 - INFO - +- END SUITE: Acceptance.090 UserSecidChange (387)
+20200818 22:10:44.752 - INFO - +- END SUITE: Acceptance.090 UserSecidChange (380)
 ==============================================================================
-20200818 22:04:06.759 - INFO - +- START SUITE: Acceptance.100 UserEmailChange [ ]
+20200818 22:10:44.788 - INFO - +- START SUITE: Acceptance.100 UserEmailChange [ ]
 ==============================================================================
-20200818 22:04:06.760 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200818 22:04:06.761 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200818 22:04:06.762 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200818 22:04:06.763 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
-20200818 22:04:06.764 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
-20200818 22:04:06.764 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
-20200818 22:04:06.765 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
-20200818 22:04:06.765 - INFO - Open Browserstack Windows10 Firefox
-20200818 22:04:06.765 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200818 22:04:06.766 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
-20200818 22:04:06.766 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6417,project:GeoKrety,resolution:1920x1080"
-20200818 22:04:06.766 - INFO - +-------- END KW: BuiltIn.Log (0)
-20200818 22:04:06.767 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
-20200818 22:04:06.768 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
-20200818 22:04:07.066 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200818 22:04:07.066 - INFO - Cannot capture screenshot because no browser is open.
-20200818 22:04:07.066 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
-20200818 22:04:07.067 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
-20200818 22:04:07.067 - DEBUG - Traceback (most recent call last):
+20200818 22:10:44.789 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200818 22:10:44.790 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200818 22:10:44.791 - INFO - +---- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200818 22:10:44.792 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack [ ${browser} ]
+20200818 22:10:44.793 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety BrowserStack Windows10 Firefox ]
+20200818 22:10:44.793 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox [ ]
+20200818 22:10:44.794 - INFO - +-------- START KW: BuiltIn.Log [ Open Browserstack Windows10 Firefox ]
+20200818 22:10:44.794 - INFO - Open Browserstack Windows10 Firefox
+20200818 22:10:44.794 - INFO - +-------- END KW: BuiltIn.Log (0)
+20200818 22:10:44.794 - INFO - +-------- START KW: BuiltIn.Log [ ${DC_Win10Firefox} ]
+20200818 22:10:44.795 - INFO - "os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"
+20200818 22:10:44.795 - INFO - +-------- END KW: BuiltIn.Log (1)
+20200818 22:10:44.795 - INFO - +-------- START KW: SeleniumLibrary.Open Browser [ ${BROWSER_START_PAGE} | remote_url=${BS_HUB} | desired_capabilities=${DC_Win10Firefox} ]
+20200818 22:10:44.796 - INFO - Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.
+20200818 22:10:45.409 - INFO - +--------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200818 22:10:45.409 - INFO - Cannot capture screenshot because no browser is open.
+20200818 22:10:45.409 - INFO - +--------- END KW: SeleniumLibrary.Capture Page Screenshot (0)
+20200818 22:10:45.410 - FAIL - WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+20200818 22:10:45.410 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
@@ -1362,168 +1362,168 @@
     self.error_handler.check_response(response)
   File "/home/travis/.local/lib/python2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-20200818 22:04:07.067 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (300)
-20200818 22:04:07.067 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (303)
-20200818 22:04:07.067 - INFO - +------ END KW: BuiltIn.Run Keyword If (304)
-20200818 22:04:07.067 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (304)
-20200818 22:04:07.068 - INFO - +---- END KW: BuiltIn.Run Keyword If (306)
-20200818 22:04:07.068 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (307)
-20200818 22:04:07.068 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (308)
+20200818 22:10:45.410 - INFO - +-------- END KW: SeleniumLibrary.Open Browser (615)
+20200818 22:10:45.410 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack Windows10 Firefox (617)
+20200818 22:10:45.410 - INFO - +------ END KW: BuiltIn.Run Keyword If (617)
+20200818 22:10:45.410 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety BrowserStack (618)
+20200818 22:10:45.410 - INFO - +---- END KW: BuiltIn.Run Keyword If (619)
+20200818 22:10:45.410 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (620)
+20200818 22:10:45.411 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (622)
 ==============================================================================
-20200818 22:04:07.069 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.010 Access [ ]
+20200818 22:10:45.411 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.010 Access [ ]
 ==============================================================================
-20200818 22:04:07.069 - INFO - +--- START TEST: Seed [ ]
+20200818 22:10:45.412 - INFO - +--- START TEST: Seed [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.070 - INFO - +--- END TEST: Seed (1)
+20200818 22:10:45.413 - INFO - +--- END TEST: Seed (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.071 - INFO - +--- START TEST: Anonymous users should not access form [ ]
+20200818 22:10:45.413 - INFO - +--- START TEST: Anonymous users should not access form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.071 - INFO - +--- END TEST: Anonymous users should not access form (1)
+20200818 22:10:45.414 - INFO - +--- END TEST: Anonymous users should not access form (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.072 - INFO - +--- START TEST: User himself can access form - Form [ ]
+20200818 22:10:45.414 - INFO - +--- START TEST: User himself can access form - Form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.072 - INFO - +--- END TEST: User himself can access form - Form (1)
+20200818 22:10:45.415 - INFO - +--- END TEST: User himself can access form - Form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.073 - INFO - +--- START TEST: User himself can access form - Modal [ ]
+20200818 22:10:45.415 - INFO - +--- START TEST: User himself can access form - Modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.074 - INFO - +--- END TEST: User himself can access form - Modal (0)
+20200818 22:10:45.416 - INFO - +--- END TEST: User himself can access form - Modal (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.074 - INFO - +--- START TEST: Expired session ask to login [ ]
+20200818 22:10:45.416 - INFO - +--- START TEST: Expired session ask to login [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.075 - INFO - +--- END TEST: Expired session ask to login (0)
+20200818 22:10:45.417 - INFO - +--- END TEST: Expired session ask to login (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.077 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.010 Access (7)
+20200818 22:10:45.419 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.010 Access (6)
 ==============================================================================
-20200818 22:04:07.077 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.020 ChangeValid [ ]
+20200818 22:10:45.419 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.020 ChangeValid [ ]
 ==============================================================================
-20200818 22:04:07.078 - INFO - +--- START TEST: Valid email change - modal [ ]
+20200818 22:10:45.420 - INFO - +--- START TEST: Valid email change - modal [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.079 - INFO - +--- END TEST: Valid email change - modal (0)
+20200818 22:10:45.421 - INFO - +--- END TEST: Valid email change - modal (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.079 - INFO - +--- START TEST: Valid email change - page form [ ]
+20200818 22:10:45.421 - INFO - +--- START TEST: Valid email change - page form [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.080 - INFO - +--- END TEST: Valid email change - page form (0)
+20200818 22:10:45.422 - INFO - +--- END TEST: Valid email change - page form (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.080 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
+20200818 22:10:45.422 - INFO - +--- START TEST: Confirmation mail should be sent [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.081 - INFO - +--- END TEST: Confirmation mail should be sent (1)
+20200818 22:10:45.423 - INFO - +--- END TEST: Confirmation mail should be sent (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.082 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.020 ChangeValid (4)
+20200818 22:10:45.425 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.020 ChangeValid (4)
 ==============================================================================
-20200818 22:04:07.083 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse [ ]
+20200818 22:10:45.426 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse [ ]
 ==============================================================================
-20200818 22:04:07.085 - INFO - +--- START TEST: OLD mail REFUSE change [ ]
+20200818 22:10:45.427 - INFO - +--- START TEST: OLD mail REFUSE change [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.085 - INFO - +--- END TEST: OLD mail REFUSE change (1)
+20200818 22:10:45.427 - INFO - +--- END TEST: OLD mail REFUSE change (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.086 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
+20200818 22:10:45.428 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.087 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (0)
+20200818 22:10:45.429 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.087 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:10:45.429 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.088 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
+20200818 22:10:45.430 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.090 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse (5)
+20200818 22:10:45.432 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.030 OldUserRefuse (5)
 ==============================================================================
-20200818 22:04:07.090 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept [ ]
+20200818 22:10:45.433 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept [ ]
 ==============================================================================
-20200818 22:04:07.091 - INFO - +--- START TEST: OLD mail ACCEPT change [ ]
+20200818 22:10:45.434 - INFO - +--- START TEST: OLD mail ACCEPT change [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.092 - INFO - +--- END TEST: OLD mail ACCEPT change (1)
+20200818 22:10:45.434 - INFO - +--- END TEST: OLD mail ACCEPT change (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.092 - INFO - +--- START TEST: On accept confirmation mails should be sent [ ]
+20200818 22:10:45.435 - INFO - +--- START TEST: On accept confirmation mails should be sent [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.093 - INFO - +--- END TEST: On accept confirmation mails should be sent (1)
+20200818 22:10:45.435 - INFO - +--- END TEST: On accept confirmation mails should be sent (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.094 - INFO - +--- START TEST: Token is then disabled for old email [ ]
+20200818 22:10:45.436 - INFO - +--- START TEST: Token is then disabled for old email [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.094 - INFO - +--- END TEST: Token is then disabled for old email (1)
+20200818 22:10:45.437 - INFO - +--- END TEST: Token is then disabled for old email (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.095 - INFO - +--- START TEST: Token is then disabled for new email [ ]
+20200818 22:10:45.437 - INFO - +--- START TEST: Token is then disabled for new email [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.095 - INFO - +--- END TEST: Token is then disabled for new email (1)
+20200818 22:10:45.438 - INFO - +--- END TEST: Token is then disabled for new email (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.097 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept (6)
+20200818 22:10:45.440 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.040 OldUserAccept (6)
 ==============================================================================
-20200818 22:04:07.098 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept [ ]
+20200818 22:10:45.441 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept [ ]
 ==============================================================================
-20200818 22:04:07.099 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
+20200818 22:10:45.441 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.100 - INFO - +--- END TEST: NEW mail ACCEPT change (0)
+20200818 22:10:45.442 - INFO - +--- END TEST: NEW mail ACCEPT change (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.100 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
+20200818 22:10:45.443 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.101 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
+20200818 22:10:45.443 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.101 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:10:45.444 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.102 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
+20200818 22:10:45.444 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.104 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept (5)
+20200818 22:10:45.446 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.050 NewUserAccept (5)
 ==============================================================================
-20200818 22:04:07.105 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse [ ]
+20200818 22:10:45.447 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse [ ]
 ==============================================================================
-20200818 22:04:07.105 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
+20200818 22:10:45.448 - INFO - +--- START TEST: NEW mail ACCEPT change [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.106 - INFO - +--- END TEST: NEW mail ACCEPT change (1)
+20200818 22:10:45.448 - INFO - +--- END TEST: NEW mail ACCEPT change (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.107 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
+20200818 22:10:45.449 - INFO - +--- START TEST: Once decision taken, token is disabled - old user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.107 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (1)
+20200818 22:10:45.450 - INFO - +--- END TEST: Once decision taken, token is disabled - old user (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.108 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:10:45.450 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.108 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
+20200818 22:10:45.451 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.110 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse (5)
+20200818 22:10:45.453 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.060 NewUserRefuse (5)
 ==============================================================================
-20200818 22:04:07.111 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.070 Dismiss [ ]
+20200818 22:10:45.454 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.070 Dismiss [ ]
 ==============================================================================
-20200818 22:04:07.112 - INFO - +--- START TEST: Dismiss button doesn't invalidate the token [ ]
+20200818 22:10:45.454 - INFO - +--- START TEST: Dismiss button doesn't invalidate the token [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.112 - INFO - +--- END TEST: Dismiss button doesn't invalidate the token (1)
+20200818 22:10:45.455 - INFO - +--- END TEST: Dismiss button doesn't invalidate the token (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.113 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
+20200818 22:10:45.456 - INFO - +--- START TEST: Once decision taken, token is disabled - new user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.114 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (0)
+20200818 22:10:45.456 - INFO - +--- END TEST: Once decision taken, token is disabled - new user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.115 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.070 Dismiss (4)
+20200818 22:10:45.458 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.070 Dismiss (4)
 ==============================================================================
-20200818 22:04:07.116 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.080 DailyMails [ ]
+20200818 22:10:45.459 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.080 DailyMails [ ]
 ==============================================================================
-20200818 22:04:07.117 - INFO - +--- START TEST: Disable daily mails [ ]
+20200818 22:10:45.459 - INFO - +--- START TEST: Disable daily mails [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.117 - INFO - +--- END TEST: Disable daily mails (1)
+20200818 22:10:45.460 - INFO - +--- END TEST: Disable daily mails (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.118 - INFO - +--- START TEST: Enable daily mails [ ]
+20200818 22:10:45.461 - INFO - +--- START TEST: Enable daily mails [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.119 - INFO - +--- END TEST: Enable daily mails (1)
+20200818 22:10:45.462 - INFO - +--- END TEST: Enable daily mails (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.120 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.080 DailyMails (4)
+20200818 22:10:45.463 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.080 DailyMails (4)
 ==============================================================================
-20200818 22:04:07.121 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken [ ]
+20200818 22:10:45.464 - INFO - +-- START SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken [ ]
 ==============================================================================
-20200818 22:04:07.122 - INFO - +--- START TEST: Email address already PENDING by user himself [ ]
+20200818 22:10:45.465 - INFO - +--- START TEST: Email address already PENDING by user himself [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.123 - INFO - +--- END TEST: Email address already PENDING by user himself (0)
+20200818 22:10:45.465 - INFO - +--- END TEST: Email address already PENDING by user himself (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.123 - INFO - +--- START TEST: Email address already USED by another user [ ]
+20200818 22:10:45.466 - INFO - +--- START TEST: Email address already USED by another user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.124 - INFO - +--- END TEST: Email address already USED by another user (1)
+20200818 22:10:45.467 - INFO - +--- END TEST: Email address already USED by another user (0)
 ------------------------------------------------------------------------------
-20200818 22:04:07.124 - INFO - +--- START TEST: Email address already PENDING by another user [ ]
+20200818 22:10:45.467 - INFO - +--- START TEST: Email address already PENDING by another user [ ]
 ------------------------------------------------------------------------------
-20200818 22:04:07.125 - INFO - +--- END TEST: Email address already PENDING by another user (1)
+20200818 22:10:45.468 - INFO - +--- END TEST: Email address already PENDING by another user (1)
 ------------------------------------------------------------------------------
-20200818 22:04:07.127 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken (5)
+20200818 22:10:45.470 - INFO - +-- END SUITE: Acceptance.100 UserEmailChange.090 EmailAlreadyTaken (5)
 ==============================================================================
-20200818 22:04:07.128 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200818 22:04:07.129 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20200818 22:04:07.129 - INFO - +--- END KW: SeleniumLibrary.Close Browser (0)
-20200818 22:04:07.129 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
+20200818 22:10:45.471 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200818 22:10:45.471 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20200818 22:10:45.472 - INFO - +--- END KW: SeleniumLibrary.Close Browser (1)
+20200818 22:10:45.472 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (1)
 ==============================================================================
-20200818 22:04:07.134 - INFO - +- END SUITE: Acceptance.100 UserEmailChange (407)
+20200818 22:10:45.477 - INFO - +- END SUITE: Acceptance.100 UserEmailChange (719)
 ==============================================================================
-20200818 22:04:07.153 - INFO - + END SUITE: Acceptance (5361)
+20200818 22:10:45.494 - INFO - + END SUITE: Acceptance (5390)
 ==============================================================================
