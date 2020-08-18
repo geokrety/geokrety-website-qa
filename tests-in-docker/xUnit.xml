@@ -1,378 +1,284 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="125" errors="0" name="Acceptance" skipped="0" time="101.636" failures="125">
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testsuite tests="125" errors="0" name="Acceptance" skipped="0" time="1574.345" failures="31">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="6.507">
 </testcase>
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="10.738">
 </testcase>
-<testcase classname="Acceptance.001 HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.001 HomePage.010 Found GeoKret" name="Welcome: (EN) input geokret code" time="5.645">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="11.577">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="9.748">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="6.565">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="5.717">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="3.835">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Seed an account" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Seed an account" time="5.274">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="19.233">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Seed an account" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Seed an account" time="5.325">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="8.485">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="4.133">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="5.419">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check username" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check username" time="16.655">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="13.292">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="9.400">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="3.705">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="17.463">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="6.228">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="2.083">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="14.574">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Seed an account" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Seed an account" time="5.642">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="8.986">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="6.768">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="6.629">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel login" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel login" time="5.396">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel logout" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel logout" time="6.553">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="14.160">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="30.073">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="12.946">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Seed" time="5.038">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="7.353">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="23.993">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Seed" time="5.407">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in navbar for anonymous users" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in navbar for anonymous users" time="3.391">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in profile actions for signed in users" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in profile actions for signed in users" time="2.950">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Forbidden for anonymous users" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Forbidden for anonymous users" time="2.274">
+<failure message="Location should have contained 'http://bs-local.com:3000/en/login' but it was 'http://bs-local.com:3000/en/geokrety/create'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Sign in" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Sign in" time="2.487">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present in navbar for signed in users" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present in navbar for signed in users" time="3.172">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present on user's profile actions for signed in users" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present on user's profile actions for signed in users" time="2.912">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link absent on someone else profile actions" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link absent on someone else profile actions" time="2.659">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use navbar link to access form" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use navbar link to access form" time="6.549">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use profile action link to access form" time="0.003">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use profile action link to access form" time="5.750">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Direct link access to form" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Direct link access to form" time="4.059">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Seed" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Seed" time="7.173">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Create A GeoKret" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Create A GeoKret" time="9.358">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Seed" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Seed" time="7.228">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid" time="19.492">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid (check after submit)" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid (check after submit)" time="11.007">
+<failure message="Page should not have contained text 'Your GeoKret has been created.'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name valid" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name valid" time="33.752">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Seed" time="7.527">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Type valid" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Type valid" time="34.152">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Seed" time="7.931">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Text valid" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Text valid" time="59.251">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Seed" time="0.003">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Seed" time="9.937">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - anonymous" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - anonymous" time="11.058">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - anonymous" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - anonymous" time="6.226">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - authenticated" time="0.003">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - authenticated" time="14.877">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Visible - authenticated - owned" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Visible - authenticated - owned" time="7.329">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - authenticated - not owned" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - authenticated - not owned" time="6.388">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Seed" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Seed" time="25.660">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - anonymous" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - anonymous" time="4.476">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - anonymous" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - anonymous" time="4.797">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - owned" time="0.003">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - owned" time="9.573">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - owned" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - owned" time="6.191">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - not owned" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - not owned" time="6.056">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - not owned" time="0.004">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - not owned" time="6.160">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Seed" time="5.577">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - anonymous" time="0.002">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - anonymous" time="8.613">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - anonymous" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - anonymous" time="9.255">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - authenticated" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - authenticated" time="9.173">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Visible - authenticated - himself" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Visible - authenticated - himself" time="5.575">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - authenticated - someone else" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - authenticated - someone else" time="5.381">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Seed" time="7.151">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Panel should be present" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Panel should be present" time="4.340">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats present" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats present" time="3.633">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats are per user" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats are per user" time="7.552">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stat created incremented" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stat created incremented" time="24.466">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic generated on user create" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic generated on user create" time="9.720">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic updated on geokrety create" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic updated on geokrety create" time="12.547">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Seed" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Seed" time="5.816">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for anonymous users" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for anonymous users" time="4.889">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users" time="5.971">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users - himself" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users - himself" time="5.998">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Seed" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Seed" time="5.322">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="2.236">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="3.862">
+<failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 1" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 1" time="8.723">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 2" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 2" time="9.214">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 3" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 3" time="10.055">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 4" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 4" time="9.012">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 5" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 5" time="9.510">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 6" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 6" time="8.986">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 7" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 7" time="9.608">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 8" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 8" time="9.839">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 9" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner 9" time="9.365">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Seed" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Seed" time="5.377">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Anonymous users are refused" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Anonymous users are refused" time="2.377">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Users cannot edit other user observation area" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Users cannot edit other user observation area" time="4.423">
+<failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Move pan should update coordinates field" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Move pan should update coordinates field" time="3.894">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius is set to 0 by default" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius is set to 0 by default" time="3.596">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius between 0-10" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius between 0-10" time="50.918">
+<failure message="Several failures occurred:&#10;&#10;1) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '0' but was '50'.&#10;&#10;2) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '1' but was '51'.&#10;&#10;3) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '2' but was '52'.&#10;&#10;4) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '3' but was '53'.&#10;&#10;5) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '4' but was '54'.&#10;&#10;6) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '5' but was '55'.&#10;&#10;7) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '6' but was '56'.&#10;&#10;8) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '7' but was '57'.&#10;&#10;9) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '8' but was '58'.&#10;&#10;10) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '9' but was '59'.&#10;&#10;11) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '10' but was '510'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius outside range" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius outside range" time="9.841">
+<failure message="Several failures occurred:&#10;&#10;1) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '5' but was ''.&#10;&#10;2) Value of text field '//*[@id=&quot;inputRadius&quot;]' should have been '5' but was '511'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="7.839">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 0" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 0" time="7.037">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 1" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 1" time="6.917">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 5" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 5" time="7.538">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 10" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius 10" time="7.088">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check valid coordinates" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check valid coordinates" time="12.603">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check invalid coordinates" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check invalid coordinates" time="12.368">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="36.883">
+<failure message="Element '//*[@id=&quot;mapid&quot; and @data-map-loaded=&quot;true&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Seed" time="0.004">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Seed" time="5.419">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Anonymous should not see draggable" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Anonymous should not see draggable" time="3.049">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="User himself should see draggable" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="User himself should see draggable" time="5.526">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Authenticated should not see draggable for other users" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Authenticated should not see draggable for other users" time="4.993">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via button" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via button" time="40.927">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via Drag/Drop - same page" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via Drag/Drop - same page" time="41.504">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="41.441">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="5.665">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Seed" time="0.000">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Seed" time="5.649">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="35.687">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete Picture" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete Picture" time="41.557">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete 1 picture should leave other present" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete 1 picture should leave other present" time="41.608">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="41.721">
+<failure message="Element '//*[@id=&quot;userPicturesList&quot;]//div[@class=&quot;gallery&quot;]/div[@class=&quot;gallery&quot;][1]//a[@class=&quot;picture-link&quot;]' did not appear in 30 seconds." type="AssertionError"></failure>
 </testcase>
 </testsuite>
