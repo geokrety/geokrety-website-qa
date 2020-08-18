@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200818 22:10:40.089" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
+<robot rpa="false" generated="20200818 22:22:35.873" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance" id="s1" name="Acceptance">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/001_HomePage" id="s1-s1" name="001 HomePage">
 <kw type="setup" name="Global Setup" library="FunctionsGlobal">
@@ -33,16 +33,16 @@
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:40.288" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:40.288" starttime="20200818 22:10:40.287"></status>
+<msg timestamp="20200818 22:22:36.079" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:36.079" starttime="20200818 22:22:36.079"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:40.289" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:40.289" starttime="20200818 22:10:40.288"></status>
+<msg timestamp="20200818 22:22:36.080" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:36.080" starttime="20200818 22:22:36.079"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -51,27 +51,27 @@
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:40.290" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:36.081" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:40.693" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:40.693" starttime="20200818 22:10:40.692"></status>
+<msg timestamp="20200818 22:22:36.447" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:36.447" starttime="20200818 22:22:36.447"></status>
 </kw>
-<msg timestamp="20200818 22:10:40.694" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:36.449" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:40.694" starttime="20200818 22:10:40.289"></status>
+<status status="FAIL" endtime="20200818 22:22:36.449" starttime="20200818 22:22:36.080"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.695" starttime="20200818 22:10:40.286"></status>
+<status status="FAIL" endtime="20200818 22:22:36.449" starttime="20200818 22:22:36.078"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.695" starttime="20200818 22:10:40.286"></status>
+<status status="FAIL" endtime="20200818 22:22:36.449" starttime="20200818 22:22:36.078"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.695" starttime="20200818 22:10:40.285"></status>
+<status status="FAIL" endtime="20200818 22:22:36.449" starttime="20200818 22:22:36.077"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.695" starttime="20200818 22:10:40.284"></status>
+<status status="FAIL" endtime="20200818 22:22:36.450" starttime="20200818 22:22:36.076"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.695" starttime="20200818 22:10:40.283"></status>
+<status status="FAIL" endtime="20200818 22:22:36.450" starttime="20200818 22:22:36.075"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.695" starttime="20200818 22:10:40.282"></status>
+<status status="FAIL" endtime="20200818 22:22:36.450" starttime="20200818 22:22:36.075"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/001_HomePage/000_Languages.robot" id="s1-s1-s1" name="000 Languages">
 <test id="s1-s1-s1-t1" name="Welcome: (EN)">
@@ -81,7 +81,7 @@
 <tag>Languages</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:40.697" critical="yes" starttime="20200818 22:10:40.696">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.452" critical="yes" starttime="20200818 22:22:36.451">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -92,11 +92,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>Languages</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:40.699" critical="yes" starttime="20200818 22:10:40.698">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.453" critical="yes" starttime="20200818 22:22:36.453">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:40.700" starttime="20200818 22:10:40.695">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.454" starttime="20200818 22:22:36.450">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -107,22 +107,22 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>Movement</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:40.703" critical="yes" starttime="20200818 22:10:40.702">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.458" critical="yes" starttime="20200818 22:22:36.457">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:40.704" starttime="20200818 22:10:40.701">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.458" starttime="20200818 22:22:36.455">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:40.707" starttime="20200818 22:10:40.706"></status>
+<status status="PASS" endtime="20200818 22:22:36.461" starttime="20200818 22:22:36.460"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:40.707" starttime="20200818 22:10:40.706"></status>
+<status status="PASS" endtime="20200818 22:22:36.461" starttime="20200818 22:22:36.460"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:40.707" starttime="20200818 22:10:40.107">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.461" starttime="20200818 22:22:35.891">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -158,16 +158,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:40.777" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:40.778" starttime="20200818 22:10:40.777"></status>
+<msg timestamp="20200818 22:22:36.500" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:36.500" starttime="20200818 22:22:36.500"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:40.778" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:40.778" starttime="20200818 22:10:40.778"></status>
+<msg timestamp="20200818 22:22:36.501" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:36.501" starttime="20200818 22:22:36.501"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -176,27 +176,27 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:40.779" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:36.502" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:41.068" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:41.068" starttime="20200818 22:10:41.068"></status>
+<msg timestamp="20200818 22:22:36.907" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:36.907" starttime="20200818 22:22:36.907"></status>
 </kw>
-<msg timestamp="20200818 22:10:41.069" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:36.908" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:41.069" starttime="20200818 22:10:40.778"></status>
+<status status="FAIL" endtime="20200818 22:22:36.908" starttime="20200818 22:22:36.502"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.069" starttime="20200818 22:10:40.776"></status>
+<status status="FAIL" endtime="20200818 22:22:36.908" starttime="20200818 22:22:36.499"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.069" starttime="20200818 22:10:40.774"></status>
+<status status="FAIL" endtime="20200818 22:22:36.908" starttime="20200818 22:22:36.499"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.069" starttime="20200818 22:10:40.772"></status>
+<status status="FAIL" endtime="20200818 22:22:36.908" starttime="20200818 22:22:36.498"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.069" starttime="20200818 22:10:40.770"></status>
+<status status="FAIL" endtime="20200818 22:22:36.908" starttime="20200818 22:22:36.497"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.070" starttime="20200818 22:10:40.768"></status>
+<status status="FAIL" endtime="20200818 22:22:36.909" starttime="20200818 22:22:36.497"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.070" starttime="20200818 22:10:40.766"></status>
+<status status="FAIL" endtime="20200818 22:22:36.909" starttime="20200818 22:22:36.496"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/010_UserRegistration/000_create_account.robot" id="s1-s2-s1" name="000 Create Account">
 <test id="s1-s2-s1-t1" name="Create first account">
@@ -205,7 +205,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.072" critical="yes" starttime="20200818 22:10:41.071">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.911" critical="yes" starttime="20200818 22:22:36.910">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -215,7 +215,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.073" critical="yes" starttime="20200818 22:10:41.072">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.913" critical="yes" starttime="20200818 22:22:36.912">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -225,7 +225,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.075" critical="yes" starttime="20200818 22:10:41.074">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.914" critical="yes" starttime="20200818 22:22:36.913">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -235,7 +235,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.076" critical="yes" starttime="20200818 22:10:41.075">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.916" critical="yes" starttime="20200818 22:22:36.915">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -245,11 +245,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.077" critical="yes" starttime="20200818 22:10:41.077">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.917" critical="yes" starttime="20200818 22:22:36.916">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.078" starttime="20200818 22:10:41.070">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.918" starttime="20200818 22:22:36.909">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -260,7 +260,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.086" critical="yes" starttime="20200818 22:10:41.085">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.922" critical="yes" starttime="20200818 22:22:36.921">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -269,11 +269,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.090" critical="yes" starttime="20200818 22:10:41.087">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.923" critical="yes" starttime="20200818 22:22:36.922">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.091" starttime="20200818 22:10:41.082">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.924" starttime="20200818 22:22:36.919">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -284,7 +284,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.104" critical="yes" starttime="20200818 22:10:41.103">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.930" critical="yes" starttime="20200818 22:22:36.929">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -294,7 +294,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.106" critical="yes" starttime="20200818 22:10:41.104">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.931" critical="yes" starttime="20200818 22:22:36.931">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -305,11 +305,11 @@ But password fileds stayed empty</doc>
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.110" critical="yes" starttime="20200818 22:10:41.107">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.933" critical="yes" starttime="20200818 22:22:36.932">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.112" starttime="20200818 22:10:41.094">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.933" starttime="20200818 22:22:36.925">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -320,7 +320,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.120" critical="yes" starttime="20200818 22:10:41.118">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.937" critical="yes" starttime="20200818 22:22:36.936">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -329,11 +329,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.124" critical="yes" starttime="20200818 22:10:41.122">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.938" critical="yes" starttime="20200818 22:22:36.937">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.126" starttime="20200818 22:10:41.117">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.939" starttime="20200818 22:22:36.935">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -344,11 +344,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.136" critical="yes" starttime="20200818 22:10:41.133">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.942" critical="yes" starttime="20200818 22:22:36.941">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.138" starttime="20200818 22:10:41.129">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.942" starttime="20200818 22:22:36.940">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -359,7 +359,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.153" critical="yes" starttime="20200818 22:10:41.149">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.946" critical="yes" starttime="20200818 22:22:36.945">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -369,22 +369,22 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.158" critical="yes" starttime="20200818 22:10:41.155">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.947" critical="yes" starttime="20200818 22:22:36.946">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.161" starttime="20200818 22:10:41.146">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.948" starttime="20200818 22:22:36.944">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:41.173" starttime="20200818 22:10:41.171"></status>
+<status status="PASS" endtime="20200818 22:22:36.950" starttime="20200818 22:22:36.950"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:41.174" starttime="20200818 22:10:41.169"></status>
+<status status="PASS" endtime="20200818 22:22:36.951" starttime="20200818 22:22:36.950"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.174" starttime="20200818 22:10:40.710">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:36.951" starttime="20200818 22:22:36.463">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -420,16 +420,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:41.355" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:41.356" starttime="20200818 22:10:41.355"></status>
+<msg timestamp="20200818 22:22:37.036" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:37.037" starttime="20200818 22:22:37.036"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:41.357" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:41.357" starttime="20200818 22:10:41.356"></status>
+<msg timestamp="20200818 22:22:37.037" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:37.037" starttime="20200818 22:22:37.037"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -438,27 +438,27 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:41.360" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:37.039" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:41.676" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:41.676" starttime="20200818 22:10:41.676"></status>
+<msg timestamp="20200818 22:22:37.582" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:37.582" starttime="20200818 22:22:37.581"></status>
 </kw>
-<msg timestamp="20200818 22:10:41.676" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:37.582" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.358"></status>
+<status status="FAIL" endtime="20200818 22:22:37.582" starttime="20200818 22:22:37.038"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.354"></status>
+<status status="FAIL" endtime="20200818 22:22:37.583" starttime="20200818 22:22:37.036"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.354"></status>
+<status status="FAIL" endtime="20200818 22:22:37.583" starttime="20200818 22:22:37.035"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.353"></status>
+<status status="FAIL" endtime="20200818 22:22:37.583" starttime="20200818 22:22:37.035"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.352"></status>
+<status status="FAIL" endtime="20200818 22:22:37.583" starttime="20200818 22:22:37.034"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.351"></status>
+<status status="FAIL" endtime="20200818 22:22:37.583" starttime="20200818 22:22:37.033"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.677" starttime="20200818 22:10:41.350"></status>
+<status status="FAIL" endtime="20200818 22:22:37.583" starttime="20200818 22:22:37.032"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/020_SignIn.robot/010_AccountMustBeActivatedFirst.robot" id="s1-s3-s1" name="010 AccountMustBeActivatedFirst">
 <test id="s1-s3-s1-t1" name="Create an account">
@@ -467,7 +467,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.679" critical="yes" starttime="20200818 22:10:41.678">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.585" critical="yes" starttime="20200818 22:22:37.584">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -477,7 +477,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.681" critical="yes" starttime="20200818 22:10:41.680">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.588" critical="yes" starttime="20200818 22:22:37.586">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -486,7 +486,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.684" critical="yes" starttime="20200818 22:10:41.683">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.594" critical="yes" starttime="20200818 22:22:37.591">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -495,11 +495,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.688" critical="yes" starttime="20200818 22:10:41.686">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.601" critical="yes" starttime="20200818 22:22:37.598">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.690" starttime="20200818 22:10:41.678">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.605" starttime="20200818 22:22:37.583">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -510,7 +510,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.698" critical="yes" starttime="20200818 22:10:41.697">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.621" critical="yes" starttime="20200818 22:22:37.620">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -520,7 +520,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.702" critical="yes" starttime="20200818 22:10:41.700">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.623" critical="yes" starttime="20200818 22:22:37.622">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -530,7 +530,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.705" critical="yes" starttime="20200818 22:10:41.703">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.625" critical="yes" starttime="20200818 22:22:37.624">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -540,7 +540,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.710" critical="yes" starttime="20200818 22:10:41.706">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.627" critical="yes" starttime="20200818 22:22:37.625">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -550,7 +550,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.711" critical="yes" starttime="20200818 22:10:41.711">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.629" critical="yes" starttime="20200818 22:22:37.627">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -560,11 +560,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.713" critical="yes" starttime="20200818 22:10:41.712">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.631" critical="yes" starttime="20200818 22:22:37.629">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.715" starttime="20200818 22:10:41.694">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.632" starttime="20200818 22:22:37.614">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -575,7 +575,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.723" critical="yes" starttime="20200818 22:10:41.721">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.639" critical="yes" starttime="20200818 22:22:37.638">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -585,7 +585,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.727" critical="yes" starttime="20200818 22:10:41.724">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.642" critical="yes" starttime="20200818 22:22:37.640">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -595,11 +595,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.731" critical="yes" starttime="20200818 22:10:41.728">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.644" critical="yes" starttime="20200818 22:22:37.643">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.734" starttime="20200818 22:10:41.718">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.645" starttime="20200818 22:22:37.636">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -609,7 +609,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.740" critical="yes" starttime="20200818 22:10:41.738">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.652" critical="yes" starttime="20200818 22:22:37.650">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -619,7 +619,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.743" critical="yes" starttime="20200818 22:10:41.741">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.654" critical="yes" starttime="20200818 22:22:37.653">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -629,22 +629,22 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:41.746" critical="yes" starttime="20200818 22:10:41.745">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.656" critical="yes" starttime="20200818 22:22:37.655">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:41.748" starttime="20200818 22:10:41.735">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.657" starttime="20200818 22:22:37.648">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:41.756" starttime="20200818 22:10:41.756"></status>
+<status status="PASS" endtime="20200818 22:22:37.661" starttime="20200818 22:22:37.661"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:41.757" starttime="20200818 22:10:41.754"></status>
+<status status="PASS" endtime="20200818 22:22:37.662" starttime="20200818 22:22:37.660"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:41.757" starttime="20200818 22:10:41.187">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:37.662" starttime="20200818 22:22:36.954">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -680,16 +680,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:41.861" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:41.861" starttime="20200818 22:10:41.860"></status>
+<msg timestamp="20200818 22:22:37.732" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:37.732" starttime="20200818 22:22:37.731"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:41.863" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:41.864" starttime="20200818 22:10:41.861"></status>
+<msg timestamp="20200818 22:22:37.734" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:37.734" starttime="20200818 22:22:37.733"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -698,27 +698,27 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:41.872" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:37.736" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:42.198" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:42.198" starttime="20200818 22:10:42.198"></status>
+<msg timestamp="20200818 22:22:38.114" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:38.114" starttime="20200818 22:22:38.113"></status>
 </kw>
-<msg timestamp="20200818 22:10:42.199" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:38.114" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:42.199" starttime="20200818 22:10:41.866"></status>
+<status status="FAIL" endtime="20200818 22:22:38.114" starttime="20200818 22:22:37.735"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.199" starttime="20200818 22:10:41.860"></status>
+<status status="FAIL" endtime="20200818 22:22:38.115" starttime="20200818 22:22:37.730"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.199" starttime="20200818 22:10:41.859"></status>
+<status status="FAIL" endtime="20200818 22:22:38.115" starttime="20200818 22:22:37.729"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.200" starttime="20200818 22:10:41.859"></status>
+<status status="FAIL" endtime="20200818 22:22:38.115" starttime="20200818 22:22:37.728"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.200" starttime="20200818 22:10:41.858"></status>
+<status status="FAIL" endtime="20200818 22:22:38.115" starttime="20200818 22:22:37.727"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.200" starttime="20200818 22:10:41.858"></status>
+<status status="FAIL" endtime="20200818 22:22:38.115" starttime="20200818 22:22:37.725"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.200" starttime="20200818 22:10:41.857"></status>
+<status status="FAIL" endtime="20200818 22:22:38.115" starttime="20200818 22:22:37.725"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/030_GeokretyCreation/010_FormAccess.robot" id="s1-s4-s1" name="010 FormAccess">
 <test id="s1-s4-s1-t1" name="Seed">
@@ -726,7 +726,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.202" critical="yes" starttime="20200818 22:10:42.201">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.117" critical="yes" starttime="20200818 22:22:38.116">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -735,7 +735,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.204" critical="yes" starttime="20200818 22:10:42.203">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.118" critical="yes" starttime="20200818 22:22:38.117">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -744,7 +744,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.206" critical="yes" starttime="20200818 22:10:42.204">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.119" critical="yes" starttime="20200818 22:22:38.118">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -754,7 +754,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.217" critical="yes" starttime="20200818 22:10:42.216">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.120" critical="yes" starttime="20200818 22:22:38.120">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -763,7 +763,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.218" critical="yes" starttime="20200818 22:10:42.217">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.122" critical="yes" starttime="20200818 22:22:38.121">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -772,7 +772,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.219" critical="yes" starttime="20200818 22:10:42.219">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.132" critical="yes" starttime="20200818 22:22:38.128">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -781,7 +781,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.221" critical="yes" starttime="20200818 22:10:42.220">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.134" critical="yes" starttime="20200818 22:22:38.133">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -790,7 +790,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.222" critical="yes" starttime="20200818 22:10:42.221">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.135" critical="yes" starttime="20200818 22:22:38.134">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -799,7 +799,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.223" critical="yes" starttime="20200818 22:10:42.222">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.136" critical="yes" starttime="20200818 22:22:38.135">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -808,7 +808,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.224" critical="yes" starttime="20200818 22:10:42.224">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.147" critical="yes" starttime="20200818 22:22:38.136">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -817,11 +817,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.225" critical="yes" starttime="20200818 22:10:42.225">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.149" critical="yes" starttime="20200818 22:22:38.148">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.226" starttime="20200818 22:10:42.200">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.153" starttime="20200818 22:22:38.115">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -831,7 +831,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.230" critical="yes" starttime="20200818 22:10:42.230">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.159" critical="yes" starttime="20200818 22:22:38.159">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -840,11 +840,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.232" critical="yes" starttime="20200818 22:10:42.231">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.160" critical="yes" starttime="20200818 22:22:38.160">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.232" starttime="20200818 22:10:42.229">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.174" starttime="20200818 22:22:38.157">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -854,7 +854,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.236" critical="yes" starttime="20200818 22:10:42.235">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.178" critical="yes" starttime="20200818 22:22:38.177">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -863,7 +863,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.237" critical="yes" starttime="20200818 22:10:42.236">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.179" critical="yes" starttime="20200818 22:22:38.178">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -873,7 +873,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.238" critical="yes" starttime="20200818 22:10:42.237">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.180" critical="yes" starttime="20200818 22:22:38.179">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -882,11 +882,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.239" critical="yes" starttime="20200818 22:10:42.239">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.181" critical="yes" starttime="20200818 22:22:38.180">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.240" starttime="20200818 22:10:42.233">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.191" starttime="20200818 22:22:38.175">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -896,7 +896,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.243" critical="yes" starttime="20200818 22:10:42.243">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.194" critical="yes" starttime="20200818 22:22:38.194">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -905,11 +905,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.244" critical="yes" starttime="20200818 22:10:42.244">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.195" critical="yes" starttime="20200818 22:22:38.195">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.245" starttime="20200818 22:10:42.241">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.196" starttime="20200818 22:22:38.192">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -919,7 +919,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.248" critical="yes" starttime="20200818 22:10:42.248">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.208" critical="yes" starttime="20200818 22:22:38.207">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -928,22 +928,22 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.250" critical="yes" starttime="20200818 22:10:42.249">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.209" critical="yes" starttime="20200818 22:22:38.208">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.250" starttime="20200818 22:10:42.246">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.210" starttime="20200818 22:22:38.206">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:42.253" starttime="20200818 22:10:42.253"></status>
+<status status="PASS" endtime="20200818 22:22:38.212" starttime="20200818 22:22:38.212"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:42.253" starttime="20200818 22:10:42.252"></status>
+<status status="PASS" endtime="20200818 22:22:38.222" starttime="20200818 22:22:38.212"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.254" starttime="20200818 22:10:41.761">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.222" starttime="20200818 22:22:37.669">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -979,16 +979,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:42.292" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:42.292" starttime="20200818 22:10:42.291"></status>
+<msg timestamp="20200818 22:22:38.282" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:38.282" starttime="20200818 22:22:38.282"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:42.293" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:42.293" starttime="20200818 22:10:42.292"></status>
+<msg timestamp="20200818 22:22:38.283" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:38.283" starttime="20200818 22:22:38.283"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -997,27 +997,27 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:42.294" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:38.284" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:42.679" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:42.679" starttime="20200818 22:10:42.678"></status>
+<msg timestamp="20200818 22:22:38.673" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:38.673" starttime="20200818 22:22:38.673"></status>
 </kw>
-<msg timestamp="20200818 22:10:42.679" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:38.674" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:42.679" starttime="20200818 22:10:42.293"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.283"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.679" starttime="20200818 22:10:42.291"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.282"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.680" starttime="20200818 22:10:42.290"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.282"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.680" starttime="20200818 22:10:42.290"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.281"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.680" starttime="20200818 22:10:42.289"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.280"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.680" starttime="20200818 22:10:42.288"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.280"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.680" starttime="20200818 22:10:42.288"></status>
+<status status="FAIL" endtime="20200818 22:22:38.674" starttime="20200818 22:22:38.279"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/040_GeokretyDetails/010_Details.robot" id="s1-s5-s1" name="010 Details">
 <test id="s1-s5-s1-t1" name="Seed">
@@ -1025,7 +1025,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.682" critical="yes" starttime="20200818 22:10:42.681">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.680" critical="yes" starttime="20200818 22:22:38.679">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1034,7 +1034,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.683" critical="yes" starttime="20200818 22:10:42.682">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.687" critical="yes" starttime="20200818 22:22:38.684">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1043,7 +1043,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.684" critical="yes" starttime="20200818 22:10:42.684">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.688" critical="yes" starttime="20200818 22:22:38.687">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1052,7 +1052,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.686" critical="yes" starttime="20200818 22:10:42.685">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.689" critical="yes" starttime="20200818 22:22:38.688">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1061,7 +1061,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.687" critical="yes" starttime="20200818 22:10:42.687">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.696" critical="yes" starttime="20200818 22:22:38.692">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1070,11 +1070,11 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.688" critical="yes" starttime="20200818 22:10:42.688">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.700" critical="yes" starttime="20200818 22:22:38.699">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.689" starttime="20200818 22:10:42.680">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.700" starttime="20200818 22:22:38.675">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -1084,7 +1084,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.693" critical="yes" starttime="20200818 22:10:42.692">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.703" critical="yes" starttime="20200818 22:22:38.703">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1093,7 +1093,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.695" critical="yes" starttime="20200818 22:10:42.694">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.705" critical="yes" starttime="20200818 22:22:38.704">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1102,7 +1102,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.697" critical="yes" starttime="20200818 22:10:42.696">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.712" critical="yes" starttime="20200818 22:22:38.705">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1111,7 +1111,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.699" critical="yes" starttime="20200818 22:10:42.698">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.719" critical="yes" starttime="20200818 22:22:38.715">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1120,7 +1120,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.700" critical="yes" starttime="20200818 22:10:42.699">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.720" critical="yes" starttime="20200818 22:22:38.720">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1129,7 +1129,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.702" critical="yes" starttime="20200818 22:10:42.701">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.725" critical="yes" starttime="20200818 22:22:38.721">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1138,22 +1138,22 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>CreateAccount</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:42.703" critical="yes" starttime="20200818 22:10:42.702">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.728" critical="yes" starttime="20200818 22:22:38.727">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:42.704" starttime="20200818 22:10:42.691">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.729" starttime="20200818 22:22:38.702">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:42.708" starttime="20200818 22:10:42.708"></status>
+<status status="PASS" endtime="20200818 22:22:38.739" starttime="20200818 22:22:38.738"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:42.709" starttime="20200818 22:10:42.707"></status>
+<status status="PASS" endtime="20200818 22:22:38.739" starttime="20200818 22:22:38.738"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:42.709" starttime="20200818 22:10:42.258">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:38.739" starttime="20200818 22:22:38.226">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -1189,16 +1189,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:42.758" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:42.758" starttime="20200818 22:10:42.757"></status>
+<msg timestamp="20200818 22:22:38.803" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:38.803" starttime="20200818 22:22:38.802"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:42.759" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:42.759" starttime="20200818 22:10:42.758"></status>
+<msg timestamp="20200818 22:22:38.803" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:38.803" starttime="20200818 22:22:38.803"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -1207,160 +1207,160 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:42.760" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:38.804" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:43.041" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:43.041" starttime="20200818 22:10:43.040"></status>
+<msg timestamp="20200818 22:22:39.175" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:39.175" starttime="20200818 22:22:39.174"></status>
 </kw>
-<msg timestamp="20200818 22:10:43.041" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:39.175" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:43.041" starttime="20200818 22:10:42.759"></status>
+<status status="FAIL" endtime="20200818 22:22:39.175" starttime="20200818 22:22:38.804"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.042" starttime="20200818 22:10:42.757"></status>
+<status status="FAIL" endtime="20200818 22:22:39.176" starttime="20200818 22:22:38.800"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.042" starttime="20200818 22:10:42.756"></status>
+<status status="FAIL" endtime="20200818 22:22:39.176" starttime="20200818 22:22:38.798"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.042" starttime="20200818 22:10:42.755"></status>
+<status status="FAIL" endtime="20200818 22:22:39.176" starttime="20200818 22:22:38.798"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.042" starttime="20200818 22:10:42.754"></status>
+<status status="FAIL" endtime="20200818 22:22:39.176" starttime="20200818 22:22:38.797"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.042" starttime="20200818 22:10:42.753"></status>
+<status status="FAIL" endtime="20200818 22:22:39.176" starttime="20200818 22:22:38.796"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.042" starttime="20200818 22:10:42.753"></status>
+<status status="FAIL" endtime="20200818 22:22:39.176" starttime="20200818 22:22:38.795"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/010_Details.robot" id="s1-s6-s1" name="010 Details">
 <test id="s1-s6-s1-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.046" critical="yes" starttime="20200818 22:10:43.044">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.178" critical="yes" starttime="20200818 22:22:39.177">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s1-t2" name="Public Information Visible - anonymous">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.048" critical="yes" starttime="20200818 22:10:43.047">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.180" critical="yes" starttime="20200818 22:22:39.179">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s1-t3" name="Private Information Not Visible - anonymous">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.049" critical="yes" starttime="20200818 22:10:43.048">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.184" critical="yes" starttime="20200818 22:22:39.181">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s1-t4" name="Public Information Visible - authenticated">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.051" critical="yes" starttime="20200818 22:10:43.050">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.186" critical="yes" starttime="20200818 22:22:39.185">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s1-t5" name="Private Information Visible - authenticated - himself">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.053" critical="yes" starttime="20200818 22:10:43.052">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.187" critical="yes" starttime="20200818 22:22:39.186">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s1-t6" name="Private Information Not Visible - authenticated - someone else">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.055" critical="yes" starttime="20200818 22:10:43.054">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.188" critical="yes" starttime="20200818 22:22:39.187">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.056" starttime="20200818 22:10:43.042">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.189" starttime="20200818 22:22:39.176">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/020_Awards.robot" id="s1-s6-s2" name="020 Awards">
 <test id="s1-s6-s2-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.065" critical="yes" starttime="20200818 22:10:43.064">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.206" critical="yes" starttime="20200818 22:22:39.205">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s2-t2" name="Panel should be present">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.067" critical="yes" starttime="20200818 22:10:43.066">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.207" critical="yes" starttime="20200818 22:22:39.206">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s2-t3" name="Stats present">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.070" critical="yes" starttime="20200818 22:10:43.068">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.208" critical="yes" starttime="20200818 22:22:39.207">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s2-t4" name="Stats are per user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.071" critical="yes" starttime="20200818 22:10:43.070">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.210" critical="yes" starttime="20200818 22:22:39.209">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s2-t5" name="Stat created incremented">
 <timeout value="10 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.073" critical="yes" starttime="20200818 22:10:43.072">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.217" critical="yes" starttime="20200818 22:22:39.213">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.074" starttime="20200818 22:10:43.058">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.221" starttime="20200818 22:22:39.196">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/030_Statpic.robot" id="s1-s6-s3" name="030 Statpic">
 <test id="s1-s6-s3-t1" name="Statpic generated on user create">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.079" critical="yes" starttime="20200818 22:10:43.078">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.225" critical="yes" starttime="20200818 22:22:39.224">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s3-t2" name="Statpic updated on geokrety create">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.082" critical="yes" starttime="20200818 22:10:43.080">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.226" critical="yes" starttime="20200818 22:22:39.225">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.083" starttime="20200818 22:10:43.076">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.226" starttime="20200818 22:22:39.223">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/040_ProfileEditable.robot" id="s1-s6-s4" name="040 ProfileEditable">
 <test id="s1-s6-s4-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.089" critical="yes" starttime="20200818 22:10:43.088">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.231" critical="yes" starttime="20200818 22:22:39.229">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s4-t2" name="Buttons shown for anonymous users">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.091" critical="yes" starttime="20200818 22:10:43.090">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.241" critical="yes" starttime="20200818 22:22:39.236">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s4-t3" name="Buttons shown for authenticated users">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.092" critical="yes" starttime="20200818 22:10:43.092">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.242" critical="yes" starttime="20200818 22:22:39.242">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s4-t4" name="Buttons shown for authenticated users - himself">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.094" critical="yes" starttime="20200818 22:10:43.093">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.244" critical="yes" starttime="20200818 22:22:39.243">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.096" starttime="20200818 22:10:43.085">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.244" starttime="20200818 22:22:39.228">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/050_BanerTemplate.robot" id="s1-s6-s5" name="050 BanerTemplate">
 <test id="s1-s6-s5-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.102" critical="yes" starttime="20200818 22:10:43.101">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.247" critical="yes" starttime="20200818 22:22:39.247">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s5-t2" name="Anonymous users are refused">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.105" critical="yes" starttime="20200818 22:10:43.103">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.248" critical="yes" starttime="20200818 22:22:39.248">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1369,30 +1369,30 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.107" critical="yes" starttime="20200818 22:10:43.106">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.254" critical="yes" starttime="20200818 22:22:39.249">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s5-t4" name="Select banner">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.108" critical="yes" starttime="20200818 22:10:43.108">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.261" critical="yes" starttime="20200818 22:22:39.258">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.109" starttime="20200818 22:10:43.098">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.262" starttime="20200818 22:22:39.246">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/060_ObservationArea.robot" id="s1-s6-s6" name="060 ObservationArea">
 <test id="s1-s6-s6-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.116" critical="yes" starttime="20200818 22:10:43.115">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.272" critical="yes" starttime="20200818 22:22:39.267">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t2" name="Anonymous users are refused">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.118" critical="yes" starttime="20200818 22:10:43.117">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.277" critical="yes" starttime="20200818 22:22:39.276">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1401,94 +1401,94 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.121" critical="yes" starttime="20200818 22:10:43.119">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.278" critical="yes" starttime="20200818 22:22:39.278">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t4" name="Move pan should update coordinates field">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.123" critical="yes" starttime="20200818 22:10:43.122">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.279" critical="yes" starttime="20200818 22:22:39.279">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t5" name="Observation radius is set to 0 by default">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.126" critical="yes" starttime="20200818 22:10:43.124">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.281" critical="yes" starttime="20200818 22:22:39.280">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t6" name="Observation radius between 0-10">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.128" critical="yes" starttime="20200818 22:10:43.127">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.291" critical="yes" starttime="20200818 22:22:39.283">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t7" name="Observation radius outside range">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.130" critical="yes" starttime="20200818 22:10:43.129">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.292" critical="yes" starttime="20200818 22:22:39.292">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t8" name="Map should reflect manual coordinates input">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.132" critical="yes" starttime="20200818 22:10:43.131">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.299" critical="yes" starttime="20200818 22:22:39.293">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t9" name="Map circle should reflect observation radius 0">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.133" critical="yes" starttime="20200818 22:10:43.132">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.300" critical="yes" starttime="20200818 22:22:39.300">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t10" name="Map circle should reflect observation radius 1">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.135" critical="yes" starttime="20200818 22:10:43.134">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.302" critical="yes" starttime="20200818 22:22:39.301">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t11" name="Map circle should reflect observation radius 5">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.137" critical="yes" starttime="20200818 22:10:43.136">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.303" critical="yes" starttime="20200818 22:22:39.302">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t12" name="Map circle should reflect observation radius 10">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.140" critical="yes" starttime="20200818 22:10:43.138">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.304" critical="yes" starttime="20200818 22:22:39.303">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t13" name="Check valid coordinates">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.141" critical="yes" starttime="20200818 22:10:43.140">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.305" critical="yes" starttime="20200818 22:22:39.304">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t14" name="Check invalid coordinates">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.143" critical="yes" starttime="20200818 22:10:43.142">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.314" critical="yes" starttime="20200818 22:22:39.313">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s6-s6-t15" name="Save Observation Area Preferences">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.146" critical="yes" starttime="20200818 22:10:43.144">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.315" critical="yes" starttime="20200818 22:22:39.315">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.147" starttime="20200818 22:10:43.111">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.316" starttime="20200818 22:22:39.263">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:43.154" starttime="20200818 22:10:43.154"></status>
+<status status="PASS" endtime="20200818 22:22:39.335" starttime="20200818 22:22:39.334"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:43.155" starttime="20200818 22:10:43.153"></status>
+<status status="PASS" endtime="20200818 22:22:39.335" starttime="20200818 22:22:39.327"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.155" starttime="20200818 22:10:42.713">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.335" starttime="20200818 22:22:38.747">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -1524,16 +1524,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:43.227" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:43.227" starttime="20200818 22:10:43.226"></status>
+<msg timestamp="20200818 22:22:39.409" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:39.410" starttime="20200818 22:22:39.409"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:43.228" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:43.228" starttime="20200818 22:10:43.227"></status>
+<msg timestamp="20200818 22:22:39.410" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:39.410" starttime="20200818 22:22:39.410"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -1542,144 +1542,144 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:43.230" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:39.411" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:43.514" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:43.514" starttime="20200818 22:10:43.513"></status>
+<msg timestamp="20200818 22:22:39.753" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:39.753" starttime="20200818 22:22:39.752"></status>
 </kw>
-<msg timestamp="20200818 22:10:43.514" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:39.753" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:43.514" starttime="20200818 22:10:43.229"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.410"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.515" starttime="20200818 22:10:43.225"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.409"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.515" starttime="20200818 22:10:43.224"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.409"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.515" starttime="20200818 22:10:43.223"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.408"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.515" starttime="20200818 22:10:43.222"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.407"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.515" starttime="20200818 22:10:43.220"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.407"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.515" starttime="20200818 22:10:43.219"></status>
+<status status="FAIL" endtime="20200818 22:22:39.754" starttime="20200818 22:22:39.406"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/010_Access.robot" id="s1-s7-s1" name="010 Access">
 <test id="s1-s7-s1-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.517" critical="yes" starttime="20200818 22:10:43.516">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.756" critical="yes" starttime="20200818 22:22:39.755">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s1-t2" name="Anonymous should not see draggable">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.519" critical="yes" starttime="20200818 22:10:43.518">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.758" critical="yes" starttime="20200818 22:22:39.757">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s1-t3" name="User himself should see draggable">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.520" critical="yes" starttime="20200818 22:10:43.519">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.759" critical="yes" starttime="20200818 22:22:39.758">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s1-t4" name="Authenticated should not see draggable for other users">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.522" critical="yes" starttime="20200818 22:10:43.521">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.760" critical="yes" starttime="20200818 22:22:39.759">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.523" starttime="20200818 22:10:43.515">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.761" starttime="20200818 22:22:39.755">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/020_AvatarUpload.robot" id="s1-s7-s2" name="020 AvatarUpload">
 <test id="s1-s7-s2-t1" name="Upload image via button">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.528" critical="yes" starttime="20200818 22:10:43.527">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.764" critical="yes" starttime="20200818 22:22:39.763">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s2-t2" name="Upload image via Drag/Drop - same page">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.530" critical="yes" starttime="20200818 22:10:43.529">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.765" critical="yes" starttime="20200818 22:22:39.764">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.532" starttime="20200818 22:10:43.525">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.770" starttime="20200818 22:22:39.762">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/030_DefineAsMain.robot" id="s1-s7-s3" name="030 DefineAsMain">
 <test id="s1-s7-s3-t1" name="Set image as main avatar">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.537" critical="yes" starttime="20200818 22:10:43.536">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.775" critical="yes" starttime="20200818 22:22:39.774">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s3-t2" name="Set second image as main avatar">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.539" critical="yes" starttime="20200818 22:10:43.538">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.776" critical="yes" starttime="20200818 22:22:39.775">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.540" starttime="20200818 22:10:43.534">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.776" starttime="20200818 22:22:39.773">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/040_UpdateCaption.robot" id="s1-s7-s4" name="040 UpdateCaption">
 <test id="s1-s7-s4-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.544" critical="yes" starttime="20200818 22:10:43.544">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.787" critical="yes" starttime="20200818 22:22:39.787">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s4-t2" name="Define Picture Caption">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.546" critical="yes" starttime="20200818 22:10:43.545">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.788" critical="yes" starttime="20200818 22:22:39.788">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.548" starttime="20200818 22:10:43.542">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.790" starttime="20200818 22:22:39.785">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/050_DeletePicture.robot" id="s1-s7-s5" name="050 DeletePicture">
 <test id="s1-s7-s5-t1" name="Delete Picture">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.553" critical="yes" starttime="20200818 22:10:43.551">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.799" critical="yes" starttime="20200818 22:22:39.798">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s7-s5-t2" name="Delete 1 picture should leave other present">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.555" critical="yes" starttime="20200818 22:10:43.554">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.800" critical="yes" starttime="20200818 22:22:39.799">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.556" starttime="20200818 22:10:43.550">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.800" starttime="20200818 22:22:39.797">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/060_ShowOnHomepage.robot" id="s1-s7-s6" name="060 ShowOnHomepage">
 <test id="s1-s7-s6-t1" name="Should be shown on Homepage">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.561" critical="yes" starttime="20200818 22:10:43.560">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.810" critical="yes" starttime="20200818 22:22:39.809">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.562" starttime="20200818 22:10:43.558">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.810" starttime="20200818 22:22:39.808">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:43.566" starttime="20200818 22:10:43.566"></status>
+<status status="PASS" endtime="20200818 22:22:39.815" starttime="20200818 22:22:39.813"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:43.567" starttime="20200818 22:10:43.565"></status>
+<status status="PASS" endtime="20200818 22:22:39.818" starttime="20200818 22:22:39.812"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.567" starttime="20200818 22:10:43.165">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:39.819" starttime="20200818 22:22:39.346">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -1715,16 +1715,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:43.636" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:43.636" starttime="20200818 22:10:43.635"></status>
+<msg timestamp="20200818 22:22:39.864" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:39.864" starttime="20200818 22:22:39.863"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:43.637" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:43.638" starttime="20200818 22:10:43.636"></status>
+<msg timestamp="20200818 22:22:39.865" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:39.865" starttime="20200818 22:22:39.864"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -1733,111 +1733,111 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:43.640" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:39.866" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:43.935" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:43.935" starttime="20200818 22:10:43.935"></status>
+<msg timestamp="20200818 22:22:40.202" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:40.202" starttime="20200818 22:22:40.202"></status>
 </kw>
-<msg timestamp="20200818 22:10:43.935" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:40.203" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.638"></status>
+<status status="FAIL" endtime="20200818 22:22:40.203" starttime="20200818 22:22:39.865"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.634"></status>
+<status status="FAIL" endtime="20200818 22:22:40.203" starttime="20200818 22:22:39.863"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.633"></status>
+<status status="FAIL" endtime="20200818 22:22:40.203" starttime="20200818 22:22:39.862"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.632"></status>
+<status status="FAIL" endtime="20200818 22:22:40.203" starttime="20200818 22:22:39.862"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.631"></status>
+<status status="FAIL" endtime="20200818 22:22:40.203" starttime="20200818 22:22:39.861"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.629"></status>
+<status status="FAIL" endtime="20200818 22:22:40.204" starttime="20200818 22:22:39.860"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.936" starttime="20200818 22:10:43.628"></status>
+<status status="FAIL" endtime="20200818 22:22:40.204" starttime="20200818 22:22:39.860"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/070_UserPassword/010_Access.robot" id="s1-s8-s1" name="010 Access">
 <test id="s1-s8-s1-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.940" critical="yes" starttime="20200818 22:10:43.937">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.209" critical="yes" starttime="20200818 22:22:40.207">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s1-t2" name="Anonymous users should not access form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.941" critical="yes" starttime="20200818 22:10:43.940">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.212" critical="yes" starttime="20200818 22:22:40.210">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s1-t3" name="User himself can access form - Form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.943" critical="yes" starttime="20200818 22:10:43.942">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.214" critical="yes" starttime="20200818 22:22:40.213">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s1-t4" name="User himself can access form - Modal">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.945" critical="yes" starttime="20200818 22:10:43.944">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.216" critical="yes" starttime="20200818 22:22:40.214">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s1-t5" name="Expired session ask to login">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.946" critical="yes" starttime="20200818 22:10:43.945">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.217" critical="yes" starttime="20200818 22:22:40.216">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.948" starttime="20200818 22:10:43.937">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.219" starttime="20200818 22:22:40.204">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/070_UserPassword/020_ChangeValid.robot" id="s1-s8-s2" name="020 ChangeValid">
 <test id="s1-s8-s2-t1" name="Valid password change - modal">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.954" critical="yes" starttime="20200818 22:10:43.952">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.223" critical="yes" starttime="20200818 22:22:40.222">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s2-t2" name="Valid password change - page form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.956" critical="yes" starttime="20200818 22:10:43.955">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.225" critical="yes" starttime="20200818 22:22:40.224">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s2-t3" name="Confirmation mail should be sent">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.958" critical="yes" starttime="20200818 22:10:43.957">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.226" critical="yes" starttime="20200818 22:22:40.225">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.959" starttime="20200818 22:10:43.950">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.227" starttime="20200818 22:22:40.221">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/070_UserPassword/030_ChangeInvalid.robot" id="s1-s8-s3" name="030 ChangeInvalid">
 <test id="s1-s8-s3-t1" name="Wrong old password">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.964" critical="yes" starttime="20200818 22:10:43.963">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.233" critical="yes" starttime="20200818 22:22:40.232">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s8-s3-t2" name="New password does not match confirm">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:43.967" critical="yes" starttime="20200818 22:10:43.965">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.235" critical="yes" starttime="20200818 22:22:40.234">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:43.968" starttime="20200818 22:10:43.961">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.236" starttime="20200818 22:22:40.230">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:43.973" starttime="20200818 22:10:43.973"></status>
+<status status="PASS" endtime="20200818 22:22:40.241" starttime="20200818 22:22:40.240"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:43.974" starttime="20200818 22:10:43.972"></status>
+<status status="PASS" endtime="20200818 22:22:40.241" starttime="20200818 22:22:40.239"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:43.974" starttime="20200818 22:10:43.573">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.241" starttime="20200818 22:22:39.823">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -1873,16 +1873,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.039" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:44.039" starttime="20200818 22:10:44.038"></status>
+<msg timestamp="20200818 22:22:40.300" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:40.300" starttime="20200818 22:22:40.299"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.040" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:44.040" starttime="20200818 22:10:44.040"></status>
+<msg timestamp="20200818 22:22:40.301" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:40.301" starttime="20200818 22:22:40.300"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -1891,60 +1891,60 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.042" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:40.303" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:44.344" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:44.344" starttime="20200818 22:10:44.343"></status>
+<msg timestamp="20200818 22:22:40.676" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:40.676" starttime="20200818 22:22:40.675"></status>
 </kw>
-<msg timestamp="20200818 22:10:44.344" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:40.676" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:44.344" starttime="20200818 22:10:44.041"></status>
+<status status="FAIL" endtime="20200818 22:22:40.676" starttime="20200818 22:22:40.302"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.345" starttime="20200818 22:10:44.038"></status>
+<status status="FAIL" endtime="20200818 22:22:40.676" starttime="20200818 22:22:40.299"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.345" starttime="20200818 22:10:44.037"></status>
+<status status="FAIL" endtime="20200818 22:22:40.677" starttime="20200818 22:22:40.298"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.345" starttime="20200818 22:10:44.035"></status>
+<status status="FAIL" endtime="20200818 22:22:40.677" starttime="20200818 22:22:40.297"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.345" starttime="20200818 22:10:44.034"></status>
+<status status="FAIL" endtime="20200818 22:22:40.677" starttime="20200818 22:22:40.296"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.345" starttime="20200818 22:10:44.032"></status>
+<status status="FAIL" endtime="20200818 22:22:40.677" starttime="20200818 22:22:40.294"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.345" starttime="20200818 22:10:44.031"></status>
+<status status="FAIL" endtime="20200818 22:22:40.677" starttime="20200818 22:22:40.294"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/080_UserLanguageChange/010_Access.robot" id="s1-s9-s1" name="010 Access">
 <test id="s1-s9-s1-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.349" critical="yes" starttime="20200818 22:10:44.347">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.681" critical="yes" starttime="20200818 22:22:40.678">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s9-s1-t2" name="Anonymous users should not access form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.351" critical="yes" starttime="20200818 22:10:44.350">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.688" critical="yes" starttime="20200818 22:22:40.684">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s9-s1-t3" name="User himself can access form - Form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.352" critical="yes" starttime="20200818 22:10:44.351">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.695" critical="yes" starttime="20200818 22:22:40.691">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s9-s1-t4" name="User himself can access form - Modal">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.353" critical="yes" starttime="20200818 22:10:44.352">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.703" critical="yes" starttime="20200818 22:22:40.698">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s9-s1-t5" name="Expired session ask to login">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.354" critical="yes" starttime="20200818 22:10:44.354">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.710" critical="yes" starttime="20200818 22:22:40.706">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:44.355" starttime="20200818 22:10:44.345">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.714" starttime="20200818 22:22:40.677">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -1954,7 +1954,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.359" critical="yes" starttime="20200818 22:10:44.358">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.735" critical="yes" starttime="20200818 22:22:40.730">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1963,7 +1963,7 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.360" critical="yes" starttime="20200818 22:10:44.360">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.743" critical="yes" starttime="20200818 22:22:40.738">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
@@ -1972,22 +1972,22 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <tag>TODO</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.362" critical="yes" starttime="20200818 22:10:44.361">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.751" critical="yes" starttime="20200818 22:22:40.747">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:44.363" starttime="20200818 22:10:44.357">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.756" starttime="20200818 22:22:40.723">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:44.366" starttime="20200818 22:10:44.366"></status>
+<status status="PASS" endtime="20200818 22:22:40.772" starttime="20200818 22:22:40.771"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:44.367" starttime="20200818 22:10:44.365"></status>
+<status status="PASS" endtime="20200818 22:22:40.774" starttime="20200818 22:22:40.767"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.367" starttime="20200818 22:10:43.980">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:40.775" starttime="20200818 22:22:40.245">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -2023,16 +2023,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.412" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:44.412" starttime="20200818 22:10:44.411"></status>
+<msg timestamp="20200818 22:22:40.809" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:40.810" starttime="20200818 22:22:40.809"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.413" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:44.413" starttime="20200818 22:10:44.412"></status>
+<msg timestamp="20200818 22:22:40.811" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:40.811" starttime="20200818 22:22:40.810"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -2041,82 +2041,82 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.415" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:40.812" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:44.732" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:44.732" starttime="20200818 22:10:44.732"></status>
+<msg timestamp="20200818 22:22:41.183" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:41.183" starttime="20200818 22:22:41.182"></status>
 </kw>
-<msg timestamp="20200818 22:10:44.732" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:41.183" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.413"></status>
+<status status="FAIL" endtime="20200818 22:22:41.183" starttime="20200818 22:22:40.811"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.411"></status>
+<status status="FAIL" endtime="20200818 22:22:41.184" starttime="20200818 22:22:40.808"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.410"></status>
+<status status="FAIL" endtime="20200818 22:22:41.184" starttime="20200818 22:22:40.807"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.410"></status>
+<status status="FAIL" endtime="20200818 22:22:41.184" starttime="20200818 22:22:40.806"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.409"></status>
+<status status="FAIL" endtime="20200818 22:22:41.184" starttime="20200818 22:22:40.805"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.408"></status>
+<status status="FAIL" endtime="20200818 22:22:41.184" starttime="20200818 22:22:40.804"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.733" starttime="20200818 22:10:44.407"></status>
+<status status="FAIL" endtime="20200818 22:22:41.184" starttime="20200818 22:22:40.803"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/090_UserSecidChange/010_Access.robot" id="s1-s10-s1" name="010 Access">
 <test id="s1-s10-s1-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.735" critical="yes" starttime="20200818 22:10:44.734">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.186" critical="yes" starttime="20200818 22:22:41.185">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s10-s1-t2" name="Anonymous users should not access form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.737" critical="yes" starttime="20200818 22:10:44.736">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.188" critical="yes" starttime="20200818 22:22:41.187">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s10-s1-t3" name="User himself can access form - Form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.738" critical="yes" starttime="20200818 22:10:44.737">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.190" critical="yes" starttime="20200818 22:22:41.189">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s10-s1-t4" name="User himself can access form - Modal">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.739" critical="yes" starttime="20200818 22:10:44.739">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.192" critical="yes" starttime="20200818 22:22:41.191">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s10-s1-t5" name="Expired session ask to login">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.741" critical="yes" starttime="20200818 22:10:44.740">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.194" critical="yes" starttime="20200818 22:22:41.193">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:44.742" starttime="20200818 22:10:44.734">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.195" starttime="20200818 22:22:41.185">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/090_UserSecidChange/020_Change.robot" id="s1-s10-s2" name="020 Change">
 <test id="s1-s10-s2-t1" name="Refresh should display a message">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:44.746" critical="yes" starttime="20200818 22:10:44.745">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.200" critical="yes" starttime="20200818 22:22:41.199">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:44.747" starttime="20200818 22:10:44.744">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.202" starttime="20200818 22:22:41.197">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:44.750" starttime="20200818 22:10:44.749"></status>
+<status status="PASS" endtime="20200818 22:22:41.205" starttime="20200818 22:22:41.205"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:44.750" starttime="20200818 22:10:44.749"></status>
+<status status="PASS" endtime="20200818 22:22:41.206" starttime="20200818 22:22:41.204"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:44.750" starttime="20200818 22:10:44.370">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.206" starttime="20200818 22:22:40.784">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
@@ -2152,16 +2152,16 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arguments>
 <arg>Open Browserstack Windows10 Firefox</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.794" level="INFO">Open Browserstack Windows10 Firefox</msg>
-<status status="PASS" endtime="20200818 22:10:44.794" starttime="20200818 22:10:44.794"></status>
+<msg timestamp="20200818 22:22:41.265" level="INFO">Open Browserstack Windows10 Firefox</msg>
+<status status="PASS" endtime="20200818 22:22:41.265" starttime="20200818 22:22:41.264"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.795" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6418,project:GeoKrety,resolution:1920x1080"</msg>
-<status status="PASS" endtime="20200818 22:10:44.795" starttime="20200818 22:10:44.794"></status>
+<msg timestamp="20200818 22:22:41.266" level="INFO">"os:Windows,os_version:10,browser:Firefox,browser_version:79.0,browserstack.local:true,browserstack.localIdentifier:travis-tests-in-docker-6419,project:GeoKrety,resolution:1280x1024"</msg>
+<status status="PASS" endtime="20200818 22:22:41.266" starttime="20200818 22:22:41.265"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -2170,253 +2170,253 @@ WebDriverException: Message: The specified screen resolution is not compatible w
 <arg>remote_url=${BS_HUB}</arg>
 <arg>desired_capabilities=${DC_Win10Firefox}</arg>
 </arguments>
-<msg timestamp="20200818 22:10:44.796" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
+<msg timestamp="20200818 22:22:41.268" level="INFO">Opening browser 'firefox' to base url 'about:blank' through remote server at 'https://geokretygeokrety1:e53qu2x85DsykVPqRsst@hub.browserstack.com/wd/hub'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200818 22:10:45.409" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20200818 22:10:45.409" starttime="20200818 22:10:45.409"></status>
+<msg timestamp="20200818 22:22:41.610" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200818 22:22:41.610" starttime="20200818 22:22:41.609"></status>
 </kw>
-<msg timestamp="20200818 22:10:45.410" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
+<msg timestamp="20200818 22:22:41.610" level="FAIL">WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </msg>
-<status status="FAIL" endtime="20200818 22:10:45.410" starttime="20200818 22:10:44.795"></status>
+<status status="FAIL" endtime="20200818 22:22:41.610" starttime="20200818 22:22:41.267"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.410" starttime="20200818 22:10:44.793"></status>
+<status status="FAIL" endtime="20200818 22:22:41.611" starttime="20200818 22:22:41.263"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.410" starttime="20200818 22:10:44.793"></status>
+<status status="FAIL" endtime="20200818 22:22:41.611" starttime="20200818 22:22:41.262"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.410" starttime="20200818 22:10:44.792"></status>
+<status status="FAIL" endtime="20200818 22:22:41.611" starttime="20200818 22:22:41.261"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.410" starttime="20200818 22:10:44.791"></status>
+<status status="FAIL" endtime="20200818 22:22:41.611" starttime="20200818 22:22:41.260"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.410" starttime="20200818 22:10:44.790"></status>
+<status status="FAIL" endtime="20200818 22:22:41.611" starttime="20200818 22:22:41.259"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.411" starttime="20200818 22:10:44.789"></status>
+<status status="FAIL" endtime="20200818 22:22:41.611" starttime="20200818 22:22:41.258"></status>
 </kw>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/010_Access.robot" id="s1-s11-s1" name="010 Access">
 <test id="s1-s11-s1-t1" name="Seed">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.412" critical="yes" starttime="20200818 22:10:45.412">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.613" critical="yes" starttime="20200818 22:22:41.612">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s1-t2" name="Anonymous users should not access form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.413" critical="yes" starttime="20200818 22:10:45.413">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.614" critical="yes" starttime="20200818 22:22:41.613">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s1-t3" name="User himself can access form - Form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.415" critical="yes" starttime="20200818 22:10:45.414">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.615" critical="yes" starttime="20200818 22:22:41.614">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s1-t4" name="User himself can access form - Modal">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.416" critical="yes" starttime="20200818 22:10:45.415">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.616" critical="yes" starttime="20200818 22:22:41.615">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s1-t5" name="Expired session ask to login">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.417" critical="yes" starttime="20200818 22:10:45.416">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.617" critical="yes" starttime="20200818 22:22:41.616">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.417" starttime="20200818 22:10:45.411">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.620" starttime="20200818 22:22:41.611">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/020_ChangeValid.robot" id="s1-s11-s2" name="020 ChangeValid">
 <test id="s1-s11-s2-t1" name="Valid email change - modal">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.420" critical="yes" starttime="20200818 22:10:45.420">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.631" critical="yes" starttime="20200818 22:22:41.629">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s2-t2" name="Valid email change - page form">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.422" critical="yes" starttime="20200818 22:10:45.421">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.634" critical="yes" starttime="20200818 22:22:41.632">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s2-t3" name="Confirmation mail should be sent">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.423" critical="yes" starttime="20200818 22:10:45.422">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.637" critical="yes" starttime="20200818 22:22:41.635">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.423" starttime="20200818 22:10:45.419">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.639" starttime="20200818 22:22:41.626">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/030_OldUserRefuse.robot" id="s1-s11-s3" name="030 OldUserRefuse">
 <test id="s1-s11-s3-t1" name="OLD mail REFUSE change">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.427" critical="yes" starttime="20200818 22:10:45.426">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.648" critical="yes" starttime="20200818 22:22:41.646">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s3-t2" name="Once decision taken, token is disabled - old user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.428" critical="yes" starttime="20200818 22:10:45.428">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.652" critical="yes" starttime="20200818 22:22:41.650">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s3-t3" name="Once decision taken, token is disabled - new user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.430" critical="yes" starttime="20200818 22:10:45.429">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.655" critical="yes" starttime="20200818 22:22:41.653">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.430" starttime="20200818 22:10:45.425">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.657" starttime="20200818 22:22:41.642">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/040_OldUserAccept.robot" id="s1-s11-s4" name="040 OldUserAccept">
 <test id="s1-s11-s4-t1" name="OLD mail ACCEPT change">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.434" critical="yes" starttime="20200818 22:10:45.433">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.665" critical="yes" starttime="20200818 22:22:41.663">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s4-t2" name="On accept confirmation mails should be sent">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.435" critical="yes" starttime="20200818 22:10:45.434">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.668" critical="yes" starttime="20200818 22:22:41.666">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s4-t3" name="Token is then disabled for old email">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.436" critical="yes" starttime="20200818 22:10:45.436">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.671" critical="yes" starttime="20200818 22:22:41.669">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s4-t4" name="Token is then disabled for new email">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.438" critical="yes" starttime="20200818 22:10:45.437">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.674" critical="yes" starttime="20200818 22:22:41.672">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.438" starttime="20200818 22:10:45.432">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.676" starttime="20200818 22:22:41.660">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/050_NewUserAccept.robot" id="s1-s11-s5" name="050 NewUserAccept">
 <test id="s1-s11-s5-t1" name="NEW mail ACCEPT change">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.442" critical="yes" starttime="20200818 22:10:45.441">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.685" critical="yes" starttime="20200818 22:22:41.683">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s5-t2" name="Once decision taken, token is disabled - old user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.443" critical="yes" starttime="20200818 22:10:45.442">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.689" critical="yes" starttime="20200818 22:22:41.687">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s5-t3" name="Once decision taken, token is disabled - new user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.444" critical="yes" starttime="20200818 22:10:45.443">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.692" critical="yes" starttime="20200818 22:22:41.690">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.445" starttime="20200818 22:10:45.440">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.694" starttime="20200818 22:22:41.680">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/060_NewUserRefuse.robot" id="s1-s11-s6" name="060 NewUserRefuse">
 <test id="s1-s11-s6-t1" name="NEW mail ACCEPT change">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.448" critical="yes" starttime="20200818 22:10:45.447">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.703" critical="yes" starttime="20200818 22:22:41.701">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s6-t2" name="Once decision taken, token is disabled - old user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.449" critical="yes" starttime="20200818 22:10:45.449">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.707" critical="yes" starttime="20200818 22:22:41.705">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s6-t3" name="Once decision taken, token is disabled - new user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.451" critical="yes" starttime="20200818 22:10:45.450">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.710" critical="yes" starttime="20200818 22:22:41.708">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.451" starttime="20200818 22:10:45.446">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.712" starttime="20200818 22:22:41.698">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/070_Dismiss.robot" id="s1-s11-s7" name="070 Dismiss">
 <test id="s1-s11-s7-t1" name="Dismiss button doesn't invalidate the token">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.455" critical="yes" starttime="20200818 22:10:45.454">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.721" critical="yes" starttime="20200818 22:22:41.719">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s7-t2" name="Once decision taken, token is disabled - new user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.456" critical="yes" starttime="20200818 22:10:45.455">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.725" critical="yes" starttime="20200818 22:22:41.723">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.457" starttime="20200818 22:10:45.453">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.727" starttime="20200818 22:22:41.716">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/080_DailyMails.robot" id="s1-s11-s8" name="080 DailyMails">
 <test id="s1-s11-s8-t1" name="Disable daily mails">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.460" critical="yes" starttime="20200818 22:10:45.459">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.735" critical="yes" starttime="20200818 22:22:41.733">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s8-t2" name="Enable daily mails">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.461" critical="yes" starttime="20200818 22:10:45.460">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.740" critical="yes" starttime="20200818 22:22:41.737">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.462" starttime="20200818 22:10:45.458">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.741" starttime="20200818 22:22:41.730">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/100_UserEmailChange/090_EmailAlreadyTaken.robot" id="s1-s11-s9" name="090 EmailAlreadyTaken">
 <test id="s1-s11-s9-t1" name="Email address already PENDING by user himself">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.465" critical="yes" starttime="20200818 22:10:45.464">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.754" critical="yes" starttime="20200818 22:22:41.750">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s9-t2" name="Email address already USED by another user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.466" critical="yes" starttime="20200818 22:10:45.466">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.760" critical="yes" starttime="20200818 22:22:41.756">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
 <test id="s1-s11-s9-t3" name="Email address already PENDING by another user">
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20200818 22:10:45.468" critical="yes" starttime="20200818 22:10:45.467">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.766" critical="yes" starttime="20200818 22:22:41.762">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </test>
-<status status="FAIL" endtime="20200818 22:10:45.468" starttime="20200818 22:10:45.463">Parent suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.771" starttime="20200818 22:22:41.746">Parent suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200818 22:10:45.472" starttime="20200818 22:10:45.471"></status>
+<status status="PASS" endtime="20200818 22:22:41.788" starttime="20200818 22:22:41.786"></status>
 </kw>
-<status status="PASS" endtime="20200818 22:10:45.472" starttime="20200818 22:10:45.471"></status>
+<status status="PASS" endtime="20200818 22:22:41.790" starttime="20200818 22:22:41.783"></status>
 </kw>
-<status status="FAIL" endtime="20200818 22:10:45.472" starttime="20200818 22:10:44.753">Suite setup failed:
+<status status="FAIL" endtime="20200818 22:22:41.790" starttime="20200818 22:22:41.210">Suite setup failed:
 WebDriverException: Message: The specified screen resolution is not compatible with the chosen OS version.
 </status>
 </suite>
-<status status="FAIL" endtime="20200818 22:10:45.481" starttime="20200818 22:10:40.091"></status>
+<status status="FAIL" endtime="20200818 22:22:41.834" starttime="20200818 22:22:35.875"></status>
 </suite>
 <statistics>
 <total>
