@@ -1,0 +1,97 @@
+==============================================================================
+20200819 10:36:26.648 - INFO - + START SUITE: 050 UsersDetails [ ]
+==============================================================================
+20200819 10:36:26.649 - INFO - +- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200819 10:36:26.650 - INFO - +-- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200819 10:36:26.652 - INFO - +--- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200819 10:36:26.653 - INFO - +---- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
+20200819 10:36:26.654 - INFO - +----- START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
+20200819 10:36:26.655 - INFO - +------ START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
+20200819 10:36:26.656 - INFO - +------- START KW: BuiltIn.Log [ Open Browser Firefox ]
+20200819 10:36:26.656 - INFO - Open Browser Firefox
+20200819 10:36:26.657 - INFO - +------- END KW: BuiltIn.Log (1)
+20200819 10:36:26.657 - INFO - +------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
+20200819 10:36:26.658 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7fe0fde46b50>
+20200819 10:36:26.658 - INFO - +------- END KW: BuiltIn.Evaluate (1)
+20200819 10:36:26.659 - INFO - +------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
+20200819 10:36:26.660 - INFO - +-------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
+20200819 10:36:26.661 - INFO - +-------- END KW: BuiltIn.Call Method (1)
+20200819 10:36:26.661 - INFO - +------- END KW: BuiltIn.Run Keyword If (2)
+20200819 10:36:26.661 - INFO - +------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} ]
+20200819 10:36:26.662 - INFO - Creating an instance of the Firefox WebDriver.
+20200819 10:36:29.094 - DEBUG - Created Firefox WebDriver instance with session id 9c2e92c2-0006-45a6-ae1a-af7b736b9fe2.
+20200819 10:36:29.095 - INFO - +------- END KW: SeleniumLibrary.Create Webdriver (2434)
+20200819 10:36:29.095 - INFO - +------ END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (2440)
+20200819 10:36:29.096 - INFO - +----- END KW: BuiltIn.Run Keyword If (2442)
+20200819 10:36:29.096 - INFO - +----- START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
+20200819 10:36:29.097 - INFO - +----- END KW: BuiltIn.Run Keyword If (1)
+20200819 10:36:29.097 - INFO - +---- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (2444)
+20200819 10:36:29.097 - INFO - +--- END KW: BuiltIn.Run Keyword If (2446)
+20200819 10:36:29.098 - INFO - +--- START KW: SeleniumLibrary.Set Window Size [ 1279 | 1023 ]
+20200819 10:36:29.202 - INFO - +--- END KW: SeleniumLibrary.Set Window Size (104)
+20200819 10:36:29.203 - INFO - +-- END KW: FunctionsGlobal.!Open GeoKrety Browser (2553)
+20200819 10:36:29.203 - INFO - +-- START KW: FunctionsGlobal.Clear Database [ ]
+20200819 10:36:29.204 - INFO - +--- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20200819 10:36:29.204 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:36:29.205 - INFO - Opening url 'http://localhost:3000/devel/db/reset'
+20200819 10:36:29.347 - INFO - +---- END KW: SeleniumLibrary.Go To (143)
+20200819 10:36:29.347 - INFO - +---- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:36:29.348 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:36:29.381 - DEBUG - Current frame has 0 subframes.
+20200819 10:36:29.381 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:36:29.381 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (33)
+20200819 10:36:29.382 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:36:29.419 - DEBUG - Current frame has 0 subframes.
+20200819 10:36:29.419 - INFO - Current page does not contain text 'Failed'.
+20200819 10:36:29.419 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (37)
+20200819 10:36:29.420 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:36:29.439 - DEBUG - Current frame has 0 subframes.
+20200819 10:36:29.439 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:36:29.440 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (19)
+20200819 10:36:29.440 - INFO - +---- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (93)
+20200819 10:36:29.440 - INFO - +--- END KW: FunctionsGlobal.Go To Url (236)
+20200819 10:36:29.440 - INFO - +--- START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20200819 10:36:29.468 - DEBUG - Current frame has 0 subframes.
+20200819 10:36:29.473 - INFO - +---- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200819 10:36:29.488 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-1.png"><img src="selenium-screenshot-1.png" width="800px"></a>
+20200819 10:36:29.489 - INFO - +---- END KW: SeleniumLibrary.Capture Page Screenshot (16)
+20200819 10:36:29.489 - FAIL - Page should have contained text 'OK' but did not.
+20200819 10:36:29.489 - DEBUG - Traceback (most recent call last):
+  File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/keywords/element.py", line 124, in page_should_contain
+    "but did not." % text)
+20200819 10:36:29.490 - INFO - +--- END KW: SeleniumLibrary.Page Should Contain (50)
+20200819 10:36:29.490 - INFO - +-- END KW: FunctionsGlobal.Clear Database (287)
+20200819 10:36:29.490 - INFO - +- END SETUP: FunctionsGlobal.Global Setup (2841)
+==============================================================================
+20200819 10:36:29.492 - INFO - +- START SUITE: 050 UsersDetails.050 BanerTemplate [ ]
+==============================================================================
+20200819 10:36:29.504 - INFO - +-- START TEST: Seed [ ]
+------------------------------------------------------------------------------
+20200819 10:36:29.520 - INFO - +-- END TEST: Seed (5)
+------------------------------------------------------------------------------
+20200819 10:36:29.523 - INFO - +-- START TEST: Anonymous users are refused [ ]
+------------------------------------------------------------------------------
+20200819 10:36:29.525 - INFO - +-- END TEST: Anonymous users are refused (1)
+------------------------------------------------------------------------------
+20200819 10:36:29.527 - INFO - +-- START TEST: Users cannot edit other user banner [ ]
+------------------------------------------------------------------------------
+20200819 10:36:29.528 - INFO - +-- END TEST: Users cannot edit other user banner (3)
+------------------------------------------------------------------------------
+20200819 10:36:29.529 - INFO - +-- START TEST: Select banner [ ]
+------------------------------------------------------------------------------
+20200819 10:36:29.529 - INFO - +-- END TEST: Select banner (1)
+------------------------------------------------------------------------------
+20200819 10:36:29.531 - INFO - +- END SUITE: 050 UsersDetails.050 BanerTemplate (39)
+==============================================================================
+20200819 10:36:29.537 - INFO - +- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200819 10:36:29.538 - INFO - +-- START KW: SeleniumLibrary.Close Browser [ ]
+20200819 10:36:29.538 - DEBUG - Closing browser with session id 9c2e92c2-0006-45a6-ae1a-af7b736b9fe2.
+20200819 10:36:30.039 - INFO - +-- END KW: SeleniumLibrary.Close Browser (501)
+20200819 10:36:30.040 - INFO - +- END TEARDOWN: FunctionsGlobal.Global TearDown (503)
+==============================================================================
+20200819 10:36:30.042 - INFO - + END SUITE: 050 UsersDetails (3582)
+==============================================================================

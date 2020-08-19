@@ -1,6 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200819 10:18:18.774" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
+<robot rpa="false" generated="20200819 10:36:26.456" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
+<suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails" id="s1" name="050 UsersDetails">
+<kw type="setup" name="Global Setup" library="FunctionsGlobal">
+<kw name="!Open GeoKrety Browser" library="FunctionsGlobal">
+<arguments>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${BS_ENABLED}' != 'false'</arg>
+<arg>!Open GeoKrety BrowserStack</arg>
+<arg>${browser}</arg>
+<arg>ELSE</arg>
+<arg>!Open GeoKrety Browser Local</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="!Open GeoKrety Browser Local" library="FunctionsGlobal">
+<arguments>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${browser}"=="Firefox"</arg>
+<arg>!Open GeoKrety Browser Firefox</arg>
+</arguments>
+<kw name="!Open GeoKrety Browser Firefox" library="FunctionsGlobal">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Open Browser Firefox</arg>
+</arguments>
+<msg timestamp="20200819 10:36:26.656" level="INFO">Open Browser Firefox</msg>
+<status status="PASS" endtime="20200819 10:36:26.657" starttime="20200819 10:36:26.656"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].firefox.webdriver.Options()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${firefox_options}</var>
+</assign>
+<msg timestamp="20200819 10:36:26.658" level="INFO">${firefox_options} = &lt;selenium.webdriver.firefox.options.Options object at 0x7fe0fde46b50&gt;</msg>
+<status status="PASS" endtime="20200819 10:36:26.658" starttime="20200819 10:36:26.657"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${HEADLESS}</arg>
+<arg>Call Method</arg>
+<arg>${firefox_options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+</arguments>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${firefox_options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+</arguments>
+<status status="PASS" endtime="20200819 10:36:26.661" starttime="20200819 10:36:26.660"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:26.661" starttime="20200819 10:36:26.659"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Firefox</arg>
+<arg>firefox_options=${firefox options}</arg>
+</arguments>
+<msg timestamp="20200819 10:36:26.662" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" endtime="20200819 10:36:29.095" starttime="20200819 10:36:26.661"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.095" starttime="20200819 10:36:26.655"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.096" starttime="20200819 10:36:26.654"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${browser}"=="Chrome"</arg>
+<arg>!Open GeoKrety Browser Chrome</arg>
+</arguments>
+<status status="PASS" endtime="20200819 10:36:29.097" starttime="20200819 10:36:29.096"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.097" starttime="20200819 10:36:26.653"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.097" starttime="20200819 10:36:26.651"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1279</arg>
+<arg>1023</arg>
+</arguments>
+<status status="PASS" endtime="20200819 10:36:29.202" starttime="20200819 10:36:29.098"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.203" starttime="20200819 10:36:26.650"></status>
+</kw>
+<kw name="Clear Database" library="FunctionsGlobal">
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${PAGE_DEV_RESET_DB_URL}</arg>
+</arguments>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200819 10:36:29.205" level="INFO">Opening url 'http://localhost:3000/devel/db/reset'</msg>
+<status status="PASS" endtime="20200819 10:36:29.347" starttime="20200819 10:36:29.204"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20200819 10:36:29.381" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20200819 10:36:29.381" starttime="20200819 10:36:29.348"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20200819 10:36:29.419" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20200819 10:36:29.419" starttime="20200819 10:36:29.382"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20200819 10:36:29.439" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20200819 10:36:29.439" starttime="20200819 10:36:29.420"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.440" starttime="20200819 10:36:29.347"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:29.440" starttime="20200819 10:36:29.204"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200819 10:36:29.488" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200819 10:36:29.489" starttime="20200819 10:36:29.473"></status>
+</kw>
+<msg timestamp="20200819 10:36:29.489" level="FAIL">Page should have contained text 'OK' but did not.</msg>
+<status status="FAIL" endtime="20200819 10:36:29.490" starttime="20200819 10:36:29.440"></status>
+</kw>
+<status status="FAIL" endtime="20200819 10:36:29.490" starttime="20200819 10:36:29.203"></status>
+</kw>
+<status status="FAIL" endtime="20200819 10:36:29.490" starttime="20200819 10:36:26.649"></status>
+</kw>
+<suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/050_UsersDetails/050_BanerTemplate.robot" id="s1-s1" name="050 BanerTemplate">
+<test id="s1-s1-t1" name="Seed">
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20200819 10:36:29.509" critical="yes" starttime="20200819 10:36:29.504">Parent suite setup failed:
+Page should have contained text 'OK' but did not.</status>
+</test>
+<test id="s1-s1-t2" name="Anonymous users are refused">
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20200819 10:36:29.524" critical="yes" starttime="20200819 10:36:29.523">Parent suite setup failed:
+Page should have contained text 'OK' but did not.</status>
+</test>
+<test id="s1-s1-t3" name="Users cannot edit other user banner">
+<tags>
+<tag>TODO</tag>
+</tags>
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20200819 10:36:29.528" critical="yes" starttime="20200819 10:36:29.525">Parent suite setup failed:
+Page should have contained text 'OK' but did not.</status>
+</test>
+<test id="s1-s1-t4" name="Select banner">
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20200819 10:36:29.529" critical="yes" starttime="20200819 10:36:29.528">Parent suite setup failed:
+Page should have contained text 'OK' but did not.</status>
+</test>
+<status status="FAIL" endtime="20200819 10:36:29.530" starttime="20200819 10:36:29.491">Parent suite setup failed:
+Page should have contained text 'OK' but did not.</status>
+</suite>
+<kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200819 10:36:30.039" starttime="20200819 10:36:29.538"></status>
+</kw>
+<status status="PASS" endtime="20200819 10:36:30.040" starttime="20200819 10:36:29.537"></status>
+</kw>
+<status status="FAIL" endtime="20200819 10:36:30.040" starttime="20200819 10:36:26.458">Suite setup failed:
+Page should have contained text 'OK' but did not.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="4" pass="0">Critical Tests</stat>
+<stat fail="4" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">TODO</stat>
+</tag>
+<suite>
+<stat fail="4" id="s1" name="050 UsersDetails" pass="0">050 UsersDetails</stat>
+<stat fail="4" id="s1-s1" name="050 BanerTemplate" pass="0">050 UsersDetails.050 BanerTemplate</stat>
+</suite>
+</statistics>
 <errors>
-<msg timestamp="20200819 10:18:18.775" level="ERROR">Execution stopped by user.</msg>
 </errors>
 </robot>
