@@ -1,97 +1,964 @@
 ==============================================================================
-20200819 10:36:26.648 - INFO - + START SUITE: 050 UsersDetails [ ]
+20200819 10:45:56.301 - INFO - + START SUITE: 050 UsersDetails [ ]
 ==============================================================================
-20200819 10:36:26.649 - INFO - +- START SETUP: FunctionsGlobal.Global Setup [ ]
-20200819 10:36:26.650 - INFO - +-- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20200819 10:36:26.652 - INFO - +--- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20200819 10:36:26.653 - INFO - +---- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
-20200819 10:36:26.654 - INFO - +----- START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
-20200819 10:36:26.655 - INFO - +------ START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
-20200819 10:36:26.656 - INFO - +------- START KW: BuiltIn.Log [ Open Browser Firefox ]
-20200819 10:36:26.656 - INFO - Open Browser Firefox
-20200819 10:36:26.657 - INFO - +------- END KW: BuiltIn.Log (1)
-20200819 10:36:26.657 - INFO - +------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
-20200819 10:36:26.658 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7fe0fde46b50>
-20200819 10:36:26.658 - INFO - +------- END KW: BuiltIn.Evaluate (1)
-20200819 10:36:26.659 - INFO - +------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
-20200819 10:36:26.660 - INFO - +-------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
-20200819 10:36:26.661 - INFO - +-------- END KW: BuiltIn.Call Method (1)
-20200819 10:36:26.661 - INFO - +------- END KW: BuiltIn.Run Keyword If (2)
-20200819 10:36:26.661 - INFO - +------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} ]
-20200819 10:36:26.662 - INFO - Creating an instance of the Firefox WebDriver.
-20200819 10:36:29.094 - DEBUG - Created Firefox WebDriver instance with session id 9c2e92c2-0006-45a6-ae1a-af7b736b9fe2.
-20200819 10:36:29.095 - INFO - +------- END KW: SeleniumLibrary.Create Webdriver (2434)
-20200819 10:36:29.095 - INFO - +------ END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (2440)
-20200819 10:36:29.096 - INFO - +----- END KW: BuiltIn.Run Keyword If (2442)
-20200819 10:36:29.096 - INFO - +----- START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
-20200819 10:36:29.097 - INFO - +----- END KW: BuiltIn.Run Keyword If (1)
-20200819 10:36:29.097 - INFO - +---- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (2444)
-20200819 10:36:29.097 - INFO - +--- END KW: BuiltIn.Run Keyword If (2446)
-20200819 10:36:29.098 - INFO - +--- START KW: SeleniumLibrary.Set Window Size [ 1279 | 1023 ]
-20200819 10:36:29.202 - INFO - +--- END KW: SeleniumLibrary.Set Window Size (104)
-20200819 10:36:29.203 - INFO - +-- END KW: FunctionsGlobal.!Open GeoKrety Browser (2553)
-20200819 10:36:29.203 - INFO - +-- START KW: FunctionsGlobal.Clear Database [ ]
-20200819 10:36:29.204 - INFO - +--- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
-20200819 10:36:29.204 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${url} ]
-20200819 10:36:29.205 - INFO - Opening url 'http://localhost:3000/devel/db/reset'
-20200819 10:36:29.347 - INFO - +---- END KW: SeleniumLibrary.Go To (143)
-20200819 10:36:29.347 - INFO - +---- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20200819 10:36:29.348 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20200819 10:36:29.381 - DEBUG - Current frame has 0 subframes.
-20200819 10:36:29.381 - INFO - Current page does not contain text 'Warning:'.
-20200819 10:36:29.381 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (33)
-20200819 10:36:29.382 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20200819 10:36:29.419 - DEBUG - Current frame has 0 subframes.
-20200819 10:36:29.419 - INFO - Current page does not contain text 'Failed'.
-20200819 10:36:29.419 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (37)
-20200819 10:36:29.420 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20200819 10:36:29.439 - DEBUG - Current frame has 0 subframes.
-20200819 10:36:29.439 - INFO - Current page does not contain text 'Internal Server Error'.
-20200819 10:36:29.440 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (19)
-20200819 10:36:29.440 - INFO - +---- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (93)
-20200819 10:36:29.440 - INFO - +--- END KW: FunctionsGlobal.Go To Url (236)
-20200819 10:36:29.440 - INFO - +--- START KW: SeleniumLibrary.Page Should Contain [ OK ]
-20200819 10:36:29.468 - DEBUG - Current frame has 0 subframes.
-20200819 10:36:29.473 - INFO - +---- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
-20200819 10:36:29.488 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-1.png"><img src="selenium-screenshot-1.png" width="800px"></a>
-20200819 10:36:29.489 - INFO - +---- END KW: SeleniumLibrary.Capture Page Screenshot (16)
-20200819 10:36:29.489 - FAIL - Page should have contained text 'OK' but did not.
-20200819 10:36:29.489 - DEBUG - Traceback (most recent call last):
+20200819 10:45:56.305 - INFO - +- START SETUP: FunctionsGlobal.Global Setup [ ]
+20200819 10:45:56.306 - INFO - +-- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20200819 10:45:56.307 - INFO - +--- START KW: BuiltIn.Run Keyword If [ '${BS_ENABLED}' != 'false' | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20200819 10:45:56.308 - INFO - +---- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
+20200819 10:45:56.309 - INFO - +----- START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
+20200819 10:45:56.310 - INFO - +------ START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
+20200819 10:45:56.310 - INFO - +------- START KW: BuiltIn.Log [ Open Browser Firefox ]
+20200819 10:45:56.311 - INFO - Open Browser Firefox
+20200819 10:45:56.311 - INFO - +------- END KW: BuiltIn.Log (1)
+20200819 10:45:56.311 - INFO - +------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
+20200819 10:45:56.312 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7f5af7e05290>
+20200819 10:45:56.312 - INFO - +------- END KW: BuiltIn.Evaluate (1)
+20200819 10:45:56.313 - INFO - +------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
+20200819 10:45:56.313 - INFO - +-------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
+20200819 10:45:56.314 - INFO - +-------- END KW: BuiltIn.Call Method (1)
+20200819 10:45:56.314 - INFO - +------- END KW: BuiltIn.Run Keyword If (1)
+20200819 10:45:56.314 - INFO - +------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} ]
+20200819 10:45:56.315 - INFO - Creating an instance of the Firefox WebDriver.
+20200819 10:45:58.714 - DEBUG - Created Firefox WebDriver instance with session id d40a02dc-0fae-43d9-9023-636c76bb40dd.
+20200819 10:45:58.715 - INFO - +------- END KW: SeleniumLibrary.Create Webdriver (2401)
+20200819 10:45:58.715 - INFO - +------ END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (2405)
+20200819 10:45:58.716 - INFO - +----- END KW: BuiltIn.Run Keyword If (2407)
+20200819 10:45:58.716 - INFO - +----- START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
+20200819 10:45:58.717 - INFO - +----- END KW: BuiltIn.Run Keyword If (1)
+20200819 10:45:58.717 - INFO - +---- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (2409)
+20200819 10:45:58.717 - INFO - +--- END KW: BuiltIn.Run Keyword If (2410)
+20200819 10:45:58.718 - INFO - +--- START KW: SeleniumLibrary.Set Window Size [ 1280 | 1024 ]
+20200819 10:45:58.776 - INFO - +--- END KW: SeleniumLibrary.Set Window Size (58)
+20200819 10:45:58.777 - INFO - +-- END KW: FunctionsGlobal.!Open GeoKrety Browser (2470)
+20200819 10:45:58.777 - INFO - +-- START KW: FunctionsGlobal.Clear Database [ ]
+20200819 10:45:58.777 - INFO - +--- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20200819 10:45:58.778 - INFO - +---- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:45:58.778 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
+20200819 10:46:00.333 - INFO - +---- END KW: SeleniumLibrary.Go To (1555)
+20200819 10:46:00.334 - INFO - +---- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:00.334 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:00.359 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:00.359 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:00.359 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (25)
+20200819 10:46:00.360 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:00.370 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:00.370 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:00.370 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:00.370 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:00.381 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:00.382 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:00.382 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (12)
+20200819 10:46:00.382 - INFO - +---- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (48)
+20200819 10:46:00.382 - INFO - +--- END KW: FunctionsGlobal.Go To Url (1605)
+20200819 10:46:00.382 - INFO - +--- START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20200819 10:46:00.389 - INFO - Current page contains text 'OK'.
+20200819 10:46:00.389 - INFO - +--- END KW: SeleniumLibrary.Page Should Contain (7)
+20200819 10:46:00.389 - INFO - +-- END KW: FunctionsGlobal.Clear Database (1612)
+20200819 10:46:00.389 - INFO - +- END SETUP: FunctionsGlobal.Global Setup (4084)
+==============================================================================
+20200819 10:46:00.415 - INFO - +- START SUITE: 050 UsersDetails.050 BanerTemplate [ ]
+==============================================================================
+20200819 10:46:00.419 - INFO - +-- START TEST: Seed [ ]
+------------------------------------------------------------------------------
+20200819 10:46:00.420 - INFO - +--- START KW: FunctionsGlobal.Clear Database [ ]
+20200819 10:46:00.420 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20200819 10:46:00.421 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:00.421 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200819 10:46:00.421 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
+20200819 10:46:01.942 - INFO - +----- END KW: SeleniumLibrary.Go To (1521)
+20200819 10:46:01.943 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:01.943 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:01.943 - DEBUG - Test timeout 2 minutes active. 118.475 seconds left.
+20200819 10:46:01.964 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:01.964 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:01.964 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (21)
+20200819 10:46:01.964 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:01.965 - DEBUG - Test timeout 2 minutes active. 118.454 seconds left.
+20200819 10:46:01.973 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:01.973 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:01.973 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:01.974 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:01.974 - DEBUG - Test timeout 2 minutes active. 118.444 seconds left.
+20200819 10:46:01.982 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:01.982 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:01.982 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:01.982 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (39)
+20200819 10:46:01.983 - INFO - +---- END KW: FunctionsGlobal.Go To Url (1562)
+20200819 10:46:01.983 - INFO - +---- START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20200819 10:46:01.983 - DEBUG - Test timeout 2 minutes active. 118.435 seconds left.
+20200819 10:46:01.989 - INFO - Current page contains text 'OK'.
+20200819 10:46:01.989 - INFO - +---- END KW: SeleniumLibrary.Page Should Contain (6)
+20200819 10:46:01.990 - INFO - +--- END KW: FunctionsGlobal.Clear Database (1571)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:01.990 - INFO - +--- START KW: FunctionsGlobal.Seed 2 users [ ]
+20200819 10:46:01.990 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
+20200819 10:46:01.991 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:01.991 - DEBUG - Test timeout 2 minutes active. 118.427 seconds left.
+20200819 10:46:01.991 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/2'
+20200819 10:46:02.925 - INFO - +----- END KW: SeleniumLibrary.Go To (934)
+20200819 10:46:02.925 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:02.926 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:02.926 - DEBUG - Test timeout 2 minutes active. 117.492 seconds left.
+20200819 10:46:02.946 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:02.946 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:02.947 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (21)
+20200819 10:46:02.947 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:02.947 - DEBUG - Test timeout 2 minutes active. 117.471 seconds left.
+20200819 10:46:02.955 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:02.955 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:02.955 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:02.955 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:02.955 - DEBUG - Test timeout 2 minutes active. 117.463 seconds left.
+20200819 10:46:02.964 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:02.965 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:02.965 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:02.965 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (40)
+20200819 10:46:02.965 - INFO - +---- END KW: FunctionsGlobal.Go To Url (975)
+20200819 10:46:02.965 - INFO - +--- END KW: FunctionsGlobal.Seed 2 users (975)
+------------------------------------------------------------------------------
+20200819 10:46:02.966 - INFO - +-- END TEST: Seed (2547)
+------------------------------------------------------------------------------
+20200819 10:46:02.967 - INFO - +-- START TEST: Anonymous users are refused [ ]
+------------------------------------------------------------------------------
+20200819 10:46:02.967 - INFO - +--- START KW: FunctionsGlobal.Sign Out Fast [ ]
+20200819 10:46:02.968 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/logout ]
+20200819 10:46:02.969 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:02.969 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
+20200819 10:46:02.969 - INFO - Opening url 'http://localhost:3001/devel/users/logout'
+20200819 10:46:03.088 - INFO - +----- END KW: SeleniumLibrary.Go To (119)
+20200819 10:46:03.088 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:03.089 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:03.089 - DEBUG - Test timeout 2 minutes active. 119.877 seconds left.
+20200819 10:46:03.108 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:03.108 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:03.108 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (19)
+20200819 10:46:03.108 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:03.108 - DEBUG - Test timeout 2 minutes active. 119.858 seconds left.
+20200819 10:46:03.117 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:03.117 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:03.117 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:03.117 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:03.118 - DEBUG - Test timeout 2 minutes active. 119.849 seconds left.
+20200819 10:46:03.126 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:03.126 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:03.126 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:03.127 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (39)
+20200819 10:46:03.127 - INFO - +---- END KW: FunctionsGlobal.Go To Url (159)
+20200819 10:46:03.127 - INFO - +--- END KW: FunctionsGlobal.Sign Out Fast (160)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:03.127 - INFO - +--- START KW: SeleniumLibrary.Go To [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:03.127 - DEBUG - Test timeout 2 minutes active. 119.839 seconds left.
+20200819 10:46:03.128 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:03.205 - INFO - +--- END KW: SeleniumLibrary.Go To (78)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:03.205 - INFO - +--- START KW: SeleniumLibrary.Page Should Contain [ Unauthorized ]
+20200819 10:46:03.205 - DEBUG - Test timeout 2 minutes active. 119.761 seconds left.
+20200819 10:46:03.225 - INFO - Current page contains text 'Unauthorized'.
+20200819 10:46:03.225 - INFO - +--- END KW: SeleniumLibrary.Page Should Contain (20)
+------------------------------------------------------------------------------
+20200819 10:46:03.226 - INFO - +-- END TEST: Anonymous users are refused (260)
+------------------------------------------------------------------------------
+20200819 10:46:03.228 - INFO - +-- START TEST: Users cannot edit other user banner [ ]
+------------------------------------------------------------------------------
+20200819 10:46:03.228 - INFO - +--- START KW: FunctionsGlobal.Sign In ${USER_2.name} Fast [ ]
+20200819 10:46:03.229 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:03.230 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:03.231 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
+20200819 10:46:03.231 - INFO - Opening url 'http://localhost:3001/devel/users/username2/login'
+20200819 10:46:03.874 - INFO - +----- END KW: SeleniumLibrary.Go To (643)
+20200819 10:46:03.874 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:03.876 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:03.877 - DEBUG - Test timeout 2 minutes active. 119.35 seconds left.
+20200819 10:46:03.906 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:03.906 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:03.906 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (30)
+20200819 10:46:03.907 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:03.907 - DEBUG - Test timeout 2 minutes active. 119.32 seconds left.
+20200819 10:46:03.916 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:03.916 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:03.916 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:03.917 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:03.917 - DEBUG - Test timeout 2 minutes active. 119.31 seconds left.
+20200819 10:46:03.924 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:03.924 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:03.925 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:03.925 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (51)
+20200819 10:46:03.925 - INFO - +---- END KW: FunctionsGlobal.Go To Url (696)
+20200819 10:46:03.925 - INFO - +--- END KW: FunctionsGlobal.Sign In ${USER_2.name} Fast (697)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:03.925 - INFO - +--- START KW: SeleniumLibrary.Go To [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:03.926 - DEBUG - Test timeout 2 minutes active. 119.302 seconds left.
+20200819 10:46:03.926 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:04.439 - INFO - +--- END KW: SeleniumLibrary.Go To (514)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:04.439 - INFO - +--- START KW: SeleniumLibrary.Page Should Contain [ Unauthorized ]
+20200819 10:46:04.472 - INFO - +---- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20200819 10:46:04.473 - DEBUG - Test timeout 2 minutes active. 118.755 seconds left.
+20200819 10:46:04.563 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-1.png"><img src="selenium-screenshot-1.png" width="800px"></a>
+20200819 10:46:04.563 - INFO - +---- END KW: SeleniumLibrary.Capture Page Screenshot (91)
+20200819 10:46:04.440 - DEBUG - Test timeout 2 minutes active. 118.787 seconds left.
+20200819 10:46:04.466 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:04.564 - FAIL - Page should have contained text 'Unauthorized' but did not.
+20200819 10:46:04.564 - DEBUG - Traceback (most recent call last):
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
     return DynamicCore.run_keyword(self, name, args, kwargs)
   File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
     return self.keywords[name](*args, **(kwargs or {}))
   File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/keywords/element.py", line 124, in page_should_contain
     "but did not." % text)
-20200819 10:36:29.490 - INFO - +--- END KW: SeleniumLibrary.Page Should Contain (50)
-20200819 10:36:29.490 - INFO - +-- END KW: FunctionsGlobal.Clear Database (287)
-20200819 10:36:29.490 - INFO - +- END SETUP: FunctionsGlobal.Global Setup (2841)
+20200819 10:46:04.564 - INFO - +--- END KW: SeleniumLibrary.Page Should Contain (125)
+------------------------------------------------------------------------------
+20200819 10:46:04.566 - INFO - +-- END TEST: Users cannot edit other user banner (1337)
+------------------------------------------------------------------------------
+20200819 10:46:04.567 - INFO - +-- START TEST: Select banner [ ]
+------------------------------------------------------------------------------
+20200819 10:46:04.569 - INFO - +--- START KW: Select banner [ 1 ]
+20200819 10:46:04.570 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:04.570 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:04.571 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:04.571 - DEBUG - Test timeout 2 minutes active. 119.996 seconds left.
+20200819 10:46:04.571 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:05.138 - INFO - +------ END KW: SeleniumLibrary.Go To (567)
+20200819 10:46:05.138 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:05.139 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:05.139 - DEBUG - Test timeout 2 minutes active. 119.428 seconds left.
+20200819 10:46:05.167 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:05.168 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:05.168 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (29)
+20200819 10:46:05.168 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:05.168 - DEBUG - Test timeout 2 minutes active. 119.399 seconds left.
+20200819 10:46:05.177 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:05.177 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:05.177 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:05.177 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:05.178 - DEBUG - Test timeout 2 minutes active. 119.39 seconds left.
+20200819 10:46:05.185 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:05.185 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:05.185 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:05.185 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (47)
+20200819 10:46:05.185 - INFO - +----- END KW: FunctionsGlobal.Go To Url (615)
+20200819 10:46:05.185 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (616)
+20200819 10:46:05.185 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:05.186 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:05.186 - DEBUG - Test timeout 2 minutes active. 119.381 seconds left.
+20200819 10:46:05.186 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:05.512 - INFO - +----- END KW: SeleniumLibrary.Go To (326)
+20200819 10:46:05.513 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:05.513 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:05.514 - DEBUG - Test timeout 2 minutes active. 119.054 seconds left.
+20200819 10:46:05.553 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:05.553 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:05.554 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (41)
+20200819 10:46:05.554 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:05.554 - DEBUG - Test timeout 2 minutes active. 119.013 seconds left.
+20200819 10:46:05.563 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:05.563 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:05.563 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:05.563 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:05.563 - DEBUG - Test timeout 2 minutes active. 119.004 seconds left.
+20200819 10:46:05.570 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:05.570 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:05.571 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:05.571 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (58)
+20200819 10:46:05.571 - INFO - +---- END KW: FunctionsGlobal.Go To Url (386)
+20200819 10:46:05.571 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:05.571 - DEBUG - Test timeout 2 minutes active. 118.996 seconds left.
+20200819 10:46:05.571 - INFO - Selecting '1' from radio button 'statpic'.
+20200819 10:46:05.571 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='1' or @id='1')]
+20200819 10:46:05.578 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (7)
+20200819 10:46:05.578 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:05.578 - DEBUG - Test timeout 2 minutes active. 118.989 seconds left.
+20200819 10:46:05.578 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:06.596 - INFO - +---- END KW: SeleniumLibrary.Click Button (1017)
+20200819 10:46:06.596 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:06.596 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:06.597 - DEBUG - Test timeout 2 minutes active. 117.971 seconds left.
+20200819 10:46:06.622 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (26)
+20200819 10:46:06.623 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (27)
+20200819 10:46:06.624 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:06.625 - DEBUG - Test timeout 2 minutes active. 117.942 seconds left.
+20200819 10:46:06.626 - INFO - Select_banner_1
+20200819 10:46:06.626 - INFO - +---- END KW: RobotEyes.Open Eyes (3)
+20200819 10:46:06.626 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:06.626 - DEBUG - Test timeout 2 minutes active. 117.941 seconds left.
+20200819 10:46:06.664 - INFO - +---- END KW: RobotEyes.Scroll To Element (38)
+20200819 10:46:06.664 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:06.665 - DEBUG - Test timeout 2 minutes active. 117.902 seconds left.
+20200819 10:46:06.714 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (50)
+20200819 10:46:06.714 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:06.714 - DEBUG - Test timeout 2 minutes active. 117.853 seconds left.
+20200819 10:46:07.832 - INFO - +---- END KW: RobotEyes.Capture Element (1118)
+20200819 10:46:07.833 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:07.833 - DEBUG - Test timeout 2 minutes active. 116.734 seconds left.
+20200819 10:46:07.883 - INFO - Comparison output: 0 (0) @ 0,0
+20200819 10:46:07.883 - INFO - +---- END KW: RobotEyes.Compare Images (50)
+20200819 10:46:07.883 - INFO - +--- END KW: Select banner (3314)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:07.884 - INFO - +--- START KW: Select banner [ 2 ]
+20200819 10:46:07.884 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:07.885 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:07.885 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:07.886 - DEBUG - Test timeout 2 minutes active. 116.682 seconds left.
+20200819 10:46:07.886 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:08.478 - INFO - +------ END KW: SeleniumLibrary.Go To (593)
+20200819 10:46:08.478 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:08.479 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:08.479 - DEBUG - Test timeout 2 minutes active. 116.088 seconds left.
+20200819 10:46:08.530 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:08.530 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:08.531 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (51)
+20200819 10:46:08.531 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:08.531 - DEBUG - Test timeout 2 minutes active. 116.036 seconds left.
+20200819 10:46:08.540 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:08.540 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:08.541 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:08.541 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:08.541 - DEBUG - Test timeout 2 minutes active. 116.026 seconds left.
+20200819 10:46:08.549 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:08.549 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:08.549 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:08.550 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (72)
+20200819 10:46:08.550 - INFO - +----- END KW: FunctionsGlobal.Go To Url (665)
+20200819 10:46:08.550 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (666)
+20200819 10:46:08.550 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:08.551 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:08.551 - DEBUG - Test timeout 2 minutes active. 116.016 seconds left.
+20200819 10:46:08.551 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:08.849 - INFO - +----- END KW: SeleniumLibrary.Go To (298)
+20200819 10:46:08.849 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:08.850 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:08.850 - DEBUG - Test timeout 2 minutes active. 115.717 seconds left.
+20200819 10:46:08.873 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:08.873 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:08.873 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (23)
+20200819 10:46:08.874 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:08.874 - DEBUG - Test timeout 2 minutes active. 115.693 seconds left.
+20200819 10:46:08.883 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:08.883 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:08.883 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:08.883 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:08.884 - DEBUG - Test timeout 2 minutes active. 115.684 seconds left.
+20200819 10:46:08.890 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:08.890 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:08.891 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:08.891 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (42)
+20200819 10:46:08.891 - INFO - +---- END KW: FunctionsGlobal.Go To Url (341)
+20200819 10:46:08.891 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:08.892 - DEBUG - Test timeout 2 minutes active. 115.675 seconds left.
+20200819 10:46:08.892 - INFO - Selecting '2' from radio button 'statpic'.
+20200819 10:46:08.892 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='2' or @id='2')]
+20200819 10:46:09.126 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (235)
+20200819 10:46:09.126 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:09.126 - DEBUG - Test timeout 2 minutes active. 115.441 seconds left.
+20200819 10:46:09.126 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:10.031 - INFO - +---- END KW: SeleniumLibrary.Click Button (905)
+20200819 10:46:10.032 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:10.032 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:10.033 - DEBUG - Test timeout 2 minutes active. 114.534 seconds left.
+20200819 10:46:10.054 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (22)
+20200819 10:46:10.055 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (22)
+20200819 10:46:10.055 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:10.055 - DEBUG - Test timeout 2 minutes active. 114.512 seconds left.
+20200819 10:46:10.056 - INFO - Select_banner_2
+20200819 10:46:10.056 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:10.056 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:10.057 - DEBUG - Test timeout 2 minutes active. 114.51 seconds left.
+20200819 10:46:10.087 - INFO - +---- END KW: RobotEyes.Scroll To Element (31)
+20200819 10:46:10.087 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:10.088 - DEBUG - Test timeout 2 minutes active. 114.48 seconds left.
+20200819 10:46:10.119 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (32)
+20200819 10:46:10.119 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:10.120 - DEBUG - Test timeout 2 minutes active. 114.448 seconds left.
+20200819 10:46:11.238 - INFO - +---- END KW: RobotEyes.Capture Element (1119)
+20200819 10:46:11.238 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:11.238 - DEBUG - Test timeout 2 minutes active. 113.329 seconds left.
+20200819 10:46:11.251 - INFO - Comparison output: 0 (0) @ 0,0
+20200819 10:46:11.252 - INFO - +---- END KW: RobotEyes.Compare Images (14)
+20200819 10:46:11.252 - INFO - +--- END KW: Select banner (3368)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:11.252 - INFO - +--- START KW: Select banner [ 3 ]
+20200819 10:46:11.253 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:11.254 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:11.254 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:11.254 - DEBUG - Test timeout 2 minutes active. 113.313 seconds left.
+20200819 10:46:11.254 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:11.893 - INFO - +------ END KW: SeleniumLibrary.Go To (639)
+20200819 10:46:11.893 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:11.894 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:11.895 - DEBUG - Test timeout 2 minutes active. 112.672 seconds left.
+20200819 10:46:11.942 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:11.942 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:11.942 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (48)
+20200819 10:46:11.942 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:11.942 - DEBUG - Test timeout 2 minutes active. 112.625 seconds left.
+20200819 10:46:11.955 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:11.955 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:11.955 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (13)
+20200819 10:46:11.955 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:11.956 - DEBUG - Test timeout 2 minutes active. 112.612 seconds left.
+20200819 10:46:11.967 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:11.967 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:11.967 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (12)
+20200819 10:46:11.967 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (74)
+20200819 10:46:11.968 - INFO - +----- END KW: FunctionsGlobal.Go To Url (713)
+20200819 10:46:11.968 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (715)
+20200819 10:46:11.968 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:11.968 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:11.968 - DEBUG - Test timeout 2 minutes active. 112.599 seconds left.
+20200819 10:46:11.969 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:12.261 - INFO - +----- END KW: SeleniumLibrary.Go To (293)
+20200819 10:46:12.261 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:12.262 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:12.262 - DEBUG - Test timeout 2 minutes active. 112.305 seconds left.
+20200819 10:46:12.295 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:12.295 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:12.295 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (33)
+20200819 10:46:12.295 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:12.296 - DEBUG - Test timeout 2 minutes active. 112.272 seconds left.
+20200819 10:46:12.303 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:12.303 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:12.304 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:12.304 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:12.304 - DEBUG - Test timeout 2 minutes active. 112.263 seconds left.
+20200819 10:46:12.313 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:12.313 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:12.313 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:12.314 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (53)
+20200819 10:46:12.314 - INFO - +---- END KW: FunctionsGlobal.Go To Url (346)
+20200819 10:46:12.314 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:12.314 - DEBUG - Test timeout 2 minutes active. 112.253 seconds left.
+20200819 10:46:12.314 - INFO - Selecting '3' from radio button 'statpic'.
+20200819 10:46:12.314 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='3' or @id='3')]
+20200819 10:46:12.563 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (249)
+20200819 10:46:12.563 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:12.564 - DEBUG - Test timeout 2 minutes active. 112.004 seconds left.
+20200819 10:46:12.564 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:13.466 - INFO - +---- END KW: SeleniumLibrary.Click Button (903)
+20200819 10:46:13.466 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:13.467 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:13.467 - DEBUG - Test timeout 2 minutes active. 111.1 seconds left.
+20200819 10:46:13.487 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (20)
+20200819 10:46:13.488 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (21)
+20200819 10:46:13.488 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:13.489 - DEBUG - Test timeout 2 minutes active. 111.079 seconds left.
+20200819 10:46:13.489 - INFO - Select_banner_3
+20200819 10:46:13.489 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:13.490 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:13.490 - DEBUG - Test timeout 2 minutes active. 111.077 seconds left.
+20200819 10:46:13.508 - INFO - +---- END KW: RobotEyes.Scroll To Element (18)
+20200819 10:46:13.508 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:13.509 - DEBUG - Test timeout 2 minutes active. 111.059 seconds left.
+20200819 10:46:13.532 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (24)
+20200819 10:46:13.532 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:13.533 - DEBUG - Test timeout 2 minutes active. 111.035 seconds left.
+20200819 10:46:14.645 - INFO - +---- END KW: RobotEyes.Capture Element (1113)
+20200819 10:46:14.645 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:14.645 - DEBUG - Test timeout 2 minutes active. 109.922 seconds left.
+20200819 10:46:14.658 - INFO - Comparison output: 0 (0) @ 0,0
+20200819 10:46:14.658 - INFO - +---- END KW: RobotEyes.Compare Images (13)
+20200819 10:46:14.658 - INFO - +--- END KW: Select banner (3406)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:14.659 - INFO - +--- START KW: Select banner [ 4 ]
+20200819 10:46:14.660 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:14.660 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:14.661 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:14.661 - DEBUG - Test timeout 2 minutes active. 109.906 seconds left.
+20200819 10:46:14.661 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:15.222 - INFO - +------ END KW: SeleniumLibrary.Go To (561)
+20200819 10:46:15.223 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:15.223 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:15.223 - DEBUG - Test timeout 2 minutes active. 109.344 seconds left.
+20200819 10:46:15.252 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:15.252 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:15.252 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (29)
+20200819 10:46:15.253 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:15.253 - DEBUG - Test timeout 2 minutes active. 109.314 seconds left.
+20200819 10:46:15.261 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:15.261 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:15.262 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:15.262 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:15.262 - DEBUG - Test timeout 2 minutes active. 109.305 seconds left.
+20200819 10:46:15.269 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:15.269 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:15.269 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20200819 10:46:15.269 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (46)
+20200819 10:46:15.269 - INFO - +----- END KW: FunctionsGlobal.Go To Url (609)
+20200819 10:46:15.269 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (610)
+20200819 10:46:15.269 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:15.270 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:15.270 - DEBUG - Test timeout 2 minutes active. 109.297 seconds left.
+20200819 10:46:15.270 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:15.573 - INFO - +----- END KW: SeleniumLibrary.Go To (303)
+20200819 10:46:15.574 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:15.574 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:15.575 - DEBUG - Test timeout 2 minutes active. 108.993 seconds left.
+20200819 10:46:15.601 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:15.601 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:15.601 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (27)
+20200819 10:46:15.601 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:15.602 - DEBUG - Test timeout 2 minutes active. 108.966 seconds left.
+20200819 10:46:15.610 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:15.610 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:15.611 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:15.611 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:15.611 - DEBUG - Test timeout 2 minutes active. 108.956 seconds left.
+20200819 10:46:15.618 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:15.618 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:15.618 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (7)
+20200819 10:46:15.618 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (44)
+20200819 10:46:15.618 - INFO - +---- END KW: FunctionsGlobal.Go To Url (349)
+20200819 10:46:15.619 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:15.619 - DEBUG - Test timeout 2 minutes active. 108.948 seconds left.
+20200819 10:46:15.619 - INFO - Selecting '4' from radio button 'statpic'.
+20200819 10:46:15.619 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='4' or @id='4')]
+20200819 10:46:15.861 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (242)
+20200819 10:46:15.861 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:15.862 - DEBUG - Test timeout 2 minutes active. 108.706 seconds left.
+20200819 10:46:15.862 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:16.757 - INFO - +---- END KW: SeleniumLibrary.Click Button (896)
+20200819 10:46:16.757 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:16.758 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:16.759 - DEBUG - Test timeout 2 minutes active. 107.809 seconds left.
+20200819 10:46:16.789 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (31)
+20200819 10:46:16.789 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (32)
+20200819 10:46:16.789 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:16.790 - DEBUG - Test timeout 2 minutes active. 107.777 seconds left.
+20200819 10:46:16.790 - INFO - Select_banner_4
+20200819 10:46:16.790 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:16.790 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:16.791 - DEBUG - Test timeout 2 minutes active. 107.777 seconds left.
+20200819 10:46:16.815 - INFO - +---- END KW: RobotEyes.Scroll To Element (25)
+20200819 10:46:16.815 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:16.815 - DEBUG - Test timeout 2 minutes active. 107.752 seconds left.
+20200819 10:46:16.839 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (23)
+20200819 10:46:16.839 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:16.839 - DEBUG - Test timeout 2 minutes active. 107.728 seconds left.
+20200819 10:46:17.956 - INFO - +---- END KW: RobotEyes.Capture Element (1117)
+20200819 10:46:17.956 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:17.956 - DEBUG - Test timeout 2 minutes active. 106.611 seconds left.
+20200819 10:46:17.970 - INFO - Comparison output: 167.745 (0.00255962) @ 0,0
+20200819 10:46:17.970 - INFO - +---- END KW: RobotEyes.Compare Images (14)
+20200819 10:46:17.971 - INFO - +--- END KW: Select banner (3312)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:17.971 - INFO - +--- START KW: Select banner [ 5 ]
+20200819 10:46:17.972 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:17.972 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:17.973 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:17.973 - DEBUG - Test timeout 2 minutes active. 106.594 seconds left.
+20200819 10:46:17.973 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:18.544 - INFO - +------ END KW: SeleniumLibrary.Go To (571)
+20200819 10:46:18.544 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:18.545 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:18.545 - DEBUG - Test timeout 2 minutes active. 106.022 seconds left.
+20200819 10:46:18.571 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:18.571 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:18.571 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (26)
+20200819 10:46:18.572 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:18.572 - DEBUG - Test timeout 2 minutes active. 105.995 seconds left.
+20200819 10:46:18.581 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:18.581 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:18.581 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:18.581 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:18.582 - DEBUG - Test timeout 2 minutes active. 105.986 seconds left.
+20200819 10:46:18.591 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:18.592 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:18.592 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20200819 10:46:18.592 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (48)
+20200819 10:46:18.592 - INFO - +----- END KW: FunctionsGlobal.Go To Url (620)
+20200819 10:46:18.592 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (620)
+20200819 10:46:18.592 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:18.593 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:18.593 - DEBUG - Test timeout 2 minutes active. 105.974 seconds left.
+20200819 10:46:18.593 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:18.902 - INFO - +----- END KW: SeleniumLibrary.Go To (309)
+20200819 10:46:18.902 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:18.903 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:18.903 - DEBUG - Test timeout 2 minutes active. 105.664 seconds left.
+20200819 10:46:18.919 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:18.919 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:18.919 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (16)
+20200819 10:46:18.920 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:18.920 - DEBUG - Test timeout 2 minutes active. 105.647 seconds left.
+20200819 10:46:18.927 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:18.927 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:18.928 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:18.928 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:18.928 - DEBUG - Test timeout 2 minutes active. 105.639 seconds left.
+20200819 10:46:18.935 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:18.935 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:18.936 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:18.936 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (34)
+20200819 10:46:18.936 - INFO - +---- END KW: FunctionsGlobal.Go To Url (344)
+20200819 10:46:18.936 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:18.936 - DEBUG - Test timeout 2 minutes active. 105.631 seconds left.
+20200819 10:46:18.936 - INFO - Selecting '5' from radio button 'statpic'.
+20200819 10:46:18.936 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='5' or @id='5')]
+20200819 10:46:19.165 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (228)
+20200819 10:46:19.165 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:19.165 - DEBUG - Test timeout 2 minutes active. 105.402 seconds left.
+20200819 10:46:19.165 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:20.065 - INFO - +---- END KW: SeleniumLibrary.Click Button (900)
+20200819 10:46:20.066 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:20.067 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:20.067 - DEBUG - Test timeout 2 minutes active. 104.5 seconds left.
+20200819 10:46:20.087 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (21)
+20200819 10:46:20.087 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (21)
+20200819 10:46:20.088 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:20.088 - DEBUG - Test timeout 2 minutes active. 104.479 seconds left.
+20200819 10:46:20.089 - INFO - Select_banner_5
+20200819 10:46:20.089 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:20.089 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:20.089 - DEBUG - Test timeout 2 minutes active. 104.478 seconds left.
+20200819 10:46:20.104 - INFO - +---- END KW: RobotEyes.Scroll To Element (15)
+20200819 10:46:20.104 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:20.105 - DEBUG - Test timeout 2 minutes active. 104.463 seconds left.
+20200819 10:46:20.127 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (23)
+20200819 10:46:20.128 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:20.128 - DEBUG - Test timeout 2 minutes active. 104.439 seconds left.
+20200819 10:46:21.280 - INFO - +---- END KW: RobotEyes.Capture Element (1152)
+20200819 10:46:21.280 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:21.281 - DEBUG - Test timeout 2 minutes active. 103.287 seconds left.
+20200819 10:46:21.292 - INFO - Comparison output: 0 (0) @ 0,0
+20200819 10:46:21.293 - INFO - +---- END KW: RobotEyes.Compare Images (13)
+20200819 10:46:21.293 - INFO - +--- END KW: Select banner (3322)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:21.293 - INFO - +--- START KW: Select banner [ 6 ]
+20200819 10:46:21.294 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:21.295 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:21.295 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:21.295 - DEBUG - Test timeout 2 minutes active. 103.272 seconds left.
+20200819 10:46:21.296 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:21.854 - INFO - +------ END KW: SeleniumLibrary.Go To (559)
+20200819 10:46:21.854 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:21.855 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:21.855 - DEBUG - Test timeout 2 minutes active. 102.712 seconds left.
+20200819 10:46:21.896 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:21.896 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:21.896 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (41)
+20200819 10:46:21.896 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:21.896 - DEBUG - Test timeout 2 minutes active. 102.671 seconds left.
+20200819 10:46:21.904 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:21.904 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:21.904 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:21.904 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:21.905 - DEBUG - Test timeout 2 minutes active. 102.663 seconds left.
+20200819 10:46:21.913 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:21.913 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:21.913 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:21.913 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (59)
+20200819 10:46:21.913 - INFO - +----- END KW: FunctionsGlobal.Go To Url (618)
+20200819 10:46:21.913 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (619)
+20200819 10:46:21.914 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:21.914 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:21.914 - DEBUG - Test timeout 2 minutes active. 102.653 seconds left.
+20200819 10:46:21.914 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:22.205 - INFO - +----- END KW: SeleniumLibrary.Go To (291)
+20200819 10:46:22.206 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:22.206 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:22.207 - DEBUG - Test timeout 2 minutes active. 102.36 seconds left.
+20200819 10:46:22.231 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:22.231 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:22.231 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (25)
+20200819 10:46:22.231 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:22.231 - DEBUG - Test timeout 2 minutes active. 102.336 seconds left.
+20200819 10:46:22.240 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:22.240 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:22.240 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:22.240 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:22.240 - DEBUG - Test timeout 2 minutes active. 102.327 seconds left.
+20200819 10:46:22.248 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:22.248 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:22.249 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:22.249 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (43)
+20200819 10:46:22.249 - INFO - +---- END KW: FunctionsGlobal.Go To Url (335)
+20200819 10:46:22.249 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:22.249 - DEBUG - Test timeout 2 minutes active. 102.318 seconds left.
+20200819 10:46:22.250 - INFO - Selecting '6' from radio button 'statpic'.
+20200819 10:46:22.250 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='6' or @id='6')]
+20200819 10:46:22.479 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (230)
+20200819 10:46:22.479 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:22.480 - DEBUG - Test timeout 2 minutes active. 102.087 seconds left.
+20200819 10:46:22.480 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:23.365 - INFO - +---- END KW: SeleniumLibrary.Click Button (886)
+20200819 10:46:23.366 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:23.366 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:23.366 - DEBUG - Test timeout 2 minutes active. 101.201 seconds left.
+20200819 10:46:23.386 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (20)
+20200819 10:46:23.386 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (20)
+20200819 10:46:23.387 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:23.387 - DEBUG - Test timeout 2 minutes active. 101.18 seconds left.
+20200819 10:46:23.388 - INFO - Select_banner_6
+20200819 10:46:23.388 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:23.388 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:23.389 - DEBUG - Test timeout 2 minutes active. 101.179 seconds left.
+20200819 10:46:23.407 - INFO - +---- END KW: RobotEyes.Scroll To Element (19)
+20200819 10:46:23.407 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:23.407 - DEBUG - Test timeout 2 minutes active. 101.16 seconds left.
+20200819 10:46:23.444 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (37)
+20200819 10:46:23.444 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:23.444 - DEBUG - Test timeout 2 minutes active. 101.123 seconds left.
+20200819 10:46:24.560 - INFO - +---- END KW: RobotEyes.Capture Element (1116)
+20200819 10:46:24.560 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:24.560 - DEBUG - Test timeout 2 minutes active. 100.007 seconds left.
+20200819 10:46:24.572 - INFO - Comparison output: 39.9648 (0.000609824) @ 0,0
+20200819 10:46:24.572 - INFO - +---- END KW: RobotEyes.Compare Images (12)
+20200819 10:46:24.573 - INFO - +--- END KW: Select banner (3280)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:24.573 - INFO - +--- START KW: Select banner [ 7 ]
+20200819 10:46:24.574 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:24.574 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:24.575 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:24.575 - DEBUG - Test timeout 2 minutes active. 99.992 seconds left.
+20200819 10:46:24.575 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:25.131 - INFO - +------ END KW: SeleniumLibrary.Go To (556)
+20200819 10:46:25.131 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:25.132 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:25.132 - DEBUG - Test timeout 2 minutes active. 99.435 seconds left.
+20200819 10:46:25.157 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:25.157 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:25.157 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (25)
+20200819 10:46:25.157 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:25.158 - DEBUG - Test timeout 2 minutes active. 99.41 seconds left.
+20200819 10:46:25.167 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:25.167 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:25.167 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:25.168 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:25.168 - DEBUG - Test timeout 2 minutes active. 99.399 seconds left.
+20200819 10:46:25.178 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:25.178 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:25.178 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:25.178 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (47)
+20200819 10:46:25.178 - INFO - +----- END KW: FunctionsGlobal.Go To Url (604)
+20200819 10:46:25.178 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (604)
+20200819 10:46:25.179 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:25.179 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:25.179 - DEBUG - Test timeout 2 minutes active. 99.388 seconds left.
+20200819 10:46:25.179 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:25.471 - INFO - +----- END KW: SeleniumLibrary.Go To (292)
+20200819 10:46:25.472 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:25.472 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:25.473 - DEBUG - Test timeout 2 minutes active. 99.095 seconds left.
+20200819 10:46:25.499 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:25.499 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:25.500 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (28)
+20200819 10:46:25.500 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:25.500 - DEBUG - Test timeout 2 minutes active. 99.067 seconds left.
+20200819 10:46:25.508 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:25.508 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:25.509 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:25.509 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:25.510 - DEBUG - Test timeout 2 minutes active. 99.058 seconds left.
+20200819 10:46:25.517 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:25.517 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:25.518 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:25.518 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (46)
+20200819 10:46:25.518 - INFO - +---- END KW: FunctionsGlobal.Go To Url (339)
+20200819 10:46:25.518 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:25.518 - DEBUG - Test timeout 2 minutes active. 99.049 seconds left.
+20200819 10:46:25.518 - INFO - Selecting '7' from radio button 'statpic'.
+20200819 10:46:25.518 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='7' or @id='7')]
+20200819 10:46:25.747 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (229)
+20200819 10:46:25.747 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:25.748 - DEBUG - Test timeout 2 minutes active. 98.819 seconds left.
+20200819 10:46:25.748 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:26.643 - INFO - +---- END KW: SeleniumLibrary.Click Button (895)
+20200819 10:46:26.643 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:26.644 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:26.644 - DEBUG - Test timeout 2 minutes active. 97.923 seconds left.
+20200819 10:46:26.664 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (20)
+20200819 10:46:26.664 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (21)
+20200819 10:46:26.664 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:26.665 - DEBUG - Test timeout 2 minutes active. 97.903 seconds left.
+20200819 10:46:26.665 - INFO - Select_banner_7
+20200819 10:46:26.665 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:26.665 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:26.666 - DEBUG - Test timeout 2 minutes active. 97.902 seconds left.
+20200819 10:46:26.680 - INFO - +---- END KW: RobotEyes.Scroll To Element (15)
+20200819 10:46:26.680 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:26.681 - DEBUG - Test timeout 2 minutes active. 97.887 seconds left.
+20200819 10:46:26.702 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (22)
+20200819 10:46:26.702 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:26.702 - DEBUG - Test timeout 2 minutes active. 97.865 seconds left.
+20200819 10:46:27.817 - INFO - +---- END KW: RobotEyes.Capture Element (1115)
+20200819 10:46:27.817 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:27.817 - DEBUG - Test timeout 2 minutes active. 96.75 seconds left.
+20200819 10:46:27.831 - INFO - Comparison output: 49.9635 (0.000762394) @ 0,0
+20200819 10:46:27.831 - INFO - +---- END KW: RobotEyes.Compare Images (14)
+20200819 10:46:27.831 - INFO - +--- END KW: Select banner (3258)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:27.832 - INFO - +--- START KW: Select banner [ 8 ]
+20200819 10:46:27.832 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:27.833 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:27.834 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:27.834 - DEBUG - Test timeout 2 minutes active. 96.733 seconds left.
+20200819 10:46:27.834 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:28.421 - INFO - +------ END KW: SeleniumLibrary.Go To (587)
+20200819 10:46:28.422 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:28.423 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:28.424 - DEBUG - Test timeout 2 minutes active. 96.144 seconds left.
+20200819 10:46:28.456 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:28.456 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:28.457 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (34)
+20200819 10:46:28.457 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:28.457 - DEBUG - Test timeout 2 minutes active. 96.11 seconds left.
+20200819 10:46:28.477 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:28.477 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:28.477 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (20)
+20200819 10:46:28.478 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:28.478 - DEBUG - Test timeout 2 minutes active. 96.089 seconds left.
+20200819 10:46:28.485 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:28.485 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:28.485 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20200819 10:46:28.485 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (63)
+20200819 10:46:28.485 - INFO - +----- END KW: FunctionsGlobal.Go To Url (652)
+20200819 10:46:28.485 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (653)
+20200819 10:46:28.486 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:28.486 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:28.486 - DEBUG - Test timeout 2 minutes active. 96.081 seconds left.
+20200819 10:46:28.486 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:28.787 - INFO - +----- END KW: SeleniumLibrary.Go To (301)
+20200819 10:46:28.787 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:28.788 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:28.788 - DEBUG - Test timeout 2 minutes active. 95.779 seconds left.
+20200819 10:46:28.813 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:28.813 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:28.813 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (25)
+20200819 10:46:28.813 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:28.814 - DEBUG - Test timeout 2 minutes active. 95.754 seconds left.
+20200819 10:46:28.821 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:28.821 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:28.821 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:28.821 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:28.822 - DEBUG - Test timeout 2 minutes active. 95.746 seconds left.
+20200819 10:46:28.829 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:28.829 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:28.829 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:28.829 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (42)
+20200819 10:46:28.829 - INFO - +---- END KW: FunctionsGlobal.Go To Url (344)
+20200819 10:46:28.830 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:28.830 - DEBUG - Test timeout 2 minutes active. 95.737 seconds left.
+20200819 10:46:28.830 - INFO - Selecting '8' from radio button 'statpic'.
+20200819 10:46:28.830 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='8' or @id='8')]
+20200819 10:46:29.059 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (229)
+20200819 10:46:29.060 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:29.060 - DEBUG - Test timeout 2 minutes active. 95.507 seconds left.
+20200819 10:46:29.060 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:29.986 - INFO - +---- END KW: SeleniumLibrary.Click Button (926)
+20200819 10:46:29.987 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:29.988 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:29.988 - DEBUG - Test timeout 2 minutes active. 94.579 seconds left.
+20200819 10:46:30.005 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (17)
+20200819 10:46:30.006 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (19)
+20200819 10:46:30.006 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:30.006 - DEBUG - Test timeout 2 minutes active. 94.561 seconds left.
+20200819 10:46:30.007 - INFO - Select_banner_8
+20200819 10:46:30.007 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:30.007 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:30.007 - DEBUG - Test timeout 2 minutes active. 94.56 seconds left.
+20200819 10:46:30.027 - INFO - +---- END KW: RobotEyes.Scroll To Element (20)
+20200819 10:46:30.027 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:30.027 - DEBUG - Test timeout 2 minutes active. 94.54 seconds left.
+20200819 10:46:30.054 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (27)
+20200819 10:46:30.055 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:30.055 - DEBUG - Test timeout 2 minutes active. 94.512 seconds left.
+20200819 10:46:31.171 - INFO - +---- END KW: RobotEyes.Capture Element (1117)
+20200819 10:46:31.171 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:31.171 - DEBUG - Test timeout 2 minutes active. 93.396 seconds left.
+20200819 10:46:31.184 - INFO - Comparison output: 46.622 (0.000711406) @ 0,0
+20200819 10:46:31.185 - INFO - +---- END KW: RobotEyes.Compare Images (14)
+20200819 10:46:31.185 - INFO - +--- END KW: Select banner (3353)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20200819 10:46:31.185 - INFO - +--- START KW: Select banner [ 9 ]
+20200819 10:46:31.186 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20200819 10:46:31.187 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}devel/users/${username}/login ]
+20200819 10:46:31.187 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:31.188 - DEBUG - Test timeout 2 minutes active. 93.38 seconds left.
+20200819 10:46:31.188 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20200819 10:46:31.756 - INFO - +------ END KW: SeleniumLibrary.Go To (569)
+20200819 10:46:31.756 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:31.757 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:31.757 - DEBUG - Test timeout 2 minutes active. 92.81 seconds left.
+20200819 10:46:31.786 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:31.786 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:31.786 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (29)
+20200819 10:46:31.786 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:31.786 - DEBUG - Test timeout 2 minutes active. 92.781 seconds left.
+20200819 10:46:31.795 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:31.795 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:31.795 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20200819 10:46:31.795 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:31.795 - DEBUG - Test timeout 2 minutes active. 92.772 seconds left.
+20200819 10:46:31.805 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:31.805 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:31.805 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20200819 10:46:31.805 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (49)
+20200819 10:46:31.806 - INFO - +----- END KW: FunctionsGlobal.Go To Url (619)
+20200819 10:46:31.806 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (620)
+20200819 10:46:31.806 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_USER_1_BANER_TEMPLATE_URL} ]
+20200819 10:46:31.806 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${url} ]
+20200819 10:46:31.807 - DEBUG - Test timeout 2 minutes active. 92.761 seconds left.
+20200819 10:46:31.807 - INFO - Opening url 'http://localhost:3001/en/users/1/choose-statpic-template'
+20200819 10:46:32.117 - INFO - +----- END KW: SeleniumLibrary.Go To (311)
+20200819 10:46:32.117 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20200819 10:46:32.118 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20200819 10:46:32.118 - DEBUG - Test timeout 2 minutes active. 92.449 seconds left.
+20200819 10:46:32.141 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:32.141 - INFO - Current page does not contain text 'Warning:'.
+20200819 10:46:32.142 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (24)
+20200819 10:46:32.142 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20200819 10:46:32.143 - DEBUG - Test timeout 2 minutes active. 92.425 seconds left.
+20200819 10:46:32.150 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:32.150 - INFO - Current page does not contain text 'Failed'.
+20200819 10:46:32.150 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:32.151 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20200819 10:46:32.151 - DEBUG - Test timeout 2 minutes active. 92.416 seconds left.
+20200819 10:46:32.158 - DEBUG - Current frame has 0 subframes.
+20200819 10:46:32.158 - INFO - Current page does not contain text 'Internal Server Error'.
+20200819 10:46:32.159 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (8)
+20200819 10:46:32.159 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (42)
+20200819 10:46:32.159 - INFO - +---- END KW: FunctionsGlobal.Go To Url (353)
+20200819 10:46:32.159 - INFO - +---- START KW: SeleniumLibrary.Select Radio Button [ ${USER_BANER_TEMPLATE_CHOOSER_RADIO_GROUP} | ${templateId} ]
+20200819 10:46:32.160 - DEBUG - Test timeout 2 minutes active. 92.408 seconds left.
+20200819 10:46:32.160 - INFO - Selecting '9' from radio button 'statpic'.
+20200819 10:46:32.160 - DEBUG - Radio group locator: xpath://input[@type='radio' and @name='statpic' and (@value='9' or @id='9')]
+20200819 10:46:32.391 - INFO - +---- END KW: SeleniumLibrary.Select Radio Button (232)
+20200819 10:46:32.391 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${USER_BANER_TEMPLATE_CHOOSER_SUBMIT_BUTTON} ]
+20200819 10:46:32.391 - DEBUG - Test timeout 2 minutes active. 92.176 seconds left.
+20200819 10:46:32.391 - INFO - Clicking button '//*[@id="bannerTemplateSubmitButton"]'.
+20200819 10:46:33.303 - INFO - +---- END KW: SeleniumLibrary.Click Button (912)
+20200819 10:46:33.304 - INFO - +---- START KW: FunctionsGlobal.Flash message shown [ Your user banner template preference has been successfully saved. ]
+20200819 10:46:33.305 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ //div[contains(@class, "flash-message") and text()[contains(., '${message}')]] ]
+20200819 10:46:33.305 - DEBUG - Test timeout 2 minutes active. 91.262 seconds left.
+20200819 10:46:33.328 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (23)
+20200819 10:46:33.329 - INFO - +---- END KW: FunctionsGlobal.Flash message shown (24)
+20200819 10:46:33.329 - INFO - +---- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 | template_id=${templateId} ]
+20200819 10:46:33.329 - DEBUG - Test timeout 2 minutes active. 91.238 seconds left.
+20200819 10:46:33.330 - INFO - Select_banner_9
+20200819 10:46:33.330 - INFO - +---- END KW: RobotEyes.Open Eyes (1)
+20200819 10:46:33.330 - INFO - +---- START KW: RobotEyes.Scroll To Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:33.331 - DEBUG - Test timeout 2 minutes active. 91.237 seconds left.
+20200819 10:46:33.347 - INFO - +---- END KW: RobotEyes.Scroll To Element (17)
+20200819 10:46:33.347 - INFO - +---- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:33.348 - DEBUG - Test timeout 2 minutes active. 91.22 seconds left.
+20200819 10:46:33.371 - INFO - +---- END KW: SeleniumLibrary.Wait Until Element Is Visible (24)
+20200819 10:46:33.372 - INFO - +---- START KW: RobotEyes.Capture Element [ ${USER_PROFILE_STATPIC_IMAGE} ]
+20200819 10:46:33.372 - DEBUG - Test timeout 2 minutes active. 91.195 seconds left.
+20200819 10:46:34.512 - INFO - +---- END KW: RobotEyes.Capture Element (1141)
+20200819 10:46:34.513 - INFO - +---- START KW: RobotEyes.Compare Images [ ]
+20200819 10:46:34.513 - DEBUG - Test timeout 2 minutes active. 90.054 seconds left.
+20200819 10:46:34.526 - INFO - Comparison output: 0 (0) @ 0,0
+20200819 10:46:34.527 - INFO - +---- END KW: RobotEyes.Compare Images (13)
+20200819 10:46:34.527 - INFO - +--- END KW: Select banner (3342)
+------------------------------------------------------------------------------
+20200819 10:46:34.531 - INFO - +-- END TEST: Select banner (29960)
+------------------------------------------------------------------------------
+20200819 10:46:34.541 - INFO - +- END SUITE: 050 UsersDetails.050 BanerTemplate (34143)
 ==============================================================================
-20200819 10:36:29.492 - INFO - +- START SUITE: 050 UsersDetails.050 BanerTemplate [ ]
+20200819 10:46:34.542 - INFO - +- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20200819 10:46:34.543 - INFO - +-- START KW: SeleniumLibrary.Close Browser [ ]
+20200819 10:46:34.543 - DEBUG - Closing browser with session id d40a02dc-0fae-43d9-9023-636c76bb40dd.
+20200819 10:46:35.020 - INFO - +-- END KW: SeleniumLibrary.Close Browser (477)
+20200819 10:46:35.020 - INFO - +- END TEARDOWN: FunctionsGlobal.Global TearDown (478)
 ==============================================================================
-20200819 10:36:29.504 - INFO - +-- START TEST: Seed [ ]
-------------------------------------------------------------------------------
-20200819 10:36:29.520 - INFO - +-- END TEST: Seed (5)
-------------------------------------------------------------------------------
-20200819 10:36:29.523 - INFO - +-- START TEST: Anonymous users are refused [ ]
-------------------------------------------------------------------------------
-20200819 10:36:29.525 - INFO - +-- END TEST: Anonymous users are refused (1)
-------------------------------------------------------------------------------
-20200819 10:36:29.527 - INFO - +-- START TEST: Users cannot edit other user banner [ ]
-------------------------------------------------------------------------------
-20200819 10:36:29.528 - INFO - +-- END TEST: Users cannot edit other user banner (3)
-------------------------------------------------------------------------------
-20200819 10:36:29.529 - INFO - +-- START TEST: Select banner [ ]
-------------------------------------------------------------------------------
-20200819 10:36:29.529 - INFO - +-- END TEST: Select banner (1)
-------------------------------------------------------------------------------
-20200819 10:36:29.531 - INFO - +- END SUITE: 050 UsersDetails.050 BanerTemplate (39)
-==============================================================================
-20200819 10:36:29.537 - INFO - +- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20200819 10:36:29.538 - INFO - +-- START KW: SeleniumLibrary.Close Browser [ ]
-20200819 10:36:29.538 - DEBUG - Closing browser with session id 9c2e92c2-0006-45a6-ae1a-af7b736b9fe2.
-20200819 10:36:30.039 - INFO - +-- END KW: SeleniumLibrary.Close Browser (501)
-20200819 10:36:30.040 - INFO - +- END TEARDOWN: FunctionsGlobal.Global TearDown (503)
-==============================================================================
-20200819 10:36:30.042 - INFO - + END SUITE: 050 UsersDetails (3582)
+20200819 10:46:35.025 - INFO - + END SUITE: 050 UsersDetails (38890)
 ==============================================================================

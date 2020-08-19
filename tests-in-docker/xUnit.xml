@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="4" errors="0" name="050 UsersDetails" skipped="0" time="3.582" failures="4">
-<testcase classname="050 UsersDetails.050 BanerTemplate" name="Seed" time="0.005">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testsuite tests="4" errors="0" name="050 UsersDetails" skipped="0" time="38.890" failures="1">
+<testcase classname="050 UsersDetails.050 BanerTemplate" name="Seed" time="2.547">
 </testcase>
-<testcase classname="050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="0.260">
 </testcase>
-<testcase classname="050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="0.003">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="1.337">
+<failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="050 UsersDetails.050 BanerTemplate" name="Select banner" time="0.001">
-<failure message="Parent suite setup failed:&#10;Page should have contained text 'OK' but did not." type="AssertionError"></failure>
+<testcase classname="050 UsersDetails.050 BanerTemplate" name="Select banner" time="29.960">
 </testcase>
 </testsuite>
