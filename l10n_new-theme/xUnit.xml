@@ -1,637 +1,637 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="317" errors="0" name="Acceptance" skipped="0" time="11994.746" failures="0">
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="0.768">
+<testsuite tests="317" errors="0" name="Acceptance" skipped="0" time="12003.560" failures="0">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (EN)" time="0.782">
 </testcase>
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="1.041">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="1.038">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="2.833">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Create first account" time="2.829">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="User is connected after registration" time="0.392">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="User is connected after registration" time="0.394">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="3.224">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="3.244">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="1.333">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="1.489">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="1.281">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="1.286">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.966">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.884">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="6.690">
+<testcase classname="Acceptance.010 UserRegistration.010 UsernameAlreadyExists" name="Check username" time="6.772">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="2.081">
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Email is already taken" time="2.094">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="0.200">
+<testcase classname="Acceptance.010 UserRegistration.011 EmailAlreadyExists" name="Form content keeped" time="0.129">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="1.107">
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Seed an account" time="1.074">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check Valid Username" time="7.647">
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check Valid Username" time="7.673">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check Invalid Username" time="4.183">
+<testcase classname="Acceptance.010 UserRegistration.020 UsernameValid" name="Check Invalid Username" time="4.209">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="3.068">
+<testcase classname="Acceptance.010 UserRegistration.030 ActivationMailFollowUserLanguage" name="Create an account" time="2.851">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="1.104">
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use unchecked" time="1.241">
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="1.368">
+<testcase classname="Acceptance.010 UserRegistration.040 TermsofUseMandatory" name="Terms of use checked" time="1.449">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="3.431">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Create an account" time="3.357">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="1.297">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="1.306">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.277">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.267">
 </testcase>
 <testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="4.200">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="1.813">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="1.729">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="1.754">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="1.801">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="1.811">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="1.771">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel login" time="1.219">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel login" time="1.304">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel logout" time="0.900">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Fast devel logout" time="1.287">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="3.335">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="3.482">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="7.270">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="7.170">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="3.020">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="3.013">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="1.719">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="1.723">
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="5.013">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="5.079">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in navbar for anonymous users" time="0.533">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in navbar for anonymous users" time="0.537">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in profile actions for signed in users" time="0.597">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="No link present in profile actions for signed in users" time="0.586">
 </testcase>
 <testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Sign in" time="0.699">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present in navbar for signed in users" time="0.503">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present in navbar for signed in users" time="0.495">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present on user's profile actions for signed in users" time="0.789">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link present on user's profile actions for signed in users" time="0.807">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link absent on someone else profile actions" time="0.550">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Link absent on someone else profile actions" time="0.540">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use navbar link to access form" time="0.922">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use navbar link to access form" time="0.930">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use profile action link to access form" time="1.345">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Use profile action link to access form" time="1.328">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Direct link access to form" time="0.426">
+<testcase classname="Acceptance.030 GeokretyCreation.010 FormAccess" name="Direct link access to form" time="0.406">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Create A GeoKret" time="1.509">
+<testcase classname="Acceptance.030 GeokretyCreation.020 CreateGeoKret" name="Create A GeoKret" time="1.511">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid" time="2.560">
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name invalid" time="2.652">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name valid" time="7.921">
+<testcase classname="Acceptance.030 GeokretyCreation.030 GeoKretName" name="Name valid" time="7.940">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Type valid" time="6.739">
+<testcase classname="Acceptance.030 GeokretyCreation.040 GeoKretType" name="Type valid" time="6.871">
 </testcase>
-<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Text valid" time="11.391">
+<testcase classname="Acceptance.030 GeokretyCreation.050 GeoKretMission" name="Text valid" time="11.274">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - anonymous" time="0.854">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - anonymous" time="0.869">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - anonymous" time="0.731">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - anonymous" time="0.753">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - authenticated" time="2.017">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Public Information Visible - authenticated" time="2.055">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Visible - authenticated - owned" time="1.292">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Visible - authenticated - owned" time="1.341">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - authenticated - not owned" time="1.754">
+<testcase classname="Acceptance.040 GeokretyDetails.010 Details" name="Private Information Not Visible - authenticated - not owned" time="1.671">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - anonymous" time="0.490">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - anonymous" time="0.494">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - anonymous" time="0.445">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - anonymous" time="0.473">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - owned" time="1.454">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - owned" time="1.531">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - owned" time="1.366">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - owned" time="1.335">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - not owned" time="1.793">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Mission is shown - authenticated - not owned" time="1.857">
 </testcase>
-<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - not owned" time="1.882">
+<testcase classname="Acceptance.040 GeokretyDetails.020 Mission" name="Placeholder when no mission - authenticated - not owned" time="1.955">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - anonymous" time="1.372">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - anonymous" time="1.393">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - anonymous" time="1.339">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - anonymous" time="1.342">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - authenticated" time="1.768">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Public Information Visible - authenticated" time="1.747">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Visible - authenticated - himself" time="1.499">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Visible - authenticated - himself" time="1.435">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - authenticated - someone else" time="1.450">
+<testcase classname="Acceptance.050 UsersDetails.010 Details" name="Private Information Not Visible - authenticated - someone else" time="1.454">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Panel should be present" time="0.674">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Panel should be present" time="0.668">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats present" time="0.814">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats present" time="0.941">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats are per user" time="1.415">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stats are per user" time="1.449">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stat created incremented" time="3.761">
+<testcase classname="Acceptance.050 UsersDetails.020 Awards" name="Stat created incremented" time="3.770">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic generated on user create" time="2.667">
+<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic generated on user create" time="2.703">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic updated on geokrety create" time="3.128">
+<testcase classname="Acceptance.050 UsersDetails.030 Statpic" name="Statpic updated on geokrety create" time="3.247">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for anonymous users" time="0.493">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for anonymous users" time="0.482">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users" time="1.561">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users" time="1.599">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users - himself" time="1.191">
+<testcase classname="Acceptance.050 UsersDetails.040 ProfileEditable" name="Buttons shown for authenticated users - himself" time="1.189">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="0.223">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Anonymous users are refused" time="0.216">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner" time="31.057">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Select banner" time="31.775">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Anonymous users are refused" time="0.237">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Anonymous users are refused" time="0.239">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Move pan should update coordinates field" time="1.167">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Move pan should update coordinates field" time="1.165">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius is set to 0 by default" time="1.681">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius is set to 0 by default" time="0.791">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius between 0-10" time="13.561">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius between 0-10" time="12.483">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius outside range" time="3.910">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Observation radius outside range" time="3.516">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="2.528">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="2.590">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius" time="10.482">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map circle should reflect observation radius" time="10.333">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check valid coordinates" time="4.544">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check valid coordinates" time="4.675">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check invalid coordinates" time="4.305">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Check invalid coordinates" time="4.445">
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="4.436">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="4.788">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Anonymous should not see draggable" time="0.417">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Anonymous should not see draggable" time="0.397">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="User himself should see draggable" time="1.254">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="User himself should see draggable" time="1.288">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Authenticated should not see draggable for other users" time="1.417">
+<testcase classname="Acceptance.060 UserAvatar.robot.010 Access" name="Authenticated should not see draggable for other users" time="1.415">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via button" time="5.027">
+<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via button" time="5.046">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via Drag/Drop - same page" time="3.121">
+<testcase classname="Acceptance.060 UserAvatar.robot.020 AvatarUpload" name="Upload image via Drag/Drop - same page" time="4.906">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="8.802">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="9.049">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="11.143">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="9.169">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.480">
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.562">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete Picture" time="7.883">
+<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete Picture" time="7.750">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete 1 picture should leave other present" time="9.024">
+<testcase classname="Acceptance.060 UserAvatar.robot.050 DeletePicture" name="Delete 1 picture should leave other present" time="9.083">
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="7.836">
+<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="9.655">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="Anonymous users should not access form" time="0.245">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="Anonymous users should not access form" time="0.246">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Form" time="1.362">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Form" time="1.359">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Modal" time="1.660">
+<testcase classname="Acceptance.070 UserPassword.010 Access" name="User himself can access form - Modal" time="1.589">
 </testcase>
 <testcase classname="Acceptance.070 UserPassword.010 Access" name="Expired session ask to login" time="1.384">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - modal" time="4.058">
+<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - modal" time="4.021">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - page form" time="3.485">
+<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Valid password change - page form" time="3.548">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Confirmation mail should be sent" time="4.376">
+<testcase classname="Acceptance.070 UserPassword.020 ChangeValid" name="Confirmation mail should be sent" time="4.454">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="Wrong old password" time="4.018">
+<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="Wrong old password" time="3.890">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="New password does not match confirm" time="2.972">
+<testcase classname="Acceptance.070 UserPassword.030 ChangeInvalid" name="New password does not match confirm" time="3.076">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Invalid email submitted" time="5.637">
+<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Invalid email submitted" time="5.528">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Valid form validation" time="3.647">
+<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Valid form validation" time="3.734">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Unknown address found" time="3.084">
+<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Unknown address found" time="3.168">
 </testcase>
-<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Reset Password By Mail" time="6.444">
+<testcase classname="Acceptance.070 UserPassword.040 PasswordReset" name="Reset Password By Mail" time="6.297">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Anonymous users should not access form" time="0.251">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Anonymous users should not access form" time="0.262">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Form" time="1.217">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Form" time="1.250">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Modal" time="1.596">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="User himself can access form - Modal" time="1.590">
 </testcase>
-<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Expired session ask to login" time="1.305">
+<testcase classname="Acceptance.080 UserLanguageChange.010 Access" name="Expired session ask to login" time="1.327">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Anonymous users should not access form" time="0.247">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Anonymous users should not access form" time="0.241">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Form" time="1.189">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Form" time="1.186">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Modal" time="1.552">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="User himself can access form - Modal" time="1.540">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Expired session ask to login" time="1.275">
+<testcase classname="Acceptance.090 UserSecidChange.010 Access" name="Expired session ask to login" time="1.268">
 </testcase>
-<testcase classname="Acceptance.090 UserSecidChange.020 Change" name="Refresh should display a message" time="3.377">
+<testcase classname="Acceptance.090 UserSecidChange.020 Change" name="Refresh should display a message" time="3.535">
 </testcase>
 <testcase classname="Acceptance.100 UserEmailChange.010 Access" name="Anonymous users should not access form" time="0.243">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="User himself can access form - Form" time="1.203">
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="User himself can access form - Form" time="1.236">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="User himself can access form - Modal" time="1.576">
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="User himself can access form - Modal" time="1.602">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="Expired session ask to login" time="1.300">
+<testcase classname="Acceptance.100 UserEmailChange.010 Access" name="Expired session ask to login" time="1.321">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Valid email change - modal" time="4.410">
+<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Valid email change - modal" time="4.491">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Valid email change - page form" time="4.222">
+<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Valid email change - page form" time="4.148">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Confirmation mail should be sent" time="5.064">
+<testcase classname="Acceptance.100 UserEmailChange.020 ChangeValid" name="Confirmation mail should be sent" time="4.810">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="OLD mail REFUSE change" time="6.390">
+<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="OLD mail REFUSE change" time="6.384">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="Once decision taken, token is disabled - old user" time="6.459">
+<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="Once decision taken, token is disabled - old user" time="6.402">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="Once decision taken, token is disabled - new user" time="6.365">
+<testcase classname="Acceptance.100 UserEmailChange.030 OldUserRefuse" name="Once decision taken, token is disabled - new user" time="6.423">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="OLD mail ACCEPT change" time="7.185">
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="OLD mail ACCEPT change" time="7.276">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="On accept confirmation mails should be sent" time="7.856">
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="On accept confirmation mails should be sent" time="7.926">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="Token is then disabled for old email" time="7.692">
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="Token is then disabled for old email" time="7.758">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="Token is then disabled for new email" time="7.804">
+<testcase classname="Acceptance.100 UserEmailChange.040 OldUserAccept" name="Token is then disabled for new email" time="7.802">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="NEW mail ACCEPT change" time="7.232">
+<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="NEW mail ACCEPT change" time="7.378">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="Once decision taken, token is disabled - old user" time="7.643">
+<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="Once decision taken, token is disabled - old user" time="7.452">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="Once decision taken, token is disabled - new user" time="8.160">
+<testcase classname="Acceptance.100 UserEmailChange.050 NewUserAccept" name="Once decision taken, token is disabled - new user" time="7.694">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="NEW mail ACCEPT change" time="5.796">
+<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="NEW mail ACCEPT change" time="5.822">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="Once decision taken, token is disabled - old user" time="6.328">
+<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="Once decision taken, token is disabled - old user" time="6.552">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="Once decision taken, token is disabled - new user" time="6.418">
+<testcase classname="Acceptance.100 UserEmailChange.060 NewUserRefuse" name="Once decision taken, token is disabled - new user" time="6.548">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.070 Dismiss" name="Dismiss button doesn't invalidate the token" time="6.024">
+<testcase classname="Acceptance.100 UserEmailChange.070 Dismiss" name="Dismiss button doesn't invalidate the token" time="6.085">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.070 Dismiss" name="Once decision taken, token is disabled - new user" time="6.239">
+<testcase classname="Acceptance.100 UserEmailChange.070 Dismiss" name="Once decision taken, token is disabled - new user" time="6.149">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Disable daily mails" time="4.481">
+<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Disable daily mails" time="4.720">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Enable daily mails" time="4.381">
+<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Enable daily mails" time="4.609">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already PENDING by user himself" time="6.427">
+<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already PENDING by user himself" time="7.008">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already USED by another user" time="2.700">
+<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already USED by another user" time="3.235">
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already PENDING by another user" time="6.250">
+<testcase classname="Acceptance.100 UserEmailChange.090 EmailAlreadyTaken" name="Email address already PENDING by another user" time="6.679">
 </testcase>
-<testcase classname="Acceptance.110 Moves.010 Access" name="Anonymous users should access form" time="0.580">
+<testcase classname="Acceptance.110 Moves.010 Access" name="Anonymous users should access form" time="0.574">
 </testcase>
-<testcase classname="Acceptance.110 Moves.010 Access" name="Authenticated users should access form" time="1.696">
+<testcase classname="Acceptance.110 Moves.010 Access" name="Authenticated users should access form" time="1.645">
 </testcase>
-<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Button Trigger Validation" time="2.602">
+<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Button Trigger Validation" time="2.737">
 </testcase>
-<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Blur Trigger Validation On 6th Character" time="3.538">
+<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Blur Trigger Validation On 6th Character" time="3.487">
 </testcase>
-<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Next Trigger Validation - Valid" time="0.789">
+<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Next Trigger Validation - Valid" time="0.887">
 </testcase>
-<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Next Trigger Validation - Invalid" time="0.795">
+<testcase classname="Acceptance.110 Moves.020 TrackingCodeUI" name="Next Trigger Validation - Invalid" time="0.884">
 </testcase>
-<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Tracking Code Should Load GeoKret" time="1.238">
+<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Tracking Code Should Load GeoKret" time="1.248">
 </testcase>
-<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Invalid Tracking Code" time="1.335">
+<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Invalid Tracking Code" time="1.277">
 </testcase>
-<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Tracking Code With Reference Number" time="2.868">
+<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Tracking Code With Reference Number" time="3.109">
 </testcase>
-<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Multiple Tracking Code Is Not Possible For Anonymous" time="1.391">
+<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Multiple Tracking Code Is Not Possible For Anonymous" time="1.208">
 </testcase>
-<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Multiple Tracking Code Should Load GeoKrety" time="2.104">
+<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="Fill Multiple Tracking Code Should Load GeoKrety" time="2.690">
 </testcase>
-<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="GeoKret Reference Should Be Displayed In Panel Heading" time="2.276">
+<testcase classname="Acceptance.110 Moves.030 TrackingCodeValid" name="GeoKret Reference Should Be Displayed In Panel Heading" time="2.067">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Inventory Button Not Displayed For Anonymous" time="0.479">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Inventory Button Not Displayed For Anonymous" time="0.827">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Inventory Button Displayed For Connected" time="1.224">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Inventory Button Displayed For Connected" time="1.443">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Click Inventory Button Show Inventory" time="1.680">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Click Inventory Button Show Inventory" time="1.408">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Inventory Should Show GeoKrety" time="1.780">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Inventory Should Show GeoKrety" time="2.266">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Checkbox Should Increment Button Badge" time="1.956">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Checkbox Should Increment Button Badge" time="2.007">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Checkbox ALL Should Check all items" time="1.736">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Checkbox ALL Should Check all items" time="1.888">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Filter By GeoKrety Names" time="1.557">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Filter By GeoKrety Names" time="1.569">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Select Button Should Close Inventory And Fill TC" time="1.929">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Select Button Should Close Inventory And Fill TC" time="1.729">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Select Another Button Should Close Inventory And Append TC" time="2.330">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Select Another Button Should Close Inventory And Append TC" time="2.636">
 </testcase>
-<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Select Via CheckBoxes" time="2.075">
+<testcase classname="Acceptance.110 Moves.040 TrackingCodeInventory" name="Select Via CheckBoxes" time="2.032">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Check Buttons Precence" time="0.753">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Check Buttons Precence" time="0.742">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="No Selection Should Show Error" time="1.083">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="No Selection Should Show Error" time="1.108">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Dropped" time="1.069">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Dropped" time="0.911">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Grabbed" time="1.164">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Grabbed" time="1.206">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Meet" time="0.910">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Meet" time="0.922">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Dipped" time="0.869">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Dipped" time="0.914">
 </testcase>
-<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Comment" time="1.615">
+<testcase classname="Acceptance.110 Moves.100 LogTypeUI" name="Select Comment" time="1.499">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Form Initial Status" time="0.678">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Form Initial Status" time="0.820">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Empty Waypoint" time="2.556">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Empty Waypoint" time="1.548">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Invalid Waypoint" time="1.563">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Invalid Waypoint" time="2.439">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Coordinates Field Can Be Manually Open" time="1.743">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Coordinates Field Can Be Manually Open" time="1.773">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Invalid GC Waypoint" time="1.567">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Invalid GC Waypoint" time="1.638">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Valid Waypoint Validate The Form" time="3.090">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Valid Waypoint Validate The Form" time="3.066">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Coordinates Validate The Form" time="4.117">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Coordinates Validate The Form" time="4.123">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Coordinates With Invalid Coordinates" time="6.259">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Coordinates With Invalid Coordinates" time="5.959">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Coordinates Show Map Centered" time="3.196">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Fill Coordinates Show Map Centered" time="3.198">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="No Selection Should Show Error" time="0.994">
+<testcase classname="Acceptance.110 Moves.110 Location" name="No Selection Should Show Error" time="0.907">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Open OC Search Field" time="0.991">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Open OC Search Field" time="0.982">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="OC Autocomplete Displayed After 4th Character" time="1.792">
+<testcase classname="Acceptance.110 Moves.110 Location" name="OC Autocomplete Displayed After 4th Character" time="1.767">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="OC Autocomplete Responses" time="1.089">
+<testcase classname="Acceptance.110 Moves.110 Location" name="OC Autocomplete Responses" time="1.113">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="OC Autocomplete Responses Exact Match" time="1.138">
+<testcase classname="Acceptance.110 Moves.110 Location" name="OC Autocomplete Responses Exact Match" time="1.062">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Select Cache Name From OC Autocomplete Fill Waypoint" time="3.218">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Select Cache Name From OC Autocomplete Fill Waypoint" time="3.440">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Click Next With Known Waypoint Raise Validation Success" time="1.111">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Click Next With Known Waypoint Raise Validation Success" time="0.950">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Click Next With Empty Waypoint Raise Validation Error" time="1.073">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Click Next With Empty Waypoint Raise Validation Error" time="0.998">
 </testcase>
-<testcase classname="Acceptance.110 Moves.110 Location" name="Click Next With UnKnown GC Waypoint Raise Validation Error" time="1.042">
+<testcase classname="Acceptance.110 Moves.110 Location" name="Click Next With UnKnown GC Waypoint Raise Validation Error" time="1.029">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Form Initial Status As Anonymous" time="1.025">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Form Initial Status As Anonymous" time="1.013">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Form Initial Status As Authenticated" time="1.949">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Form Initial Status As Authenticated" time="1.671">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Empty Username" time="1.001">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Empty Username" time="1.039">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Check Valid Username" time="8.476">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Check Valid Username" time="8.382">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Check Invalid Username" time="1.996">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Check Invalid Username" time="2.368">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Open DatetimePicker Via Button" time="1.062">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Open DatetimePicker Via Button" time="1.097">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Open DatetimePicker Via Input" time="1.449">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Open DatetimePicker Via Input" time="1.111">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="DateTime Input Is read-only" time="0.809">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="DateTime Input Is read-only" time="0.953">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="DateTime Input In The Future" time="1.474">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="DateTime Input In The Future" time="1.965">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Hidden DateTime Fields Should Be Filled" time="0.937">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Hidden DateTime Fields Should Be Filled" time="0.977">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Hidden DateTime Fields Should Be Filled With Timezone" time="1.092">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Hidden DateTime Fields Should Be Filled With Timezone" time="0.953">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Fill Comment" time="0.898">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Fill Comment" time="0.930">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Click Next Without Filling Values Should Trigger Error As Anonymous" time="1.237">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Click Next Without Filling Values Should Trigger Error As Anonymous" time="2.386">
 </testcase>
-<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Click Next Without Filling Values Should Trigger Success As Authenticated" time="2.177">
+<testcase classname="Acceptance.110 Moves.120 AdditionalData" name="Click Next Without Filling Values Should Trigger Success As Authenticated" time="1.933">
 </testcase>
-<testcase classname="Acceptance.110 Moves.200 FullForm" name="Fill Form Naturally" time="4.735">
+<testcase classname="Acceptance.110 Moves.200 FullForm" name="Fill Form Naturally" time="5.433">
 </testcase>
-<testcase classname="Acceptance.110 Moves.200 FullForm" name="Found It Log It From Home Page" time="4.341">
+<testcase classname="Acceptance.110 Moves.200 FullForm" name="Found It Log It From Home Page" time="5.126">
 </testcase>
-<testcase classname="Acceptance.110 Moves.200 FullForm" name="Found It Log It From GeoKret Page" time="5.017">
+<testcase classname="Acceptance.110 Moves.200 FullForm" name="Found It Log It From GeoKret Page" time="5.834">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Anonymous Cannot Edit Moves" time="3.136">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Anonymous Cannot Edit Moves" time="4.070">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Author Can Edit It's Moves" time="3.972">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Author Can Edit It's Moves" time="3.971">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Other Users Cannot Edit Others Moves" time="5.862">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Other Users Cannot Edit Others Moves" time="3.494">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Information Should Be Loaded" time="4.239">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Information Should Be Loaded" time="3.870">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Tracking Code" time="5.301">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Tracking Code" time="5.313">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Move Type" time="5.995">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Move Type" time="5.915">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Location" time="5.675">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Location" time="5.769">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Date" time="5.560">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Date" time="5.048">
 </testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Comment" time="5.402">
+<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Comment" time="5.554">
 </testcase>
-<testcase classname="Acceptance.110 Moves.210 PostFast" name="Predefined Moves" time="3.914">
+<testcase classname="Acceptance.110 Moves.210 PostFast" name="Predefined Moves" time="3.828">
 </testcase>
-<testcase classname="Acceptance.110 Moves.220 HomePage" name="Move Should Be Shown In Recent Moves" time="2.984">
+<testcase classname="Acceptance.110 Moves.220 HomePage" name="Move Should Be Shown In Recent Moves" time="2.853">
 </testcase>
-<testcase classname="Acceptance.110 Moves.220 HomePage" name="Recent Moves First" time="3.135">
+<testcase classname="Acceptance.110 Moves.220 HomePage" name="Recent Moves First" time="3.081">
 </testcase>
-<testcase classname="Acceptance.110 Moves.230 GeoKretPage" name="Moves Should Be Shown On GeoKret Page" time="6.321">
+<testcase classname="Acceptance.110 Moves.230 GeoKretPage" name="Moves Should Be Shown On GeoKret Page" time="6.358">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Moves By User Should Show Edit Button" time="1.463">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Moves By User Should Show Edit Button" time="1.442">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Moves By User Should Show Delete Button" time="1.556">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Moves By User Should Show Delete Button" time="1.513">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Moves By User Should Show Upload Picture Button" time="1.568">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Moves By User Should Show Upload Picture Button" time="1.614">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="All Moves Should Show Comment Button" time="1.543">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="All Moves Should Show Comment Button" time="1.516">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Edit Button Are Clickable" time="2.658">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Edit Button Are Clickable" time="2.677">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Delete Button Are Clickable" time="2.282">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Delete Button Are Clickable" time="2.159">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Comment Button Are Clickable" time="2.019">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="Comment Button Are Clickable" time="2.012">
 </testcase>
-<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="No Buttons For Anonymous Users" time="0.643">
+<testcase classname="Acceptance.110 Moves.231 GeoKretPageMovesButtons" name="No Buttons For Anonymous Users" time="0.704">
 </testcase>
-<testcase classname="Acceptance.110 Moves.240 UserRecentMoves" name="Moves Should Be Shown On User Recent Moves Page" time="1.473">
+<testcase classname="Acceptance.110 Moves.240 UserRecentMoves" name="Moves Should Be Shown On User Recent Moves Page" time="1.364">
 </testcase>
-<testcase classname="Acceptance.110 Moves.240 UserRecentMoves" name="Owner Recent Moves Page Should Be Empty" time="0.273">
+<testcase classname="Acceptance.110 Moves.240 UserRecentMoves" name="Owner Recent Moves Page Should Be Empty" time="0.285">
 </testcase>
-<testcase classname="Acceptance.110 Moves.250 UserInventory" name="Moves Should Be Shown On User Inventory Page" time="0.421">
+<testcase classname="Acceptance.110 Moves.250 UserInventory" name="Moves Should Be Shown On User Inventory Page" time="0.442">
 </testcase>
-<testcase classname="Acceptance.110 Moves.250 UserInventory" name="Owner Inventory Page Should Be Empty" time="0.277">
+<testcase classname="Acceptance.110 Moves.250 UserInventory" name="Owner Inventory Page Should Be Empty" time="0.290">
 </testcase>
-<testcase classname="Acceptance.110 Moves.250 UserInventory" name="Owner Inventory Page Should Be Empty - Authenticated" time="1.096">
+<testcase classname="Acceptance.110 Moves.250 UserInventory" name="Owner Inventory Page Should Be Empty - Authenticated" time="1.158">
 </testcase>
-<testcase classname="Acceptance.110 Moves.260 OwnedGeoKrety" name="GeoKrety Should Be Shown On User Owned GeoKrety Page" time="0.416">
+<testcase classname="Acceptance.110 Moves.260 OwnedGeoKrety" name="GeoKrety Should Be Shown On User Owned GeoKrety Page" time="0.491">
 </testcase>
-<testcase classname="Acceptance.110 Moves.260 OwnedGeoKrety" name="Owned GeoKrety Page Should Be Empty" time="0.270">
+<testcase classname="Acceptance.110 Moves.260 OwnedGeoKrety" name="Owned GeoKrety Page Should Be Empty" time="0.271">
 </testcase>
-<testcase classname="Acceptance.110 Moves.260 OwnedGeoKrety" name="Owned GeoKrety Page Should Be Empty - Authenticated" time="1.186">
+<testcase classname="Acceptance.110 Moves.260 OwnedGeoKrety" name="Owned GeoKrety Page Should Be Empty - Authenticated" time="1.110">
 </testcase>
-<testcase classname="Acceptance.110 Moves.270 OwnedGeoKretyRecentMoves" name="GeoKrety Should Be Shown On User Owned GeoKrety Page" time="1.126">
+<testcase classname="Acceptance.110 Moves.270 OwnedGeoKretyRecentMoves" name="GeoKrety Should Be Shown On User Owned GeoKrety Page" time="1.048">
 </testcase>
-<testcase classname="Acceptance.110 Moves.270 OwnedGeoKretyRecentMoves" name="Owner Inventory Page Should Be Empty" time="0.288">
+<testcase classname="Acceptance.110 Moves.270 OwnedGeoKretyRecentMoves" name="Owner Inventory Page Should Be Empty" time="0.285">
 </testcase>
-<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Anonymous Cannot Delete Moves" time="0.240">
+<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Anonymous Cannot Delete Moves" time="0.236">
 </testcase>
-<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Author Can Delete It's Moves" time="1.117">
+<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Author Can Delete It's Moves" time="1.035">
 </testcase>
-<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Other Users Cannot Delete Others Moves" time="1.004">
+<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Other Users Cannot Delete Others Moves" time="1.047">
 </testcase>
-<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Delete Move" time="2.607">
+<testcase classname="Acceptance.110 Moves.280 MoveDelete" name="Delete Move" time="2.870">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Not Existent Move Cannot Be Commented" time="1.022">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Not Existent Move Cannot Be Commented" time="1.029">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Move Comment Url Has Panel As Authenticated" time="1.247">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Move Comment Url Has Panel As Authenticated" time="1.225">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Commented Move Should Be Shown" time="1.237">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Commented Move Should Be Shown" time="1.209">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Post Comment Via Direct Url" time="2.962">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Post Comment Via Direct Url" time="3.808">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Post Comment Via Modal" time="3.336">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Post Comment Via Modal" time="3.383">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Check Valid Comments" time="25.562">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Check Valid Comments" time="25.116">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Check Invalid Comments" time="12.439">
+<testcase classname="Acceptance.120 MovesComments.20 CommentCreate" name="Check Invalid Comments" time="12.532">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.30 CommentDelete" name="Comment Is Shown In Modal" time="6.575">
+<testcase classname="Acceptance.120 MovesComments.30 CommentDelete" name="Comment Is Shown In Modal" time="6.638">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.30 CommentDelete" name="Author Can Delete Comment" time="8.303">
+<testcase classname="Acceptance.120 MovesComments.30 CommentDelete" name="Author Can Delete Comment" time="8.380">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Anonymous Cannot Report Missing" time="4.620">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Anonymous Cannot Report Missing" time="4.583">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Only One Missing Button Can Be Shown" time="5.346">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Only One Missing Button Can Be Shown" time="5.280">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Grab" time="5.654">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Grab" time="5.535">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Comment" time="5.619">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Comment" time="5.554">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Seen" time="5.784">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Seen" time="5.749">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Archive" time="5.515">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Archive" time="5.430">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Dip" time="6.034">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Missing Button Only For Some Types - Dip" time="5.972">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Direct Link To Not Last Position Is Forbidden" time="4.999">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Direct Link To Not Last Position Is Forbidden" time="5.010">
 </testcase>
-<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Multiple Missing Report Allowed" time="7.787">
+<testcase classname="Acceptance.120 MovesComments.40 Missing" name="Multiple Missing Report Allowed" time="7.711">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.010 Access" name="Anonymous should not see draggable" time="1.655">
+<testcase classname="Acceptance.130 MovesPictures.010 Access" name="Anonymous should not see draggable" time="0.567">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.010 Access" name="Author himself should see draggable" time="1.555">
+<testcase classname="Acceptance.130 MovesPictures.010 Access" name="Author himself should see draggable" time="2.467">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.010 Access" name="Authenticated should not see draggable for other users moves" time="1.558">
+<testcase classname="Acceptance.130 MovesPictures.010 Access" name="Authenticated should not see draggable for other users moves" time="1.642">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload image via button" time="7.027">
+<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload image via button" time="7.092">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload image via Drag/Drop - same page" time="6.660">
+<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload image via Drag/Drop - same page" time="6.868">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload multiple image via button" time="9.424">
+<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload multiple image via button" time="9.271">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload images to different moves" time="9.473">
+<testcase classname="Acceptance.130 MovesPictures.020 PictureUpload" name="Upload images to different moves" time="9.380">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="Anonymous Don't Have Manage Buttons" time="7.738">
+<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="Anonymous Don't Have Manage Buttons" time="7.895">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="Picture Owner Has Manage Buttons" time="8.760">
+<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="Picture Owner Has Manage Buttons" time="8.712">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="GeoKret Owner Has Manage Buttons" time="8.510">
+<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="GeoKret Owner Has Manage Buttons" time="8.564">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="Other Users Don't Have Manage Buttons" time="8.704">
+<testcase classname="Acceptance.130 MovesPictures.030 ManageButtons" name="Other Users Don't Have Manage Buttons" time="8.861">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.040 EditCaption" name="Picture Owner Can Set Caption" time="10.401">
+<testcase classname="Acceptance.130 MovesPictures.040 EditCaption" name="Picture Owner Can Set Caption" time="10.370">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.040 EditCaption" name="Picture Owner Can Edit Caption" time="12.073">
+<testcase classname="Acceptance.130 MovesPictures.040 EditCaption" name="Picture Owner Can Edit Caption" time="12.154">
 </testcase>
-<testcase classname="Acceptance.130 MovesPictures.050 DeletePicture" name="Picture Owner Can Delete Picture" time="11.591">
+<testcase classname="Acceptance.130 MovesPictures.050 DeletePicture" name="Picture Owner Can Delete Picture" time="11.498">
 </testcase>
-<testcase classname="Acceptance.140 Messaging.10 Access" name="Anonymous Cannot Acces Form - via user" time="0.240">
+<testcase classname="Acceptance.140 Messaging.10 Access" name="Anonymous Cannot Acces Form - via user" time="0.236">
 </testcase>
-<testcase classname="Acceptance.140 Messaging.10 Access" name="Anonymous Cannot Acces Form - via geokret" time="0.265">
+<testcase classname="Acceptance.140 Messaging.10 Access" name="Anonymous Cannot Acces Form - via geokret" time="0.243">
 </testcase>
-<testcase classname="Acceptance.140 Messaging.10 Access" name="Authenticated Users Can Access Form" time="2.590">
+<testcase classname="Acceptance.140 Messaging.10 Access" name="Authenticated Users Can Access Form" time="2.564">
 </testcase>
-<testcase classname="Acceptance.140 Messaging.20 SendMessage" name="Send Message Via User Contact" time="2.536">
+<testcase classname="Acceptance.140 Messaging.20 SendMessage" name="Send Message Via User Contact" time="2.539">
 </testcase>
-<testcase classname="Acceptance.140 Messaging.20 SendMessage" name="Sending From GeoKret Fill The Subject" time="1.141">
+<testcase classname="Acceptance.140 Messaging.20 SendMessage" name="Sending From GeoKret Fill The Subject" time="1.153">
 </testcase>
-<testcase classname="Acceptance.150 Claim.10 Access" name="Authenticated Users Can Access Form" time="1.221">
+<testcase classname="Acceptance.150 Claim.10 Access" name="Authenticated Users Can Access Form" time="1.231">
 </testcase>
-<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Anonymous Don't Have Link To Offer" time="0.473">
+<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Anonymous Don't Have Link To Offer" time="0.480">
 </testcase>
-<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="GeoKret Owner Has Link To Offer" time="1.220">
+<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="GeoKret Owner Has Link To Offer" time="1.186">
 </testcase>
-<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Other Authenticated Users Don't Have Link To Offer" time="1.455">
+<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Other Authenticated Users Don't Have Link To Offer" time="1.452">
 </testcase>
-<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Clic Offer Ask For Confirmation" time="1.951">
+<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Clic Offer Ask For Confirmation" time="1.898">
 </testcase>
-<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Anonymous Don't See The Adoption Code" time="2.769">
+<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Anonymous Don't See The Adoption Code" time="2.814">
 </testcase>
-<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Other Users Don't See The Adoption Code" time="3.421">
+<testcase classname="Acceptance.150 Claim.20 OfferForAdoption" name="Other Users Don't See The Adoption Code" time="3.363">
 </testcase>
-<testcase classname="Acceptance.150 Claim.30 Adopt" name="Owner Can't Claim It's Own GeoKrety" time="5.101">
+<testcase classname="Acceptance.150 Claim.30 Adopt" name="Owner Can't Claim It's Own GeoKrety" time="4.998">
 </testcase>
-<testcase classname="Acceptance.150 Claim.30 Adopt" name="Other Users Can Claim GeoKrety" time="6.793">
+<testcase classname="Acceptance.150 Claim.30 Adopt" name="Other Users Can Claim GeoKrety" time="6.835">
 </testcase>
-<testcase classname="Acceptance.150 Claim.30 Adopt" name="On Adoption Mail Should Be Sent To Old Owner" time="6.861">
+<testcase classname="Acceptance.150 Claim.30 Adopt" name="On Adoption Mail Should Be Sent To Old Owner" time="6.721">
 </testcase>
-<testcase classname="Acceptance.150 Claim.30 Adopt" name="Adoption Code Already Used" time="7.842">
+<testcase classname="Acceptance.150 Claim.30 Adopt" name="Adoption Code Already Used" time="7.994">
 </testcase>
-<testcase classname="Acceptance.150 Claim.30 Adopt" name="Invalid Input" time="10.188">
+<testcase classname="Acceptance.150 Claim.30 Adopt" name="Invalid Input" time="10.351">
 </testcase>
-<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="Gallery Page Should Show All Types Of Uploaded Pictures" time="0.600">
+<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="Gallery Page Should Show All Types Of Uploaded Pictures" time="0.631">
 </testcase>
-<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="User Posted Pictures Page Should Show All Types Of Uploaded Pictures" time="0.517">
+<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="User Posted Pictures Page Should Show All Types Of Uploaded Pictures" time="0.708">
 </testcase>
-<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="User Owned GeoKrety Posted Pictures Page Should Show GeoKrety Uploaded Pictures" time="0.485">
+<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="User Owned GeoKrety Posted Pictures Page Should Show GeoKrety Uploaded Pictures" time="0.765">
 </testcase>
-<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="No Pictures Placeholder - owned GeoKrety" time="0.428">
+<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="No Pictures Placeholder - owned GeoKrety" time="0.427">
 </testcase>
-<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="No Pictures Placeholder - posted" time="0.399">
+<testcase classname="Acceptance.160 PhotoGallery.10 ViewGalleries" name="No Pictures Placeholder - posted" time="0.397">
 </testcase>
-<testcase classname="Acceptance.180 News.10 HomePage" name="No News Should Hide Panel" time="0.306">
+<testcase classname="Acceptance.180 News.10 HomePage" name="No News Should Hide Panel" time="0.310">
 </testcase>
-<testcase classname="Acceptance.180 News.10 HomePage" name="Homepage should hide older news" time="0.449">
+<testcase classname="Acceptance.180 News.10 HomePage" name="Homepage should hide older news" time="0.443">
 </testcase>
-<testcase classname="Acceptance.180 News.10 HomePage" name="Homepage should show 3 most recent news not older than 31 days" time="0.482">
+<testcase classname="Acceptance.180 News.10 HomePage" name="Homepage should show 3 most recent news not older than 31 days" time="0.483">
 </testcase>
-<testcase classname="Acceptance.180 News.20 NewsListPage" name="No News Should Show Placeholder" time="1.377">
+<testcase classname="Acceptance.180 News.20 NewsListPage" name="No News Should Show Placeholder" time="1.326">
 </testcase>
 <testcase classname="Acceptance.180 News.20 NewsListPage" name="News Should Be SHown" time="1.552">
 </testcase>
-<testcase classname="Acceptance.180 News.20 NewsListPage" name="News Should Be Paginated" time="1.561">
+<testcase classname="Acceptance.180 News.20 NewsListPage" name="News Should Be Paginated" time="1.465">
 </testcase>
-<testcase classname="Acceptance.180 News.20 NewsListPage" name="Paginator Should Count Pages" time="1.632">
+<testcase classname="Acceptance.180 News.20 NewsListPage" name="Paginator Should Count Pages" time="1.590">
 </testcase>
-<testcase classname="Acceptance.180 News.20 NewsListPage" name="Check News" time="1.724">
+<testcase classname="Acceptance.180 News.20 NewsListPage" name="Check News" time="1.616">
 </testcase>
-<testcase classname="Acceptance.180 News.30 NewsPage" name="Check News" time="0.387">
+<testcase classname="Acceptance.180 News.30 NewsPage" name="Check News" time="0.774">
 </testcase>
-<testcase classname="Acceptance.180 News.30 NewsPage" name="Leave Comment Panel - Anonymous" time="0.311">
+<testcase classname="Acceptance.180 News.30 NewsPage" name="Leave Comment Panel - Anonymous" time="0.292">
 </testcase>
-<testcase classname="Acceptance.180 News.30 NewsPage" name="Leave Comment Panel - Authenticated" time="1.310">
+<testcase classname="Acceptance.180 News.30 NewsPage" name="Leave Comment Panel - Authenticated" time="1.328">
 </testcase>
-<testcase classname="Acceptance.180 News.40 NewsSubscription" name="Click Should Show Subscribe Confirmation" time="3.002">
+<testcase classname="Acceptance.180 News.40 NewsSubscription" name="Click Should Show Subscribe Confirmation" time="3.226">
 </testcase>
-<testcase classname="Acceptance.180 News.40 NewsSubscription" name="User Can Subscribe" time="3.906">
+<testcase classname="Acceptance.180 News.40 NewsSubscription" name="User Can Subscribe" time="3.943">
 </testcase>
-<testcase classname="Acceptance.180 News.40 NewsSubscription" name="User Can Unsubscribe" time="4.438">
+<testcase classname="Acceptance.180 News.40 NewsSubscription" name="User Can Unsubscribe" time="4.441">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Comment Must Have A Content" time="3.090">
+<testcase classname="Acceptance.180 News.50 Comments" name="Comment Must Have A Content" time="3.290">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Users Can Post Comments" time="3.585">
+<testcase classname="Acceptance.180 News.50 Comments" name="Users Can Post Comments" time="3.822">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Users Can Subscribe Via Post Comments" time="3.794">
+<testcase classname="Acceptance.180 News.50 Comments" name="Users Can Subscribe Via Post Comments" time="4.063">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Users May Choose To Not Subscribe Via Post Comments" time="3.461">
+<testcase classname="Acceptance.180 News.50 Comments" name="Users May Choose To Not Subscribe Via Post Comments" time="3.424">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Users Can Unsubscribe Via Post Comments" time="4.746">
+<testcase classname="Acceptance.180 News.50 Comments" name="Users Can Unsubscribe Via Post Comments" time="5.135">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Comments Author See The Delete Button" time="5.109">
+<testcase classname="Acceptance.180 News.50 Comments" name="Comments Author See The Delete Button" time="5.502">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Comments Author Can Delete Their Comments" time="4.219">
+<testcase classname="Acceptance.180 News.50 Comments" name="Comments Author Can Delete Their Comments" time="4.146">
 </testcase>
-<testcase classname="Acceptance.180 News.50 Comments" name="Delete Comment Leave Subscription" time="4.484">
+<testcase classname="Acceptance.180 News.50 Comments" name="Delete Comment Leave Subscription" time="4.459">
 </testcase>
 </testsuite>
