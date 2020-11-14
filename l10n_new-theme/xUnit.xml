@@ -1,44 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="14" errors="0" name="Acceptance" skipped="0" time="10833.489" failures="13">
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.012">
+<testsuite tests="13" errors="0" name="Acceptance" skipped="0" time="10821.716" failures="13">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.003">
 <failure message="Dependency not met: test case u'Email activation confirmation received' not found, wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.006">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.005">
 <failure message="Dependency not met: test case u'Sign In user' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="0.008">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Account not active" time="0.006">
 <failure message="Dependency not met: test case u'Create an account' not found, wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.007">
+<testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.002">
 <failure message="Dependency not met: test case u'Account not active' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
 <testcase classname="Acceptance.020 SignIn.robot.010 AccountMustBeActivatedFirst" name="Validated account can login" time="0.002">
 <failure message="Dependency not met: test case u'Confirmation mail sent again' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="0.490">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user" time="0.433">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="0.497">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with wrong password" time="0.438">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="0.499">
+<testcase classname="Acceptance.020 SignIn.robot.020 GoodBadPassword" name="Sign In user with non existent username" time="0.445">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="1.940">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Seeded are fully valid" time="1.807">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;&#10;&#10;Also teardown failed:&#10;Several failures occurred:&#10;&#10;1) Link with locator '//*[@id=&quot;navbar-profile-user&quot;]' not found.&#10;&#10;2) Link with locator '//*[@id=&quot;navbar-profile-user-logout&quot;]' not found." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="6.846">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="6.375">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;&#10;&#10;Also teardown failed:&#10;Several failures occurred:&#10;&#10;1) Link with locator '//*[@id=&quot;navbar-profile-user&quot;]' not found.&#10;&#10;2) Link with locator '//*[@id=&quot;navbar-profile-user-logout&quot;]' not found." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="1.944">
+<testcase classname="Acceptance.020 SignIn.robot.030 MustAcceptTermOfUse" name="Legacy accounts are asked for terms of use" time="1.748">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;&#10;&#10;Also teardown failed:&#10;Several failures occurred:&#10;&#10;1) Link with locator '//*[@id=&quot;navbar-profile-user&quot;]' not found.&#10;&#10;2) Link with locator '//*[@id=&quot;navbar-profile-user-logout&quot;]' not found." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="0.512">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="Redirects to last page" time="0.374">
 <failure message="ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=news_list&amp;params=YToxOntpOjA7czo4OiIvZW4vbmV3cyI7fQ%253D%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="1.569">
+<testcase classname="Acceptance.020 SignIn.robot.040 RedirectToPageAfterLogin" name="No redirect urls" time="1.475">
 <failure message="Several failures occurred:&#10;&#10;1) ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=login&amp;params=YToxOntpOjA7czo5OiIvZW4vbG9naW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;&#10;&#10;2) ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=registration&amp;params=YToxOntpOjA7czoxNjoiL2VuL3JlZ2lzdHJhdGlvbiI7fQ%253D%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;&#10;&#10;3) ElementNotInteractableException: Message: Element &lt;a id=&quot;navbar-profile-login&quot; class=&quot;btn btn-info&quot; href=&quot;http://localhost:3001/en/login?goto=home&amp;params=YToxOntpOjA7czozOiIvZW4iO30%253D&amp;query=YTowOnt9&quot;&gt; could not be scrolled into view&#10;" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.110 Moves.205 MoveEdit" name="Change Tracking Code" time="6.199">
 </testcase>
 </testsuite>
