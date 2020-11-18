@@ -1,315 +1,606 @@
 ==============================================================================
-20201116 09:23:20.264 - INFO - + START SUITE: Acceptance [ ]
+20201118 20:21:20.976 - INFO - + START SUITE: Acceptance [ ]
 ==============================================================================
-20201116 09:23:20.420 - INFO - +- START SUITE: Acceptance.060 UserAvatar.robot [ ]
+20201118 23:21:21.154 - INFO - +- START SUITE: Acceptance.110 Moves [ ]
 ==============================================================================
-20201116 09:23:20.422 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20201116 09:23:20.422 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20201116 09:23:20.423 - INFO - +---- START KW: BuiltIn.Run Keyword If [ "${BS_ENABLED}" != "false" | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20201116 09:23:20.423 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
-20201116 09:23:20.424 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
-20201116 09:23:20.424 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
-20201116 09:23:20.424 - INFO - +-------- START KW: BuiltIn.Log [ Open Browser Firefox ]
-20201116 09:23:20.424 - INFO - Open Browser Firefox
-20201116 09:23:20.424 - INFO - +-------- END KW: BuiltIn.Log (0)
-20201116 09:23:20.424 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
-20201116 09:23:20.425 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7f52d640c250>
-20201116 09:23:20.425 - INFO - +-------- END KW: BuiltIn.Evaluate (1)
-20201116 09:23:20.425 - INFO - +-------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
-20201116 09:23:20.425 - INFO - +--------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
-20201116 09:23:20.426 - INFO - +--------- END KW: BuiltIn.Call Method (1)
-20201116 09:23:20.426 - INFO - +-------- END KW: BuiltIn.Run Keyword If (1)
-20201116 09:23:20.426 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].DesiredCapabilities.FIREFOX | sys, selenium.webdriver ]
-20201116 09:23:20.426 - INFO - ${dc} = {'acceptInsecureCerts': True, 'browserName': 'firefox', 'marionette': True}
-20201116 09:23:20.426 - INFO - +-------- END KW: BuiltIn.Evaluate (0)
-20201116 09:23:20.426 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | strictFileInteractability=${FALSE} ]
-20201116 09:23:20.426 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
-20201116 09:23:20.427 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | timezone=UTC-05:00 ]
-20201116 09:23:20.427 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
-20201116 09:23:20.427 - INFO - +-------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} | desired_capabilities=${dc} ]
-20201116 09:23:20.427 - INFO - Creating an instance of the Firefox WebDriver.
-20201116 12:23:22.410 - DEBUG - Created Firefox WebDriver instance with session id 00461d22-191a-431d-a445-8ded1b754aab.
-20201116 12:23:22.411 - INFO - +-------- END KW: SeleniumLibrary.Create Webdriver (10801983)
-20201116 12:23:22.411 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (10801987)
-20201116 12:23:22.411 - INFO - +------ END KW: BuiltIn.Run Keyword If (10801987)
-20201116 12:23:22.412 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
-20201116 12:23:22.413 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
-20201116 12:23:22.413 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (10801990)
-20201116 12:23:22.413 - INFO - +---- END KW: BuiltIn.Run Keyword If (10801990)
-20201116 12:23:22.413 - INFO - +---- START KW: SeleniumLibrary.Set Window Size [ 1280 | 1024 ]
-20201116 12:23:22.435 - INFO - +---- END KW: SeleniumLibrary.Set Window Size (22)
-20201116 12:23:22.435 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (10802013)
-20201116 12:23:22.436 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (10802013)
+20201118 23:21:21.155 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20201118 23:21:21.156 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20201118 23:21:21.157 - INFO - +---- START KW: BuiltIn.Run Keyword If [ "${BS_ENABLED}" != "false" | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20201118 23:21:21.157 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
+20201118 23:21:21.158 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
+20201118 23:21:21.159 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
+20201118 23:21:21.160 - INFO - +-------- START KW: BuiltIn.Log [ Open Browser Firefox ]
+20201118 23:21:21.160 - INFO - Open Browser Firefox
+20201118 23:21:21.160 - INFO - +-------- END KW: BuiltIn.Log (0)
+20201118 23:21:21.161 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
+20201118 23:21:21.161 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7f6246190550>
+20201118 23:21:21.161 - INFO - +-------- END KW: BuiltIn.Evaluate (1)
+20201118 23:21:21.162 - INFO - +-------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
+20201118 23:21:21.162 - INFO - +--------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
+20201118 23:21:21.163 - INFO - +--------- END KW: BuiltIn.Call Method (1)
+20201118 23:21:21.163 - INFO - +-------- END KW: BuiltIn.Run Keyword If (1)
+20201118 23:21:21.163 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].DesiredCapabilities.FIREFOX | sys, selenium.webdriver ]
+20201118 23:21:21.164 - INFO - ${dc} = {'acceptInsecureCerts': True, 'browserName': 'firefox', 'marionette': True}
+20201118 23:21:21.164 - INFO - +-------- END KW: BuiltIn.Evaluate (1)
+20201118 23:21:21.164 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | strictFileInteractability=${FALSE} ]
+20201118 23:21:21.164 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
+20201118 23:21:21.164 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | timezone=UTC-05:00 ]
+20201118 23:21:21.165 - INFO - +-------- END KW: Collections.Set To Dictionary (1)
+20201118 23:21:21.165 - INFO - +-------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} | desired_capabilities=${dc} ]
+20201118 23:21:21.165 - INFO - Creating an instance of the Firefox WebDriver.
+20201118 23:21:23.272 - DEBUG - Created Firefox WebDriver instance with session id 27525e34-0c76-43fa-8e74-0f62a702faf7.
+20201118 23:21:23.272 - INFO - +-------- END KW: SeleniumLibrary.Create Webdriver (2107)
+20201118 23:21:23.273 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (2114)
+20201118 23:21:23.273 - INFO - +------ END KW: BuiltIn.Run Keyword If (2115)
+20201118 23:21:23.273 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
+20201118 23:21:23.274 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
+20201118 23:21:23.275 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (2117)
+20201118 23:21:23.275 - INFO - +---- END KW: BuiltIn.Run Keyword If (2118)
+20201118 23:21:23.275 - INFO - +---- START KW: SeleniumLibrary.Set Window Size [ 1280 | 1024 ]
+20201118 23:21:23.304 - INFO - +---- END KW: SeleniumLibrary.Set Window Size (29)
+20201118 23:21:23.305 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (2149)
+20201118 23:21:23.306 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (2151)
 ==============================================================================
-20201116 12:23:22.498 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage [ ]
+20201118 23:21:23.454 - INFO - +-- START SUITE: Acceptance.110 Moves.100 LogTypeUI [ ]
 ==============================================================================
-20201116 12:23:22.504 - INFO - +--- START TEST: Should be shown on Homepage [ ]
+20201118 23:21:23.463 - INFO - +--- START SETUP: Seed [ ]
+20201118 23:21:23.464 - INFO - +---- START KW: FunctionsGlobal.Clear DB And Seed 1 users [ ]
+20201118 23:21:23.464 - INFO - +----- START KW: FunctionsGlobal.Clear Database [ ]
+20201118 23:21:23.465 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20201118 23:21:23.465 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:23.466 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:23.466 - INFO - ${url_} = http://localhost:3001/devel/db/reset
+20201118 23:21:23.466 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:23.466 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:23.467 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
+20201118 23:21:23.837 - INFO - +-------- END KW: SeleniumLibrary.Go To (370)
+20201118 23:21:23.837 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (372)
+20201118 23:21:23.837 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:23.838 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:23.892 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:23.892 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:23.892 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (54)
+20201118 23:21:23.892 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:23.905 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:23.906 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:23.906 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (14)
+20201118 23:21:23.906 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:23.917 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:23.917 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:23.917 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201118 23:21:23.917 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (80)
+20201118 23:21:23.918 - INFO - +------ END KW: FunctionsGlobal.Go To Url (453)
+20201118 23:21:23.918 - INFO - +------ START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20201118 23:21:23.930 - INFO - Current page contains text 'OK'.
+20201118 23:21:23.930 - INFO - +------ END KW: SeleniumLibrary.Page Should Contain (12)
+20201118 23:21:23.930 - INFO - +----- END KW: FunctionsGlobal.Clear Database (466)
+20201118 23:21:23.931 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
+20201118 23:21:23.931 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:23.932 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:23.932 - INFO - ${url_} = http://localhost:3001/devel/db/users/seed/1
+20201118 23:21:23.932 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:23.933 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:23.933 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/1'
+20201118 23:21:24.463 - INFO - +------- END KW: SeleniumLibrary.Go To (530)
+20201118 23:21:24.464 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (533)
+20201118 23:21:24.464 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:24.466 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:24.485 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:24.485 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:24.486 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (20)
+20201118 23:21:24.486 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:24.496 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:24.497 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:24.497 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201118 23:21:24.497 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:24.506 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:24.506 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:24.506 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201118 23:21:24.507 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (43)
+20201118 23:21:24.507 - INFO - +----- END KW: FunctionsGlobal.Go To Url (576)
+20201118 23:21:24.507 - INFO - +----- START KW: FunctionsGlobal.Empty Dev Mailbox Fast [ ]
+20201118 23:21:24.507 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_MAILBOX_CLEAR_URL} ]
+20201118 23:21:24.508 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:24.509 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:24.509 - INFO - ${url_} = http://localhost:3001/devel/mail/delete/all
+20201118 23:21:24.509 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:24.509 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:24.509 - INFO - Opening url 'http://localhost:3001/devel/mail/delete/all'
+20201118 23:21:24.929 - INFO - +-------- END KW: SeleniumLibrary.Go To (420)
+20201118 23:21:24.929 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (421)
+20201118 23:21:24.930 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:24.930 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:24.965 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:24.965 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:24.965 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (35)
+20201118 23:21:24.966 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:24.978 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:24.978 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:24.978 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (12)
+20201118 23:21:24.978 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:24.986 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:24.986 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:24.986 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201118 23:21:24.987 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (57)
+20201118 23:21:24.987 - INFO - +------ END KW: FunctionsGlobal.Go To Url (480)
+20201118 23:21:24.987 - INFO - +----- END KW: FunctionsGlobal.Empty Dev Mailbox Fast (480)
+20201118 23:21:24.987 - INFO - +---- END KW: FunctionsGlobal.Clear DB And Seed 1 users (1523)
+20201118 23:21:24.987 - INFO - +---- START KW: FunctionsGlobal.Seed 1 geokrety owned by 1 [ ]
+20201118 23:21:24.988 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
+20201118 23:21:24.988 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:24.989 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:24.989 - INFO - ${url_} = http://localhost:3001/devel/db/users/1/geokrety/seed/1
+20201118 23:21:24.989 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:24.989 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:24.990 - INFO - Opening url 'http://localhost:3001/devel/db/users/1/geokrety/seed/1'
+20201118 23:21:25.212 - INFO - +------- END KW: SeleniumLibrary.Go To (223)
+20201118 23:21:25.213 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (225)
+20201118 23:21:25.213 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:25.213 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:25.227 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.228 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:25.228 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (15)
+20201118 23:21:25.228 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:25.235 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.235 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:25.236 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20201118 23:21:25.236 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:25.244 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.244 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:25.244 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201118 23:21:25.244 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (31)
+20201118 23:21:25.245 - INFO - +----- END KW: FunctionsGlobal.Go To Url (257)
+20201118 23:21:25.245 - INFO - +---- END KW: FunctionsGlobal.Seed 1 geokrety owned by 1 (258)
+20201118 23:21:25.245 - INFO - +---- START KW: FunctionsGlobal.Sign Out Fast [ ]
+20201118 23:21:25.245 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/users/logout ]
+20201118 23:21:25.246 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:25.247 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:25.247 - INFO - ${url_} = http://localhost:3001/devel/users/logout
+20201118 23:21:25.247 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:25.248 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:25.248 - INFO - Opening url 'http://localhost:3001/devel/users/logout'
+20201118 23:21:25.367 - INFO - +------- END KW: SeleniumLibrary.Go To (119)
+20201118 23:21:25.367 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (121)
+20201118 23:21:25.368 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:25.368 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:25.388 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.389 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:25.389 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (21)
+20201118 23:21:25.389 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:25.396 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.396 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:25.396 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20201118 23:21:25.397 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:25.405 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.405 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:25.406 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201118 23:21:25.406 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (39)
+20201118 23:21:25.406 - INFO - +----- END KW: FunctionsGlobal.Go To Url (161)
+20201118 23:21:25.406 - INFO - +---- END KW: FunctionsGlobal.Sign Out Fast (161)
+20201118 23:21:25.406 - INFO - +--- END SETUP: Seed (1943)
 ------------------------------------------------------------------------------
-20201116 12:23:22.510 - INFO - +---- START SETUP: FunctionsGlobal.Clear DB And Seed 1 users [ ]
-20201116 12:23:22.511 - INFO - +----- START KW: FunctionsGlobal.Clear Database [ ]
-20201116 12:23:22.511 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
-20201116 12:23:22.512 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201116 12:23:22.513 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201116 12:23:22.513 - DEBUG - Test timeout 2 minutes active. 119.99 seconds left.
-20201116 12:23:22.514 - INFO - ${url_} = http://localhost:3001/devel/db/reset
-20201116 12:23:22.514 - INFO - +-------- END KW: BuiltIn.Replace Variables (1)
-20201116 12:23:22.514 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201116 12:23:22.514 - DEBUG - Test timeout 2 minutes active. 119.989 seconds left.
-20201116 12:23:22.515 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
-20201116 12:23:22.833 - INFO - +-------- END KW: SeleniumLibrary.Go To (319)
-20201116 12:23:22.834 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (321)
-20201116 12:23:22.834 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201116 12:23:22.834 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201116 12:23:22.834 - DEBUG - Test timeout 2 minutes active. 119.669 seconds left.
-20201116 12:23:22.865 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:22.865 - INFO - Current page does not contain text 'Warning:'.
-20201116 12:23:22.865 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (31)
-20201116 12:23:22.865 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201116 12:23:22.865 - DEBUG - Test timeout 2 minutes active. 119.638 seconds left.
-20201116 12:23:22.876 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:22.877 - INFO - Current page does not contain text 'Failed'.
-20201116 12:23:22.877 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (12)
-20201116 12:23:22.877 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201116 12:23:22.877 - DEBUG - Test timeout 2 minutes active. 119.626 seconds left.
-20201116 12:23:22.887 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:22.887 - INFO - Current page does not contain text 'Internal Server Error'.
-20201116 12:23:22.887 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (10)
-20201116 12:23:22.887 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (53)
-20201116 12:23:22.888 - INFO - +------ END KW: FunctionsGlobal.Go To Url (377)
-20201116 12:23:22.888 - INFO - +------ START KW: SeleniumLibrary.Page Should Contain [ OK ]
-20201116 12:23:22.888 - DEBUG - Test timeout 2 minutes active. 119.615 seconds left.
-20201116 12:23:22.895 - INFO - Current page contains text 'OK'.
-20201116 12:23:22.895 - INFO - +------ END KW: SeleniumLibrary.Page Should Contain (7)
-20201116 12:23:22.896 - INFO - +----- END KW: FunctionsGlobal.Clear Database (385)
-20201116 12:23:22.896 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
-20201116 12:23:22.896 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201116 12:23:22.897 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201116 12:23:22.898 - DEBUG - Test timeout 2 minutes active. 119.605 seconds left.
-20201116 12:23:22.898 - INFO - ${url_} = http://localhost:3001/devel/db/users/seed/1
-20201116 12:23:22.898 - INFO - +------- END KW: BuiltIn.Replace Variables (1)
-20201116 12:23:22.899 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201116 12:23:22.899 - DEBUG - Test timeout 2 minutes active. 119.604 seconds left.
-20201116 12:23:22.901 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/1'
-20201116 12:23:23.494 - INFO - +------- END KW: SeleniumLibrary.Go To (596)
-20201116 12:23:23.495 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (599)
-20201116 12:23:23.495 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201116 12:23:23.495 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201116 12:23:23.496 - DEBUG - Test timeout 2 minutes active. 119.008 seconds left.
-20201116 12:23:23.510 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:23.510 - INFO - Current page does not contain text 'Warning:'.
-20201116 12:23:23.510 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (15)
-20201116 12:23:23.510 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201116 12:23:23.510 - DEBUG - Test timeout 2 minutes active. 118.993 seconds left.
-20201116 12:23:23.518 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:23.518 - INFO - Current page does not contain text 'Failed'.
-20201116 12:23:23.518 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
-20201116 12:23:23.518 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201116 12:23:23.519 - DEBUG - Test timeout 2 minutes active. 118.985 seconds left.
-20201116 12:23:23.525 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:23.525 - INFO - Current page does not contain text 'Internal Server Error'.
-20201116 12:23:23.525 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201116 12:23:23.525 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (30)
-20201116 12:23:23.525 - INFO - +----- END KW: FunctionsGlobal.Go To Url (629)
-20201116 12:23:23.525 - INFO - +----- START KW: FunctionsGlobal.Empty Dev Mailbox Fast [ ]
-20201116 12:23:23.526 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_MAILBOX_CLEAR_URL} ]
-20201116 12:23:23.526 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201116 12:23:23.527 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201116 12:23:23.527 - DEBUG - Test timeout 2 minutes active. 118.976 seconds left.
-20201116 12:23:23.527 - INFO - ${url_} = http://localhost:3001/devel/mail/delete/all
-20201116 12:23:23.527 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
-20201116 12:23:23.527 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201116 12:23:23.528 - DEBUG - Test timeout 2 minutes active. 118.976 seconds left.
-20201116 12:23:23.528 - INFO - Opening url 'http://localhost:3001/devel/mail/delete/all'
-20201116 12:23:23.907 - INFO - +-------- END KW: SeleniumLibrary.Go To (380)
-20201116 12:23:23.908 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (382)
-20201116 12:23:23.908 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201116 12:23:23.909 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201116 12:23:23.909 - DEBUG - Test timeout 2 minutes active. 118.594 seconds left.
-20201116 12:23:23.928 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:23.928 - INFO - Current page does not contain text 'Warning:'.
-20201116 12:23:23.928 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (20)
-20201116 12:23:23.929 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201116 12:23:23.929 - DEBUG - Test timeout 2 minutes active. 118.574 seconds left.
-20201116 12:23:23.937 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:23.937 - INFO - Current page does not contain text 'Failed'.
-20201116 12:23:23.937 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (8)
-20201116 12:23:23.937 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201116 12:23:23.938 - DEBUG - Test timeout 2 minutes active. 118.566 seconds left.
-20201116 12:23:23.944 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:23.944 - INFO - Current page does not contain text 'Internal Server Error'.
-20201116 12:23:23.944 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201116 12:23:23.944 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (36)
-20201116 12:23:23.944 - INFO - +------ END KW: FunctionsGlobal.Go To Url (418)
-20201116 12:23:23.945 - INFO - +----- END KW: FunctionsGlobal.Empty Dev Mailbox Fast (419)
-20201116 12:23:23.945 - INFO - +---- END SETUP: FunctionsGlobal.Clear DB And Seed 1 users (1435)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:23.945 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
-20201116 12:23:23.946 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_LOGIN_USER} | username=${username} ]
-20201116 12:23:23.946 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201116 12:23:23.947 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201116 12:23:23.947 - DEBUG - Test timeout 2 minutes active. 118.556 seconds left.
-20201116 12:23:23.948 - INFO - ${url_} = http://localhost:3001/devel/users/username1/login
-20201116 12:23:23.948 - INFO - +------- END KW: BuiltIn.Replace Variables (1)
-20201116 12:23:23.948 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201116 12:23:23.948 - DEBUG - Test timeout 2 minutes active. 118.555 seconds left.
-20201116 12:23:23.948 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
-20201116 12:23:24.569 - INFO - +------- END KW: SeleniumLibrary.Go To (621)
-20201116 12:23:24.569 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (623)
-20201116 12:23:24.569 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201116 12:23:24.570 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201116 12:23:24.570 - DEBUG - Test timeout 2 minutes active. 117.933 seconds left.
-20201116 12:23:24.616 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:24.616 - INFO - Current page does not contain text 'Warning:'.
-20201116 12:23:24.617 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (47)
-20201116 12:23:24.617 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201116 12:23:24.618 - DEBUG - Test timeout 2 minutes active. 117.886 seconds left.
-20201116 12:23:24.627 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:24.627 - INFO - Current page does not contain text 'Failed'.
-20201116 12:23:24.627 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (10)
-20201116 12:23:24.627 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201116 12:23:24.627 - DEBUG - Test timeout 2 minutes active. 117.876 seconds left.
-20201116 12:23:24.642 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:24.642 - INFO - Current page does not contain text 'Internal Server Error'.
-20201116 12:23:24.642 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (15)
-20201116 12:23:24.642 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (73)
-20201116 12:23:24.643 - INFO - +----- END KW: FunctionsGlobal.Go To Url (697)
-20201116 12:23:24.643 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Error signing in user ]
-20201116 12:23:24.643 - DEBUG - Test timeout 2 minutes active. 117.86 seconds left.
-20201116 12:23:24.649 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:24.649 - INFO - Current page does not contain text 'Error signing in user'.
-20201116 12:23:24.650 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201116 12:23:24.650 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (705)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:24.650 - INFO - +---- START KW: Images.Upload user avatar via button [ ${PAGE_USER_1_PROFILE_URL} | /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture.png | count=1 ]
-20201116 12:23:24.651 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${user_profile_url} ]
-20201116 12:23:24.651 - DEBUG - Test timeout 2 minutes active. 117.852 seconds left.
-20201116 12:23:24.651 - INFO - Opening url 'http://localhost:3001/en/users/1'
-20201116 12:23:25.165 - INFO - +----- END KW: SeleniumLibrary.Go To (514)
-20201116 12:23:25.166 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_PICTURE_UPLOAD_BUTTON} | timeout=30 ]
-20201116 12:23:25.167 - DEBUG - Test timeout 2 minutes active. 117.337 seconds left.
-20201116 12:23:25.181 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (15)
-20201116 12:23:25.181 - INFO - +----- START KW: SeleniumLibrary.Choose File [ //*[@type="file"] | ${file} ]
-20201116 12:23:25.182 - DEBUG - Test timeout 2 minutes active. 117.321 seconds left.
-20201116 12:23:25.182 - INFO - Sending /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture.png to browser.
-20201116 12:23:25.220 - INFO - +----- END KW: SeleniumLibrary.Choose File (39)
-20201116 12:23:25.221 - INFO - +----- START KW: BuiltIn.Run Keyword And Continue On Failure [ Wait Until Page Contains Element | ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX} | timeout=30 ]
-20201116 12:23:25.221 - INFO - +------ START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX} | timeout=30 ]
-20201116 12:23:25.222 - DEBUG - Test timeout 2 minutes active. 117.281 seconds left.
-20201116 12:23:25.641 - INFO - +------ END KW: SeleniumLibrary.Wait Until Page Contains Element (420)
-20201116 12:23:25.641 - INFO - +----- END KW: BuiltIn.Run Keyword And Continue On Failure (420)
-20201116 12:23:25.642 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSED_SUFFIX} | timeout=30 ]
-20201116 12:23:25.642 - DEBUG - Test timeout 2 minutes active. 116.861 seconds left.
-20201116 12:23:27.690 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (2048)
-20201116 12:23:27.690 - INFO - +---- END KW: Images.Upload user avatar via button (3040)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:27.690 - INFO - +---- START KW: Images.Upload user avatar via button [ ${PAGE_USER_1_PROFILE_URL} | /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture2.png | count=2 ]
-20201116 12:23:27.691 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${user_profile_url} ]
-20201116 12:23:27.691 - DEBUG - Test timeout 2 minutes active. 114.812 seconds left.
-20201116 12:23:27.691 - INFO - Opening url 'http://localhost:3001/en/users/1'
-20201116 12:23:28.416 - INFO - +----- END KW: SeleniumLibrary.Go To (725)
-20201116 12:23:28.417 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_PICTURE_UPLOAD_BUTTON} | timeout=30 ]
-20201116 12:23:28.417 - DEBUG - Test timeout 2 minutes active. 114.086 seconds left.
-20201116 12:23:28.443 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (26)
-20201116 12:23:28.444 - INFO - +----- START KW: SeleniumLibrary.Choose File [ //*[@type="file"] | ${file} ]
-20201116 12:23:28.444 - DEBUG - Test timeout 2 minutes active. 114.059 seconds left.
-20201116 12:23:28.444 - INFO - Sending /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture2.png to browser.
-20201116 12:23:28.491 - INFO - +----- END KW: SeleniumLibrary.Choose File (48)
-20201116 12:23:28.492 - INFO - +----- START KW: BuiltIn.Run Keyword And Continue On Failure [ Wait Until Page Contains Element | ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX} | timeout=30 ]
-20201116 12:23:28.492 - INFO - +------ START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX} | timeout=30 ]
-20201116 12:23:28.493 - DEBUG - Test timeout 2 minutes active. 114.01 seconds left.
-20201116 12:23:28.909 - INFO - +------ END KW: SeleniumLibrary.Wait Until Page Contains Element (417)
-20201116 12:23:28.909 - INFO - +----- END KW: BuiltIn.Run Keyword And Continue On Failure (417)
-20201116 12:23:28.910 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSED_SUFFIX} | timeout=30 ]
-20201116 12:23:28.910 - DEBUG - Test timeout 2 minutes active. 113.593 seconds left.
-20201116 12:23:29.118 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (208)
-20201116 12:23:29.118 - INFO - +---- END KW: Images.Upload user avatar via button (1428)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:29.119 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_HOME_URL} ]
-20201116 12:23:29.120 - INFO - +----- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201116 12:23:29.120 - INFO - +------ START KW: BuiltIn.Replace Variables [ ${url} ]
-20201116 12:23:29.120 - DEBUG - Test timeout 2 minutes active. 113.383 seconds left.
-20201116 12:23:29.121 - INFO - ${url_} = http://localhost:3001/en
-20201116 12:23:29.121 - INFO - +------ END KW: BuiltIn.Replace Variables (1)
-20201116 12:23:29.121 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201116 12:23:29.121 - DEBUG - Test timeout 2 minutes active. 113.382 seconds left.
-20201116 12:23:29.121 - INFO - Opening url 'http://localhost:3001/en'
-20201116 12:23:29.428 - INFO - +------ END KW: SeleniumLibrary.Go To (307)
-20201116 12:23:29.428 - INFO - +----- END KW: FunctionsGlobal.Got To Url With Param (309)
-20201116 12:23:29.428 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201116 12:23:29.429 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201116 12:23:29.429 - DEBUG - Test timeout 2 minutes active. 113.074 seconds left.
-20201116 12:23:29.471 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:29.471 - INFO - Current page does not contain text 'Warning:'.
-20201116 12:23:29.472 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (43)
-20201116 12:23:29.472 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201116 12:23:29.472 - DEBUG - Test timeout 2 minutes active. 113.031 seconds left.
-20201116 12:23:29.482 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:29.482 - INFO - Current page does not contain text 'Failed'.
-20201116 12:23:29.482 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (10)
-20201116 12:23:29.483 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201116 12:23:29.483 - DEBUG - Test timeout 2 minutes active. 113.02 seconds left.
-20201116 12:23:29.504 - DEBUG - Current frame has 0 subframes.
-20201116 12:23:29.504 - INFO - Current page does not contain text 'Internal Server Error'.
-20201116 12:23:29.504 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (21)
-20201116 12:23:29.505 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (76)
-20201116 12:23:29.505 - INFO - +---- END KW: FunctionsGlobal.Go To Url (386)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:29.505 - INFO - +---- START KW: SeleniumLibrary.Page Should Contain Element [ ${HOME_PICTURE_LIST_PANEL} ]
-20201116 12:23:29.505 - DEBUG - Test timeout 2 minutes active. 112.998 seconds left.
-20201116 12:23:29.512 - INFO - Current page contains element '//*[@id="recentPicturesPanel"]'.
-20201116 12:23:29.512 - INFO - +---- END KW: SeleniumLibrary.Page Should Contain Element (7)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:29.513 - INFO - +---- START KW: FunctionsGlobal.Element Count Should Be [ ${HOME_PICTURE_LIST_PICTURES} | 2 ]
-20201116 12:23:29.513 - INFO - +----- START KW: SeleniumLibrary.Page Should Contain Element [ ${element} | limit=${count} ]
-20201116 12:23:29.513 - DEBUG - Test timeout 2 minutes active. 112.99 seconds left.
-20201116 12:23:29.516 - INFO - Current page contains 2 element(s).
-20201116 12:23:29.517 - INFO - +----- END KW: SeleniumLibrary.Page Should Contain Element (4)
-20201116 12:23:29.517 - INFO - +---- END KW: FunctionsGlobal.Element Count Should Be (4)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201116 12:23:29.517 - INFO - +---- START KW: FunctionsGlobal.Check Image [ ${HOME_PICTURE_LIST_GALERY} ]
-20201116 12:23:29.517 - INFO - +----- START KW: RobotEyes.Open Eyes [ SeleniumLibrary | 5 ]
-20201116 12:23:29.518 - DEBUG - Test timeout 2 minutes active. 112.986 seconds left.
-20201116 12:23:29.525 - INFO - Should_be_shown_on_Homepage
-20201116 12:23:29.525 - INFO - +----- END KW: RobotEyes.Open Eyes (8)
-20201116 12:23:29.526 - INFO - +----- START KW: FunctionsGlobal.Scroll Into View [ ${GK_LOGO_LINK} ]
-20201116 12:23:29.526 - INFO - +------ START KW: SeleniumLibrary.Execute Javascript [ document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' }); ]
-20201116 12:23:29.526 - DEBUG - Test timeout 2 minutes active. 112.977 seconds left.
-20201116 12:23:29.527 - INFO - Executing JavaScript:
-document.evaluate('//*[@id="home-logo"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
-Without any arguments.
-20201116 12:23:29.531 - INFO - +------ END KW: SeleniumLibrary.Execute Javascript (5)
-20201116 12:23:29.531 - INFO - +----- END KW: FunctionsGlobal.Scroll Into View (5)
-20201116 12:23:29.531 - INFO - +----- START KW: FunctionsGlobal.Scroll Into View [ ${element} ]
-20201116 12:23:29.532 - INFO - +------ START KW: SeleniumLibrary.Execute Javascript [ document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' }); ]
-20201116 12:23:29.532 - DEBUG - Test timeout 2 minutes active. 112.971 seconds left.
-20201116 12:23:29.533 - INFO - Executing JavaScript:
-document.evaluate('//*[@id="recentPicturesPanel"]//div[contains(@class, "gallery")]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
-Without any arguments.
-20201116 12:23:29.550 - INFO - +------ END KW: SeleniumLibrary.Execute Javascript (18)
-20201116 12:23:29.551 - INFO - +----- END KW: FunctionsGlobal.Scroll Into View (20)
-20201116 12:23:29.552 - INFO - +----- START KW: SeleniumLibrary.Wait Until Element Is Visible [ ${element} ]
-20201116 12:23:29.553 - DEBUG - Test timeout 2 minutes active. 112.951 seconds left.
-20201116 12:23:29.576 - INFO - +----- END KW: SeleniumLibrary.Wait Until Element Is Visible (24)
-20201116 12:23:29.576 - INFO - +----- START KW: RobotEyes.Capture Element [ ${element} | name=${name} ]
-20201116 12:23:29.576 - DEBUG - Test timeout 2 minutes active. 112.927 seconds left.
-20201116 12:23:30.731 - INFO - +----- END KW: RobotEyes.Capture Element (1155)
-20201116 12:23:30.732 - INFO - +----- START KW: RobotEyes.Compare Images [ ]
-20201116 12:23:30.732 - DEBUG - Test timeout 2 minutes active. 111.771 seconds left.
-20201116 12:23:30.757 - INFO - Comparison output: 2998.25 (0.0457504) @ 0,0
-20201116 12:23:30.757 - INFO - +----- END KW: RobotEyes.Compare Images (25)
-20201116 12:23:30.758 - INFO - +---- END KW: FunctionsGlobal.Check Image (1241)
+20201118 23:21:25.407 - INFO - +--- START TEST: No Selection Should Show Error [ ]
 ------------------------------------------------------------------------------
-20201116 12:23:30.759 - INFO - +--- END TEST: Should be shown on Homepage (8255)
+20201118 23:21:25.408 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_MOVES_URL} ]
+20201118 23:21:25.409 - INFO - +----- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:25.411 - INFO - +------ START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:25.411 - DEBUG - Test timeout 2 minutes active. 119.995 seconds left.
+20201118 23:21:25.411 - INFO - ${url_} = http://localhost:3001/en/moves
+20201118 23:21:25.412 - INFO - +------ END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:25.412 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:25.412 - DEBUG - Test timeout 2 minutes active. 119.994 seconds left.
+20201118 23:21:25.412 - INFO - Opening url 'http://localhost:3001/en/moves'
+20201118 23:21:25.760 - INFO - +------ END KW: SeleniumLibrary.Go To (348)
+20201118 23:21:25.760 - INFO - +----- END KW: FunctionsGlobal.Got To Url With Param (351)
+20201118 23:21:25.761 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:25.762 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:25.762 - DEBUG - Test timeout 2 minutes active. 119.645 seconds left.
+20201118 23:21:25.823 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.823 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:25.823 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (62)
+20201118 23:21:25.823 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:25.824 - DEBUG - Test timeout 2 minutes active. 119.583 seconds left.
+20201118 23:21:25.835 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.835 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:25.835 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (12)
+20201118 23:21:25.836 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:25.836 - DEBUG - Test timeout 2 minutes active. 119.571 seconds left.
+20201118 23:21:25.845 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:25.845 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:25.845 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201118 23:21:25.845 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (84)
+20201118 23:21:25.846 - INFO - +---- END KW: FunctionsGlobal.Go To Url (437)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:25.846 - INFO - +---- START KW: FunctionsGlobal.Open Panel [ ${MOVE_LOG_TYPE_PANEL} ]
+20201118 23:21:25.846 - INFO - +----- START KW: BuiltIn.Run Keyword And Ignore Error [ Panel Is Collapsed | ${element} ]
+20201118 23:21:25.847 - INFO - +------ START KW: FunctionsGlobal.Panel Is Collapsed [ ${element} ]
+20201118 23:21:25.847 - INFO - +------- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and contains(@class, "collapsed")] ]
+20201118 23:21:25.847 - DEBUG - Test timeout 2 minutes active. 119.559 seconds left.
+20201118 23:21:25.851 - INFO - Current page contains element '//*[@id="panelMoveLogType"]/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]'.
+20201118 23:21:25.851 - INFO - +------- END KW: SeleniumLibrary.Page Should Contain Element (4)
+20201118 23:21:25.851 - INFO - +------ END KW: FunctionsGlobal.Panel Is Collapsed (4)
+20201118 23:21:25.852 - INFO - ${status} = PASS
+20201118 23:21:25.852 - INFO - ${value} = None
+20201118 23:21:25.852 - INFO - +----- END KW: BuiltIn.Run Keyword And Ignore Error (6)
+20201118 23:21:25.852 - INFO - +----- START KW: BuiltIn.Run Keyword If [ '${status}' == 'PASS' | Click Element | ${element}/div[contains(@class, "panel-heading")] ]
+20201118 23:21:25.853 - INFO - +------ START KW: SeleniumLibrary.Click Element [ ${element}/div[contains(@class, "panel-heading")] ]
+20201118 23:21:25.853 - DEBUG - Test timeout 2 minutes active. 119.554 seconds left.
+20201118 23:21:25.853 - INFO - Clicking element '//*[@id="panelMoveLogType"]/div[contains(@class, "panel-heading")]'.
+20201118 23:21:26.094 - INFO - +------ END KW: SeleniumLibrary.Click Element (241)
+20201118 23:21:26.095 - INFO - +----- END KW: BuiltIn.Run Keyword If (243)
+20201118 23:21:26.095 - INFO - +----- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))] ]
+20201118 23:21:26.096 - DEBUG - Test timeout 2 minutes active. 119.311 seconds left.
+20201118 23:21:26.109 - INFO - Current page contains element '//*[@id="panelMoveLogType"]/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))]'.
+20201118 23:21:26.109 - INFO - +----- END KW: SeleniumLibrary.Page Should Contain Element (14)
+20201118 23:21:26.110 - INFO - +---- END KW: FunctionsGlobal.Open Panel (264)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:26.110 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${MOVE_LOG_TYPE_NEXT_BUTTON} ]
+20201118 23:21:26.111 - DEBUG - Test timeout 2 minutes active. 119.296 seconds left.
+20201118 23:21:26.111 - INFO - Clicking button '//*[@id="logtypeNextButton"]'.
+20201118 23:21:26.417 - INFO - +---- END KW: SeleniumLibrary.Click Button (307)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:26.417 - INFO - +---- START KW: FunctionsGlobal.Open Panel [ ${MOVE_LOG_TYPE_PANEL} ]
+20201118 23:21:26.418 - INFO - +----- START KW: BuiltIn.Run Keyword And Ignore Error [ Panel Is Collapsed | ${element} ]
+20201118 23:21:26.419 - INFO - +------ START KW: FunctionsGlobal.Panel Is Collapsed [ ${element} ]
+20201118 23:21:26.421 - INFO - +------- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and contains(@class, "collapsed")] ]
+20201118 23:21:26.460 - INFO - +-------- START KW: SeleniumLibrary.Capture Page Screenshot [ ]
+20201118 23:21:26.460 - DEBUG - Test timeout 2 minutes active. 118.946 seconds left.
+20201118 23:21:26.575 - INFO - </td></tr><tr><td colspan="3"><a href="selenium-screenshot-13.png"><img src="selenium-screenshot-13.png" width="800px"></a>
+20201118 23:21:26.576 - INFO - +-------- END KW: SeleniumLibrary.Capture Page Screenshot (116)
+20201118 23:21:26.422 - DEBUG - Test timeout 2 minutes active. 118.985 seconds left.
+20201118 23:21:26.577 - FAIL - Page should have contained element '//*[@id="panelMoveLogType"]/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]' but did not.
+20201118 23:21:26.577 - DEBUG - Traceback (most recent call last):
+  File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/__init__.py", line 471, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+  File "/home/travis/.local/lib/python2.7/site-packages/robotlibcore.py", line 103, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+  File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/keywords/element.py", line 156, in page_should_contain_element
+    loglevel=loglevel)
+  File "/home/travis/.local/lib/python2.7/site-packages/SeleniumLibrary/base/librarycomponent.py", line 53, in assert_page_contains
+    raise AssertionError(message)
+20201118 23:21:26.577 - INFO - +------- END KW: SeleniumLibrary.Page Should Contain Element (156)
+20201118 23:21:26.578 - INFO - +------ END KW: FunctionsGlobal.Panel Is Collapsed (159)
+20201118 23:21:26.578 - INFO - ${status} = FAIL
+20201118 23:21:26.578 - INFO - ${value} = Page should have contained element '//*[@id="panelMoveLogType"]/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]' but did not.
+20201118 23:21:26.578 - INFO - +----- END KW: BuiltIn.Run Keyword And Ignore Error (160)
+20201118 23:21:26.579 - INFO - +----- START KW: BuiltIn.Run Keyword If [ '${status}' == 'PASS' | Click Element | ${element}/div[contains(@class, "panel-heading")] ]
+20201118 23:21:26.581 - INFO - +----- END KW: BuiltIn.Run Keyword If (1)
+20201118 23:21:26.582 - INFO - +----- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))] ]
+20201118 23:21:26.582 - DEBUG - Test timeout 2 minutes active. 118.824 seconds left.
+20201118 23:21:26.597 - INFO - Current page contains element '//*[@id="panelMoveLogType"]/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))]'.
+20201118 23:21:26.598 - INFO - +----- END KW: SeleniumLibrary.Page Should Contain Element (16)
+20201118 23:21:26.598 - INFO - +---- END KW: FunctionsGlobal.Open Panel (181)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:26.598 - INFO - +---- START KW: FunctionsGlobal.Panel validation has error [ ${MOVE_LOG_TYPE_PANEL} ]
+20201118 23:21:26.599 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${element}\[contains(@class, "panel-danger")] | timeout=3 ]
+20201118 23:21:26.599 - DEBUG - Test timeout 2 minutes active. 118.807 seconds left.
+20201118 23:21:26.606 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (7)
+20201118 23:21:26.606 - INFO - +---- END KW: FunctionsGlobal.Panel validation has error (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:26.606 - INFO - +---- START KW: FunctionsGlobal.Input validation has error help [ ${MOVE_LOG_TYPE_DROPPED_RADIO} | This value is required. ]
+20201118 23:21:26.607 - INFO - +----- START KW: SeleniumLibrary.Wait Until Element Is Visible [ //span[contains(@class, "help-block") and parent::div[.${element}]] | timeout=2 ]
+20201118 23:21:26.607 - DEBUG - Test timeout 2 minutes active. 118.799 seconds left.
+20201118 23:21:26.631 - INFO - +----- END KW: SeleniumLibrary.Wait Until Element Is Visible (24)
+20201118 23:21:26.632 - INFO - +----- START KW: SeleniumLibrary.Element Should Contain [ //span[contains(@class, "help-block") and parent::div[.${element}]] | ${message} ]
+20201118 23:21:26.632 - DEBUG - Test timeout 2 minutes active. 118.774 seconds left.
+20201118 23:21:26.656 - INFO - Element '//span[contains(@class, "help-block") and parent::div[.//*[@id="logType0"]]]' contains text 'This value is required.'.
+20201118 23:21:26.657 - INFO - +----- END KW: SeleniumLibrary.Element Should Contain (25)
+20201118 23:21:26.657 - INFO - +---- END KW: FunctionsGlobal.Input validation has error help (51)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:26.657 - INFO - +---- START KW: SeleniumLibrary.Element Text Should Be [ ${MOVE_LOG_TYPE_PANEL_HEADER_TEXT} | ${EMPTY} ]
+20201118 23:21:26.658 - DEBUG - Test timeout 2 minutes active. 118.749 seconds left.
+20201118 23:21:26.658 - INFO - Verifying element '//*[@id="logTypeHeader"]' contains exact text ''.
+20201118 23:21:26.668 - INFO - +---- END KW: SeleniumLibrary.Element Text Should Be (11)
 ------------------------------------------------------------------------------
-20201116 12:23:30.762 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.060 ShowOnHomepage (8323)
+20201118 23:21:26.671 - INFO - +--- END TEST: No Selection Should Show Error (1262)
+------------------------------------------------------------------------------
+20201118 23:21:26.675 - INFO - +-- END SUITE: Acceptance.110 Moves.100 LogTypeUI (3366)
 ==============================================================================
-20201116 12:23:30.764 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20201116 12:23:30.765 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20201116 12:23:30.766 - DEBUG - Closing browser with session id 00461d22-191a-431d-a445-8ded1b754aab.
-20201116 12:23:31.268 - INFO - +--- END KW: SeleniumLibrary.Close Browser (503)
-20201116 12:23:31.268 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (504)
+20201118 23:21:26.739 - INFO - +-- START SUITE: Acceptance.110 Moves.205 MoveEdit [ ]
 ==============================================================================
-20201116 12:23:31.271 - INFO - +- END SUITE: Acceptance.060 UserAvatar.robot (10811000)
+20201118 23:21:26.740 - INFO - +--- START TEST: Change Tracking Code [ ]
+------------------------------------------------------------------------------
+20201118 23:21:26.741 - INFO - +---- START SETUP: Seed [ ]
+20201118 23:21:26.742 - INFO - +----- START KW: FunctionsGlobal.Clear DB And Seed 2 users [ ]
+20201118 23:21:26.742 - INFO - +------ START KW: FunctionsGlobal.Clear Database [ ]
+20201118 23:21:26.743 - INFO - +------- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20201118 23:21:26.744 - INFO - +-------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:26.746 - INFO - +--------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:26.746 - DEBUG - Test timeout 2 minutes active. 119.994 seconds left.
+20201118 23:21:26.746 - INFO - ${url_} = http://localhost:3001/devel/db/reset
+20201118 23:21:26.746 - INFO - +--------- END KW: BuiltIn.Replace Variables (1)
+20201118 23:21:26.747 - INFO - +--------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:26.747 - DEBUG - Test timeout 2 minutes active. 119.992 seconds left.
+20201118 23:21:26.747 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
+20201118 23:21:27.038 - INFO - +--------- END KW: SeleniumLibrary.Go To (291)
+20201118 23:21:27.039 - INFO - +-------- END KW: FunctionsGlobal.Got To Url With Param (295)
+20201118 23:21:27.039 - INFO - +-------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:27.040 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:27.040 - DEBUG - Test timeout 2 minutes active. 119.7 seconds left.
+20201118 23:21:27.061 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:27.061 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:27.062 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (22)
+20201118 23:21:27.062 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:27.062 - DEBUG - Test timeout 2 minutes active. 119.678 seconds left.
+20201118 23:21:27.071 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:27.071 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:27.072 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20201118 23:21:27.072 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:27.072 - DEBUG - Test timeout 2 minutes active. 119.667 seconds left.
+20201118 23:21:27.080 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:27.080 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:27.080 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201118 23:21:27.081 - INFO - +-------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (42)
+20201118 23:21:27.081 - INFO - +------- END KW: FunctionsGlobal.Go To Url (338)
+20201118 23:21:27.081 - INFO - +------- START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20201118 23:21:27.081 - DEBUG - Test timeout 2 minutes active. 119.658 seconds left.
+20201118 23:21:27.087 - INFO - Current page contains text 'OK'.
+20201118 23:21:27.087 - INFO - +------- END KW: SeleniumLibrary.Page Should Contain (6)
+20201118 23:21:27.087 - INFO - +------ END KW: FunctionsGlobal.Clear Database (345)
+20201118 23:21:27.087 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
+20201118 23:21:27.088 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:27.089 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:27.089 - DEBUG - Test timeout 2 minutes active. 119.65 seconds left.
+20201118 23:21:27.089 - INFO - ${url_} = http://localhost:3001/devel/db/users/seed/2
+20201118 23:21:27.090 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
+20201118 23:21:27.090 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:27.090 - DEBUG - Test timeout 2 minutes active. 119.65 seconds left.
+20201118 23:21:27.090 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/2'
+20201118 23:21:27.998 - INFO - +-------- END KW: SeleniumLibrary.Go To (908)
+20201118 23:21:27.998 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (910)
+20201118 23:21:27.998 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:27.999 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:27.999 - DEBUG - Test timeout 2 minutes active. 118.741 seconds left.
+20201118 23:21:28.019 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.019 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:28.019 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (20)
+20201118 23:21:28.019 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:28.019 - DEBUG - Test timeout 2 minutes active. 118.72 seconds left.
+20201118 23:21:28.029 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.029 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:28.029 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20201118 23:21:28.029 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:28.030 - DEBUG - Test timeout 2 minutes active. 118.71 seconds left.
+20201118 23:21:28.038 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.038 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:28.038 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201118 23:21:28.038 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (40)
+20201118 23:21:28.038 - INFO - +------ END KW: FunctionsGlobal.Go To Url (951)
+20201118 23:21:28.039 - INFO - +------ START KW: FunctionsGlobal.Empty Dev Mailbox Fast [ ]
+20201118 23:21:28.039 - INFO - +------- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_MAILBOX_CLEAR_URL} ]
+20201118 23:21:28.040 - INFO - +-------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:28.040 - INFO - +--------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:28.040 - DEBUG - Test timeout 2 minutes active. 118.699 seconds left.
+20201118 23:21:28.041 - INFO - ${url_} = http://localhost:3001/devel/mail/delete/all
+20201118 23:21:28.041 - INFO - +--------- END KW: BuiltIn.Replace Variables (1)
+20201118 23:21:28.041 - INFO - +--------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:28.041 - DEBUG - Test timeout 2 minutes active. 118.699 seconds left.
+20201118 23:21:28.041 - INFO - Opening url 'http://localhost:3001/devel/mail/delete/all'
+20201118 23:21:28.383 - INFO - +--------- END KW: SeleniumLibrary.Go To (342)
+20201118 23:21:28.383 - INFO - +-------- END KW: FunctionsGlobal.Got To Url With Param (343)
+20201118 23:21:28.384 - INFO - +-------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:28.384 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:28.384 - DEBUG - Test timeout 2 minutes active. 118.355 seconds left.
+20201118 23:21:28.411 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.411 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:28.412 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (28)
+20201118 23:21:28.412 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:28.412 - DEBUG - Test timeout 2 minutes active. 118.327 seconds left.
+20201118 23:21:28.423 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.423 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:28.423 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201118 23:21:28.423 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:28.423 - DEBUG - Test timeout 2 minutes active. 118.316 seconds left.
+20201118 23:21:28.432 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.432 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:28.432 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201118 23:21:28.432 - INFO - +-------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (48)
+20201118 23:21:28.432 - INFO - +------- END KW: FunctionsGlobal.Go To Url (393)
+20201118 23:21:28.432 - INFO - +------ END KW: FunctionsGlobal.Empty Dev Mailbox Fast (393)
+20201118 23:21:28.433 - INFO - +----- END KW: FunctionsGlobal.Clear DB And Seed 2 users (1690)
+20201118 23:21:28.433 - INFO - +----- START KW: FunctionsGlobal.Seed 1 geokrety owned by 1 [ ]
+20201118 23:21:28.433 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
+20201118 23:21:28.434 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:28.435 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:28.436 - DEBUG - Test timeout 2 minutes active. 118.304 seconds left.
+20201118 23:21:28.436 - INFO - ${url_} = http://localhost:3001/devel/db/users/1/geokrety/seed/1
+20201118 23:21:28.436 - INFO - +-------- END KW: BuiltIn.Replace Variables (1)
+20201118 23:21:28.436 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:28.436 - DEBUG - Test timeout 2 minutes active. 118.303 seconds left.
+20201118 23:21:28.436 - INFO - Opening url 'http://localhost:3001/devel/db/users/1/geokrety/seed/1'
+20201118 23:21:28.634 - INFO - +-------- END KW: SeleniumLibrary.Go To (198)
+20201118 23:21:28.634 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (200)
+20201118 23:21:28.634 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:28.635 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:28.635 - DEBUG - Test timeout 2 minutes active. 118.105 seconds left.
+20201118 23:21:28.660 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.660 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:28.660 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (25)
+20201118 23:21:28.661 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:28.661 - DEBUG - Test timeout 2 minutes active. 118.079 seconds left.
+20201118 23:21:28.671 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.671 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:28.671 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20201118 23:21:28.671 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:28.672 - DEBUG - Test timeout 2 minutes active. 118.068 seconds left.
+20201118 23:21:28.682 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.682 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:28.682 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201118 23:21:28.682 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (48)
+20201118 23:21:28.682 - INFO - +------ END KW: FunctionsGlobal.Go To Url (249)
+20201118 23:21:28.682 - INFO - +----- END KW: FunctionsGlobal.Seed 1 geokrety owned by 1 (249)
+20201118 23:21:28.683 - INFO - +----- START KW: FunctionsGlobal.Seed 1 geokrety owned by 2 [ ]
+20201118 23:21:28.683 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
+20201118 23:21:28.684 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:28.684 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:28.685 - DEBUG - Test timeout 2 minutes active. 118.054 seconds left.
+20201118 23:21:28.686 - INFO - ${url_} = http://localhost:3001/devel/db/users/2/geokrety/seed/1
+20201118 23:21:28.686 - INFO - +-------- END KW: BuiltIn.Replace Variables (2)
+20201118 23:21:28.686 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:28.686 - DEBUG - Test timeout 2 minutes active. 118.054 seconds left.
+20201118 23:21:28.686 - INFO - Opening url 'http://localhost:3001/devel/db/users/2/geokrety/seed/1'
+20201118 23:21:28.884 - INFO - +-------- END KW: SeleniumLibrary.Go To (198)
+20201118 23:21:28.884 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (200)
+20201118 23:21:28.885 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:28.885 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:28.886 - DEBUG - Test timeout 2 minutes active. 117.854 seconds left.
+20201118 23:21:28.902 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.902 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:28.902 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (17)
+20201118 23:21:28.902 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:28.902 - DEBUG - Test timeout 2 minutes active. 117.837 seconds left.
+20201118 23:21:28.912 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.912 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:28.913 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201118 23:21:28.913 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:28.913 - DEBUG - Test timeout 2 minutes active. 117.827 seconds left.
+20201118 23:21:28.921 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:28.921 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:28.921 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201118 23:21:28.922 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (36)
+20201118 23:21:28.922 - INFO - +------ END KW: FunctionsGlobal.Go To Url (239)
+20201118 23:21:28.922 - INFO - +----- END KW: FunctionsGlobal.Seed 1 geokrety owned by 2 (239)
+20201118 23:21:28.922 - INFO - +----- START KW: PageMoves.Post Move [ ${MOVE_1} ]
+20201118 23:21:28.923 - INFO - +------ START KW: RequestsLibrary.Create Session [ gk | ${GK_URL} ]
+20201118 23:21:28.923 - DEBUG - Test timeout 2 minutes active. 117.817 seconds left.
+20201118 23:21:28.923 - INFO - Creating Session using : alias=gk, url=http://localhost:3001, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0
+20201118 23:21:28.923 - DEBUG - Creating session: gk
+20201118 23:21:28.923 - DEBUG - Argument types are:
+<type 'bool'>
+20201118 23:21:28.923 - INFO - +------ END KW: RequestsLibrary.Create Session (0)
+20201118 23:21:28.924 - INFO - +------ START KW: RequestsLibrary.Post Request [ gk | /devel/db/geokrety/move/seed | data=${move} | headers=${CONTENT_TYPE_FORM_URLENCODED} ]
+20201118 23:21:28.924 - DEBUG - Test timeout 2 minutes active. 117.816 seconds left.
+20201118 23:21:29.577 - INFO - POST Request : url=http://localhost:3001/devel/db/geokrety/move/seed 
+ path_url=/devel/db/geokrety/move/seed 
+ headers={'Content-Length': '113', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4', 'Connection': 'keep-alive', 'Content-Type': u'application/x-www-form-urlencoded'} 
+ body=comment=Hello&author=1&app=robotframework&move_type=0&lon=7.0000&app_ver=3.2.1&waypoint=GC0001&lat=43.6000&gkid=1
+20201118 23:21:29.577 - INFO - POST Response : url=http://localhost:3001/devel/db/geokrety/move/seed 
+ status=200, reason=OK 
+ body=Create move id:1 geokret:1 waypoint:GC0001 movetype:0 wpt:GC0001 lat:43.60000 lon:7.00000
+OK
+20201118 23:21:29.578 - INFO - ${resp} = <Response [200]>
+20201118 23:21:29.578 - INFO - +------ END KW: RequestsLibrary.Post Request (654)
+20201118 23:21:29.578 - INFO - +------ START KW: RequestsLibrary.Request Should Be Successful [ ${resp} ]
+20201118 23:21:29.579 - DEBUG - Test timeout 2 minutes active. 117.161 seconds left.
+20201118 23:21:29.579 - INFO - +------ END KW: RequestsLibrary.Request Should Be Successful (1)
+20201118 23:21:29.579 - INFO - +----- END KW: PageMoves.Post Move (657)
+20201118 23:21:29.579 - INFO - +---- END SETUP: Seed (2838)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:29.580 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20201118 23:21:29.580 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_LOGIN_USER} | username=${username} ]
+20201118 23:21:29.581 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:29.584 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:29.584 - DEBUG - Test timeout 2 minutes active. 117.155 seconds left.
+20201118 23:21:29.585 - INFO - ${url_} = http://localhost:3001/devel/users/username1/login
+20201118 23:21:29.585 - INFO - +------- END KW: BuiltIn.Replace Variables (1)
+20201118 23:21:29.585 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:29.585 - DEBUG - Test timeout 2 minutes active. 117.154 seconds left.
+20201118 23:21:29.585 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20201118 23:21:30.462 - INFO - +------- END KW: SeleniumLibrary.Go To (877)
+20201118 23:21:30.462 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (881)
+20201118 23:21:30.463 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:30.463 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:30.464 - DEBUG - Test timeout 2 minutes active. 116.276 seconds left.
+20201118 23:21:30.527 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:30.527 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:30.528 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (65)
+20201118 23:21:30.528 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:30.528 - DEBUG - Test timeout 2 minutes active. 116.211 seconds left.
+20201118 23:21:30.570 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:30.570 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:30.571 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (43)
+20201118 23:21:30.571 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:30.572 - DEBUG - Test timeout 2 minutes active. 116.168 seconds left.
+20201118 23:21:30.590 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:30.590 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:30.590 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (19)
+20201118 23:21:30.591 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (128)
+20201118 23:21:30.591 - INFO - +----- END KW: FunctionsGlobal.Go To Url (1011)
+20201118 23:21:30.591 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Error signing in user ]
+20201118 23:21:30.591 - DEBUG - Test timeout 2 minutes active. 116.148 seconds left.
+20201118 23:21:30.602 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:30.602 - INFO - Current page does not contain text 'Error signing in user'.
+20201118 23:21:30.602 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201118 23:21:30.603 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (1023)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:30.603 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_MOVES_EDIT_URL} | moveid=1 ]
+20201118 23:21:30.604 - INFO - +----- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201118 23:21:30.606 - INFO - +------ START KW: BuiltIn.Replace Variables [ ${url} ]
+20201118 23:21:30.606 - DEBUG - Test timeout 2 minutes active. 116.133 seconds left.
+20201118 23:21:30.607 - INFO - ${url_} = http://localhost:3001/en/moves/1/edit
+20201118 23:21:30.607 - INFO - +------ END KW: BuiltIn.Replace Variables (1)
+20201118 23:21:30.608 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201118 23:21:30.608 - DEBUG - Test timeout 2 minutes active. 116.132 seconds left.
+20201118 23:21:30.608 - INFO - Opening url 'http://localhost:3001/en/moves/1/edit'
+20201118 23:21:30.970 - INFO - +------ END KW: SeleniumLibrary.Go To (362)
+20201118 23:21:30.970 - INFO - +----- END KW: FunctionsGlobal.Got To Url With Param (366)
+20201118 23:21:30.970 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201118 23:21:30.971 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201118 23:21:30.971 - DEBUG - Test timeout 2 minutes active. 115.768 seconds left.
+20201118 23:21:31.101 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:31.101 - INFO - Current page does not contain text 'Warning:'.
+20201118 23:21:31.102 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (130)
+20201118 23:21:31.102 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201118 23:21:31.102 - DEBUG - Test timeout 2 minutes active. 115.638 seconds left.
+20201118 23:21:31.119 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:31.120 - INFO - Current page does not contain text 'Failed'.
+20201118 23:21:31.120 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (18)
+20201118 23:21:31.120 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201118 23:21:31.121 - DEBUG - Test timeout 2 minutes active. 115.619 seconds left.
+20201118 23:21:31.132 - DEBUG - Current frame has 0 subframes.
+20201118 23:21:31.132 - INFO - Current page does not contain text 'Internal Server Error'.
+20201118 23:21:31.132 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (12)
+20201118 23:21:31.132 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (162)
+20201118 23:21:31.133 - INFO - +---- END KW: FunctionsGlobal.Go To Url (529)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:31.133 - INFO - +---- START KW: SeleniumLibrary.Input Text [ ${MOVE_TRACKING_CODE_INPUT} | ${GEOKRETY_2.tc} ]
+20201118 23:21:31.133 - DEBUG - Test timeout 2 minutes active. 115.606 seconds left.
+20201118 23:21:31.133 - INFO - Typing text 'TC0002' into text field '//*[@id="nr"]'.
+20201118 23:21:31.181 - INFO - +---- END KW: SeleniumLibrary.Input Text (48)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:31.181 - INFO - +---- START KW: FunctionsGlobal.Open Panel [ ${MOVE_ADDITIONAL_DATA_PANEL} ]
+20201118 23:21:31.182 - INFO - +----- START KW: BuiltIn.Run Keyword And Ignore Error [ Panel Is Collapsed | ${element} ]
+20201118 23:21:31.182 - INFO - +------ START KW: FunctionsGlobal.Panel Is Collapsed [ ${element} ]
+20201118 23:21:31.183 - INFO - +------- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and contains(@class, "collapsed")] ]
+20201118 23:21:31.183 - DEBUG - Test timeout 2 minutes active. 115.557 seconds left.
+20201118 23:21:31.189 - INFO - Current page contains element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]'.
+20201118 23:21:31.189 - INFO - +------- END KW: SeleniumLibrary.Page Should Contain Element (6)
+20201118 23:21:31.189 - INFO - +------ END KW: FunctionsGlobal.Panel Is Collapsed (7)
+20201118 23:21:31.190 - INFO - ${status} = PASS
+20201118 23:21:31.190 - INFO - ${value} = None
+20201118 23:21:31.190 - INFO - +----- END KW: BuiltIn.Run Keyword And Ignore Error (8)
+20201118 23:21:31.190 - INFO - +----- START KW: BuiltIn.Run Keyword If [ '${status}' == 'PASS' | Click Element | ${element}/div[contains(@class, "panel-heading")] ]
+20201118 23:21:31.190 - INFO - +------ START KW: SeleniumLibrary.Click Element [ ${element}/div[contains(@class, "panel-heading")] ]
+20201118 23:21:31.191 - DEBUG - Test timeout 2 minutes active. 115.549 seconds left.
+20201118 23:21:31.191 - INFO - Clicking element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading")]'.
+20201118 23:21:31.423 - INFO - +------ END KW: SeleniumLibrary.Click Element (233)
+20201118 23:21:31.423 - INFO - +----- END KW: BuiltIn.Run Keyword If (233)
+20201118 23:21:31.424 - INFO - +----- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))] ]
+20201118 23:21:31.424 - DEBUG - Test timeout 2 minutes active. 115.316 seconds left.
+20201118 23:21:31.429 - INFO - Current page contains element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))]'.
+20201118 23:21:31.429 - INFO - +----- END KW: SeleniumLibrary.Page Should Contain Element (5)
+20201118 23:21:31.430 - INFO - +---- END KW: FunctionsGlobal.Open Panel (249)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:31.430 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${MOVE_ADDITIONAL_DATA_SUBMIT_BUTTON} ]
+20201118 23:21:31.430 - DEBUG - Test timeout 2 minutes active. 115.309 seconds left.
+20201118 23:21:31.430 - INFO - Clicking button '//*[@id="submitButton"]'.
+20201118 23:21:31.915 - INFO - +---- END KW: SeleniumLibrary.Click Button (485)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201118 23:21:31.915 - INFO - +---- START KW: SeleniumLibrary.Wait Until Location Is [ ${PAGE_GEOKRETY_2_DETAILS_URL}/page/1\#log1 ]
+20201118 23:21:31.916 - DEBUG - Test timeout 2 minutes active. 114.824 seconds left.
+20201118 23:21:32.884 - INFO - +---- END KW: SeleniumLibrary.Wait Until Location Is (969)
+------------------------------------------------------------------------------
+20201118 23:21:32.893 - INFO - +--- END TEST: Change Tracking Code (6145)
+------------------------------------------------------------------------------
+20201118 23:21:32.908 - INFO - +-- END SUITE: Acceptance.110 Moves.205 MoveEdit (6220)
 ==============================================================================
-20201116 12:23:31.276 - INFO - + END SUITE: Acceptance (10811039)
+20201118 23:21:32.909 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20201118 23:21:32.910 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20201118 23:21:32.910 - DEBUG - Closing browser with session id 27525e34-0c76-43fa-8e74-0f62a702faf7.
+20201118 23:21:33.642 - INFO - +--- END KW: SeleniumLibrary.Close Browser (732)
+20201118 23:21:33.643 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (733)
+==============================================================================
+20201118 23:21:33.645 - INFO - +- END SUITE: Acceptance.110 Moves (10812667)
+==============================================================================
+20201118 23:21:33.649 - INFO - + END SUITE: Acceptance (10812711)
 ==============================================================================
