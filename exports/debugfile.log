@@ -1,769 +1,624 @@
 ==============================================================================
-20201126 22:50:31.402 - INFO - + START SUITE: Acceptance [ ]
+20201127 22:51:12.804 - INFO - + START SUITE: Acceptance [ ]
 ==============================================================================
-20201126 22:50:31.580 - INFO - +- START SUITE: Acceptance.300 LegacyBridges [ ]
+20201127 22:51:12.979 - INFO - +- START SUITE: Acceptance.060 UserAvatar.robot [ ]
 ==============================================================================
-20201126 22:50:31.584 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
-20201126 22:50:31.585 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
-20201126 22:50:31.586 - INFO - +---- START KW: BuiltIn.Run Keyword If [ "${BS_ENABLED}" != "false" | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
-20201126 22:50:31.586 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
-20201126 22:50:31.587 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
-20201126 22:50:31.587 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
-20201126 22:50:31.587 - INFO - +-------- START KW: BuiltIn.Log [ Open Browser Firefox ]
-20201126 22:50:31.587 - INFO - Open Browser Firefox
-20201126 22:50:31.588 - INFO - +-------- END KW: BuiltIn.Log (1)
-20201126 22:50:31.588 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
-20201126 22:50:31.588 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7f93b485d7d0>
-20201126 22:50:31.588 - INFO - +-------- END KW: BuiltIn.Evaluate (0)
-20201126 22:50:31.588 - INFO - +-------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
-20201126 22:50:31.589 - INFO - +--------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
-20201126 22:50:31.589 - INFO - +--------- END KW: BuiltIn.Call Method (0)
-20201126 22:50:31.589 - INFO - +-------- END KW: BuiltIn.Run Keyword If (1)
-20201126 22:50:31.589 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].DesiredCapabilities.FIREFOX | sys, selenium.webdriver ]
-20201126 22:50:31.589 - INFO - ${dc} = {'acceptInsecureCerts': True, 'browserName': 'firefox', 'marionette': True}
-20201126 22:50:31.589 - INFO - +-------- END KW: BuiltIn.Evaluate (0)
-20201126 22:50:31.589 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | strictFileInteractability=${FALSE} ]
-20201126 22:50:31.590 - INFO - +-------- END KW: Collections.Set To Dictionary (1)
-20201126 22:50:31.590 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | timezone=UTC-05:00 ]
-20201126 22:50:31.590 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
-20201126 22:50:31.590 - INFO - +-------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} | desired_capabilities=${dc} ]
-20201126 22:50:31.591 - INFO - Creating an instance of the Firefox WebDriver.
-20201127 01:50:33.675 - DEBUG - Created Firefox WebDriver instance with session id d3b19422-cc52-446d-9d19-0e8337cc2dfa.
-20201127 01:50:33.675 - INFO - +-------- END KW: SeleniumLibrary.Create Webdriver (10802085)
-20201127 01:50:33.676 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (10802089)
-20201127 01:50:33.676 - INFO - +------ END KW: BuiltIn.Run Keyword If (10802089)
-20201127 01:50:33.677 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
-20201127 01:50:33.677 - INFO - +------ END KW: BuiltIn.Run Keyword If (0)
-20201127 01:50:33.678 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (10802091)
-20201127 01:50:33.678 - INFO - +---- END KW: BuiltIn.Run Keyword If (10802092)
-20201127 01:50:33.678 - INFO - +---- START KW: SeleniumLibrary.Set Window Size [ 1280 | 1024 ]
-20201127 01:50:33.709 - INFO - +---- END KW: SeleniumLibrary.Set Window Size (30)
-20201127 01:50:33.709 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (10802124)
-20201127 01:50:33.709 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (10802125)
+20201127 22:51:12.984 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20201127 22:51:12.985 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20201127 22:51:12.985 - INFO - +---- START KW: BuiltIn.Run Keyword If [ "${BS_ENABLED}" != "false" | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20201127 22:51:12.985 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
+20201127 22:51:12.986 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
+20201127 22:51:12.986 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
+20201127 22:51:12.987 - INFO - +-------- START KW: BuiltIn.Log [ Open Browser Firefox ]
+20201127 22:51:12.987 - INFO - Open Browser Firefox
+20201127 22:51:12.987 - INFO - +-------- END KW: BuiltIn.Log (0)
+20201127 22:51:12.987 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
+20201127 22:51:12.987 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7fb722600650>
+20201127 22:51:12.987 - INFO - +-------- END KW: BuiltIn.Evaluate (0)
+20201127 22:51:12.988 - INFO - +-------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
+20201127 22:51:12.988 - INFO - +--------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
+20201127 22:51:12.988 - INFO - +--------- END KW: BuiltIn.Call Method (0)
+20201127 22:51:12.988 - INFO - +-------- END KW: BuiltIn.Run Keyword If (0)
+20201127 22:51:12.988 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].DesiredCapabilities.FIREFOX | sys, selenium.webdriver ]
+20201127 22:51:12.989 - INFO - ${dc} = {'acceptInsecureCerts': True, 'browserName': 'firefox', 'marionette': True}
+20201127 22:51:12.989 - INFO - +-------- END KW: BuiltIn.Evaluate (1)
+20201127 22:51:12.989 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | strictFileInteractability=${FALSE} ]
+20201127 22:51:12.989 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
+20201127 22:51:12.989 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | timezone=UTC-05:00 ]
+20201127 22:51:12.990 - INFO - +-------- END KW: Collections.Set To Dictionary (1)
+20201127 22:51:12.990 - INFO - +-------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} | desired_capabilities=${dc} ]
+20201127 22:51:12.990 - INFO - Creating an instance of the Firefox WebDriver.
+20201128 01:51:15.160 - DEBUG - Created Firefox WebDriver instance with session id 7d8cef9a-37a0-4bdd-8633-85d6806b67de.
+20201128 01:51:15.160 - INFO - +-------- END KW: SeleniumLibrary.Create Webdriver (10802170)
+20201128 01:51:15.161 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (10802175)
+20201128 01:51:15.161 - INFO - +------ END KW: BuiltIn.Run Keyword If (10802175)
+20201128 01:51:15.162 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
+20201128 01:51:15.163 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
+20201128 01:51:15.163 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (10802178)
+20201128 01:51:15.163 - INFO - +---- END KW: BuiltIn.Run Keyword If (10802178)
+20201128 01:51:15.163 - INFO - +---- START KW: SeleniumLibrary.Set Window Size [ 1280 | 1024 ]
+20201128 01:51:15.185 - INFO - +---- END KW: SeleniumLibrary.Set Window Size (22)
+20201128 01:51:15.185 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (10802201)
+20201128 01:51:15.186 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (10802202)
 ==============================================================================
-20201127 01:50:33.938 - INFO - +-- START SUITE: Acceptance.300 LegacyBridges.190 Json Gkt Inventory V3 [ ]
+20201128 01:51:15.265 - INFO - +-- START SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload [ ]
 ==============================================================================
-20201127 01:50:33.942 - INFO - +--- START SETUP: Seed [ ]
-20201127 01:50:33.943 - INFO - +---- START KW: FunctionsGlobal.Clear DB And Seed 3 users [ ]
-20201127 01:50:33.944 - INFO - +----- START KW: FunctionsGlobal.Clear Database [ ]
-20201127 01:50:33.944 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
-20201127 01:50:33.945 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:33.945 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:33.946 - INFO - ${url_} = http://localhost:3001/devel/db/reset
-20201127 01:50:33.946 - INFO - +-------- END KW: BuiltIn.Replace Variables (1)
-20201127 01:50:33.946 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:33.946 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
-20201127 01:50:34.298 - INFO - +-------- END KW: SeleniumLibrary.Go To (352)
-20201127 01:50:34.298 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (353)
-20201127 01:50:34.298 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:34.299 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:34.337 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:34.338 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:34.338 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (39)
-20201127 01:50:34.338 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:34.346 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:34.346 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:34.346 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (8)
-20201127 01:50:34.347 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:34.359 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:34.359 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:34.359 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (12)
-20201127 01:50:34.360 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (62)
-20201127 01:50:34.360 - INFO - +------ END KW: FunctionsGlobal.Go To Url (416)
-20201127 01:50:34.360 - INFO - +------ START KW: SeleniumLibrary.Page Should Contain [ OK ]
-20201127 01:50:34.366 - INFO - Current page contains text 'OK'.
-20201127 01:50:34.366 - INFO - +------ END KW: SeleniumLibrary.Page Should Contain (6)
-20201127 01:50:34.367 - INFO - +----- END KW: FunctionsGlobal.Clear Database (423)
-20201127 01:50:34.367 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
-20201127 01:50:34.367 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:34.368 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:34.368 - INFO - ${url_} = http://localhost:3001/devel/db/users/seed/3
-20201127 01:50:34.368 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
-20201127 01:50:34.369 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:34.369 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/3'
-20201127 01:50:35.528 - INFO - +------- END KW: SeleniumLibrary.Go To (1158)
-20201127 01:50:35.528 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (1161)
-20201127 01:50:35.528 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:35.529 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:35.552 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:35.552 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:35.552 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (23)
-20201127 01:50:35.552 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:35.560 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:35.560 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:35.560 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
-20201127 01:50:35.560 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:35.568 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:35.568 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:35.568 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
-20201127 01:50:35.568 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (40)
-20201127 01:50:35.568 - INFO - +----- END KW: FunctionsGlobal.Go To Url (1201)
-20201127 01:50:35.569 - INFO - +----- START KW: FunctionsGlobal.Empty Dev Mailbox Fast [ ]
-20201127 01:50:35.569 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_MAILBOX_CLEAR_URL} ]
-20201127 01:50:35.570 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:35.570 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:35.570 - INFO - ${url_} = http://localhost:3001/devel/mail/delete/all
-20201127 01:50:35.571 - INFO - +-------- END KW: BuiltIn.Replace Variables (1)
-20201127 01:50:35.571 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:35.571 - INFO - Opening url 'http://localhost:3001/devel/mail/delete/all'
-20201127 01:50:35.965 - INFO - +-------- END KW: SeleniumLibrary.Go To (393)
-20201127 01:50:35.965 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (395)
-20201127 01:50:35.966 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:35.966 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:35.995 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:35.995 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:35.995 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (29)
-20201127 01:50:35.995 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:36.004 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.004 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:36.004 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (9)
-20201127 01:50:36.004 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:36.011 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.011 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:36.011 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201127 01:50:36.011 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (45)
-20201127 01:50:36.012 - INFO - +------ END KW: FunctionsGlobal.Go To Url (443)
-20201127 01:50:36.012 - INFO - +----- END KW: FunctionsGlobal.Empty Dev Mailbox Fast (443)
-20201127 01:50:36.012 - INFO - +---- END KW: FunctionsGlobal.Clear DB And Seed 3 users (2069)
-20201127 01:50:36.012 - INFO - +---- START KW: FunctionsGlobal.Seed 1 geokrety owned by 1 [ ]
-20201127 01:50:36.012 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
-20201127 01:50:36.013 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:36.014 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:36.014 - INFO - ${url_} = http://localhost:3001/devel/db/users/1/geokrety/seed/1
-20201127 01:50:36.014 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
-20201127 01:50:36.014 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:36.014 - INFO - Opening url 'http://localhost:3001/devel/db/users/1/geokrety/seed/1'
-20201127 01:50:36.216 - INFO - +------- END KW: SeleniumLibrary.Go To (201)
-20201127 01:50:36.216 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (203)
-20201127 01:50:36.216 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:36.217 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:36.236 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.236 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:36.236 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (19)
-20201127 01:50:36.236 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:36.243 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.243 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:36.243 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201127 01:50:36.243 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:36.251 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.251 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:36.251 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
-20201127 01:50:36.251 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (35)
-20201127 01:50:36.251 - INFO - +----- END KW: FunctionsGlobal.Go To Url (239)
-20201127 01:50:36.251 - INFO - +---- END KW: FunctionsGlobal.Seed 1 geokrety owned by 1 (239)
-20201127 01:50:36.252 - INFO - +---- START KW: FunctionsGlobal.Seed 2 geokrety owned by 2 [ ]
-20201127 01:50:36.252 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
-20201127 01:50:36.253 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:36.253 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:36.254 - INFO - ${url_} = http://localhost:3001/devel/db/users/2/geokrety/seed/2
-20201127 01:50:36.254 - INFO - +------- END KW: BuiltIn.Replace Variables (1)
-20201127 01:50:36.254 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:36.255 - INFO - Opening url 'http://localhost:3001/devel/db/users/2/geokrety/seed/2'
-20201127 01:50:36.446 - INFO - +------- END KW: SeleniumLibrary.Go To (192)
-20201127 01:50:36.447 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (194)
-20201127 01:50:36.447 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:36.447 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:36.466 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.466 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:36.467 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (19)
-20201127 01:50:36.467 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:36.474 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.474 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:36.475 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201127 01:50:36.475 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:36.481 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.481 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:36.481 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (6)
-20201127 01:50:36.481 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (34)
-20201127 01:50:36.481 - INFO - +----- END KW: FunctionsGlobal.Go To Url (229)
-20201127 01:50:36.481 - INFO - +---- END KW: FunctionsGlobal.Seed 2 geokrety owned by 2 (229)
-20201127 01:50:36.482 - INFO - +---- START KW: FunctionsGlobal.Seed 4 geokrety owned by 3 [ ]
-20201127 01:50:36.482 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
-20201127 01:50:36.483 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:36.484 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:36.484 - INFO - ${url_} = http://localhost:3001/devel/db/users/3/geokrety/seed/4
-20201127 01:50:36.484 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
-20201127 01:50:36.484 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:36.484 - INFO - Opening url 'http://localhost:3001/devel/db/users/3/geokrety/seed/4'
-20201127 01:50:36.728 - INFO - +------- END KW: SeleniumLibrary.Go To (244)
-20201127 01:50:36.729 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (246)
-20201127 01:50:36.729 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:36.729 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:36.742 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.742 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:36.742 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (13)
-20201127 01:50:36.742 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:36.748 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.748 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:36.748 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (6)
-20201127 01:50:36.749 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:36.756 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:36.756 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:36.756 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (7)
-20201127 01:50:36.756 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (27)
-20201127 01:50:36.757 - INFO - +----- END KW: FunctionsGlobal.Go To Url (275)
-20201127 01:50:36.757 - INFO - +---- END KW: FunctionsGlobal.Seed 4 geokrety owned by 3 (275)
-20201127 01:50:36.757 - INFO - +---- START KW: PageMoves.Post Move [ ${MOVE_1} ]
-20201127 01:50:36.757 - INFO - +----- START KW: RequestsLibrary.Create Session [ gk | ${GK_URL} ]
-20201127 01:50:36.758 - INFO - Creating Session using : alias=gk, url=http://localhost:3001, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0
-20201127 01:50:36.758 - DEBUG - Creating session: gk
-20201127 01:50:36.758 - DEBUG - Argument types are:
+20201128 01:51:15.267 - INFO - +--- START TEST: Upload image via Drag/Drop - same page [ ]
+------------------------------------------------------------------------------
+20201128 01:51:15.268 - INFO - +---- START SETUP: FunctionsGlobal.Clear DB And Seed 1 users [ ]
+20201128 01:51:15.269 - INFO - +----- START KW: FunctionsGlobal.Clear Database [ ]
+20201128 01:51:15.269 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20201128 01:51:15.270 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:15.272 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:15.272 - DEBUG - Test timeout 2 minutes active. 119.994 seconds left.
+20201128 01:51:15.272 - INFO - ${url_} = http://localhost:3001/devel/db/reset
+20201128 01:51:15.272 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
+20201128 01:51:15.273 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:15.273 - DEBUG - Test timeout 2 minutes active. 119.993 seconds left.
+20201128 01:51:15.273 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
+20201128 01:51:15.636 - INFO - +-------- END KW: SeleniumLibrary.Go To (363)
+20201128 01:51:15.636 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (366)
+20201128 01:51:15.637 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:15.638 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:15.638 - DEBUG - Test timeout 2 minutes active. 119.628 seconds left.
+20201128 01:51:15.674 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:15.674 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:15.674 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (36)
+20201128 01:51:15.675 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:15.675 - DEBUG - Test timeout 2 minutes active. 119.591 seconds left.
+20201128 01:51:15.689 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:15.689 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:15.690 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (15)
+20201128 01:51:15.690 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:15.690 - DEBUG - Test timeout 2 minutes active. 119.576 seconds left.
+20201128 01:51:15.701 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:15.701 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:15.701 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:15.701 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (64)
+20201128 01:51:15.701 - INFO - +------ END KW: FunctionsGlobal.Go To Url (432)
+20201128 01:51:15.702 - INFO - +------ START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20201128 01:51:15.702 - DEBUG - Test timeout 2 minutes active. 119.564 seconds left.
+20201128 01:51:15.710 - INFO - Current page contains text 'OK'.
+20201128 01:51:15.711 - INFO - +------ END KW: SeleniumLibrary.Page Should Contain (9)
+20201128 01:51:15.711 - INFO - +----- END KW: FunctionsGlobal.Clear Database (442)
+20201128 01:51:15.711 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
+20201128 01:51:15.712 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:15.713 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:15.713 - DEBUG - Test timeout 2 minutes active. 119.553 seconds left.
+20201128 01:51:15.713 - INFO - ${url_} = http://localhost:3001/devel/db/users/seed/1
+20201128 01:51:15.713 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
+20201128 01:51:15.713 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:15.713 - DEBUG - Test timeout 2 minutes active. 119.553 seconds left.
+20201128 01:51:15.713 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/1'
+20201128 01:51:16.241 - INFO - +------- END KW: SeleniumLibrary.Go To (528)
+20201128 01:51:16.241 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (529)
+20201128 01:51:16.242 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:16.242 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:16.243 - DEBUG - Test timeout 2 minutes active. 119.024 seconds left.
+20201128 01:51:16.266 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:16.266 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:16.266 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (24)
+20201128 01:51:16.267 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:16.267 - DEBUG - Test timeout 2 minutes active. 118.999 seconds left.
+20201128 01:51:16.274 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:16.274 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:16.275 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201128 01:51:16.275 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:16.275 - DEBUG - Test timeout 2 minutes active. 118.991 seconds left.
+20201128 01:51:16.283 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:16.283 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:16.284 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201128 01:51:16.284 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (42)
+20201128 01:51:16.284 - INFO - +----- END KW: FunctionsGlobal.Go To Url (573)
+20201128 01:51:16.284 - INFO - +----- START KW: FunctionsGlobal.Empty Dev Mailbox Fast [ ]
+20201128 01:51:16.285 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_MAILBOX_CLEAR_URL} ]
+20201128 01:51:16.285 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:16.286 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:16.286 - DEBUG - Test timeout 2 minutes active. 118.98 seconds left.
+20201128 01:51:16.286 - INFO - ${url_} = http://localhost:3001/devel/mail/delete/all
+20201128 01:51:16.286 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
+20201128 01:51:16.287 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:16.287 - DEBUG - Test timeout 2 minutes active. 118.979 seconds left.
+20201128 01:51:16.287 - INFO - Opening url 'http://localhost:3001/devel/mail/delete/all'
+20201128 01:51:16.690 - INFO - +-------- END KW: SeleniumLibrary.Go To (403)
+20201128 01:51:16.690 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (405)
+20201128 01:51:16.691 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:16.692 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:16.692 - DEBUG - Test timeout 2 minutes active. 118.574 seconds left.
+20201128 01:51:16.719 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:16.719 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:16.719 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (27)
+20201128 01:51:16.719 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:16.720 - DEBUG - Test timeout 2 minutes active. 118.547 seconds left.
+20201128 01:51:16.727 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:16.727 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:16.727 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201128 01:51:16.728 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:16.728 - DEBUG - Test timeout 2 minutes active. 118.538 seconds left.
+20201128 01:51:16.737 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:16.737 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:16.738 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:16.738 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (47)
+20201128 01:51:16.738 - INFO - +------ END KW: FunctionsGlobal.Go To Url (453)
+20201128 01:51:16.738 - INFO - +----- END KW: FunctionsGlobal.Empty Dev Mailbox Fast (454)
+20201128 01:51:16.738 - INFO - +---- END SETUP: FunctionsGlobal.Clear DB And Seed 1 users (1470)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:16.739 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20201128 01:51:16.739 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_LOGIN_USER} | username=${username} ]
+20201128 01:51:16.740 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:16.741 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:16.741 - DEBUG - Test timeout 2 minutes active. 118.525 seconds left.
+20201128 01:51:16.741 - INFO - ${url_} = http://localhost:3001/devel/users/username1/login
+20201128 01:51:16.742 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
+20201128 01:51:16.742 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:16.742 - DEBUG - Test timeout 2 minutes active. 118.524 seconds left.
+20201128 01:51:16.742 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20201128 01:51:17.432 - INFO - +------- END KW: SeleniumLibrary.Go To (690)
+20201128 01:51:17.432 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (692)
+20201128 01:51:17.432 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:17.433 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:17.434 - DEBUG - Test timeout 2 minutes active. 117.833 seconds left.
+20201128 01:51:17.465 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:17.465 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:17.465 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (32)
+20201128 01:51:17.466 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:17.466 - DEBUG - Test timeout 2 minutes active. 117.8 seconds left.
+20201128 01:51:17.474 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:17.474 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:17.475 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201128 01:51:17.475 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:17.475 - DEBUG - Test timeout 2 minutes active. 117.791 seconds left.
+20201128 01:51:17.485 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:17.485 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:17.486 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:17.486 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (54)
+20201128 01:51:17.486 - INFO - +----- END KW: FunctionsGlobal.Go To Url (747)
+20201128 01:51:17.486 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Error signing in user ]
+20201128 01:51:17.487 - DEBUG - Test timeout 2 minutes active. 117.78 seconds left.
+20201128 01:51:17.495 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:17.495 - INFO - Current page does not contain text 'Error signing in user'.
+20201128 01:51:17.495 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201128 01:51:17.496 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (756)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:17.496 - INFO - +---- START KW: Images.Upload user avatar via Drag/Drop - same page [ ${PAGE_USER_1_PROFILE_URL} | ${USER_PROFILE_ICON_IMAGE} ]
+20201128 01:51:17.497 - INFO - +----- START KW: SeleniumLibrary.Go To [ ${user_profile_url} ]
+20201128 01:51:17.498 - DEBUG - Test timeout 2 minutes active. 117.768 seconds left.
+20201128 01:51:17.498 - INFO - Opening url 'http://localhost:3001/en/users/1'
+20201128 01:51:18.068 - INFO - +----- END KW: SeleniumLibrary.Go To (571)
+20201128 01:51:18.068 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_PICTURE_UPLOAD_BUTTON} | timeout=30 ]
+20201128 01:51:18.069 - DEBUG - Test timeout 2 minutes active. 117.197 seconds left.
+20201128 01:51:18.076 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (8)
+20201128 01:51:18.076 - INFO - +----- START KW: Images.Drag And Drop [ ${source} | ${USER_PROFILE_DROPZONE} ]
+20201128 01:51:18.077 - INFO - +------ START KW: OperatingSystem.Get File [ acceptance/functions/drag-n-drop.js ]
+20201128 01:51:18.077 - DEBUG - Test timeout 2 minutes active. 117.189 seconds left.
+20201128 01:51:18.078 - INFO - Getting file '<a href="file:///home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/functions/drag-n-drop.js">/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/functions/drag-n-drop.js</a>'.
+20201128 01:51:18.078 - INFO - ${js} = // https://stackoverflow.com/a/49581588/944936
+var dataTransfer=
+                {
+                    dropEffect:'',
+                    effectAllowed:'all',
+                    files:[],
+           ...
+20201128 01:51:18.079 - INFO - +------ END KW: OperatingSystem.Get File (2)
+20201128 01:51:18.079 - INFO - +------ START KW: SeleniumLibrary.Execute Javascript [ ${js}; return DragNDrop('${src}', '${tgt}'); ]
+20201128 01:51:18.079 - DEBUG - Test timeout 2 minutes active. 117.187 seconds left.
+20201128 01:51:18.081 - INFO - Executing JavaScript:
+// https://stackoverflow.com/a/49581588/944936
+var dataTransfer=
+                {
+                    dropEffect:'',
+                    effectAllowed:'all',
+                    files:[],
+                    items:{},
+                    types:[],
+                    setData:function(format,data)
+                    {
+                        this.items[format]=data;
+                        this.types.push(format);
+                    },
+                    getData:function(format)
+                    {
+                        return this.items[format];
+                    },
+                    clearData:function(format){}
+                };
+var emit=function(event,target)
+                {
+                    var evt=document.createEvent('Event');
+                    evt.initEvent(event,true,false);
+                    evt.dataTransfer=dataTransfer;
+                    target.dispatchEvent(evt);
+                };
+function getElementByXpath(path) {return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;}
+
+var DragNDrop=function(src,tgt) {
+    // src = document.getElementById(src);
+    // tgt = document.getElementById(tgt);
+    src = getElementByXpath(src);
+    tgt = getElementByXpath(tgt);
+    dataTransfer.setData('URL', src.getAttribute('src'));
+    emit('dragstart',src);
+    emit('dragenter',tgt);
+    emit('dragover',tgt);
+    emit('drop',tgt);
+    emit('dragend',src);
+    return true;
+}
+
+// DragNDrop('userDetailsTypeIcon', 'userAvatar');
+; return DragNDrop('//*[@id="userDetailsPanel"]/div[@class="panel-heading"]/img[@data-gk-type]', '//*[@id="userAvatar" and contains(@class, "dropzone")]');
+Without any arguments.
+20201128 01:51:18.098 - INFO - ${result} = True
+20201128 01:51:18.098 - INFO - +------ END KW: SeleniumLibrary.Execute Javascript (19)
+20201128 01:51:18.099 - INFO - +----- END KW: Images.Drag And Drop (22)
+20201128 01:51:18.099 - INFO - +----- START KW: BuiltIn.Run Keyword And Continue On Failure [ Wait Until Page Contains Element | ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX} | timeout=30 ]
+20201128 01:51:18.099 - INFO - +------ START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX} | timeout=30 ]
+20201128 01:51:18.100 - DEBUG - Test timeout 2 minutes active. 117.166 seconds left.
+20201128 01:51:18.531 - INFO - +------ END KW: SeleniumLibrary.Wait Until Page Contains Element (432)
+20201128 01:51:18.531 - INFO - +----- END KW: BuiltIn.Run Keyword And Continue On Failure (432)
+20201128 01:51:18.532 - INFO - +----- START KW: SeleniumLibrary.Wait Until Page Contains Element [ ${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSED_SUFFIX} | timeout=30 ]
+20201128 01:51:18.532 - DEBUG - Test timeout 2 minutes active. 116.734 seconds left.
+20201128 01:51:20.794 - INFO - +----- END KW: SeleniumLibrary.Wait Until Page Contains Element (2262)
+20201128 01:51:20.794 - INFO - +---- END KW: Images.Upload user avatar via Drag/Drop - same page (3298)
+------------------------------------------------------------------------------
+20201128 01:51:20.795 - INFO - +--- END TEST: Upload image via Drag/Drop - same page (5528)
+------------------------------------------------------------------------------
+20201128 01:51:20.810 - INFO - +-- END SUITE: Acceptance.060 UserAvatar.robot.020 AvatarUpload (5610)
+==============================================================================
+20201128 01:51:20.811 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20201128 01:51:20.811 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20201128 01:51:20.811 - DEBUG - Closing browser with session id 7d8cef9a-37a0-4bdd-8633-85d6806b67de.
+20201128 01:51:21.321 - INFO - +--- END KW: SeleniumLibrary.Close Browser (510)
+20201128 01:51:21.322 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (511)
+==============================================================================
+20201128 01:51:21.325 - INFO - +- END SUITE: Acceptance.060 UserAvatar.robot (10808517)
+==============================================================================
+20201128 01:51:21.359 - INFO - +- START SUITE: Acceptance.110 Moves [ ]
+==============================================================================
+20201128 01:51:21.361 - INFO - +-- START SETUP: FunctionsGlobal.Global Setup [ ]
+20201128 01:51:21.362 - INFO - +--- START KW: FunctionsGlobal.!Open GeoKrety Browser [ ${browser} ]
+20201128 01:51:21.365 - INFO - +---- START KW: BuiltIn.Run Keyword If [ "${BS_ENABLED}" != "false" | !Open GeoKrety BrowserStack | ${browser} | ELSE | !Open GeoKrety Browser Local | ${browser} ]
+20201128 01:51:21.365 - INFO - +----- START KW: FunctionsGlobal.!Open GeoKrety Browser Local [ ${browser} ]
+20201128 01:51:21.366 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Firefox" | !Open GeoKrety Browser Firefox ]
+20201128 01:51:21.366 - INFO - +------- START KW: FunctionsGlobal.!Open GeoKrety Browser Firefox [ ]
+20201128 01:51:21.366 - INFO - +-------- START KW: BuiltIn.Log [ Open Browser Firefox ]
+20201128 01:51:21.367 - INFO - Open Browser Firefox
+20201128 01:51:21.367 - INFO - +-------- END KW: BuiltIn.Log (1)
+20201128 01:51:21.367 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].firefox.webdriver.Options() | sys, selenium.webdriver ]
+20201128 01:51:21.367 - INFO - ${firefox_options} = <selenium.webdriver.firefox.options.Options object at 0x7fb720f7dd50>
+20201128 01:51:21.367 - INFO - +-------- END KW: BuiltIn.Evaluate (0)
+20201128 01:51:21.367 - INFO - +-------- START KW: BuiltIn.Run Keyword If [ ${HEADLESS} | Call Method | ${firefox_options} | add_argument | -headless ]
+20201128 01:51:21.368 - INFO - +--------- START KW: BuiltIn.Call Method [ ${firefox_options} | add_argument | -headless ]
+20201128 01:51:21.368 - INFO - +--------- END KW: BuiltIn.Call Method (0)
+20201128 01:51:21.368 - INFO - +-------- END KW: BuiltIn.Run Keyword If (1)
+20201128 01:51:21.368 - INFO - +-------- START KW: BuiltIn.Evaluate [ sys.modules['selenium.webdriver'].DesiredCapabilities.FIREFOX | sys, selenium.webdriver ]
+20201128 01:51:21.368 - INFO - ${dc} = {'acceptInsecureCerts': True, u'timezone': u'UTC-05:00', 'browserName': 'firefox', u'strictFileInteractability': False, 'marionette': True}
+20201128 01:51:21.369 - INFO - +-------- END KW: BuiltIn.Evaluate (1)
+20201128 01:51:21.369 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | strictFileInteractability=${FALSE} ]
+20201128 01:51:21.369 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
+20201128 01:51:21.369 - INFO - +-------- START KW: Collections.Set To Dictionary [ ${dc} | timezone=UTC-05:00 ]
+20201128 01:51:21.369 - INFO - +-------- END KW: Collections.Set To Dictionary (0)
+20201128 01:51:21.369 - INFO - +-------- START KW: SeleniumLibrary.Create Webdriver [ Firefox | firefox_options=${firefox options} | desired_capabilities=${dc} ]
+20201128 01:51:21.370 - INFO - Creating an instance of the Firefox WebDriver.
+20201128 01:51:23.548 - DEBUG - Created Firefox WebDriver instance with session id 06abe061-8e53-4c7d-8dc8-213bd5b7e4fb.
+20201128 01:51:23.549 - INFO - +-------- END KW: SeleniumLibrary.Create Webdriver (2180)
+20201128 01:51:23.549 - INFO - +------- END KW: FunctionsGlobal.!Open GeoKrety Browser Firefox (2183)
+20201128 01:51:23.549 - INFO - +------ END KW: BuiltIn.Run Keyword If (2183)
+20201128 01:51:23.550 - INFO - +------ START KW: BuiltIn.Run Keyword If [ "${browser}"=="Chrome" | !Open GeoKrety Browser Chrome ]
+20201128 01:51:23.551 - INFO - +------ END KW: BuiltIn.Run Keyword If (1)
+20201128 01:51:23.551 - INFO - +----- END KW: FunctionsGlobal.!Open GeoKrety Browser Local (2186)
+20201128 01:51:23.551 - INFO - +---- END KW: BuiltIn.Run Keyword If (2186)
+20201128 01:51:23.552 - INFO - +---- START KW: SeleniumLibrary.Set Window Size [ 1280 | 1024 ]
+20201128 01:51:23.580 - INFO - +---- END KW: SeleniumLibrary.Set Window Size (28)
+20201128 01:51:23.581 - INFO - +--- END KW: FunctionsGlobal.!Open GeoKrety Browser (2219)
+20201128 01:51:23.581 - INFO - +-- END SETUP: FunctionsGlobal.Global Setup (2220)
+==============================================================================
+20201128 01:51:23.726 - INFO - +-- START SUITE: Acceptance.110 Moves.205 MoveEdit [ ]
+==============================================================================
+20201128 01:51:23.731 - INFO - +--- START TEST: Change Tracking Code [ ]
+------------------------------------------------------------------------------
+20201128 01:51:23.734 - INFO - +---- START SETUP: Seed [ ]
+20201128 01:51:23.736 - INFO - +----- START KW: FunctionsGlobal.Clear DB And Seed 2 users [ ]
+20201128 01:51:23.736 - INFO - +------ START KW: FunctionsGlobal.Clear Database [ ]
+20201128 01:51:23.737 - INFO - +------- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_RESET_DB_URL} ]
+20201128 01:51:23.737 - INFO - +-------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:23.738 - INFO - +--------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:23.738 - DEBUG - Test timeout 2 minutes active. 119.991 seconds left.
+20201128 01:51:23.739 - INFO - ${url_} = http://localhost:3001/devel/db/reset
+20201128 01:51:23.739 - INFO - +--------- END KW: BuiltIn.Replace Variables (1)
+20201128 01:51:23.739 - INFO - +--------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:23.739 - DEBUG - Test timeout 2 minutes active. 119.991 seconds left.
+20201128 01:51:23.739 - INFO - Opening url 'http://localhost:3001/devel/db/reset'
+20201128 01:51:24.098 - INFO - +--------- END KW: SeleniumLibrary.Go To (359)
+20201128 01:51:24.098 - INFO - +-------- END KW: FunctionsGlobal.Got To Url With Param (361)
+20201128 01:51:24.098 - INFO - +-------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:24.099 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:24.099 - DEBUG - Test timeout 2 minutes active. 119.631 seconds left.
+20201128 01:51:24.134 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:24.134 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:24.135 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (35)
+20201128 01:51:24.135 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:24.135 - DEBUG - Test timeout 2 minutes active. 119.595 seconds left.
+20201128 01:51:24.149 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:24.149 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:24.149 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (14)
+20201128 01:51:24.149 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:24.149 - DEBUG - Test timeout 2 minutes active. 119.58 seconds left.
+20201128 01:51:24.159 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:24.159 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:24.160 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:24.160 - INFO - +-------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (62)
+20201128 01:51:24.160 - INFO - +------- END KW: FunctionsGlobal.Go To Url (423)
+20201128 01:51:24.160 - INFO - +------- START KW: SeleniumLibrary.Page Should Contain [ OK ]
+20201128 01:51:24.161 - DEBUG - Test timeout 2 minutes active. 119.569 seconds left.
+20201128 01:51:24.167 - INFO - Current page contains text 'OK'.
+20201128 01:51:24.168 - INFO - +------- END KW: SeleniumLibrary.Page Should Contain (8)
+20201128 01:51:24.168 - INFO - +------ END KW: FunctionsGlobal.Clear Database (432)
+20201128 01:51:24.168 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${PAGE_SEED_USER}/${count} ]
+20201128 01:51:24.169 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:24.169 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:24.170 - DEBUG - Test timeout 2 minutes active. 119.56 seconds left.
+20201128 01:51:24.170 - INFO - ${url_} = http://localhost:3001/devel/db/users/seed/2
+20201128 01:51:24.170 - INFO - +-------- END KW: BuiltIn.Replace Variables (1)
+20201128 01:51:24.170 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:24.171 - DEBUG - Test timeout 2 minutes active. 119.559 seconds left.
+20201128 01:51:24.171 - INFO - Opening url 'http://localhost:3001/devel/db/users/seed/2'
+20201128 01:51:25.023 - INFO - +-------- END KW: SeleniumLibrary.Go To (853)
+20201128 01:51:25.023 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (854)
+20201128 01:51:25.023 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:25.024 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:25.024 - DEBUG - Test timeout 2 minutes active. 118.706 seconds left.
+20201128 01:51:25.048 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.048 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:25.048 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (24)
+20201128 01:51:25.049 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:25.049 - DEBUG - Test timeout 2 minutes active. 118.681 seconds left.
+20201128 01:51:25.059 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.059 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:25.059 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:25.059 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:25.059 - DEBUG - Test timeout 2 minutes active. 118.67 seconds left.
+20201128 01:51:25.066 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.066 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:25.066 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20201128 01:51:25.067 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (44)
+20201128 01:51:25.067 - INFO - +------ END KW: FunctionsGlobal.Go To Url (899)
+20201128 01:51:25.067 - INFO - +------ START KW: FunctionsGlobal.Empty Dev Mailbox Fast [ ]
+20201128 01:51:25.068 - INFO - +------- START KW: FunctionsGlobal.Go To Url [ ${PAGE_DEV_MAILBOX_CLEAR_URL} ]
+20201128 01:51:25.068 - INFO - +-------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:25.069 - INFO - +--------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:25.069 - DEBUG - Test timeout 2 minutes active. 118.661 seconds left.
+20201128 01:51:25.069 - INFO - ${url_} = http://localhost:3001/devel/mail/delete/all
+20201128 01:51:25.069 - INFO - +--------- END KW: BuiltIn.Replace Variables (0)
+20201128 01:51:25.069 - INFO - +--------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:25.070 - DEBUG - Test timeout 2 minutes active. 118.66 seconds left.
+20201128 01:51:25.070 - INFO - Opening url 'http://localhost:3001/devel/mail/delete/all'
+20201128 01:51:25.478 - INFO - +--------- END KW: SeleniumLibrary.Go To (409)
+20201128 01:51:25.478 - INFO - +-------- END KW: FunctionsGlobal.Got To Url With Param (410)
+20201128 01:51:25.479 - INFO - +-------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:25.479 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:25.480 - DEBUG - Test timeout 2 minutes active. 118.25 seconds left.
+20201128 01:51:25.503 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.503 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:25.503 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (24)
+20201128 01:51:25.503 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:25.504 - DEBUG - Test timeout 2 minutes active. 118.226 seconds left.
+20201128 01:51:25.513 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.513 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:25.513 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20201128 01:51:25.514 - INFO - +--------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:25.514 - DEBUG - Test timeout 2 minutes active. 118.216 seconds left.
+20201128 01:51:25.521 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.521 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:25.521 - INFO - +--------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20201128 01:51:25.521 - INFO - +-------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (42)
+20201128 01:51:25.522 - INFO - +------- END KW: FunctionsGlobal.Go To Url (454)
+20201128 01:51:25.522 - INFO - +------ END KW: FunctionsGlobal.Empty Dev Mailbox Fast (455)
+20201128 01:51:25.522 - INFO - +----- END KW: FunctionsGlobal.Clear DB And Seed 2 users (1786)
+20201128 01:51:25.522 - INFO - +----- START KW: FunctionsGlobal.Seed 1 geokrety owned by 1 [ ]
+20201128 01:51:25.523 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
+20201128 01:51:25.524 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:25.525 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:25.525 - DEBUG - Test timeout 2 minutes active. 118.204 seconds left.
+20201128 01:51:25.526 - INFO - ${url_} = http://localhost:3001/devel/db/users/1/geokrety/seed/1
+20201128 01:51:25.526 - INFO - +-------- END KW: BuiltIn.Replace Variables (1)
+20201128 01:51:25.526 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:25.526 - DEBUG - Test timeout 2 minutes active. 118.204 seconds left.
+20201128 01:51:25.526 - INFO - Opening url 'http://localhost:3001/devel/db/users/1/geokrety/seed/1'
+20201128 01:51:25.735 - INFO - +-------- END KW: SeleniumLibrary.Go To (209)
+20201128 01:51:25.736 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (212)
+20201128 01:51:25.736 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:25.736 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:25.737 - DEBUG - Test timeout 2 minutes active. 117.993 seconds left.
+20201128 01:51:25.755 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.755 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:25.755 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (19)
+20201128 01:51:25.755 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:25.756 - DEBUG - Test timeout 2 minutes active. 117.974 seconds left.
+20201128 01:51:25.765 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.765 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:25.766 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:25.766 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:25.766 - DEBUG - Test timeout 2 minutes active. 117.963 seconds left.
+20201128 01:51:25.775 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.775 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:25.775 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201128 01:51:25.776 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (40)
+20201128 01:51:25.776 - INFO - +------ END KW: FunctionsGlobal.Go To Url (253)
+20201128 01:51:25.776 - INFO - +----- END KW: FunctionsGlobal.Seed 1 geokrety owned by 1 (254)
+20201128 01:51:25.776 - INFO - +----- START KW: FunctionsGlobal.Seed 1 geokrety owned by 2 [ ]
+20201128 01:51:25.777 - INFO - +------ START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count} ]
+20201128 01:51:25.777 - INFO - +------- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:25.778 - INFO - +-------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:25.778 - DEBUG - Test timeout 2 minutes active. 117.952 seconds left.
+20201128 01:51:25.778 - INFO - ${url_} = http://localhost:3001/devel/db/users/2/geokrety/seed/1
+20201128 01:51:25.778 - INFO - +-------- END KW: BuiltIn.Replace Variables (0)
+20201128 01:51:25.779 - INFO - +-------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:25.779 - DEBUG - Test timeout 2 minutes active. 117.951 seconds left.
+20201128 01:51:25.779 - INFO - Opening url 'http://localhost:3001/devel/db/users/2/geokrety/seed/1'
+20201128 01:51:25.964 - INFO - +-------- END KW: SeleniumLibrary.Go To (186)
+20201128 01:51:25.964 - INFO - +------- END KW: FunctionsGlobal.Got To Url With Param (187)
+20201128 01:51:25.965 - INFO - +------- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:25.966 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:25.966 - DEBUG - Test timeout 2 minutes active. 117.764 seconds left.
+20201128 01:51:25.983 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.983 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:25.983 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (18)
+20201128 01:51:25.983 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:25.983 - DEBUG - Test timeout 2 minutes active. 117.746 seconds left.
+20201128 01:51:25.993 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:25.993 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:25.993 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (10)
+20201128 01:51:25.993 - INFO - +-------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:25.993 - DEBUG - Test timeout 2 minutes active. 117.736 seconds left.
+20201128 01:51:26.000 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:26.000 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:26.000 - INFO - +-------- END KW: SeleniumLibrary.Page Should Not Contain (7)
+20201128 01:51:26.001 - INFO - +------- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (36)
+20201128 01:51:26.001 - INFO - +------ END KW: FunctionsGlobal.Go To Url (224)
+20201128 01:51:26.001 - INFO - +----- END KW: FunctionsGlobal.Seed 1 geokrety owned by 2 (225)
+20201128 01:51:26.001 - INFO - +----- START KW: PageMoves.Post Move [ ${MOVE_1} ]
+20201128 01:51:26.002 - INFO - +------ START KW: RequestsLibrary.Create Session [ gk | ${GK_URL} ]
+20201128 01:51:26.002 - DEBUG - Test timeout 2 minutes active. 117.728 seconds left.
+20201128 01:51:26.002 - INFO - Creating Session using : alias=gk, url=http://localhost:3001, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0
+20201128 01:51:26.002 - DEBUG - Creating session: gk
+20201128 01:51:26.002 - DEBUG - Argument types are:
 <type 'bool'>
-20201127 01:50:36.758 - INFO - +----- END KW: RequestsLibrary.Create Session (1)
-20201127 01:50:36.758 - INFO - +----- START KW: RequestsLibrary.Post On Session [ gk | /devel/db/geokrety/move/seed | data=${move} | headers=${CONTENT_TYPE_FORM_URLENCODED} ]
-20201127 01:50:37.383 - INFO - POST Request : url=http://localhost:3001/devel/db/geokrety/move/seed 
+20201128 01:51:26.003 - INFO - +------ END KW: RequestsLibrary.Create Session (1)
+20201128 01:51:26.003 - INFO - +------ START KW: RequestsLibrary.Post On Session [ gk | /devel/db/geokrety/move/seed | data=${move} | headers=${CONTENT_TYPE_FORM_URLENCODED} ]
+20201128 01:51:26.003 - DEBUG - Test timeout 2 minutes active. 117.727 seconds left.
+20201128 01:51:26.650 - INFO - POST Request : url=http://localhost:3001/devel/db/geokrety/move/seed 
  path_url=/devel/db/geokrety/move/seed 
  headers={'Content-Length': '115', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4', 'Connection': 'keep-alive', 'Content-Type': u'application/x-www-form-urlencoded'} 
  body=gkid=1&move_type=0&author=1&waypoint=GC0001&lat=43.60000&lon=7.00000&comment=Hello&app=robotframework&app_ver=3.2.1
-20201127 01:50:37.384 - INFO - POST Response : url=http://localhost:3001/devel/db/geokrety/move/seed 
+20201128 01:51:26.650 - INFO - POST Response : url=http://localhost:3001/devel/db/geokrety/move/seed 
  status=200, reason=OK 
- headers={'Content-Length': '92', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Fat-Free Framework', 'Set-Cookie': 'PHPSESSID=6bcee8b041c39b1bd83d9965ff1cfad4; path=/; HttpOnly; SameSite=Lax', 'Expires': 'Thu, 01 Jan 1970 00:00:00 +0000', 'Keep-Alive': 'timeout=5, max=100', 'Server': 'Apache/2.4.38 (Debian)', 'Connection': 'Keep-Alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Date': 'Thu, 26 Nov 2020 22:50:36 GMT', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Type': 'text'} 
+ headers={'Content-Length': '92', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Fat-Free Framework', 'Set-Cookie': 'PHPSESSID=474f29dcba32c78757b0bd4573fd3fba; path=/; HttpOnly; SameSite=Lax', 'Expires': 'Thu, 01 Jan 1970 00:00:00 +0000', 'Keep-Alive': 'timeout=5, max=100', 'Server': 'Apache/2.4.38 (Debian)', 'Connection': 'Keep-Alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Date': 'Fri, 27 Nov 2020 22:51:26 GMT', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Type': 'text'} 
  body=Create move id:1 geokret:1 waypoint:GC0001 movetype:0 wpt:GC0001 lat:43.60000 lon:7.00000
 OK
-20201127 01:50:37.385 - INFO - ${resp} = <Response [200]>
-20201127 01:50:37.385 - INFO - +----- END KW: RequestsLibrary.Post On Session (627)
-20201127 01:50:37.385 - INFO - +----- START KW: RequestsLibrary.Request Should Be Successful [ ${resp} ]
-20201127 01:50:37.386 - INFO - +----- END KW: RequestsLibrary.Request Should Be Successful (0)
-20201127 01:50:37.386 - INFO - +---- END KW: PageMoves.Post Move (629)
-20201127 01:50:37.386 - INFO - +---- START KW: PageMoves.Post Move [ ${second_move} ]
-20201127 01:50:37.386 - INFO - +----- START KW: RequestsLibrary.Create Session [ gk | ${GK_URL} ]
-20201127 01:50:37.387 - INFO - Creating Session using : alias=gk, url=http://localhost:3001, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0
-20201127 01:50:37.387 - DEBUG - Creating session: gk
-20201127 01:50:37.387 - DEBUG - Argument types are:
-<type 'bool'>
-20201127 01:50:37.387 - INFO - +----- END KW: RequestsLibrary.Create Session (1)
-20201127 01:50:37.387 - INFO - +----- START KW: RequestsLibrary.Post On Session [ gk | /devel/db/geokrety/move/seed | data=${move} | headers=${CONTENT_TYPE_FORM_URLENCODED} ]
-20201127 01:50:37.846 - INFO - POST Request : url=http://localhost:3001/devel/db/geokrety/move/seed 
- path_url=/devel/db/geokrety/move/seed 
- headers={'Content-Length': '115', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4', 'Connection': 'keep-alive', 'Content-Type': u'application/x-www-form-urlencoded'} 
- body=gkid=2&move_type=0&author=1&waypoint=GC0001&lat=43.60000&lon=7.00000&comment=Hello&app=robotframework&app_ver=3.2.1
-20201127 01:50:37.847 - INFO - POST Response : url=http://localhost:3001/devel/db/geokrety/move/seed 
- status=200, reason=OK 
- headers={'Content-Length': '92', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Fat-Free Framework', 'Set-Cookie': 'PHPSESSID=a058bdf916982cfc473ee88dd7d5ac33; path=/; HttpOnly; SameSite=Lax', 'Expires': 'Thu, 01 Jan 1970 00:00:00 +0000', 'Keep-Alive': 'timeout=5, max=100', 'Server': 'Apache/2.4.38 (Debian)', 'Connection': 'Keep-Alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Date': 'Thu, 26 Nov 2020 22:50:37 GMT', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Type': 'text'} 
- body=Create move id:2 geokret:2 waypoint:GC0001 movetype:0 wpt:GC0001 lat:43.60000 lon:7.00000
-OK
-20201127 01:50:37.847 - INFO - ${resp} = <Response [200]>
-20201127 01:50:37.847 - INFO - +----- END KW: RequestsLibrary.Post On Session (460)
-20201127 01:50:37.847 - INFO - +----- START KW: RequestsLibrary.Request Should Be Successful [ ${resp} ]
-20201127 01:50:37.848 - INFO - +----- END KW: RequestsLibrary.Request Should Be Successful (1)
-20201127 01:50:37.848 - INFO - +---- END KW: PageMoves.Post Move (462)
-20201127 01:50:37.848 - INFO - +---- START KW: FunctionsGlobal.Sign Out Fast [ ]
-20201127 01:50:37.849 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${GK_URL}/devel/users/logout ]
-20201127 01:50:37.849 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
-20201127 01:50:37.850 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
-20201127 01:50:37.850 - INFO - ${url_} = http://localhost:3001/devel/users/logout
-20201127 01:50:37.850 - INFO - +------- END KW: BuiltIn.Replace Variables (0)
-20201127 01:50:37.850 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
-20201127 01:50:37.851 - INFO - Opening url 'http://localhost:3001/devel/users/logout'
-20201127 01:50:37.995 - INFO - +------- END KW: SeleniumLibrary.Go To (145)
-20201127 01:50:37.995 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (146)
-20201127 01:50:37.996 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
-20201127 01:50:37.996 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
-20201127 01:50:38.033 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:38.034 - INFO - Current page does not contain text 'Warning:'.
-20201127 01:50:38.034 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (38)
-20201127 01:50:38.034 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
-20201127 01:50:38.052 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:38.052 - INFO - Current page does not contain text 'Failed'.
-20201127 01:50:38.052 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (18)
-20201127 01:50:38.052 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
-20201127 01:50:38.061 - DEBUG - Current frame has 0 subframes.
-20201127 01:50:38.061 - INFO - Current page does not contain text 'Internal Server Error'.
-20201127 01:50:38.061 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
-20201127 01:50:38.061 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (65)
-20201127 01:50:38.061 - INFO - +----- END KW: FunctionsGlobal.Go To Url (212)
-20201127 01:50:38.062 - INFO - +---- END KW: FunctionsGlobal.Sign Out Fast (214)
-20201127 01:50:38.062 - INFO - +--- END SETUP: Seed (4120)
+20201128 01:51:26.651 - INFO - ${resp} = <Response [200]>
+20201128 01:51:26.651 - INFO - +------ END KW: RequestsLibrary.Post On Session (648)
+20201128 01:51:26.651 - INFO - +------ START KW: RequestsLibrary.Request Should Be Successful [ ${resp} ]
+20201128 01:51:26.652 - DEBUG - Test timeout 2 minutes active. 117.078 seconds left.
+20201128 01:51:26.652 - INFO - +------ END KW: RequestsLibrary.Request Should Be Successful (1)
+20201128 01:51:26.652 - INFO - +----- END KW: PageMoves.Post Move (651)
+20201128 01:51:26.652 - INFO - +---- END SETUP: Seed (2918)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:26.653 - INFO - +---- START KW: FunctionsGlobal.Sign In ${USER_1.name} Fast [ ]
+20201128 01:51:26.653 - INFO - +----- START KW: FunctionsGlobal.Go To Url [ ${PAGE_LOGIN_USER} | username=${username} ]
+20201128 01:51:26.654 - INFO - +------ START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:26.655 - INFO - +------- START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:26.655 - DEBUG - Test timeout 2 minutes active. 117.074 seconds left.
+20201128 01:51:26.656 - INFO - ${url_} = http://localhost:3001/devel/users/username1/login
+20201128 01:51:26.656 - INFO - +------- END KW: BuiltIn.Replace Variables (1)
+20201128 01:51:26.656 - INFO - +------- START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:26.656 - DEBUG - Test timeout 2 minutes active. 117.073 seconds left.
+20201128 01:51:26.656 - INFO - Opening url 'http://localhost:3001/devel/users/username1/login'
+20201128 01:51:27.511 - INFO - +------- END KW: SeleniumLibrary.Go To (854)
+20201128 01:51:27.511 - INFO - +------ END KW: FunctionsGlobal.Got To Url With Param (857)
+20201128 01:51:27.511 - INFO - +------ START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:27.512 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:27.512 - DEBUG - Test timeout 2 minutes active. 116.217 seconds left.
+20201128 01:51:27.549 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:27.549 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:27.549 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (37)
+20201128 01:51:27.549 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:27.549 - DEBUG - Test timeout 2 minutes active. 116.18 seconds left.
+20201128 01:51:27.560 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:27.560 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:27.560 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (11)
+20201128 01:51:27.560 - INFO - +------- START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:27.561 - DEBUG - Test timeout 2 minutes active. 116.169 seconds left.
+20201128 01:51:27.568 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:27.569 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:27.569 - INFO - +------- END KW: SeleniumLibrary.Page Should Not Contain (9)
+20201128 01:51:27.569 - INFO - +------ END KW: FunctionsGlobal.Page WithoutWarningOrFailure (58)
+20201128 01:51:27.569 - INFO - +----- END KW: FunctionsGlobal.Go To Url (916)
+20201128 01:51:27.569 - INFO - +----- START KW: SeleniumLibrary.Page Should Not Contain [ Error signing in user ]
+20201128 01:51:27.570 - DEBUG - Test timeout 2 minutes active. 116.16 seconds left.
+20201128 01:51:27.577 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:27.577 - INFO - Current page does not contain text 'Error signing in user'.
+20201128 01:51:27.577 - INFO - +----- END KW: SeleniumLibrary.Page Should Not Contain (8)
+20201128 01:51:27.578 - INFO - +---- END KW: FunctionsGlobal.Sign In ${USER_1.name} Fast (925)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:27.578 - INFO - +---- START KW: FunctionsGlobal.Go To Url [ ${PAGE_MOVES_EDIT_URL} | moveid=1 ]
+20201128 01:51:27.579 - INFO - +----- START KW: FunctionsGlobal.Got To Url With Param [ ${url} | &{params} ]
+20201128 01:51:27.579 - INFO - +------ START KW: BuiltIn.Replace Variables [ ${url} ]
+20201128 01:51:27.580 - DEBUG - Test timeout 2 minutes active. 116.15 seconds left.
+20201128 01:51:27.580 - INFO - ${url_} = http://localhost:3001/en/moves/1/edit
+20201128 01:51:27.580 - INFO - +------ END KW: BuiltIn.Replace Variables (1)
+20201128 01:51:27.580 - INFO - +------ START KW: SeleniumLibrary.Go To [ ${url_} ]
+20201128 01:51:27.580 - DEBUG - Test timeout 2 minutes active. 116.149 seconds left.
+20201128 01:51:27.580 - INFO - Opening url 'http://localhost:3001/en/moves/1/edit'
+20201128 01:51:27.999 - INFO - +------ END KW: SeleniumLibrary.Go To (419)
+20201128 01:51:27.999 - INFO - +----- END KW: FunctionsGlobal.Got To Url With Param (420)
+20201128 01:51:27.999 - INFO - +----- START KW: FunctionsGlobal.Page WithoutWarningOrFailure [ ]
+20201128 01:51:28.000 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Warning: ]
+20201128 01:51:28.001 - DEBUG - Test timeout 2 minutes active. 115.729 seconds left.
+20201128 01:51:28.143 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:28.143 - INFO - Current page does not contain text 'Warning:'.
+20201128 01:51:28.144 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (144)
+20201128 01:51:28.144 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Failed ]
+20201128 01:51:28.144 - DEBUG - Test timeout 2 minutes active. 115.586 seconds left.
+20201128 01:51:28.164 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:28.164 - INFO - Current page does not contain text 'Failed'.
+20201128 01:51:28.165 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (21)
+20201128 01:51:28.165 - INFO - +------ START KW: SeleniumLibrary.Page Should Not Contain [ Internal Server Error ]
+20201128 01:51:28.165 - DEBUG - Test timeout 2 minutes active. 115.565 seconds left.
+20201128 01:51:28.176 - DEBUG - Current frame has 0 subframes.
+20201128 01:51:28.177 - INFO - Current page does not contain text 'Internal Server Error'.
+20201128 01:51:28.177 - INFO - +------ END KW: SeleniumLibrary.Page Should Not Contain (12)
+20201128 01:51:28.177 - INFO - +----- END KW: FunctionsGlobal.Page WithoutWarningOrFailure (178)
+20201128 01:51:28.177 - INFO - +---- END KW: FunctionsGlobal.Go To Url (599)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:28.178 - INFO - +---- START KW: SeleniumLibrary.Input Text [ ${MOVE_TRACKING_CODE_INPUT} | ${GEOKRETY_2.tc} ]
+20201128 01:51:28.178 - DEBUG - Test timeout 2 minutes active. 115.552 seconds left.
+20201128 01:51:28.178 - INFO - Typing text 'TC0002' into text field '//*[@id="nr"]'.
+20201128 01:51:28.219 - INFO - +---- END KW: SeleniumLibrary.Input Text (41)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:28.220 - INFO - +---- START KW: FunctionsGlobal.Open Panel [ ${MOVE_ADDITIONAL_DATA_PANEL} ]
+20201128 01:51:28.221 - INFO - +----- START KW: BuiltIn.Run Keyword And Ignore Error [ Panel Is Collapsed | ${element} ]
+20201128 01:51:28.221 - INFO - +------ START KW: FunctionsGlobal.Panel Is Collapsed [ ${element} ]
+20201128 01:51:28.223 - INFO - +------- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and contains(@class, "collapsed")] ]
+20201128 01:51:28.223 - DEBUG - Test timeout 2 minutes active. 115.507 seconds left.
+20201128 01:51:28.232 - INFO - Current page contains element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]'.
+20201128 01:51:28.232 - INFO - +------- END KW: SeleniumLibrary.Page Should Contain Element (9)
+20201128 01:51:28.232 - INFO - +------ END KW: FunctionsGlobal.Panel Is Collapsed (11)
+20201128 01:51:28.232 - INFO - ${status} = PASS
+20201128 01:51:28.233 - INFO - ${value} = None
+20201128 01:51:28.233 - INFO - +----- END KW: BuiltIn.Run Keyword And Ignore Error (12)
+20201128 01:51:28.233 - INFO - +----- START KW: BuiltIn.Run Keyword If [ '${status}' == 'PASS' | Click Element | ${element}/div[contains(@class, "panel-heading")] ]
+20201128 01:51:28.234 - INFO - +------ START KW: SeleniumLibrary.Click Element [ ${element}/div[contains(@class, "panel-heading")] ]
+20201128 01:51:28.234 - DEBUG - Test timeout 2 minutes active. 115.495 seconds left.
+20201128 01:51:28.234 - INFO - Clicking element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading")]'.
+20201128 01:51:28.473 - INFO - +------ END KW: SeleniumLibrary.Click Element (239)
+20201128 01:51:28.474 - INFO - +----- END KW: BuiltIn.Run Keyword If (241)
+20201128 01:51:28.474 - INFO - +----- START KW: SeleniumLibrary.Page Should Contain Element [ ${element}/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))] ]
+20201128 01:51:28.475 - DEBUG - Test timeout 2 minutes active. 115.255 seconds left.
+20201128 01:51:28.481 - INFO - Current page contains element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))]'.
+20201128 01:51:28.481 - INFO - +----- END KW: SeleniumLibrary.Page Should Contain Element (7)
+20201128 01:51:28.481 - INFO - +---- END KW: FunctionsGlobal.Open Panel (261)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:28.481 - INFO - +---- START KW: SeleniumLibrary.Click Button [ ${MOVE_ADDITIONAL_DATA_SUBMIT_BUTTON} ]
+20201128 01:51:28.482 - DEBUG - Test timeout 2 minutes active. 115.248 seconds left.
+20201128 01:51:28.482 - INFO - Clicking button '//*[@id="submitButton"]'.
+20201128 01:51:28.874 - INFO - +---- END KW: SeleniumLibrary.Click Button (392)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20201128 01:51:28.874 - INFO - +---- START KW: SeleniumLibrary.Wait Until Location Is [ ${PAGE_GEOKRETY_2_DETAILS_URL}/page/1\#log1 ]
+20201128 01:51:28.875 - DEBUG - Test timeout 2 minutes active. 114.855 seconds left.
+20201128 01:51:29.805 - INFO - +---- END KW: SeleniumLibrary.Wait Until Location Is (931)
 ------------------------------------------------------------------------------
-20201127 01:50:38.063 - INFO - +--- START TEST: Authenticated User See His Inventory - User 3 - Owned 4 Inventory 4 [ ]
+20201128 01:51:29.821 - INFO - +--- END TEST: Change Tracking Code (6077)
 ------------------------------------------------------------------------------
-20201127 01:50:38.064 - INFO - +---- START KW: RequestsLibrary.Create Session [ geokrety | ${GK_URL} ]
-20201127 01:50:38.065 - DEBUG - Test timeout 2 minutes active. 119.997 seconds left.
-20201127 01:50:38.065 - INFO - Creating Session using : alias=geokrety, url=http://localhost:3001, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0
-20201127 01:50:38.065 - DEBUG - Creating session: geokrety
-20201127 01:50:38.066 - DEBUG - Argument types are:
-<type 'bool'>
-20201127 01:50:38.066 - INFO - +---- END KW: RequestsLibrary.Create Session (2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:38.067 - INFO - +---- START KW: RequestsLibrary.Get On Session [ geokrety | url=/devel/ ]
-20201127 01:50:38.067 - DEBUG - Test timeout 2 minutes active. 119.995 seconds left.
-20201127 01:50:38.234 - INFO - GET Request : url=http://localhost:3001/devel/ (redirected) 
- path_url=/devel/ 
- headers={'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4'} 
- body=None
-20201127 01:50:38.235 - INFO - GET Response : url=http://localhost:3001/devel 
- status=200, reason=OK 
- headers={'Content-Length': '5767', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Fat-Free Framework', 'Expires': 'Thu, 01 Jan 1970 00:00:00 +0000', 'Vary': 'Accept-Encoding', 'Keep-Alive': 'timeout=5, max=99', 'Server': 'Apache/2.4.38 (Debian)', 'Connection': 'Keep-Alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Date': 'Thu, 26 Nov 2020 22:50:38 GMT', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Type': 'text/html; charset=UTF-8', 'Content-Encoding': 'gzip'} 
- body=<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GeoKrety: </title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    
-    
-    
-    
-    
-    
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/bootstrap/3.3.7/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/css/flag-icon.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/parsley.js/2.9.1/parsley.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/magnific-popup/1.1.0/magnific-popup.css"/>
-	<link rel="stylesheet" type="text/css" href="/assets/compressed/33lueja9ajc4c.css?1606429703"/>
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3002/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:3002/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:3002/images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="http://localhost:3002/images/favicon/manifest.json" />
-    <link rel="mask-icon" href="http://localhost:3002/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="http://localhost:3002/images/favicon/favicon.ico" />
-    <meta name="msapplication-config" content="http://localhost:3002/images/favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-</head>
-<body>
-<header>
-    <p class="logo"><a id="home-logo" href="http://localhost:3001/en">Geo<span class="black">Krety</span>.org</a></p>
-    <p class="subline">Open source item tracking for all geocaching platforms</p>
-    <span class="bg"></span>
-    <img class="sun" src="http://localhost:3002/images/header/sun.svg">
-</header>
-    <div class="container">
-        <div class="alert alert-danger" role="alert">
-    <b>This is not the production instance. If you are not a tester, then you probably whish to go to our <a href="https://geokrety.org">production website</a>.</b>
-</div>
-        <div class="alert alert-info alert-dismissible" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    This branch 🥦 is actively developped 👨‍💻, if you find bugs 🐛, please check 👀 <a href="https://github.com/geokrety/geokrety-website/issues" target="_blank">existing issues ♻️ on GitHub <i class="fa fa-github"></i></a> and feel free 🈚 to open new 🆕. (One 1 bug per issue please 🙏)</div>
-                                        
-    <div class="row">
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">Database</div>
-                <div class="panel-body">
-                    <ul>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/reset">Clear database</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/users/seed/1">Seed "1" user</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/users/seed/1/no-terms-of-use">Seed "1" user without terms of use</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/users/1/geokrety/seed/1">Seed "1" GeoKret Owned By user "1"</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/geokrety/seed/1">Seed "1" GeoKret</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/geokrety/1/move/0/seed/1">Seed "1" Drop For GeoKret "1"</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/geokrety/1/move/1/seed/1">Seed "1" Grab For GeoKret "1"</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/waypoint/oc/1">Seed "1" Waypoint OC</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/waypoint/gc/1">Seed "1" Waypoint GC</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/news/seed/1">Seed "1" News</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/devel/db/users/1/avatar/1">Seed "1" Picture</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">Generated</div>
-                <div class="panel-body">
-                    <ul>
-                        <li>
-                            <a href="http://localhost:3001/admin/caches/rebuild/templates">Rebuild all templates</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/admin/gettext/build">Rebuild gettext files</a>
-                        </li>
-                        <li>
-                            <a href="http://localhost:3001/admin/assets/clear">Clear assets</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">…</div>
-                <div class="panel-body">
-                    <ul>
-                        <li>
-                            …
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">…</div>
-                <div class="panel-body">
-                    <ul>
-                        <li>
-                            …
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <div id ="spinner-center" style="top:30%;left:50%;z-index: 3000000000;"></div>
-    </div>
-<footer class="footer">
-    <ul class="footer_bottom_ul">
-        <li><a id="footer-home" href="http://localhost:3001/en">Home</a></li>
-        <li><a id="footer-help" href="http://localhost:3001/en/help#about">About</a></li>
-        <li><a id="footer-news" href="http://localhost:3001/en/news">News</a></li>
-        <li><a id="footer-contact" href="http://localhost:3001/en/contact-us">Contact</a></li>
-    </ul>
-
-    <p class="text-center">
-        Released under <a id="footer-license" href="https://github.com/geokrety/geokrety-website/blob/master/LICENSE">MIT license</a>        |
-        <a id="footer-inlinetranslate" href="/inline-translation/devel?">in-context translation</a>
-    </p>
-    <p class="text-center">
-        Designed with <abbr title="love">💗</abbr> by <a id="footer-team" href="http://localhost:3001/en/hall-of-fame">The GeoKrety Team</a>    </p>
-    <ul class="social_footer_ul text-center">
-        <li><a id="footer-facebook" href="https://www.facebook.com/groups/1624761011150615/about/"><i class="fa fa-facebook"></i></a></li>
-        <li><a id="footer-twitter" href="https://twitter.com/geokrety"><i class="fa fa-twitter"></i></a></li>
-        <li><a id="footer-instagram" href="https://www.instagram.com/explore/tags/geokrety/"><i class="fa fa-instagram"></i></a></li>
-    </ul>
-    <small class="pull-right">
-        <span class="deployment"
-              id="footer-appversion"
-              title="Deployed on 2020-08-07T17:23:35.869127Z" data-deploy-date="2020-08-07T17:23:35.869127Z"
-              data-deploy-version="undef"
-              data-deploy-name="new-theme"
-              data-deploy-environment="dev">GK undef - new-theme.dev on dd67971b78c0</span>&nbsp;
-    </small>
-</footer>
-<nav class="navbar-inverse navbar-fixed-top sidebarNavigation" data-sidebarClass="navbar-inverse">
-    <div class="container-fluid">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed left-navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="navbar-brand" href="http://localhost:3001/en">GeoKrety.org</a>
-
-            <div class="pull-right hidden-sm hidden-md hidden-lg">
-                                <p class="navbar-btn">
-                <div class="btn-group" role="group">
-                                                            <a id="navbar-profile-login-sm" href="http://localhost:3001/en/login?goto=devel_home&amp;params=YToxOntpOjA7czo2OiIvZGV2ZWwiO30%253D&amp;query=YTowOnt9" class="btn btn-info" data-toggle="modal" data-target="#modal" data-type="form-login">
-                        <i class="fa fa-sign-in"></i> Sign in                    </a>
-                </div>
-                </p>
-                                &nbsp;
-            </div>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-                <li><a id="navbar-home" href="http://localhost:3001/en"><span class="glyphicon glyphicon-home" ari... (set the log level to DEBUG or TRACE to see the full content)
-20201127 01:50:38.235 - INFO - ${auth} = <Response [200]>
-20201127 01:50:38.235 - INFO - +---- END KW: RequestsLibrary.Get On Session (168)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:38.235 - INFO - +---- START KW: RequestsLibrary.Get On Session [ geokrety | url=/devel/users/${USER_3.name}/login ]
-20201127 01:50:38.236 - DEBUG - Test timeout 2 minutes active. 119.826 seconds left.
-20201127 01:50:38.973 - INFO - GET Request : url=http://localhost:3001/devel/users/username3/login (redirected) 
- path_url=/devel/users/username3/login 
- headers={'Connection': 'keep-alive', 'Cookie': 'PHPSESSID=651b661c9af2d9ce9b651b3bfd7afc3c', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4'} 
- body=None
-20201127 01:50:38.974 - INFO - GET Response : url=http://localhost:3001/en/users/3 
- status=200, reason=OK 
- headers={'Content-Length': '9996', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Fat-Free Framework', 'Expires': 'Thu, 01 Jan 1970 00:00:00 +0000', 'Vary': 'Accept-Encoding', 'Keep-Alive': 'timeout=5, max=97', 'Server': 'Apache/2.4.38 (Debian)', 'Connection': 'Keep-Alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Date': 'Thu, 26 Nov 2020 22:50:38 GMT', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Type': 'text/html; charset=UTF-8', 'Content-Encoding': 'gzip'} 
- body=<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GeoKrety: username3's user profile</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    
-    
-    
-    
-    
-    
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/leaflet/1.6.0/leaflet.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/strengthify/0.5.8/strengthify.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/inscrybmde/1.11.6/inscrybmde.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/bootstrap/3.3.7/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/css/flag-icon.min.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/parsley.js/2.9.1/parsley.css"/>
-	<link rel="stylesheet" type="text/css" href="http://localhost:3002/libraries/magnific-popup/1.1.0/magnific-popup.css"/>
-	<link rel="stylesheet" type="text/css" href="/assets/compressed/33lueja9ajc4c.css?1606429703"/>
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3002/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:3002/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:3002/images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="http://localhost:3002/images/favicon/manifest.json" />
-    <link rel="mask-icon" href="http://localhost:3002/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="http://localhost:3002/images/favicon/favicon.ico" />
-    <meta name="msapplication-config" content="http://localhost:3002/images/favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-</head>
-<body>
-<header>
-    <p class="logo"><a id="home-logo" href="http://localhost:3001/en">Geo<span class="black">Krety</span>.org</a></p>
-    <p class="subline">Open source item tracking for all geocaching platforms</p>
-    <span class="bg"></span>
-    <img class="sun" src="http://localhost:3002/images/header/sun.svg">
-</header>
-    <div class="container">
-        <div class="alert alert-danger" role="alert">
-    <b>This is not the production instance. If you are not a tester, then you probably whish to go to our <a href="https://geokrety.org">production website</a>.</b>
-</div>
-        <div class="alert alert-info alert-dismissible" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    This branch 🥦 is actively developped 👨‍💻, if you find bugs 🐛, please check 👀 <a href="https://github.com/geokrety/geokrety-website/issues" target="_blank">existing issues ♻️ on GitHub <i class="fa fa-github"></i></a> and feel free 🈚 to open new 🆕. (One 1 bug per issue please 🙏)</div>
-                                <div class="alert alert-success alert-dismissible flash-message" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Welcome on board!
-</div>
-        
-    <div class="row">
-        <div class="col-xs-12 col-md-9">
-            <div id="userAvatar" class="dropzone">
-                <div class="panel panel-default" id="userDetailsPanel">
-    <div class="panel-heading">
-        <img id="userDetailsTypeIcon" src="http://localhost:3002/images/log-icons/2/icon_25.jpg" width="25" height="25" data-gk-type="" />
-        <a href="/en/users/3" data-gk-link="user" data-gk-id="3" title="View username3's profile">username3</a>
-        <div class="btn-group pull-right" role="group">
-                        <a id="userRssFeedButton" class="btn btn-warning btn-xs" href="http://localhost:3001/en/users/3/georss" title="Subscribe to RSS channel">
-                <i class="fa fa-rss"></i>
-            </a>
-                        <a id="userPasswordChangeButton" class="btn btn-info btn-xs" href="#" title="Password change" data-toggle="modal" data-target="#modal" data-type="user-update-password">
-                <i class="fa fa-key"></i>
-            </a>
-            <button id="userAvatarUploadButton" class="btn btn-success btn-xs" title="Upload a picture">
-                <i class="fa fa-plus"></i>&nbsp;<i class="fa fa-picture-o"></i>
-            </button>
-                    </div>
-        <div class="clearfix"></div>
-    </div>
-    <div class="panel-body">
-
-        <div class="pull-left">
-            <dl class="dl-horizontal">
-                <dt>Joined us</dt>
-                <dd class="user-join-on-datetime"><span data-datetime="2020-11-26T22:50:35+00:00" title="2020-11-26T22:50:35+00:00">3 seconds ago</span></dd>
-                <dt>Language</dt>
-                <dd class="user-language">
-                    English                                        <div class="btn-group pull-right" role="group">
-                        <button id="userLanguageUpdateButton" type="button" class="btn btn-warning btn-xs" title="Choose preferred language" data-toggle="modal" data-target="#modal" data-type="user-choose-language">
-                            <i class="fa fa-pencil"></i>
-                        </button>
-                    </div>
-                                    </dd>
-                                <dt>Email</dt>
-                <dd class="user-email">
-                                        username3+qa@geokrety.org
-                                        <div class="btn-group pull-right" role="group">
-                        <button id="userEmailUpdateButton" type="button" class="btn btn-warning btn-xs" title="Update email address" data-toggle="modal" data-target="#modal" data-type="user-update-email">
-                            <i class="fa fa-pencil"></i>
-                        </button>
-                    </div>
-                </dd>
-                <dt>Secid</dt>
-                <dd class="user-secid">
-                    <div class="input-group">
-                        <input class="form-control input-sm" type="text" id="secid" value="pyyHA5ZISwYvUHgcq15ySyig1xwuEj9pLefNgf0lgg" title="Used to authenticate in other applications. Keep it secret!" readonly>
-                        <a id="userSecidUpdateButton" class="btn btn-warning btn-xs input-group-addon" href="" title="Generate a new secid" data-toggle="modal" data-target="#modal" data-type="user-refresh-secid">
-                            <i class="fa fa-refresh"></i>
-                        </a>
-                    </div>
-                </dd>
-                            </dl>
-
-            <p>
-                            To change your username or remove your account? Send us <a href="http://localhost:3001/en/contact-us">an email</a>!                        </p>
-        </div>
-
-        <div class="gallery pull-right">
-            <div class="gallery">
-    <figure>
-        <div class="parent">
-            <div class="image-container">
-                                        <img src="/assets/images/the-mole-grey.svg">
-                            </div>
-        </div>
-        <figcaption></figcaption>
-    </figure>
-</div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-
-</div>
-                <a class="anchor" id="user-avatars-list"></a>
-<div id="userPicturesList" class="panel panel-default hidden picturesList">
-    <div class="panel-body">
-        <div class="gallery">
-                    </div>
-    </div>
-</div>
-            </div>
-            <div class="panel panel-default" id="userAwardsPanel">
-  <div class="panel-heading">
-    Awards  </div>
-  <div class="panel-body">
-
-    <p class="geokrety-created">
-      username3 has created <strong>4</strong> GeoKrety, which travelled <strong>0</strong> km.    </p>
-    <span class="created-awards">
-        <img src="http://localhost:3002/images/medals/medal-1-1.png" title="Award for 1 GeoKrety" />
-        </span>
-
-    <p class="geokrety-moved">
-      username3 has moved <strong>0</strong> GeoKrety on a total distance of <strong>0</strong> km.    </p>
-    <span class="move-awards">
-        </span>
-
-  </div>
-</div>
-            <div class="panel panel-default">
-  <div class="panel-heading">
-    Badges  </div>
-  <div class="panel-body">
-        <em>No badge received yet.</em>
-      </div>
-</div>
-        </div>
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-default">
-    <a href="http://localhost:3001/en/geokrety/create" id="userProfileCreateGeokretButton" class="btn btn-success btn-block"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create a new GeoKret</a>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-body">
-        <ul class="links">
-            <li>
-                <i class="fa fa-briefcase"></i>
-                <a href="http://localhost:3001/en/users/3/inventory">View inventory</a>
-            </li>
-            <li>
-                <i class="fa fa-bolt"></i>
-                <a href="http://localhost:3001/en/users/3/owned-geokrety">Owned GeoKrety</a>
-            </li>
-            <li>
-                <i class="fa fa-bolt"></i>
-                <a href="http://localhost:3001/en/users/3/watched-geokrety">Watched GeoKrety</a>
-            </li>
-            <li>
-                <i class="fa fa-plane"></i>
-                <a href="http://localhost:3001/en/users/3/recent-moves">Recently posted moves</a>
-            </li>
-            <li>
-                <i class="fa fa-plane"></i>
-                <a href="http://localhost:3001/en/users/3/owned/recent-moves">Moves of owned GeoKrety</a>
-            </li>
-            <li>
-                <i class="fa fa-picture-o"></i>
-          ... (set the log level to DEBUG or TRACE to see the full content)
-20201127 01:50:38.975 - INFO - ${auth} = <Response [200]>
-20201127 01:50:38.976 - INFO - +---- END KW: RequestsLibrary.Get On Session (740)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:38.976 - INFO - +---- START KW: RequestsLibrary.Get On Session [ geokrety | url=/gkt/inventory_v3.php ]
-20201127 01:50:38.977 - DEBUG - Test timeout 2 minutes active. 119.085 seconds left.
-20201127 01:50:39.221 - INFO - GET Request : url=http://localhost:3001/gkt/inventory_v3.php (redirected) 
- path_url=/gkt/inventory_v3.php 
- headers={'Connection': 'keep-alive', 'Cookie': 'gkt_on_behalf=3864a764e3149ddde5be36d3fe4e254b; PHPSESSID=651b661c9af2d9ce9b651b3bfd7afc3c', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4'} 
- body=None
-20201127 01:50:39.221 - INFO - GET Response : url=http://localhost:3001/gkt/v3/inventory 
- status=200, reason=OK 
- headers={'Content-Length': '158', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Fat-Free Framework', 'Expires': 'Thu, 01 Jan 1970 00:00:00 +0000', 'Keep-Alive': 'timeout=5, max=95', 'Server': 'Apache/2.4.38 (Debian)', 'Connection': 'Keep-Alive', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Date': 'Thu, 26 Nov 2020 22:50:39 GMT', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Type': 'application/json'} 
- body={"loggedin":true,"list":[{"tc":"TC0007","n":"geokrety07"},{"tc":"TC0006","n":"geokrety06"},{"tc":"TC0005","n":"geokrety05"},{"tc":"TC0004","n":"geokrety04"}]}
-20201127 01:50:39.222 - INFO - ${resp} = <Response [200]>
-20201127 01:50:39.222 - INFO - +---- END KW: RequestsLibrary.Get On Session (246)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.223 - INFO - +---- START KW: BuiltIn.Should Not Be Empty [ ${resp.content} ]
-20201127 01:50:39.223 - DEBUG - Test timeout 2 minutes active. 118.839 seconds left.
-20201127 01:50:39.223 - INFO - Length is 158
-20201127 01:50:39.224 - INFO - +---- END KW: BuiltIn.Should Not Be Empty (1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.224 - INFO - +---- START KW: JSONLibrary.Convert String to JSON [ ${resp.content} ]
-20201127 01:50:39.224 - DEBUG - Test timeout 2 minutes active. 118.838 seconds left.
-20201127 01:50:39.225 - INFO - ${json} = {u'loggedin': True, u'list': [{u'tc': u'TC0007', u'n': u'geokrety07'}, {u'tc': u'TC0006', u'n': u'geokrety06'}, {u'tc': u'TC0005', u'n': u'geokrety05'}, {u'tc': u'TC0004', u'n': u'geokrety04'}]}
-20201127 01:50:39.225 - INFO - +---- END KW: JSONLibrary.Convert String to JSON (1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.225 - INFO - +---- START KW: JSONLibrary.Get Value From Json [ ${json} | $.loggedin ]
-20201127 01:50:39.225 - DEBUG - Test timeout 2 minutes active. 118.837 seconds left.
-20201127 01:50:39.262 - INFO - ${value} = [True]
-20201127 01:50:39.262 - INFO - +---- END KW: JSONLibrary.Get Value From Json (37)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.263 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${value[0]} | ${TRUE} ]
-20201127 01:50:39.263 - DEBUG - Test timeout 2 minutes active. 118.799 seconds left.
-20201127 01:50:39.264 - DEBUG - Argument types are:
-<type 'bool'>
-<type 'bool'>
-20201127 01:50:39.264 - INFO - +---- END KW: BuiltIn.Should Be Equal (1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.264 - INFO - +---- START KW: JSONLibrary.Get Value From Json [ ${json} | $.list ]
-20201127 01:50:39.265 - DEBUG - Test timeout 2 minutes active. 118.797 seconds left.
-20201127 01:50:39.295 - INFO - ${value} = [[{u'tc': u'TC0007', u'n': u'geokrety07'}, {u'tc': u'TC0006', u'n': u'geokrety06'}, {u'tc': u'TC0005', u'n': u'geokrety05'}, {u'tc': u'TC0004', u'n': u'geokrety04'}]]
-20201127 01:50:39.295 - INFO - +---- END KW: JSONLibrary.Get Value From Json (31)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.295 - INFO - +---- START KW: BuiltIn.Length Should Be [ ${value[0]} | 4 ]
-20201127 01:50:39.296 - DEBUG - Test timeout 2 minutes active. 118.766 seconds left.
-20201127 01:50:39.296 - INFO - Length is 4
-20201127 01:50:39.297 - INFO - +---- END KW: BuiltIn.Length Should Be (2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.297 - INFO - +---- START KW: JSONLibrary.Get Value From Json [ ${json} | $.list[0].tc ]
-20201127 01:50:39.297 - DEBUG - Test timeout 2 minutes active. 118.765 seconds left.
-20201127 01:50:39.383 - INFO - ${value} = [u'TC0007']
-20201127 01:50:39.383 - INFO - +---- END KW: JSONLibrary.Get Value From Json (86)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20201127 01:50:39.384 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${value[0]} | ${GEOKRETY_4.tc} ]
-20201127 01:50:39.384 - DEBUG - Test timeout 2 minutes active. 118.678 seconds left.
-20201127 01:50:39.384 - DEBUG - Argument types are:
-<type 'unicode'>
-<type 'unicode'>
-20201127 01:50:39.384 - FAIL - TC0007 != TC0004
-20201127 01:50:39.385 - DEBUG - Traceback (most recent call last):
-  None
-20201127 01:50:39.385 - INFO - +---- END KW: BuiltIn.Should Be Equal (1)
-------------------------------------------------------------------------------
-20201127 01:50:39.385 - INFO - +--- END TEST: Authenticated User See His Inventory - User 3 - Owned 4 Inventory 4 (1323)
-------------------------------------------------------------------------------
-20201127 01:50:39.388 - INFO - +-- END SUITE: Acceptance.300 LegacyBridges.190 Json Gkt Inventory V3 (5677)
+20201128 01:51:29.836 - INFO - +-- END SUITE: Acceptance.110 Moves.205 MoveEdit (6241)
 ==============================================================================
-20201127 01:50:39.389 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
-20201127 01:50:39.389 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
-20201127 01:50:39.390 - DEBUG - Closing browser with session id d3b19422-cc52-446d-9d19-0e8337cc2dfa.
-20201127 01:50:39.964 - INFO - +--- END KW: SeleniumLibrary.Close Browser (575)
-20201127 01:50:39.964 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (575)
+20201128 01:51:29.843 - INFO - +-- START TEARDOWN: FunctionsGlobal.Global TearDown [ ]
+20201128 01:51:29.845 - INFO - +--- START KW: SeleniumLibrary.Close Browser [ ]
+20201128 01:51:29.845 - DEBUG - Closing browser with session id 06abe061-8e53-4c7d-8dc8-213bd5b7e4fb.
+20201128 01:51:30.550 - INFO - +--- END KW: SeleniumLibrary.Close Browser (705)
+20201128 01:51:30.550 - INFO - +-- END TEARDOWN: FunctionsGlobal.Global TearDown (712)
 ==============================================================================
-20201127 01:50:39.967 - INFO - +- END SUITE: Acceptance.300 LegacyBridges (10808562)
+20201128 01:51:30.554 - INFO - +- END SUITE: Acceptance.110 Moves (9223)
 ==============================================================================
-20201127 01:50:39.969 - INFO - + END SUITE: Acceptance (10808581)
+20201128 01:51:30.561 - INFO - + END SUITE: Acceptance (10817768)
 ==============================================================================
