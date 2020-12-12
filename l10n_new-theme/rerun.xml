@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20201212 20:03:51.091" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
+<robot rpa="false" generated="20201212 20:05:08.456" generator="Robot 3.2.1 (Python 2.7.17 on linux2)">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance" id="s1" name="Acceptance">
 <suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot" id="s1-s1" name="060 UserAvatar.robot">
 <kw type="setup" name="Global Setup" library="FunctionsGlobal">
@@ -33,8 +33,8 @@
 <arguments>
 <arg>Open Browser Firefox</arg>
 </arguments>
-<msg timestamp="20201212 20:03:51.322" level="INFO">Open Browser Firefox</msg>
-<status status="PASS" endtime="20201212 20:03:51.323" starttime="20201212 20:03:51.322"></status>
+<msg timestamp="20201212 20:05:08.692" level="INFO">Open Browser Firefox</msg>
+<status status="PASS" endtime="20201212 20:05:08.692" starttime="20201212 20:05:08.692"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -45,8 +45,8 @@
 <assign>
 <var>${firefox_options}</var>
 </assign>
-<msg timestamp="20201212 20:03:51.324" level="INFO">${firefox_options} = &lt;selenium.webdriver.firefox.options.Options object at 0x7fd0511c6210&gt;</msg>
-<status status="PASS" endtime="20201212 20:03:51.324" starttime="20201212 20:03:51.323"></status>
+<msg timestamp="20201212 20:05:08.692" level="INFO">${firefox_options} = &lt;selenium.webdriver.firefox.options.Options object at 0x7fa30730f650&gt;</msg>
+<status status="PASS" endtime="20201212 20:05:08.692" starttime="20201212 20:05:08.692"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -64,9 +64,9 @@
 <arg>add_argument</arg>
 <arg>-headless</arg>
 </arguments>
-<status status="PASS" endtime="20201212 20:03:51.325" starttime="20201212 20:03:51.325"></status>
+<status status="PASS" endtime="20201212 20:05:08.693" starttime="20201212 20:05:08.693"></status>
 </kw>
-<status status="PASS" endtime="20201212 20:03:51.325" starttime="20201212 20:03:51.324"></status>
+<status status="PASS" endtime="20201212 20:05:08.693" starttime="20201212 20:05:08.693"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -77,8 +77,8 @@
 <assign>
 <var>${dc}</var>
 </assign>
-<msg timestamp="20201212 20:03:51.326" level="INFO">${dc} = {'acceptInsecureCerts': True, 'browserName': 'firefox', 'marionette': True}</msg>
-<status status="PASS" endtime="20201212 20:03:51.326" starttime="20201212 20:03:51.326"></status>
+<msg timestamp="20201212 20:05:08.694" level="INFO">${dc} = {'acceptInsecureCerts': True, 'browserName': 'firefox', 'marionette': True}</msg>
+<status status="PASS" endtime="20201212 20:05:08.694" starttime="20201212 20:05:08.693"></status>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -86,7 +86,7 @@
 <arg>${dc}</arg>
 <arg>strictFileInteractability=${FALSE}</arg>
 </arguments>
-<status status="PASS" endtime="20201212 20:03:51.327" starttime="20201212 20:03:51.326"></status>
+<status status="PASS" endtime="20201212 20:05:08.694" starttime="20201212 20:05:08.694"></status>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -94,7 +94,7 @@
 <arg>${dc}</arg>
 <arg>timezone=UTC-05:00</arg>
 </arguments>
-<status status="PASS" endtime="20201212 20:03:51.327" starttime="20201212 20:03:51.327"></status>
+<status status="PASS" endtime="20201212 20:05:08.695" starttime="20201212 20:05:08.694"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -103,12 +103,12 @@
 <arg>firefox_options=${firefox options}</arg>
 <arg>desired_capabilities=${dc}</arg>
 </arguments>
-<msg timestamp="20201212 20:03:51.328" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
-<status status="PASS" endtime="20201212 23:03:53.621" starttime="20201212 20:03:51.327"></status>
+<msg timestamp="20201212 20:05:08.695" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" endtime="20201212 23:05:10.971" starttime="20201212 20:05:08.695"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:53.622" starttime="20201212 20:03:51.321"></status>
+<status status="PASS" endtime="20201212 23:05:10.971" starttime="20201212 20:05:08.691"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:53.622" starttime="20201212 20:03:51.321"></status>
+<status status="PASS" endtime="20201212 23:05:10.971" starttime="20201212 20:05:08.691"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -116,11 +116,11 @@
 <arg>"${browser}"=="Chrome"</arg>
 <arg>!Open GeoKrety Browser Chrome</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:03:53.623" starttime="20201212 23:03:53.623"></status>
+<status status="PASS" endtime="20201212 23:05:10.973" starttime="20201212 23:05:10.972"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:53.624" starttime="20201212 20:03:51.320"></status>
+<status status="PASS" endtime="20201212 23:05:10.973" starttime="20201212 20:05:08.690"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:53.624" starttime="20201212 20:03:51.319"></status>
+<status status="PASS" endtime="20201212 23:05:10.973" starttime="20201212 20:05:08.687"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -128,14 +128,14 @@
 <arg>1280</arg>
 <arg>1024</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:03:53.662" starttime="20201212 23:03:53.624"></status>
+<status status="PASS" endtime="20201212 23:05:11.005" starttime="20201212 23:05:10.974"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:53.662" starttime="20201212 20:03:51.318"></status>
+<status status="PASS" endtime="20201212 23:05:11.006" starttime="20201212 20:05:08.685"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:53.663" starttime="20201212 20:03:51.318"></status>
+<status status="PASS" endtime="20201212 23:05:11.006" starttime="20201212 20:05:08.683"></status>
 </kw>
-<suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/050_DeletePicture.robot" id="s1-s1-s1" name="050 DeletePicture">
-<test id="s1-s1-s1-t1" name="Delete 1 picture should leave other present">
+<suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/060_ShowOnHomepage.robot" id="s1-s1-s1" name="060 ShowOnHomepage">
+<test id="s1-s1-s1-t1" name="Should be shown on Homepage">
 <kw type="setup" name="Clear DB And Seed 1 users" library="FunctionsGlobal">
 <kw name="Clear Database" library="FunctionsGlobal">
 <kw name="Go To Url" library="FunctionsGlobal">
@@ -155,18 +155,18 @@
 <assign>
 <var>${url_}</var>
 </assign>
-<msg timestamp="20201212 23:03:53.761" level="INFO">${url_} = http://localhost:3001/devel/db/reset</msg>
-<status status="PASS" endtime="20201212 23:03:53.762" starttime="20201212 23:03:53.761"></status>
+<msg timestamp="20201212 23:05:11.084" level="INFO">${url_} = http://localhost:3001/devel/db/reset</msg>
+<status status="PASS" endtime="20201212 23:05:11.084" starttime="20201212 23:05:11.084"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url_}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:53.762" level="INFO">Opening url 'http://localhost:3001/devel/db/reset'</msg>
-<status status="PASS" endtime="20201212 23:03:54.137" starttime="20201212 23:03:53.762"></status>
+<msg timestamp="20201212 23:05:11.084" level="INFO">Opening url 'http://localhost:3001/devel/db/reset'</msg>
+<status status="PASS" endtime="20201212 23:05:11.444" starttime="20201212 23:05:11.084"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.137" starttime="20201212 23:03:53.759"></status>
+<status status="PASS" endtime="20201212 23:05:11.445" starttime="20201212 23:05:11.083"></status>
 </kw>
 <kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
@@ -174,38 +174,38 @@
 <arguments>
 <arg>Warning:</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.172" level="INFO">Current page does not contain text 'Warning:'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.172" starttime="20201212 23:03:54.139"></status>
+<msg timestamp="20201212 23:05:11.482" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:11.483" starttime="20201212 23:05:11.446"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Failed</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.187" level="INFO">Current page does not contain text 'Failed'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.187" starttime="20201212 23:03:54.172"></status>
+<msg timestamp="20201212 23:05:11.500" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:11.500" starttime="20201212 23:05:11.483"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Internal Server Error</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.206" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.206" starttime="20201212 23:03:54.187"></status>
+<msg timestamp="20201212 23:05:11.513" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:11.513" starttime="20201212 23:05:11.501"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.206" starttime="20201212 23:03:54.138"></status>
+<status status="PASS" endtime="20201212 23:05:11.514" starttime="20201212 23:05:11.445"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.206" starttime="20201212 23:03:53.758"></status>
+<status status="PASS" endtime="20201212 23:05:11.514" starttime="20201212 23:05:11.082"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>OK</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.215" level="INFO">Current page contains text 'OK'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.215" starttime="20201212 23:03:54.207"></status>
+<msg timestamp="20201212 23:05:11.521" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" endtime="20201212 23:05:11.522" starttime="20201212 23:05:11.514"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.215" starttime="20201212 23:03:53.757"></status>
+<status status="PASS" endtime="20201212 23:05:11.522" starttime="20201212 23:05:11.081"></status>
 </kw>
 <kw name="Go To Url" library="FunctionsGlobal">
 <arguments>
@@ -224,18 +224,18 @@
 <assign>
 <var>${url_}</var>
 </assign>
-<msg timestamp="20201212 23:03:54.217" level="INFO">${url_} = http://localhost:3001/devel/db/users/seed/1</msg>
-<status status="PASS" endtime="20201212 23:03:54.217" starttime="20201212 23:03:54.217"></status>
+<msg timestamp="20201212 23:05:11.527" level="INFO">${url_} = http://localhost:3001/devel/db/users/seed/1</msg>
+<status status="PASS" endtime="20201212 23:05:11.527" starttime="20201212 23:05:11.526"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url_}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.220" level="INFO">Opening url 'http://localhost:3001/devel/db/users/seed/1'</msg>
-<status status="PASS" endtime="20201212 23:03:54.758" starttime="20201212 23:03:54.218"></status>
+<msg timestamp="20201212 23:05:11.530" level="INFO">Opening url 'http://localhost:3001/devel/db/users/seed/1'</msg>
+<status status="PASS" endtime="20201212 23:05:12.080" starttime="20201212 23:05:11.527"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.759" starttime="20201212 23:03:54.216"></status>
+<status status="PASS" endtime="20201212 23:05:12.081" starttime="20201212 23:05:11.524"></status>
 </kw>
 <kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
@@ -243,28 +243,28 @@
 <arguments>
 <arg>Warning:</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.786" level="INFO">Current page does not contain text 'Warning:'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.786" starttime="20201212 23:03:54.760"></status>
+<msg timestamp="20201212 23:05:12.106" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:12.106" starttime="20201212 23:05:12.083"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Failed</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.796" level="INFO">Current page does not contain text 'Failed'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.797" starttime="20201212 23:03:54.787"></status>
+<msg timestamp="20201212 23:05:12.115" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:12.115" starttime="20201212 23:05:12.106"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Internal Server Error</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.804" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
-<status status="PASS" endtime="20201212 23:03:54.805" starttime="20201212 23:03:54.797"></status>
+<msg timestamp="20201212 23:05:12.124" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:12.124" starttime="20201212 23:05:12.115"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.805" starttime="20201212 23:03:54.759"></status>
+<status status="PASS" endtime="20201212 23:05:12.124" starttime="20201212 23:05:12.082"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:54.805" starttime="20201212 23:03:54.215"></status>
+<status status="PASS" endtime="20201212 23:05:12.124" starttime="20201212 23:05:11.522"></status>
 </kw>
 <kw name="Empty Dev Mailbox Fast" library="FunctionsGlobal">
 <kw name="Go To Url" library="FunctionsGlobal">
@@ -284,18 +284,18 @@
 <assign>
 <var>${url_}</var>
 </assign>
-<msg timestamp="20201212 23:03:54.807" level="INFO">${url_} = http://localhost:3001/devel/mail/delete/all</msg>
-<status status="PASS" endtime="20201212 23:03:54.807" starttime="20201212 23:03:54.807"></status>
+<msg timestamp="20201212 23:05:12.127" level="INFO">${url_} = http://localhost:3001/devel/mail/delete/all</msg>
+<status status="PASS" endtime="20201212 23:05:12.127" starttime="20201212 23:05:12.126"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url_}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:54.808" level="INFO">Opening url 'http://localhost:3001/devel/mail/delete/all'</msg>
-<status status="PASS" endtime="20201212 23:03:55.233" starttime="20201212 23:03:54.807"></status>
+<msg timestamp="20201212 23:05:12.127" level="INFO">Opening url 'http://localhost:3001/devel/mail/delete/all'</msg>
+<status status="PASS" endtime="20201212 23:05:12.564" starttime="20201212 23:05:12.127"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:55.234" starttime="20201212 23:03:54.806"></status>
+<status status="PASS" endtime="20201212 23:05:12.564" starttime="20201212 23:05:12.126"></status>
 </kw>
 <kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
@@ -303,32 +303,32 @@
 <arguments>
 <arg>Warning:</arg>
 </arguments>
-<msg timestamp="20201212 23:03:55.259" level="INFO">Current page does not contain text 'Warning:'.</msg>
-<status status="PASS" endtime="20201212 23:03:55.260" starttime="20201212 23:03:55.235"></status>
+<msg timestamp="20201212 23:05:12.583" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:12.583" starttime="20201212 23:05:12.565"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Failed</arg>
 </arguments>
-<msg timestamp="20201212 23:03:55.271" level="INFO">Current page does not contain text 'Failed'.</msg>
-<status status="PASS" endtime="20201212 23:03:55.271" starttime="20201212 23:03:55.260"></status>
+<msg timestamp="20201212 23:05:12.595" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:12.595" starttime="20201212 23:05:12.583"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Internal Server Error</arg>
 </arguments>
-<msg timestamp="20201212 23:03:55.283" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
-<status status="PASS" endtime="20201212 23:03:55.283" starttime="20201212 23:03:55.271"></status>
+<msg timestamp="20201212 23:05:12.604" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:12.604" starttime="20201212 23:05:12.595"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:55.283" starttime="20201212 23:03:55.234"></status>
+<status status="PASS" endtime="20201212 23:05:12.605" starttime="20201212 23:05:12.565"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:55.283" starttime="20201212 23:03:54.806"></status>
+<status status="PASS" endtime="20201212 23:05:12.605" starttime="20201212 23:05:12.125"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:55.283" starttime="20201212 23:03:54.805"></status>
+<status status="PASS" endtime="20201212 23:05:12.605" starttime="20201212 23:05:12.125"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:55.283" starttime="20201212 23:03:53.756"></status>
+<status status="PASS" endtime="20201212 23:05:12.605" starttime="20201212 23:05:11.080"></status>
 </kw>
 <kw name="Sign In ${USER_1.name} Fast" library="FunctionsGlobal">
 <doc>Login user using special url (doesn't use login form)</doc>
@@ -350,18 +350,18 @@
 <assign>
 <var>${url_}</var>
 </assign>
-<msg timestamp="20201212 23:03:55.287" level="INFO">${url_} = http://localhost:3001/devel/users/username1/login</msg>
-<status status="PASS" endtime="20201212 23:03:55.287" starttime="20201212 23:03:55.286"></status>
+<msg timestamp="20201212 23:05:12.608" level="INFO">${url_} = http://localhost:3001/devel/users/username1/login</msg>
+<status status="PASS" endtime="20201212 23:05:12.608" starttime="20201212 23:05:12.608"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url_}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:55.287" level="INFO">Opening url 'http://localhost:3001/devel/users/username1/login'</msg>
-<status status="PASS" endtime="20201212 23:03:55.981" starttime="20201212 23:03:55.287"></status>
+<msg timestamp="20201212 23:05:12.609" level="INFO">Opening url 'http://localhost:3001/devel/users/username1/login'</msg>
+<status status="PASS" endtime="20201212 23:05:13.289" starttime="20201212 23:05:12.608"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:55.981" starttime="20201212 23:03:55.285"></status>
+<status status="PASS" endtime="20201212 23:05:13.290" starttime="20201212 23:05:12.607"></status>
 </kw>
 <kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
@@ -369,38 +369,38 @@
 <arguments>
 <arg>Warning:</arg>
 </arguments>
-<msg timestamp="20201212 23:03:56.030" level="INFO">Current page does not contain text 'Warning:'.</msg>
-<status status="PASS" endtime="20201212 23:03:56.030" starttime="20201212 23:03:55.982"></status>
+<msg timestamp="20201212 23:05:13.339" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:13.340" starttime="20201212 23:05:13.291"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Failed</arg>
 </arguments>
-<msg timestamp="20201212 23:03:56.046" level="INFO">Current page does not contain text 'Failed'.</msg>
-<status status="PASS" endtime="20201212 23:03:56.046" starttime="20201212 23:03:56.031"></status>
+<msg timestamp="20201212 23:05:13.356" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:13.357" starttime="20201212 23:05:13.340"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Internal Server Error</arg>
 </arguments>
-<msg timestamp="20201212 23:03:56.056" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
-<status status="PASS" endtime="20201212 23:03:56.057" starttime="20201212 23:03:56.046"></status>
+<msg timestamp="20201212 23:05:13.366" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:13.366" starttime="20201212 23:05:13.357"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:56.057" starttime="20201212 23:03:55.981"></status>
+<status status="PASS" endtime="20201212 23:05:13.367" starttime="20201212 23:05:13.290"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:56.057" starttime="20201212 23:03:55.285"></status>
+<status status="PASS" endtime="20201212 23:05:13.367" starttime="20201212 23:05:12.606"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Error signing in user</arg>
 </arguments>
-<msg timestamp="20201212 23:03:56.067" level="INFO">Current page does not contain text 'Error signing in user'.</msg>
-<status status="PASS" endtime="20201212 23:03:56.067" starttime="20201212 23:03:56.057"></status>
+<msg timestamp="20201212 23:05:13.381" level="INFO">Current page does not contain text 'Error signing in user'.</msg>
+<status status="PASS" endtime="20201212 23:05:13.381" starttime="20201212 23:05:13.367"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:56.067" starttime="20201212 23:03:55.284"></status>
+<status status="PASS" endtime="20201212 23:05:13.381" starttime="20201212 23:05:12.605"></status>
 </kw>
 <kw name="Upload user avatar via button" library="Images">
 <arguments>
@@ -413,8 +413,8 @@
 <arguments>
 <arg>${user_profile_url}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:56.069" level="INFO">Opening url 'http://localhost:3001/en/users/1'</msg>
-<status status="PASS" endtime="20201212 23:03:56.653" starttime="20201212 23:03:56.068"></status>
+<msg timestamp="20201212 23:05:13.382" level="INFO">Opening url 'http://localhost:3001/en/users/1'</msg>
+<status status="PASS" endtime="20201212 23:05:13.965" starttime="20201212 23:05:13.382"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -422,7 +422,7 @@
 <arg>${USER_PROFILE_DROPZONE_PICTURE_UPLOAD_BUTTON}</arg>
 <arg>timeout=30</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:03:56.672" starttime="20201212 23:03:56.654"></status>
+<status status="PASS" endtime="20201212 23:05:13.985" starttime="20201212 23:05:13.966"></status>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
@@ -430,8 +430,8 @@
 <arg>//*[@type="file"]</arg>
 <arg>${file}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:56.673" level="INFO">Sending /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture.png to browser.</msg>
-<status status="PASS" endtime="20201212 23:03:56.724" starttime="20201212 23:03:56.673"></status>
+<msg timestamp="20201212 23:05:13.986" level="INFO">Sending /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture.png to browser.</msg>
+<status status="PASS" endtime="20201212 23:05:14.036" starttime="20201212 23:05:13.985"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -446,9 +446,9 @@
 <arg>${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX}</arg>
 <arg>timeout=30</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:03:57.168" starttime="20201212 23:03:56.725"></status>
+<status status="PASS" endtime="20201212 23:05:14.457" starttime="20201212 23:05:14.037"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:57.168" starttime="20201212 23:03:56.724"></status>
+<status status="PASS" endtime="20201212 23:05:14.457" starttime="20201212 23:05:14.036"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -456,9 +456,9 @@
 <arg>${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSED_SUFFIX}</arg>
 <arg>timeout=30</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:03:59.471" starttime="20201212 23:03:57.168"></status>
+<status status="PASS" endtime="20201212 23:05:16.720" starttime="20201212 23:05:14.458"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:03:59.471" starttime="20201212 23:03:56.068"></status>
+<status status="PASS" endtime="20201212 23:05:16.720" starttime="20201212 23:05:13.381"></status>
 </kw>
 <kw name="Upload user avatar via button" library="Images">
 <arguments>
@@ -471,8 +471,8 @@
 <arguments>
 <arg>${user_profile_url}</arg>
 </arguments>
-<msg timestamp="20201212 23:03:59.473" level="INFO">Opening url 'http://localhost:3001/en/users/1'</msg>
-<status status="PASS" endtime="20201212 23:04:00.283" starttime="20201212 23:03:59.473"></status>
+<msg timestamp="20201212 23:05:16.722" level="INFO">Opening url 'http://localhost:3001/en/users/1'</msg>
+<status status="PASS" endtime="20201212 23:05:17.463" starttime="20201212 23:05:16.722"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -480,7 +480,7 @@
 <arg>${USER_PROFILE_DROPZONE_PICTURE_UPLOAD_BUTTON}</arg>
 <arg>timeout=30</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:04:00.307" starttime="20201212 23:04:00.284"></status>
+<status status="PASS" endtime="20201212 23:05:17.487" starttime="20201212 23:05:17.464"></status>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
@@ -488,8 +488,8 @@
 <arg>//*[@type="file"]</arg>
 <arg>${file}</arg>
 </arguments>
-<msg timestamp="20201212 23:04:00.311" level="INFO">Sending /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture2.png to browser.</msg>
-<status status="PASS" endtime="20201212 23:04:00.369" starttime="20201212 23:04:00.308"></status>
+<msg timestamp="20201212 23:05:17.488" level="INFO">Sending /home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/060_UserAvatar.robot/sample-picture2.png to browser.</msg>
+<status status="PASS" endtime="20201212 23:05:17.551" starttime="20201212 23:05:17.487"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -504,9 +504,9 @@
 <arg>${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSING_SUFFIX}</arg>
 <arg>timeout=30</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:04:01.017" starttime="20201212 23:04:00.370"></status>
+<status status="PASS" endtime="20201212 23:05:18.199" starttime="20201212 23:05:17.552"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:01.018" starttime="20201212 23:04:00.369"></status>
+<status status="PASS" endtime="20201212 23:05:18.199" starttime="20201212 23:05:17.552"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -514,121 +514,81 @@
 <arg>${USER_PROFILE_DROPZONE_IMAGE}\[${count}]${DROPZONE_PROCESSED_SUFFIX}</arg>
 <arg>timeout=30</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:04:03.075" starttime="20201212 23:04:01.018"></status>
+<status status="PASS" endtime="20201212 23:05:20.257" starttime="20201212 23:05:18.199"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:03.075" starttime="20201212 23:03:59.472"></status>
+<status status="PASS" endtime="20201212 23:05:20.257" starttime="20201212 23:05:16.720"></status>
 </kw>
-<kw name="Click Picture Action" library="Images">
+<kw name="Go To Url" library="FunctionsGlobal">
 <arguments>
-<arg>${USER_PROFILE_FIRST_IMAGE}</arg>
-<arg>${PICTURE_PULLER_DELETE_BUTTON}</arg>
+<arg>${PAGE_HOME_URL}</arg>
 </arguments>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
 <arguments>
-<arg>${image}${PICTURE_PULLER}</arg>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:04:03.081" starttime="20201212 23:04:03.077"></status>
-</kw>
-<kw name="Scroll Into View" library="FunctionsGlobal">
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
 <arguments>
-<arg>${image}${PICTURE_PULLER}</arg>
+<arg>${url}</arg>
 </arguments>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<doc>Executes the given JavaScript code with possible arguments.</doc>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:20.259" level="INFO">${url_} = http://localhost:3001/en</msg>
+<status status="PASS" endtime="20201212 23:05:20.259" starttime="20201212 23:05:20.259"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });</arg>
+<arg>${url_}</arg>
 </arguments>
-<msg timestamp="20201212 23:04:03.083" level="INFO">Executing JavaScript:
-document.evaluate('//*[@id="userPicturesList"]//div[@class="gallery"]/div[@class="gallery"][1]//div[contains(@class, "pictures-actions-pull")]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
-Without any arguments.</msg>
-<status status="PASS" endtime="20201212 23:04:03.089" starttime="20201212 23:04:03.082"></status>
+<msg timestamp="20201212 23:05:20.260" level="INFO">Opening url 'http://localhost:3001/en'</msg>
+<status status="PASS" endtime="20201212 23:05:20.664" starttime="20201212 23:05:20.260"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:03.090" starttime="20201212 23:04:03.082"></status>
+<status status="PASS" endtime="20201212 23:05:20.665" starttime="20201212 23:05:20.258"></status>
 </kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
-<arg>${image}${PICTURE_PULLER}</arg>
+<arg>Warning:</arg>
 </arguments>
-<msg timestamp="20201212 23:04:03.090" level="INFO">Simulating Mouse Over on element '//*[@id="userPicturesList"]//div[@class="gallery"]/div[@class="gallery"][1]//div[contains(@class, "pictures-actions-pull")]'.</msg>
-<status status="PASS" endtime="20201212 23:04:03.367" starttime="20201212 23:04:03.090"></status>
+<msg timestamp="20201212 23:05:20.704" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:20.704" starttime="20201212 23:05:20.666"></status>
 </kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
-<arg>${image}${button}</arg>
+<arg>Failed</arg>
 </arguments>
-<msg timestamp="20201212 23:04:03.368" level="INFO">Simulating Mouse Over on element '//*[@id="userPicturesList"]//div[@class="gallery"]/div[@class="gallery"][1]//button[@data-type="picture-delete"]'.</msg>
-<status status="PASS" endtime="20201212 23:04:03.636" starttime="20201212 23:04:03.368"></status>
+<msg timestamp="20201212 23:05:20.719" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:20.719" starttime="20201212 23:05:20.705"></status>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks the button identified by ``locator``.</doc>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
-<arg>${image}${button}</arg>
+<arg>Internal Server Error</arg>
 </arguments>
-<msg timestamp="20201212 23:04:03.637" level="INFO">Clicking button '//*[@id="userPicturesList"]//div[@class="gallery"]/div[@class="gallery"][1]//button[@data-type="picture-delete"]'.</msg>
-<status status="PASS" endtime="20201212 23:04:03.915" starttime="20201212 23:04:03.637"></status>
+<msg timestamp="20201212 23:05:20.728" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:20.728" starttime="20201212 23:05:20.719"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:03.915" starttime="20201212 23:04:03.076"></status>
+<status status="PASS" endtime="20201212 23:05:20.728" starttime="20201212 23:05:20.665"></status>
 </kw>
-<kw name="Wait Until Modal" library="FunctionsGlobal">
-<arguments>
-<arg>Do you really want to delete this picture?</arg>
-</arguments>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${MODAL_DIALOG}</arg>
-</arguments>
-<status status="PASS" endtime="20201212 23:04:03.921" starttime="20201212 23:04:03.916"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>${MODAL_DIALOG_TITLE}</arg>
-</arguments>
-<status status="PASS" endtime="20201212 23:04:03.925" starttime="20201212 23:04:03.921"></status>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>${MODAL_DIALOG_TITLE}</arg>
-<arg>${title}</arg>
-</arguments>
-<msg timestamp="20201212 23:04:03.945" level="INFO">Element '//div[@class="modal-dialog"]//*[@id="modalLabel"]' contains text 'Do you really want to delete this picture?'.</msg>
-<status status="PASS" endtime="20201212 23:04:03.945" starttime="20201212 23:04:03.926"></status>
-</kw>
-<status status="PASS" endtime="20201212 23:04:03.945" starttime="20201212 23:04:03.915"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks the button identified by ``locator``.</doc>
-<arguments>
-<arg>${MODAL_DIALOG_SUBMIT_BUTTON}</arg>
-</arguments>
-<msg timestamp="20201212 23:04:03.946" level="INFO">Clicking button '//div[@class="modal-dialog"]//div[contains(@class, "modal-footer")]/button[@type="submit"]'.</msg>
-<status status="PASS" endtime="20201212 23:04:04.902" starttime="20201212 23:04:03.946"></status>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>${USER_PROFILE_PICTURES_PANEL}</arg>
-</arguments>
-<msg timestamp="20201212 23:04:04.957" level="INFO">Element '//*[@id="userPicturesList"]' is displayed.</msg>
-<status status="PASS" endtime="20201212 23:04:04.957" starttime="20201212 23:04:04.902"></status>
+<status status="PASS" endtime="20201212 23:05:20.728" starttime="20201212 23:05:20.257"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
-<arg>${USER_PROFILE_IMAGES}</arg>
+<arg>${HOME_PICTURE_LIST_PANEL}</arg>
 </arguments>
-<msg timestamp="20201212 23:04:04.974" level="INFO">Current page contains element '//*[@id="userPicturesList"]//div[contains(@class, "gallery")]//div[contains(@class, "gallery")]'.</msg>
-<status status="PASS" endtime="20201212 23:04:04.974" starttime="20201212 23:04:04.957"></status>
+<msg timestamp="20201212 23:05:20.732" level="INFO">Current page contains element '//*[@id="recentPicturesPanel"]'.</msg>
+<status status="PASS" endtime="20201212 23:05:20.733" starttime="20201212 23:05:20.728"></status>
 </kw>
 <kw name="Element Count Should Be" library="FunctionsGlobal">
 <arguments>
-<arg>${USER_PROFILE_IMAGES}</arg>
-<arg>1</arg>
+<arg>${HOME_PICTURE_LIST_PICTURES}</arg>
+<arg>2</arg>
 </arguments>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
@@ -636,22 +596,22 @@ Without any arguments.</msg>
 <arg>${element}</arg>
 <arg>limit=${count}</arg>
 </arguments>
-<msg timestamp="20201212 23:04:05.005" level="INFO">Current page contains 1 element(s).</msg>
-<status status="PASS" endtime="20201212 23:04:05.005" starttime="20201212 23:04:04.975"></status>
+<msg timestamp="20201212 23:05:20.737" level="INFO">Current page contains 2 element(s).</msg>
+<status status="PASS" endtime="20201212 23:05:20.738" starttime="20201212 23:05:20.733"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:05.006" starttime="20201212 23:04:04.975"></status>
+<status status="PASS" endtime="20201212 23:05:20.738" starttime="20201212 23:05:20.733"></status>
 </kw>
 <kw name="Check Image" library="FunctionsGlobal">
 <arguments>
-<arg>${USER_PROFILE_PICTURES_PANEL}</arg>
+<arg>${HOME_PICTURE_LIST_GALERY}</arg>
 </arguments>
 <kw name="Open Eyes" library="RobotEyes">
 <arguments>
 <arg>SeleniumLibrary</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20201212 23:04:05.027" level="INFO">Delete_1_picture_should_leave_other_present</msg>
-<status status="PASS" endtime="20201212 23:04:05.027" starttime="20201212 23:04:05.007"></status>
+<msg timestamp="20201212 23:05:20.748" level="INFO">Should_be_shown_on_Homepage</msg>
+<status status="PASS" endtime="20201212 23:05:20.748" starttime="20201212 23:05:20.739"></status>
 </kw>
 <kw name="Scroll Into View" library="FunctionsGlobal">
 <arguments>
@@ -662,12 +622,12 @@ Without any arguments.</msg>
 <arguments>
 <arg>document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });</arg>
 </arguments>
-<msg timestamp="20201212 23:04:05.030" level="INFO">Executing JavaScript:
+<msg timestamp="20201212 23:05:20.751" level="INFO">Executing JavaScript:
 document.evaluate('//*[@id="home-logo"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
 Without any arguments.</msg>
-<status status="PASS" endtime="20201212 23:04:05.036" starttime="20201212 23:04:05.028"></status>
+<status status="PASS" endtime="20201212 23:05:20.757" starttime="20201212 23:05:20.749"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:05.036" starttime="20201212 23:04:05.027"></status>
+<status status="PASS" endtime="20201212 23:05:20.757" starttime="20201212 23:05:20.749"></status>
 </kw>
 <kw name="Scroll Into View" library="FunctionsGlobal">
 <arguments>
@@ -678,70 +638,814 @@ Without any arguments.</msg>
 <arguments>
 <arg>document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });</arg>
 </arguments>
-<msg timestamp="20201212 23:04:05.038" level="INFO">Executing JavaScript:
-document.evaluate('//*[@id="userPicturesList"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
+<msg timestamp="20201212 23:05:20.759" level="INFO">Executing JavaScript:
+document.evaluate('//*[@id="recentPicturesPanel"]//div[contains(@class, "gallery")]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
 Without any arguments.</msg>
-<status status="PASS" endtime="20201212 23:04:05.043" starttime="20201212 23:04:05.037"></status>
+<status status="PASS" endtime="20201212 23:05:20.765" starttime="20201212 23:05:20.758"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:05.043" starttime="20201212 23:04:05.036"></status>
+<status status="PASS" endtime="20201212 23:05:20.765" starttime="20201212 23:05:20.757"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:04:05.071" starttime="20201212 23:04:05.043"></status>
+<status status="PASS" endtime="20201212 23:05:20.790" starttime="20201212 23:05:20.765"></status>
 </kw>
 <kw name="Capture Element" library="RobotEyes">
 <arguments>
 <arg>${element}</arg>
 <arg>name=${name}</arg>
 </arguments>
-<status status="PASS" endtime="20201212 23:04:06.209" starttime="20201212 23:04:05.071"></status>
+<status status="PASS" endtime="20201212 23:05:21.919" starttime="20201212 23:05:20.790"></status>
 </kw>
 <kw name="Compare Images" library="RobotEyes">
-<msg timestamp="20201212 23:04:06.249" level="INFO">Comparison output: 401.046 (0.00611957) @ 0,0</msg>
-<status status="PASS" endtime="20201212 23:04:06.249" starttime="20201212 23:04:06.209"></status>
+<msg timestamp="20201212 23:05:21.946" level="INFO">Comparison output: 2998.25 (0.0457504) @ 0,0</msg>
+<status status="PASS" endtime="20201212 23:05:21.946" starttime="20201212 23:05:21.919"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:06.249" starttime="20201212 23:04:05.006"></status>
+<status status="PASS" endtime="20201212 23:05:21.946" starttime="20201212 23:05:20.738"></status>
 </kw>
 <tags>
 <tag>Pictures</tag>
 <tag>Users Details</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="PASS" endtime="20201212 23:04:06.250" critical="yes" starttime="20201212 23:03:53.754"></status>
+<status status="PASS" endtime="20201212 23:05:21.947" critical="yes" starttime="20201212 23:05:11.077"></status>
 </test>
-<status status="PASS" endtime="20201212 23:04:06.251" starttime="20201212 23:03:53.663"></status>
+<status status="PASS" endtime="20201212 23:05:21.948" starttime="20201212 23:05:11.006"></status>
 </suite>
 <kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20201212 23:04:06.761" starttime="20201212 23:04:06.256"></status>
+<status status="PASS" endtime="20201212 23:05:22.471" starttime="20201212 23:05:21.953"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:06.761" starttime="20201212 23:04:06.255"></status>
+<status status="PASS" endtime="20201212 23:05:22.471" starttime="20201212 23:05:21.952"></status>
 </kw>
-<status status="PASS" endtime="20201212 23:04:06.761" starttime="20201212 20:03:51.137"></status>
+<status status="PASS" endtime="20201212 23:05:22.471" starttime="20201212 20:05:08.509"></status>
+</suite>
+<suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/110_Moves" id="s1-s2" name="110 Moves">
+<kw type="setup" name="Global Setup" library="FunctionsGlobal">
+<kw name="!Open GeoKrety Browser" library="FunctionsGlobal">
+<arguments>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${BS_ENABLED}" != "false"</arg>
+<arg>!Open GeoKrety BrowserStack</arg>
+<arg>${browser}</arg>
+<arg>ELSE</arg>
+<arg>!Open GeoKrety Browser Local</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="!Open GeoKrety Browser Local" library="FunctionsGlobal">
+<arguments>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${browser}"=="Firefox"</arg>
+<arg>!Open GeoKrety Browser Firefox</arg>
+</arguments>
+<kw name="!Open GeoKrety Browser Firefox" library="FunctionsGlobal">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Open Browser Firefox</arg>
+</arguments>
+<msg timestamp="20201212 23:05:22.514" level="INFO">Open Browser Firefox</msg>
+<status status="PASS" endtime="20201212 23:05:22.514" starttime="20201212 23:05:22.514"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].firefox.webdriver.Options()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${firefox_options}</var>
+</assign>
+<msg timestamp="20201212 23:05:22.515" level="INFO">${firefox_options} = &lt;selenium.webdriver.firefox.options.Options object at 0x7fa30633e250&gt;</msg>
+<status status="PASS" endtime="20201212 23:05:22.515" starttime="20201212 23:05:22.515"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${HEADLESS}</arg>
+<arg>Call Method</arg>
+<arg>${firefox_options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+</arguments>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${firefox_options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:22.517" starttime="20201212 23:05:22.516"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:22.517" starttime="20201212 23:05:22.516"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].DesiredCapabilities.FIREFOX</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${dc}</var>
+</assign>
+<msg timestamp="20201212 23:05:22.518" level="INFO">${dc} = {'acceptInsecureCerts': True, u'timezone': u'UTC-05:00', 'browserName': 'firefox', u'strictFileInteractability': False, 'marionette': True}</msg>
+<status status="PASS" endtime="20201212 23:05:22.518" starttime="20201212 23:05:22.517"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${dc}</arg>
+<arg>strictFileInteractability=${FALSE}</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:22.519" starttime="20201212 23:05:22.518"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${dc}</arg>
+<arg>timezone=UTC-05:00</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:22.519" starttime="20201212 23:05:22.519"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Firefox</arg>
+<arg>firefox_options=${firefox options}</arg>
+<arg>desired_capabilities=${dc}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:22.520" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" endtime="20201212 23:05:24.688" starttime="20201212 23:05:22.519"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:24.689" starttime="20201212 23:05:22.513"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:24.689" starttime="20201212 23:05:22.513"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${browser}"=="Chrome"</arg>
+<arg>!Open GeoKrety Browser Chrome</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:24.691" starttime="20201212 23:05:24.690"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:24.691" starttime="20201212 23:05:22.512"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:24.691" starttime="20201212 23:05:22.511"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1280</arg>
+<arg>1024</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:24.725" starttime="20201212 23:05:24.692"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:24.726" starttime="20201212 23:05:22.510"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:24.726" starttime="20201212 23:05:22.510"></status>
+</kw>
+<suite source="/home/travis/build/geokrety/geokrety-website/tests-qa/acceptance/110_Moves/205_MoveEdit.robot" id="s1-s2-s1" name="205 MoveEdit">
+<test id="s1-s2-s1-t1" name="Change Tracking Code">
+<kw type="setup" name="Seed">
+<kw name="Clear DB And Seed 2 users" library="FunctionsGlobal">
+<kw name="Clear Database" library="FunctionsGlobal">
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${PAGE_DEV_RESET_DB_URL}</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:24.891" level="INFO">${url_} = http://localhost:3001/devel/db/reset</msg>
+<status status="PASS" endtime="20201212 23:05:24.891" starttime="20201212 23:05:24.890"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:24.892" level="INFO">Opening url 'http://localhost:3001/devel/db/reset'</msg>
+<status status="PASS" endtime="20201212 23:05:25.234" starttime="20201212 23:05:24.891"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:25.234" starttime="20201212 23:05:24.888"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:25.270" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:25.270" starttime="20201212 23:05:25.235"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:25.284" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:25.284" starttime="20201212 23:05:25.270"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:25.297" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:25.297" starttime="20201212 23:05:25.284"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:25.298" starttime="20201212 23:05:25.234"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:25.298" starttime="20201212 23:05:24.887"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20201212 23:05:25.307" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" endtime="20201212 23:05:25.307" starttime="20201212 23:05:25.298"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:25.308" starttime="20201212 23:05:24.886"></status>
+</kw>
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${PAGE_SEED_USER}/${count}</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:25.310" level="INFO">${url_} = http://localhost:3001/devel/db/users/seed/2</msg>
+<status status="PASS" endtime="20201212 23:05:25.310" starttime="20201212 23:05:25.310"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:25.311" level="INFO">Opening url 'http://localhost:3001/devel/db/users/seed/2'</msg>
+<status status="PASS" endtime="20201212 23:05:26.184" starttime="20201212 23:05:25.311"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.184" starttime="20201212 23:05:25.309"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.201" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.201" starttime="20201212 23:05:26.185"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.211" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.212" starttime="20201212 23:05:26.202"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.219" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.219" starttime="20201212 23:05:26.212"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.220" starttime="20201212 23:05:26.184"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.220" starttime="20201212 23:05:25.308"></status>
+</kw>
+<kw name="Empty Dev Mailbox Fast" library="FunctionsGlobal">
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${PAGE_DEV_MAILBOX_CLEAR_URL}</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:26.223" level="INFO">${url_} = http://localhost:3001/devel/mail/delete/all</msg>
+<status status="PASS" endtime="20201212 23:05:26.223" starttime="20201212 23:05:26.222"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.223" level="INFO">Opening url 'http://localhost:3001/devel/mail/delete/all'</msg>
+<status status="PASS" endtime="20201212 23:05:26.647" starttime="20201212 23:05:26.223"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.648" starttime="20201212 23:05:26.221"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.673" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.673" starttime="20201212 23:05:26.649"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.686" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.686" starttime="20201212 23:05:26.673"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.697" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.698" starttime="20201212 23:05:26.687"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.698" starttime="20201212 23:05:26.648"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.698" starttime="20201212 23:05:26.221"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.698" starttime="20201212 23:05:26.220"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.698" starttime="20201212 23:05:24.885"></status>
+</kw>
+<kw name="Seed 1 geokrety owned by 1" library="FunctionsGlobal">
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count}</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:26.701" level="INFO">${url_} = http://localhost:3001/devel/db/users/1/geokrety/seed/1</msg>
+<status status="PASS" endtime="20201212 23:05:26.701" starttime="20201212 23:05:26.701"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.701" level="INFO">Opening url 'http://localhost:3001/devel/db/users/1/geokrety/seed/1'</msg>
+<status status="PASS" endtime="20201212 23:05:26.904" starttime="20201212 23:05:26.701"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.904" starttime="20201212 23:05:26.700"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.926" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.926" starttime="20201212 23:05:26.905"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.934" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.934" starttime="20201212 23:05:26.927"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.943" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:26.943" starttime="20201212 23:05:26.935"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.943" starttime="20201212 23:05:26.904"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.944" starttime="20201212 23:05:26.699"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:26.944" starttime="20201212 23:05:26.699"></status>
+</kw>
+<kw name="Seed 1 geokrety owned by 2" library="FunctionsGlobal">
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${GK_URL}/devel/db/users/${userid}/geokrety/seed/${count}</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:26.946" level="INFO">${url_} = http://localhost:3001/devel/db/users/2/geokrety/seed/1</msg>
+<status status="PASS" endtime="20201212 23:05:26.946" starttime="20201212 23:05:26.946"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:26.947" level="INFO">Opening url 'http://localhost:3001/devel/db/users/2/geokrety/seed/1'</msg>
+<status status="PASS" endtime="20201212 23:05:27.137" starttime="20201212 23:05:26.946"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:27.137" starttime="20201212 23:05:26.945"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:27.155" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:27.155" starttime="20201212 23:05:27.138"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:27.167" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:27.167" starttime="20201212 23:05:27.156"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:27.176" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:27.177" starttime="20201212 23:05:27.167"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:27.177" starttime="20201212 23:05:27.138"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:27.177" starttime="20201212 23:05:26.944"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:27.177" starttime="20201212 23:05:26.944"></status>
+</kw>
+<kw name="Post Move" library="PageMoves">
+<arguments>
+<arg>${MOVE_1}</arg>
+</arguments>
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>gk</arg>
+<arg>${GK_URL}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:27.178" level="INFO">Creating Session using : alias=gk, url=http://localhost:3001, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20201212 23:05:27.179" starttime="20201212 23:05:27.178"></status>
+</kw>
+<kw name="Post Request" library="RequestsLibrary">
+<doc>Send a POST request on the session object found using the
+given `alias`</doc>
+<arguments>
+<arg>gk</arg>
+<arg>/devel/db/geokrety/move/seed</arg>
+<arg>data=${move}</arg>
+<arg>headers=${CONTENT_TYPE_FORM_URLENCODED}</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg timestamp="20201212 23:05:27.838" level="INFO">POST Request : url=http://localhost:3001/devel/db/geokrety/move/seed 
+ path_url=/devel/db/geokrety/move/seed 
+ headers={'Content-Length': '113', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.18.4', 'Connection': 'keep-alive', 'Content-Type': u'application/x-www-form-urlencoded'} 
+ body=comment=Hello&amp;author=1&amp;app=robotframework&amp;move_type=0&amp;lon=7.0000&amp;app_ver=3.2.1&amp;waypoint=GC0001&amp;lat=43.6000&amp;gkid=1 
+ </msg>
+<msg timestamp="20201212 23:05:27.839" level="INFO">POST Response : url=http://localhost:3001/devel/db/geokrety/move/seed 
+ status=200, reason=OK 
+ body=Create move id:1 geokret:1 waypoint:GC0001 movetype:0 wpt:GC0001 lat:43.60000 lon:7.00000
+OK 
+ </msg>
+<msg timestamp="20201212 23:05:27.839" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20201212 23:05:27.839" starttime="20201212 23:05:27.180"></status>
+</kw>
+<kw name="Request Should Be Successful" library="RequestsLibrary">
+<doc>Fails if response status code is a client or server error (4xx, 5xx).</doc>
+<arguments>
+<arg>${resp}</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:27.840" starttime="20201212 23:05:27.840"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:27.840" starttime="20201212 23:05:27.177"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:27.841" starttime="20201212 23:05:24.884"></status>
+</kw>
+<kw name="Sign In ${USER_1.name} Fast" library="FunctionsGlobal">
+<doc>Login user using special url (doesn't use login form)</doc>
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${PAGE_LOGIN_USER}</arg>
+<arg>username=${username}</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:27.844" level="INFO">${url_} = http://localhost:3001/devel/users/username1/login</msg>
+<status status="PASS" endtime="20201212 23:05:27.845" starttime="20201212 23:05:27.844"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:27.845" level="INFO">Opening url 'http://localhost:3001/devel/users/username1/login'</msg>
+<status status="PASS" endtime="20201212 23:05:28.714" starttime="20201212 23:05:27.845"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:28.714" starttime="20201212 23:05:27.843"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:28.772" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:28.773" starttime="20201212 23:05:28.716"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:28.803" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:28.803" starttime="20201212 23:05:28.774"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:28.825" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:28.826" starttime="20201212 23:05:28.803"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:28.826" starttime="20201212 23:05:28.714"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:28.826" starttime="20201212 23:05:27.842"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Error signing in user</arg>
+</arguments>
+<msg timestamp="20201212 23:05:28.842" level="INFO">Current page does not contain text 'Error signing in user'.</msg>
+<status status="PASS" endtime="20201212 23:05:28.842" starttime="20201212 23:05:28.826"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:28.842" starttime="20201212 23:05:27.841"></status>
+</kw>
+<kw name="Go To Url" library="FunctionsGlobal">
+<arguments>
+<arg>${PAGE_MOVES_EDIT_URL}</arg>
+<arg>moveid=1</arg>
+</arguments>
+<kw name="Got To Url With Param" library="FunctionsGlobal">
+<arguments>
+<arg>${url}</arg>
+<arg>&amp;{params}</arg>
+</arguments>
+<kw name="Replace Variables" library="BuiltIn">
+<doc>Replaces variables in the given text with their current values.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<assign>
+<var>${url_}</var>
+</assign>
+<msg timestamp="20201212 23:05:28.845" level="INFO">${url_} = http://localhost:3001/en/moves/1/edit</msg>
+<status status="PASS" endtime="20201212 23:05:28.845" starttime="20201212 23:05:28.844"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:28.845" level="INFO">Opening url 'http://localhost:3001/en/moves/1/edit'</msg>
+<status status="PASS" endtime="20201212 23:05:29.230" starttime="20201212 23:05:28.845"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:29.231" starttime="20201212 23:05:28.843"></status>
+</kw>
+<kw name="Page WithoutWarningOrFailure" library="FunctionsGlobal">
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Warning:</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.376" level="INFO">Current page does not contain text 'Warning:'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.376" starttime="20201212 23:05:29.232"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Failed</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.389" level="INFO">Current page does not contain text 'Failed'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.390" starttime="20201212 23:05:29.376"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Internal Server Error</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.401" level="INFO">Current page does not contain text 'Internal Server Error'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.401" starttime="20201212 23:05:29.390"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:29.401" starttime="20201212 23:05:29.231"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:29.401" starttime="20201212 23:05:28.842"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${MOVE_TRACKING_CODE_INPUT}</arg>
+<arg>${GEOKRETY_2.tc}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.402" level="INFO">Typing text 'TC0002' into text field '//*[@id="nr"]'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.446" starttime="20201212 23:05:29.402"></status>
+</kw>
+<kw name="Open Panel" library="FunctionsGlobal">
+<arguments>
+<arg>${MOVE_ADDITIONAL_DATA_PANEL}</arg>
+</arguments>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Panel Is Collapsed</arg>
+<arg>${element}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+<var>${value}</var>
+</assign>
+<kw name="Panel Is Collapsed" library="FunctionsGlobal">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${element}/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.458" level="INFO">Current page contains element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading") and contains(@class, "collapsed")]'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.458" starttime="20201212 23:05:29.449"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:29.458" starttime="20201212 23:05:29.448"></status>
+</kw>
+<msg timestamp="20201212 23:05:29.459" level="INFO">${status} = PASS</msg>
+<msg timestamp="20201212 23:05:29.459" level="INFO">${value} = None</msg>
+<status status="PASS" endtime="20201212 23:05:29.459" starttime="20201212 23:05:29.448"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status}' == 'PASS'</arg>
+<arg>Click Element</arg>
+<arg>${element}/div[contains(@class, "panel-heading")]</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}/div[contains(@class, "panel-heading")]</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.461" level="INFO">Clicking element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading")]'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.699" starttime="20201212 23:05:29.460"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:29.699" starttime="20201212 23:05:29.459"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${element}/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))]</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.710" level="INFO">Current page contains element '//*[@id="panelMoveAdditionalData"]/div[contains(@class, "panel-heading") and not(contains(@class, "collapsed"))]'.</msg>
+<status status="PASS" endtime="20201212 23:05:29.710" starttime="20201212 23:05:29.700"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:29.710" starttime="20201212 23:05:29.446"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${MOVE_ADDITIONAL_DATA_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20201212 23:05:29.711" level="INFO">Clicking button '//*[@id="submitButton"]'.</msg>
+<status status="PASS" endtime="20201212 23:05:30.139" starttime="20201212 23:05:29.711"></status>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${PAGE_GEOKRETY_2_DETAILS_URL}/page/1\#log1</arg>
+</arguments>
+<status status="PASS" endtime="20201212 23:05:31.026" starttime="20201212 23:05:30.140"></status>
+</kw>
+<tags>
+<tag>GeoKret Details</tag>
+<tag>Move Comment</tag>
+<tag>Moves</tag>
+<tag>Timezone</tag>
+</tags>
+<timeout value="2 minutes"></timeout>
+<status status="PASS" endtime="20201212 23:05:31.026" critical="yes" starttime="20201212 23:05:24.883"></status>
+</test>
+<status status="PASS" endtime="20201212 23:05:31.027" starttime="20201212 23:05:24.726"></status>
+</suite>
+<kw type="teardown" name="Global TearDown" library="FunctionsGlobal">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20201212 23:05:31.690" starttime="20201212 23:05:31.050"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:31.690" starttime="20201212 23:05:31.049"></status>
+</kw>
+<status status="PASS" endtime="20201212 23:05:31.690" starttime="20201212 23:05:22.473"></status>
 </suite>
 <metadata>
 <item name="Log of First Run">[log.html|log.html]</item>
 <item name="Log of Second Run">[log-rerun.html|log-rerun.html]</item>
 </metadata>
-<status status="PASS" endtime="20201212 23:04:06.764" starttime="20201212 20:03:51.094"></status>
+<status status="PASS" endtime="20201212 23:05:31.694" starttime="20201212 20:05:08.461"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">GeoKret Details</stat>
+<stat fail="0" pass="1">Move Comment</stat>
+<stat fail="0" pass="1">Moves</stat>
 <stat fail="0" pass="1">Pictures</stat>
+<stat fail="0" pass="1">Timezone</stat>
 <stat fail="0" pass="1">Users Details</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Acceptance" pass="1">Acceptance</stat>
+<stat fail="0" id="s1" name="Acceptance" pass="2">Acceptance</stat>
 <stat fail="0" id="s1-s1" name="060 UserAvatar.robot" pass="1">Acceptance.060 UserAvatar.robot</stat>
-<stat fail="0" id="s1-s1-s1" name="050 DeletePicture" pass="1">Acceptance.060 UserAvatar.robot.050 DeletePicture</stat>
+<stat fail="0" id="s1-s1-s1" name="060 ShowOnHomepage" pass="1">Acceptance.060 UserAvatar.robot.060 ShowOnHomepage</stat>
+<stat fail="0" id="s1-s2" name="110 Moves" pass="1">Acceptance.110 Moves</stat>
+<stat fail="0" id="s1-s2-s1" name="205 MoveEdit" pass="1">Acceptance.110 Moves.205 MoveEdit</stat>
 </suite>
 </statistics>
 <errors>
