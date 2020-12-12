@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="300 LegacyBridges" tests="3" errors="0" failures="0" skipped="0" time="10825.676">
-<testcase classname="300 LegacyBridges.210 Ruchy" name="Required Parameters" time="4.411">
+<testsuite name="Acceptance" tests="5" errors="0" failures="5" skipped="0" time="10844.360">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="4.773">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="300 LegacyBridges.210 Ruchy" name="Test Invalid Cases" time="0.583">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="9.151">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="300 LegacyBridges.210 Ruchy" name="Test Valid Cases" time="15.376">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.233">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.618">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="9.546">
+<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
 </testsuite>
