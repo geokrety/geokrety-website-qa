@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Acceptance" tests="7" errors="0" failures="7" skipped="0" time="10846.159">
-<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="1.117">
+<testsuite name="Acceptance" tests="7" errors="0" failures="7" skipped="0" time="10849.665">
+<testcase classname="Acceptance.050 UsersDetails.050 BanerTemplate" name="Users cannot edit other user banner" time="1.166">
 <failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Users cannot edit other user observation area" time="1.105">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Users cannot edit other user observation area" time="1.153">
 <failure message="Page should have contained text 'Unauthorized' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Save Observation Area Preferences" time="5.661">
+<testcase classname="Acceptance.050 UsersDetails.060 ObservationArea" name="Map should reflect manual coordinates input" time="4.221">
+<failure message="Keyword 'Check Image' failed after retrying 2 times. The last error was: Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="9.580">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="9.041">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.268">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.245">
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="11.024">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.483">
-<failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="7.707">
+<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="10.045">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
 </testsuite>
