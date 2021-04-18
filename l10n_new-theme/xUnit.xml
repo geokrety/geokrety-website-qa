@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Acceptance" tests="7" errors="0" failures="7" skipped="0" time="10828.733">
-<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="10801.114">
+<testsuite name="Acceptance" tests="7" errors="0" failures="7" skipped="0" time="10828.198">
+<testcase classname="Acceptance.001 HomePage.000 Languages" name="Welcome: (FR)" time="1.129">
 <failure message="Page should have contained text 'Bienvenue sur GeoKrety.org !' but did not." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="0.002">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="0.003">
 <failure message="Dependency not met: test case 'Activate account' not found, wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.002">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.003">
 <failure message="Dependency not met: test case 'Email activation confirmation received' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
 <testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.002">
 <failure message="Dependency not met: test case 'Sign In user' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="9.536">
+<testcase classname="Acceptance.060 UserAvatar.robot.060 ShowOnHomepage" name="Should be shown on Homepage" time="9.592">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.110 Moves.290 Archive" name="Awaken GeoKrety Show The Archive Button Again" time="4.281">
-<failure message="Page should have contained element '//*[@id=&quot;geokretDetailsArchiveLink&quot;]' but did not." type="AssertionError"></failure>
+<testcase classname="Acceptance.110 Moves.290 Archive" name="Awaken GeoKrety Are Not Visually Disabled" time="3.586">
+<failure message="Page should not have contained element '//*[@id=&quot;geokretyDetailsPanel&quot;]/div[contains(@class, &quot;panel-body&quot;)][contains(@class, &quot;panel-body-default&quot;)]'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.300 LegacyBridges.200 Login2Secid" name="Test Form - valid" time="0.591">
+<testcase classname="Acceptance.300 LegacyBridges.200 Login2Secid" name="Test Form - valid" time="0.618">
 <failure message="Page should have contained text 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1' but did not." type="AssertionError"></failure>
 </testcase>
 </testsuite>
