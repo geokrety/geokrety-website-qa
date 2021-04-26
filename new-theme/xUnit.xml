@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Acceptance" tests="15" errors="0" failures="15" skipped="0" time="10851.095">
+<testsuite name="Acceptance" tests="15" errors="0" failures="15" skipped="0" time="10849.459">
 <testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="User cannot connect as account is not yet active" time="0.004">
 <failure message="Dependency not met: test case 'User is not connected after registration' not found, wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="0.002">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="0.004">
 <failure message="Dependency not met: test case 'Activate account' not found, wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.004">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.003">
 <failure message="Dependency not met: test case 'Email activation confirmation received' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.002">
+<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.003">
 <failure message="Dependency not met: test case 'Sign In user' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.010 AccountMustBeActivatedFirst" name="Account not active" time="0.008">
+<testcase classname="Acceptance.020 SignIn.010 AccountMustBeActivatedFirst" name="Account not active" time="0.004">
 <failure message="Dependency not met: test case 'Create an account' not found, wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.005">
+<testcase classname="Acceptance.020 SignIn.010 AccountMustBeActivatedFirst" name="Confirmation mail sent again" time="0.002">
 <failure message="Dependency not met: test case 'Account not active' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
 <testcase classname="Acceptance.020 SignIn.010 AccountMustBeActivatedFirst" name="Validated account can login" time="0.002">
 <failure message="Dependency not met: test case 'Confirmation mail sent again' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.060 AccountStatuses" name="Invalid accounts cannot login" time="2.820">
+<testcase classname="Acceptance.020 SignIn.060 AccountStatuses" name="Invalid accounts cannot login" time="2.582">
 <failure message="The text of element '//*[@id=&quot;navbar-localmail&quot;]/span[@class=&quot;badge&quot;]' should have been '1' but it was '0'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.020 SignIn.060 AccountStatuses" name="Imported accounts can login" time="2.721">
+<testcase classname="Acceptance.020 SignIn.060 AccountStatuses" name="Imported accounts can login" time="2.435">
 <failure message="The text of element '//*[@id=&quot;navbar-localmail&quot;]/span[@class=&quot;badge&quot;]' should have been '1' but it was '0'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="8.935">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="8.861">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.241">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.165">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.735">
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.693">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Disable daily mails" time="2.932">
+<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Disable daily mails" time="2.540">
 <failure message="Page should not have contained text 'Internal Server Error'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Enable daily mails" time="2.226">
+<testcase classname="Acceptance.100 UserEmailChange.080 DailyMails" name="Enable daily mails" time="2.097">
 <failure message="Page should not have contained text 'Internal Server Error'." type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.300 LegacyBridges.200 Login2Secid" name="Test Login - Invalid user" time="3.510">
+<testcase classname="Acceptance.300 LegacyBridges.200 Login2Secid" name="Test Login - Invalid user" time="3.175">
 <failure message="The text of element '//*[@id=&quot;navbar-localmail&quot;]/span[@class=&quot;badge&quot;]' should have been '1' but it was '0'." type="AssertionError"></failure>
 </testcase>
 </testsuite>
