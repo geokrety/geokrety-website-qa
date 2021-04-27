@@ -1,42 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Acceptance" tests="13" errors="0" failures="13" skipped="0" time="10854.206">
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Activate account" time="0.004">
-<failure message="Dependency not met: test case 'Create first account' not found, wanted 'PASS'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="User is connected after activation" time="0.004">
-<failure message="Dependency not met: test case 'Activate account' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Email activation confirmation received" time="0.003">
-<failure message="Dependency not met: test case 'Activate account' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign In user" time="0.002">
-<failure message="Dependency not met: test case 'Email activation confirmation received' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.010 UserRegistration.000 Create Account" name="Sign Out user" time="0.002">
-<failure message="Dependency not met: test case 'Sign In user' state is 'FAIL', wanted 'PASS'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.020 SignIn.010 AccountMustBeActivatedFirst" name="Validated account can login" time="0.008">
-<failure message="Dependency not met: test case 'Confirmation mail sent again' not found, wanted 'PASS'" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.020 SignIn.030 MustAcceptTermOfUse" name="Freshly created accounts are fully valid" time="13.437">
-<failure message="Text 'Welcome to the GeoKrety.org community!' did not appear in 10 seconds.&#10;&#10;Also teardown failed:&#10;Several failures occurred:&#10;&#10;1) Link with locator '//*[@id=&quot;navbar-profile-user&quot;]' not found.&#10;&#10;2) Link with locator '//*[@id=&quot;navbar-profile-user-logout&quot;]' not found." type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.020 SignIn.040 RedirectToPageAfterLogin" name="Redirects to last page" time="1.294">
-<failure message="Location should have been 'http://localhost:3001/en/news' but was 'http://localhost:3001/en'." type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.020 SignIn.040 RedirectToPageAfterLogin" name="No redirect urls" time="1.275">
-<failure message="Several failures occurred:&#10;&#10;1) Element with locator '//*[@id=&quot;navbar-profile-login&quot;]' not found.&#10;&#10;2) Element with locator '//*[@id=&quot;navbar-profile-login&quot;]' not found.&#10;&#10;3) Element with locator '//*[@id=&quot;navbar-profile-login&quot;]' not found." type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="9.017">
+<testsuite name="Acceptance" tests="3" errors="0" failures="3" skipped="0" time="10824.513">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set image as main avatar" time="8.877">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.264">
+<testcase classname="Acceptance.060 UserAvatar.robot.030 DefineAsMain" name="Set second image as main avatar" time="1.191">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
 </testcase>
-<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.593">
+<testcase classname="Acceptance.060 UserAvatar.robot.040 UpdateCaption" name="Define Picture Caption" time="10.823">
 <failure message="Image dissimilarity exceeds tolerance" type="AssertionError"></failure>
-</testcase>
-<testcase classname="Acceptance.300 LegacyBridges.200 Login2Secid" name="Test Login - Invalid user" time="3.222">
-<failure message="The text of element '//*[@id=&quot;navbar-localmail&quot;]/span[@class=&quot;badge&quot;]' should have been '1' but it was '0'." type="AssertionError"></failure>
 </testcase>
 </testsuite>
