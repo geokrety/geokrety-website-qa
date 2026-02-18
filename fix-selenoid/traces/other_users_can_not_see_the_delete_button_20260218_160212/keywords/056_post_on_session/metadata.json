@@ -1,0 +1,29 @@
+{
+  "index": 56,
+  "name": "POST On Session",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "gk",
+    "url=/en/geokrety/${geokret.ref}/archive?skip_csrf=True",
+    "expected_status=${expect}"
+  ],
+  "assign": [
+    "${resp} ="
+  ],
+  "start_time": "2026-02-18T13:02:14.697845+00:00",
+  "end_time": "2026-02-18T13:02:15.150300+00:00",
+  "duration_ms": 452,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Archive GeoKret",
+  "level": 2,
+  "folder": "056_post_on_session",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

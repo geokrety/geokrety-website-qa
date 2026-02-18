@@ -1,0 +1,29 @@
+{
+  "index": 46,
+  "name": "Execute Javascript",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "var el = document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;",
+    "if (!el || !el.tomselect) return true;",
+    "return el.tomselect.loading === 0;"
+  ],
+  "assign": [
+    "${is_loading}="
+  ],
+  "start_time": "2026-02-18T13:01:50.513912+00:00",
+  "end_time": "2026-02-18T13:01:50.528629+00:00",
+  "duration_ms": 13,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "TomSelect Loading Should Be Complete",
+  "level": 6,
+  "folder": "046_execute_javascript",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

@@ -1,0 +1,30 @@
+{
+  "index": 60,
+  "name": "Execute Javascript",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "var tomSelectElement = document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;",
+    "if (tomSelectElement && tomSelectElement.tomselect) {",
+    "tomSelectElement.tomselect.clear();",
+    "} else {",
+    "console.error('TomSelect instance not found for element');",
+    "}"
+  ],
+  "assign": [],
+  "start_time": "2026-02-18T13:01:51.201576+00:00",
+  "end_time": "2026-02-18T13:01:51.210743+00:00",
+  "duration_ms": 9,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Clear TomSelect",
+  "level": 3,
+  "folder": "060_execute_javascript",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

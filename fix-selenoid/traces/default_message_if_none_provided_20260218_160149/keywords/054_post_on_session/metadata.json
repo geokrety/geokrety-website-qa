@@ -1,0 +1,30 @@
+{
+  "index": 54,
+  "name": "POST On Session",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "gk",
+    "url=/en/geokrety/${GEOKRETY_1.ref}/archive?skip_csrf=True",
+    "data=&{CUSTOM_POST_FORM_DATA}",
+    "expected_status=200"
+  ],
+  "assign": [
+    "${resp} ="
+  ],
+  "start_time": "2026-02-18T13:01:52.044154+00:00",
+  "end_time": "2026-02-18T13:01:52.438305+00:00",
+  "duration_ms": 394,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": null,
+  "level": 1,
+  "folder": "054_post_on_session",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

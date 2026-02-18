@@ -1,0 +1,30 @@
+{
+  "index": 54,
+  "name": "POST On Session",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "gk",
+    "url=/devel/db/geokrety/move/seed",
+    "data=${move}",
+    "headers=${CONTENT_TYPE_FORM_URLENCODED}"
+  ],
+  "assign": [
+    "${resp}="
+  ],
+  "start_time": "2026-02-18T13:02:43.996136+00:00",
+  "end_time": "2026-02-18T13:02:44.295310+00:00",
+  "duration_ms": 299,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Post move",
+  "level": 3,
+  "folder": "054_post_on_session",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}
