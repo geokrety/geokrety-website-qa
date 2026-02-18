@@ -1,0 +1,33 @@
+{
+  "index": 95,
+  "name": "Run Keyword If",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "\"${redirect}\" == \"${EMPTY}\"",
+    "Location Should Be",
+    "${url_}",
+    "ELSE IF",
+    "\"${redirect}\" == \"${NO_REDIRECT_CHECK}\"",
+    "No Operation",
+    "ELSE",
+    "Location Should Match Regexp",
+    "${redirect}"
+  ],
+  "assign": [],
+  "start_time": "2026-02-18T12:37:18.132503+00:00",
+  "end_time": "2026-02-18T12:37:18.184925+00:00",
+  "duration_ms": 52,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Go To Url",
+  "level": 3,
+  "folder": "095_run_keyword_if",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

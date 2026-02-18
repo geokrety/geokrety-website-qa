@@ -1,0 +1,25 @@
+{
+  "index": 88,
+  "name": "Execute Javascript",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });"
+  ],
+  "assign": [],
+  "start_time": "2026-02-18T12:35:55.891239+00:00",
+  "end_time": "2026-02-18T12:35:55.904093+00:00",
+  "duration_ms": 13,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Scroll Into View",
+  "level": 3,
+  "folder": "088_execute_javascript",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

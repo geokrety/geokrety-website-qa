@@ -1,0 +1,30 @@
+{
+  "index": 2,
+  "name": "POST On Session",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "geokrety",
+    "url=/api-login2secid.php",
+    "expected_status=400",
+    "allow_redirects=${false}"
+  ],
+  "assign": [
+    "${resp} ="
+  ],
+  "start_time": "2026-02-18T12:35:18.101625+00:00",
+  "end_time": "2026-02-18T12:35:18.261661+00:00",
+  "duration_ms": 160,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": null,
+  "level": 1,
+  "folder": "002_post_on_session",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

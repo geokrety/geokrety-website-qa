@@ -1,0 +1,26 @@
+{
+  "index": 39,
+  "name": "Wait until page contains element",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "${element}/ancestor::div[contains(@class, \"form-group\") and contains(@class, \"has-error\")]",
+    "timeout=2"
+  ],
+  "assign": [],
+  "start_time": "2026-02-18T12:35:51.163980+00:00",
+  "end_time": "2026-02-18T12:35:51.180412+00:00",
+  "duration_ms": 19,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Input validation has error",
+  "level": 3,
+  "folder": "039_wait_until_page_contains_element",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

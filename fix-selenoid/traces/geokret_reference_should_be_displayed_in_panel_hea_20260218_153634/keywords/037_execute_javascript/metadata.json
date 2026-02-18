@@ -1,0 +1,40 @@
+{
+  "index": 37,
+  "name": "Execute Javascript",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "var el = document.evaluate('${element}', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;",
+    "if (!el) return 'Element not found';",
+    "if (!el.tomselect) return 'TomSelect not initialized';",
+    "var ts = el.tomselect;",
+    "console.log('Current items:', ts.items);",
+    "console.log('Available options:', Object.keys(ts.options));",
+    "console.log('Options data:', ts.options);",
+    "console.log('Is loading:', ts.loading);",
+    "return JSON.stringify({",
+    "items: ts.items,",
+    "optionKeys: Object.keys(ts.options),",
+    "loading: ts.loading,",
+    "locked: ts.isLocked",
+    "});"
+  ],
+  "assign": [
+    "${debug_info}="
+  ],
+  "start_time": "2026-02-18T12:36:37.340834+00:00",
+  "end_time": "2026-02-18T12:36:37.376139+00:00",
+  "duration_ms": 35,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Debug TomSelect",
+  "level": 3,
+  "folder": "037_execute_javascript",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

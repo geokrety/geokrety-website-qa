@@ -1,0 +1,29 @@
+{
+  "index": 70,
+  "name": "datetime_to_utc",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "${date}",
+    "date_format=%Y-%m-%dT%H:%M:%S%z",
+    "result_format=${result_format}"
+  ],
+  "assign": [
+    "${expected} ="
+  ],
+  "start_time": "2026-02-18T12:37:55.993109+00:00",
+  "end_time": "2026-02-18T12:37:55.993741+00:00",
+  "duration_ms": 0,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Change Born Date To Now With Validation",
+  "level": 2,
+  "folder": "070_datetime_to_utc",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

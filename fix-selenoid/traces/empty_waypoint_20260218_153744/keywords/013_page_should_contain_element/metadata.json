@@ -1,0 +1,25 @@
+{
+  "index": 13,
+  "name": "Page Should Contain Element",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "${element}/div[${CLS} and not(${CLS_COLLAPSED})]"
+  ],
+  "assign": [],
+  "start_time": "2026-02-18T12:37:44.872034+00:00",
+  "end_time": "2026-02-18T12:37:45.213902+00:00",
+  "duration_ms": 341,
+  "status": "FAIL",
+  "message": "Page should have contained element '//*[@id=\"panelLocation\"]/div[contains(concat(' ', normalize-space(@class), ' '), ' panel-heading ') and not(contains(concat(' ', normalize-space(@class), ' '), ' collapsed '))]' but did not.",
+  "parent_keyword": "Run Keyword And Return Status",
+  "level": 4,
+  "folder": "013_page_should_contain_element",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

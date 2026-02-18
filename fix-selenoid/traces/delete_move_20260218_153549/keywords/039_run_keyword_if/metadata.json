@@ -1,0 +1,30 @@
+{
+  "index": 39,
+  "name": "Run Keyword If",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "${move.move_type} in @{REQUIRE_COORDINATES}",
+    "Page Should Contain Element",
+    "${location}\\[${row}]//small[contains(@class, \"move-distance\") and contains(text(), \"${distance} km\")]",
+    "ELSE",
+    "Page Should Contain Element",
+    "${location}\\[${row}]//small[contains(@class, \"move-distance\") and normalize-space(text())=\"\"]"
+  ],
+  "assign": [],
+  "start_time": "2026-02-18T12:35:53.518259+00:00",
+  "end_time": "2026-02-18T12:35:53.536507+00:00",
+  "duration_ms": 18,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Check GeoKret Move",
+  "level": 2,
+  "folder": "039_run_keyword_if",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}

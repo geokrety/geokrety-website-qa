@@ -1,0 +1,28 @@
+{
+  "index": 65,
+  "name": "Execute Async JavaScript",
+  "library": "",
+  "type": "KEYWORD",
+  "args": [
+    "var callback = arguments[arguments.length - 1];",
+    "callback($(\"#datetimepicker\").data(\"DateTimePicker\").date().utc().format());"
+  ],
+  "assign": [
+    "${result} ="
+  ],
+  "start_time": "2026-02-18T12:37:25.741430+00:00",
+  "end_time": "2026-02-18T12:37:25.751660+00:00",
+  "duration_ms": 10,
+  "status": "PASS",
+  "message": "",
+  "parent_keyword": "Get DateTime",
+  "level": 2,
+  "folder": "065_execute_async_javascript",
+  "has_screenshot": false,
+  "has_variables": true,
+  "has_console_logs": false,
+  "console_logs_count": 0,
+  "has_dom": false,
+  "has_network": false,
+  "network_requests_count": 0
+}
