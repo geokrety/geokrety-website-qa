@@ -205,6 +205,14 @@
         <ul>
             <li class="success">To html</li>
         </ul>
+        <h2>Moves (unit\app\GeoKrety\Service\Moves)</h2>
+        <ul>
+            <li class="success">Seen with coordinates and no waypoint keeps coordinates</li>
+            <li class="success">Seen with invalid coordinates and no waypoint fails validation</li>
+            <li class="success">Seen with waypoint and coordinate override keeps both</li>
+            <li class="success">Seen without waypoint or coordinates remains locationless</li>
+            <li class="success">Comment with coordinates still clears location</li>
+        </ul>
         <h2>Password Change (unit\app\GeoKrety\Emails\PasswordChange)</h2>
         <ul>
             <li class="success">Email statuses with data set #0</li>
@@ -219,6 +227,10 @@
             <li class="success">Email statuses non prod with data set #3</li>
             <li class="success">Email statuses non prod with data set #4</li>
             <li class="success">Email statuses non prod with data set #5</li>
+        </ul>
+        <h2>Smarty Modifier Cachelink (Test\Unit\App\GeoKrety\SmartyModifierCachelink)</h2>
+        <ul>
+            <li class="success">Cachelink returns empty string for null move</li>
         </ul>
         <h2>Tracking Code (unit\app\GeoKrety\Service\Validation\TrackingCode)</h2>
         <ul>
