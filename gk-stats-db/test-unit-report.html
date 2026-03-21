@@ -96,6 +96,12 @@
             <li class="success">P h p coord</li>
             <li class="success">Parse from degree minute second hemisphere</li>
         </ul>
+        <h2>Coordinates (unit\app\GeoKrety\Service\Validation\Coordinates)</h2>
+        <ul>
+            <li class="success">Validate returns coordinates and render outputs json</li>
+            <li class="success">Validate returns missing coordinates error for empty input</li>
+            <li class="success">Validate returns parsing error for unknown format</li>
+        </ul>
         <h2>Daily Digest (unit\app\GeoKrety\Emails\DailyDigest)</h2>
         <ul>
             <li class="success">Email statuses with data set #0</li>
@@ -214,6 +220,24 @@
             <li class="success">Email statuses non prod with data set #4</li>
             <li class="success">Email statuses non prod with data set #5</li>
         </ul>
+        <h2>Tracking Code (unit\app\GeoKrety\Service\Validation\TrackingCode)</h2>
+        <ul>
+            <li class="success">Split tracking codes normalizes deduplicates and drops empty values</li>
+            <li class="success">Protected check characters rejects invalid characters</li>
+            <li class="success">Validate rejects missing input</li>
+            <li class="success">Validate rejects multiple codes for anonymous users</li>
+            <li class="success">Validate rejects too many codes</li>
+            <li class="success">Validate rejects public gk identifier when tracking code is not found</li>
+            <li class="success">Validate rejects too short tracking code</li>
+            <li class="success">Validate rejects too long tracking code</li>
+            <li class="success">Validate rejects unknown tracking code</li>
+            <li class="success">Validate accepts real tracking code that starts with gk</li>
+            <li class="success">Validate loads matching geokret and render outputs payload</li>
+            <li class="success">Validate allows multiple codes for logged in users</li>
+            <li class="success">Validate continues collecting valid codes when one entry fails</li>
+            <li class="success">Render returns json errors</li>
+            <li class="success">Validate payload structure is deterministic</li>
+        </ul>
         <h2>User (unit\app\GeoKrety\Model\User)</h2>
         <ul>
             <li class="success">Has email base</li>
@@ -249,6 +273,35 @@
             <li class="success">Email statuses non prod with data set #3</li>
             <li class="success">Email statuses non prod with data set #4</li>
             <li class="success">Email statuses non prod with data set #5</li>
+        </ul>
+        <h2>Username Free (unit\app\GeoKrety\Service\Validation\UsernameFree)</h2>
+        <ul>
+            <li class="success">Validate returns false when username is free</li>
+            <li class="success">Validate returns true and error when username is already used</li>
+            <li class="success">Validate returns true for case insensitive username collision</li>
+            <li class="success">Validate normalizes unicode whitespace before lookup</li>
+            <li class="success">Validate ignores matching pending email when email argument provided</li>
+            <li class="success">Validate returns true when username matches existing email hash without email argument</li>
+            <li class="success">Validate returns login error when duplicate exists with email argument</li>
+        </ul>
+        <h2>Waypoint (unit\app\GeoKrety\Service\Validation\Waypoint)</h2>
+        <ul>
+            <li class="success">Check length accepts coordinates without waypoint</li>
+            <li class="success">Check length rejects empty waypoint without coordinates</li>
+            <li class="success">Check length rejects out of bounds waypoints with data set "too short"</li>
+            <li class="success">Check length rejects out of bounds waypoints with data set "too long"</li>
+            <li class="success">Check characters returns true for null waypoint</li>
+            <li class="success">Check characters rejects non alphanumeric input</li>
+            <li class="success">Check is in database initializes gc model when waypoint is null</li>
+            <li class="success">Check is in database loads existing gc waypoint</li>
+            <li class="success">Check is in database loads existing oc waypoint</li>
+            <li class="success">Check is in database rejects missing gc waypoint without coordinates</li>
+            <li class="success">Check is in database rejects missing oc waypoint without coordinates</li>
+            <li class="success">Check is in database accepts missing gc waypoint with coordinates</li>
+            <li class="success">Validate accepts missing waypoint when coordinates are provided</li>
+            <li class="success">Validate rejects invalid coordinates on missing waypoint</li>
+            <li class="success">Validate and render existing waypoint</li>
+            <li class="success">Validate and render errors for missing waypoint</li>
         </ul>
     </body>
 </html>
