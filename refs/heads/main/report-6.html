@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.4.2 (Python 3.12.3 on linux)" name="Generator">
+<meta content="Robot Framework 7.5 (Python 3.12.3 on linux)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all">
 :root {
@@ -546,6 +546,28 @@ input[type='submit']:hover, input[type='button']:hover {
 #test-details th, #test-details td {
     padding: 0.2em;
 }
+#test-details .metadata {
+    table-layout: auto;
+    width: 100%;
+    border-spacing: 0;
+}
+#test-details .metadata th, #test-details .metadata td {
+    padding: 0 0 0.2em 0;
+    vertical-align: top;
+    text-align: left;
+    background: transparent;
+}
+#test-details .metadata th {
+    width: 1%;
+    padding-right: 0.6em;
+    font-weight: bold;
+}
+#test-details .metadata td {
+    overflow-wrap: anywhere;
+}
+#test-details .details-col-metadata .details-limited {
+    overflow-x: hidden;
+}
 .details-limited {
     max-height: 20em;
     overflow: auto;
@@ -570,8 +592,21 @@ input[type='submit']:hover, input[type='button']:hover {
 .details-col-doc {
     min-width: 10em;
 }
+.details-col-metadata {
+    min-width: 10em;
+}
 .details-col-tags {
     min-width: 10em;
+}
+.details-col-tags .tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.details-col-tags .label {
+    margin: 0 0.3em 0.3em 0;
+    font-size: 1em;
+    letter-spacing: normal;
 }
 .details-col-crit {
     width: 3.5em;
@@ -927,6 +962,7 @@ window.model = (function () {
         test.fullName = data.parent.fullName + '.' + test.name;
         test.formatParentName = function () { return util.formatParentName(test); };
         test.timeout = data.timeout;
+        test.metadata = data.metadata;
         test.populateKeywords = createIterablePopulator('Keyword');
         test.childrenNames = ['keyword'];
         test.isChildrenLoaded = data.isChildrenLoaded;
@@ -1375,7 +1411,7 @@ window.testdata = function () {
             timeout: strings.get(element[3]),
             args: strings.get(element[5]),
             assign: strings.get(element[6]),
-            tags: strings.get(element[7]),
+            tags: tags(element[7], strings),
             doc: function () {
                 var doc = strings.get(element[4]);
                 this.doc = function () { return doc; };
@@ -1410,7 +1446,7 @@ window.testdata = function () {
         return util.map(taglist, strings.get);
     }
     function createTest(parent, element, strings, index) {
-        var status = element[4];
+        var status = element[5];
         var test = model.Test({
             parent: parent,
             id: 't' + (index + 1),
@@ -1421,6 +1457,7 @@ window.testdata = function () {
                 return doc;
             },
             timeout: strings.get(element[1]),
+            metadata: parseMetadata(element[4], strings),
             status: parseStatus(status),
             message: function () {
                 var msg = status.length == 4 ? strings.get(status[3]) : '';
@@ -1429,9 +1466,9 @@ window.testdata = function () {
             },
             times: model.Times(times(status)),
             tags: tags(element[3], strings),
-            isChildrenLoaded: typeof(element[5]) !== 'number'
+            isChildrenLoaded: typeof(element[6]) !== 'number'
         });
-        lazyPopulateKeywordsFromFile(test, element[5], strings);
+        lazyPopulateKeywordsFromFile(test, element[6], strings);
         return test;
     }
     function createSuite(parent, element, strings, index) {
@@ -1881,28 +1918,28 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[4,5,6,7,8,9,10,11],[1,0,46144],[[12,13,14,0,[],[1,5575,38923],[[15,16,17,0,[],[1,6199,1805],[],[[18,19,0,[20],[1,6284,797],[]],[21,19,0,[20],[1,7081,81],[]],[22,19,0,[20],[1,7163,316],[]],[23,19,0,[20],[1,7479,409],[]],[24,19,0,[20],[1,7888,201],[]]],[],[5,5,0,0]],[25,26,27,0,[],[1,8090,1810],[],[[28,19,0,[20],[1,8120,202],[]],[18,19,0,[20],[1,8323,1561],[]],[21,19,0,[20],[1,9885,47],[]]],[],[3,3,0,0]],[29,30,31,0,[],[1,9932,6124],[],[[32,19,0,[20],[1,11854,292],[]],[33,19,0,[20],[1,12146,275],[]],[34,19,0,[20],[1,12421,2444],[]],[35,19,0,[20],[1,14866,210],[]],[36,19,0,[20],[1,15076,321],[]],[37,19,0,[20],[1,15398,745],[]]],[],[6,6,0,0]],[38,39,40,0,[],[1,16150,13478],[],[[41,19,0,[20],[1,18392,221],[]],[33,19,0,[20],[1,18613,276],[]],[34,19,0,[20],[1,18889,1649],[]],[35,19,0,[20],[1,20539,279],[]],[42,19,0,[20],[1,20818,451],[]],[43,19,0,[20],[1,21270,476],[]],[44,19,0,[20],[1,21746,290],[]],[45,19,0,[20],[1,22037,1251],[]],[46,19,0,[20],[1,23288,1313],[]],[47,19,0,[20],[1,24602,461],[]],[48,19,0,[20],[1,25064,873],[]],[49,19,0,[20],[1,25937,3257],[]],[50,19,0,[20],[1,29196,300],[]],[36,19,0,[20],[1,29496,213],[]]],[],[14,14,0,0]],[51,52,53,0,[],[1,29710,4906],[],[[32,19,0,[20],[1,31231,186],[]],[33,19,0,[20],[1,31417,159],[]],[34,19,0,[20],[1,31577,1538],[]],[35,19,0,[20],[1,33115,369],[]],[36,19,0,[20],[1,33485,280],[]],[37,19,0,[20],[1,33765,914],[]]],[],[6,6,0,0]],[54,55,56,0,[],[1,34682,4250],[],[[57,19,0,[20],[1,38491,252],[]],[58,19,0,[20],[1,38755,373],[]]],[],[2,2,0,0]],[59,60,61,0,[],[1,39129,5927],[],[[62,19,0,[20],[1,42453,416],[]],[63,19,0,[20],[1,42869,918],[]],[64,19,0,[20],[1,43787,718],[]],[65,19,0,[20],[1,44506,623],[]]],[],[4,4,0,0]],[66,67,68,0,[],[1,5880,9709],[],[[18,19,0,[20],[1,7857,356],[]],[69,19,0,[20],[1,8213,106],[]],[70,19,0,[20],[1,8319,742],[]],[71,19,0,[20],[1,9062,512],[]],[72,19,0,[73,20],[1,9574,2982],[]],[74,19,0,[20],[1,12557,1473],[]],[75,19,0,[73,20],[1,14034,1554],[]]],[],[7,7,0,0]],[76,77,78,0,[],[1,15589,891],[],[[79,19,0,[20],[1,15612,786],[]],[80,19,0,[20],[1,16399,81],[]]],[],[2,2,0,0]],[81,82,83,0,[],[1,16481,544],[],[[79,19,0,[20],[1,16516,435],[]],[80,19,0,[20],[1,16951,73],[]]],[],[2,2,0,0]],[84,85,86,0,[],[1,17025,19134],[],[[87,19,0,[20],[1,18761,4473],[]],[88,19,0,[20],[1,23234,1428],[]],[89,19,0,[20],[1,24662,11497],[]]],[],[3,3,0,0]],[90,91,92,0,[],[1,36160,2100],[],[[93,19,0,[20],[1,36220,720],[]],[18,19,0,[20],[1,36942,1317],[]]],[],[2,2,0,0]],[94,95,96,0,[],[1,38260,4372],[],[[97,19,0,[20],[1,38284,1912],[]],[98,19,0,[20],[1,40197,1198],[]],[99,19,0,[20],[1,41395,1237],[]]],[],[3,3,0,0]],[100,101,102,0,[],[1,42632,238],[],[[18,19,0,[20],[1,42659,154],[]],[103,19,0,[20],[1,42813,57],[]]],[],[2,2,0,0]],[104,105,106,0,[],[1,5581,860],[],[[18,19,0,[20],[1,5607,639],[]],[103,19,0,[20],[1,6247,189],[]]],[],[2,2,0,0]],[107,108,109,0,[],[1,6441,597],[],[[18,19,0,[20],[1,6493,417],[]],[103,19,0,[20],[1,6911,127],[]]],[],[2,2,0,0]],[110,111,112,0,[],[1,7039,609],[],[[18,19,0,[20],[1,7081,483],[]],[113,19,0,[20],[1,7565,82],[]]],[],[2,2,0,0]],[114,115,116,0,[],[1,7648,4349],[],[[41,19,0,[20],[1,8875,65],[]],[117,19,0,[20],[1,8942,1388],[]],[118,19,0,[20],[1,10330,544],[]],[119,19,0,[20],[1,10875,795],[]],[120,19,0,[20],[1,11672,221],[]],[121,19,0,[20],[1,11893,104],[]]],[],[6,6,0,0]],[122,123,124,0,[],[1,11997,8560],[],[[125,19,0,[20],[1,13060,650],[]],[126,19,0,[20],[1,13711,2735],[]],[127,19,0,[20],[1,16447,760],[]],[128,19,0,[20],[1,17208,796],[]],[129,19,0,[20],[1,18004,453],[]],[130,19,0,[20],[1,18460,566],[]],[131,19,0,[20],[1,19026,448],[]],[132,19,0,[20],[1,19474,643],[]],[133,19,0,[20],[1,20119,438],[]]],[],[9,9,0,0]]],[],[],[82,82,0,0]],[134,135,136,0,[],[1,20558,24114],[[137,138,139,0,[],[1,20559,8264],[],[[140,19,0,[141],[1,21250,483],[]],[142,19,0,[141],[1,21733,625],[]],[143,19,0,[141],[1,22358,1385],[]],[144,19,0,[141],[1,23743,2279],[]],[145,19,0,[141],[1,26022,1236],[]],[146,19,0,[141],[1,27259,1563],[]]],[],[6,6,0,0]],[147,148,149,0,[],[1,28823,15848],[],[[150,19,0,[141],[1,28850,2061],[]],[151,19,0,[141],[1,30911,5032],[]],[152,19,0,[141],[1,35955,5022],[]],[153,19,0,[141],[1,40977,3694],[]]],[],[4,4,0,0]]],[],[],[10,10,0,0]]],[],[],[92,92,0,0]];
+window.output["suite"] = [1,2,3,0,[4,5,6,7,8,9,10,11],[0,0,6211],[[12,13,14,0,[],[0,2733,2728],[[15,16,17,0,[],[0,2735,2728],[],[[18,19,0,[20],[],[0,2751,2729,21],[]]],[],[1,0,1,0]]],[],[],[1,0,1,0]]],[],[],[1,0,1,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Acceptance","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance","*../../../../acceptance","*Log of First Run","*<p><a href=\"log.html\">log.html\x3c/a>\x3c/p>","*Log of Second Run","*<p><a href=\"log-rerun.html\">log-rerun.html\x3c/a>\x3c/p>","*Pabot Info","*<p><a href=\"https://pabot.org/?ref=log\">Pabot\x3c/a> result from 3 executions.\x3c/p>","*Pabot Version","*<p>5.2.2\x3c/p>","*210 LegacyBridges","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges","*../../../../acceptance/210_LegacyBridges","*140 Redirect Export Oc","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/140_redirect_export_oc.robot","*../../../../acceptance/210_LegacyBridges/140_redirect_export_oc.robot","*Should Redirect To New Url","*1 minute","*Legacy Bridges","*Should Redirect To A 302","*With param - modifiedsince","*With param - bypass password","*With param - timezone","*140 Redirect M Qr","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/140_redirect_m_qr.robot","*../../../../acceptance/210_LegacyBridges/140_redirect_m_qr.robot","*Should parameter nr is mandatory","*150 Xml Export","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/150_xml_export.robot","*../../../../acceptance/210_LegacyBridges/150_xml_export.robot","*ModifiedSince Is Mandatory","*ModifiedSince Has Limit","*ModifiedSince Is Limited To Last 10 Days","*ModifiedSince Is In The Future","*Validate XML - structure","*Validate XML - count","*160 Xml Export2","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/160_xml_export2.robot","*../../../../acceptance/210_LegacyBridges/160_xml_export2.robot","*At Least One Parameter Is Required","*Search By UserId","*Search By UserId And Inventory","*Search By UserId + Invalid SecId","*Search By UserId + SecId","*Search By UserId And Inventory + SecId","*Search By GKid","*Search By Tracking Code","*Search By Waypoint","*Search By Coordinates","*170 Xml Export Oc","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/170_xml_export_oc.robot","*../../../../acceptance/210_LegacyBridges/170_xml_export_oc.robot","*180 Json Gkt Search V3","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/180_json_gkt_search_v3.robot","*../../../../acceptance/210_LegacyBridges/180_json_gkt_search_v3.robot","*No parameters","*Validate Format","*190 Json Gkt Inventory V3","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/190_json_gkt_inventory_v3.robot","*../../../../acceptance/210_LegacyBridges/190_json_gkt_inventory_v3.robot","*Unauthenticated See Empty Results","*Authenticated User See His Inventory - User 1 - Empty inventory","*Authenticated User See His Inventory - User 2 - Owned 2 Inventory 1","*Authenticated User See His Inventory - User 3 - Owned 4 Inventory 4","*200 Login2Secid","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/200_login2secid.robot","*../../../../acceptance/210_LegacyBridges/200_login2secid.robot","*Post To Old Url Dont Redirect","*Test Form - valid","*Test Form - invalid","*Test Login - Invalid user","*EmailTokenBase","*Test Login - Valid user","*Test Login - Imported user","*20 Redirect Adduser","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/20_redirect_adduser.robot","*../../../../acceptance/210_LegacyBridges/20_redirect_adduser.robot","*Should Redirect To Login","*Should Redirect Get 302","*20 Redirect Longin","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/20_redirect_longin.robot","*../../../../acceptance/210_LegacyBridges/20_redirect_longin.robot","*210 Ruchy","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/210_ruchy.robot","*../../../../acceptance/210_LegacyBridges/210_ruchy.robot","*Required Parameters","*Test Invalid Cases","*Test Valid Cases","*220 Redirect Szukaj","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/220_redirect_szukaj.robot","*../../../../acceptance/210_LegacyBridges/220_redirect_szukaj.robot","*Parameter wpt Must Be Provided","*30 Redirect Obrazki","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/30_redirect_obrazki.robot","*../../../../acceptance/210_LegacyBridges/30_redirect_obrazki.robot","*Should Redirect To Picture Download Link - By filename","*Should Redirect To Picture Download Link - By key","*Non existent picture should result in 404","*40 Redirect Statipics","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/40_redirect_statipics.robot","*../../../../acceptance/210_LegacyBridges/40_redirect_statipics.robot","*Should Redirect To Bucket Url Link","*50 Redirect Badges","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/50_redirect_badges.robot","*../../../../acceptance/210_LegacyBridges/50_redirect_badges.robot","*60 Redirect Medals","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/60_redirect_medals.robot","*../../../../acceptance/210_LegacyBridges/60_redirect_medals.robot","*70 Redirect Gkt Inventory","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/70_redirect_gkt_inventory.robot","*../../../../acceptance/210_LegacyBridges/70_redirect_gkt_inventory.robot","*Should Redirect To Be A 302","*80 Redirect Konkret","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/80_redirect_konkret.robot","*../../../../acceptance/210_LegacyBridges/80_redirect_konkret.robot","*Should Redirect To New Url - by id","*Should Redirect To New Url - by gkid - lowercase","*Should Redirect To New Url - by gkid - integer","*Wrong id numeric value","*Wrong gkid numeric value","*90 Redirect Mypage","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/210_LegacyBridges/90_redirect_mypage.robot","*../../../../acceptance/210_LegacyBridges/90_redirect_mypage.robot","*Anonymous access to mypage redirects to home","*Authenticated access to mypage redirects to user details","*Can acces any user page","*User page details - param 0","*User page details - param 1","*User page details - param 2","*User page details - param 3","*User page details - param 4","*User page details - param 5","*220 UserAuthenticationHistory","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/220_UserAuthenticationHistory","*../../../../acceptance/220_UserAuthenticationHistory","*10 Access","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/220_UserAuthenticationHistory/10_Access.robot","*../../../../acceptance/220_UserAuthenticationHistory/10_Access.robot","*Anonymous Cannot Access Authentication History","*Authentication History","*Anonymous Don't See Authentication History Link","*Authenticated Users Don't See Authentication History Link For Other Users","*User Himself Can Use His Authentication History","*User Himself Can Access His Authentication History","*User Himself See His Authentication History Link","*20 History","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/220_UserAuthenticationHistory/20_History.robot","*../../../../acceptance/220_UserAuthenticationHistory/20_History.robot","*No activity","*Password authentication","*Secid authentication","*Secid authentication - invalid"]);
+window.output["strings"] = window.output["strings"].concat(["*","*Acceptance","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance","*../../../../acceptance","*Log of First Run","*<p><a href=\"log.html\">log.html\x3c/a>\x3c/p>","*Log of Second Run","*<p><a href=\"log-rerun.html\">log-rerun.html\x3c/a>\x3c/p>","*Pabot Info","*<p><a href=\"https://pabot.org/?ref=log\">Pabot\x3c/a> result from 1 executions.\x3c/p>","*Pabot Version","*<p>5.2.2\x3c/p>","*220 UserAuthenticationHistory","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/220_UserAuthenticationHistory","*../../../../acceptance/220_UserAuthenticationHistory","*20 History","*/home/runner/work/geokrety-website/geokrety-website/tests-qa/acceptance/220_UserAuthenticationHistory/20_History.robot","*../../../../acceptance/220_UserAuthenticationHistory/20_History.robot","*Password authentication","*1 minute","*Authentication History","*Table '//*[@id=\"userAuthenticationHistory\"]' should have had at least 2 rows but had only 1."]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:01:35","fail":0,"label":"All Tests","pass":92,"skip":0}],[{"elapsed":"00:00:23","fail":0,"label":"Authentication History","pass":10,"skip":0},{"elapsed":"00:00:05","fail":0,"label":"EmailTokenBase","pass":2,"skip":0},{"elapsed":"00:01:12","fail":0,"label":"Legacy Bridges","pass":82,"skip":0}],[{"elapsed":"00:00:46","fail":0,"id":"s1","label":"Acceptance","name":"Acceptance","pass":92,"skip":0},{"elapsed":"00:00:39","fail":0,"id":"s1-s1","label":"Acceptance.210 LegacyBridges","name":"210 LegacyBridges","pass":82,"skip":0},{"elapsed":"00:00:02","fail":0,"id":"s1-s1-s1","label":"Acceptance.210 LegacyBridges.140 Redirect Export Oc","name":"140 Redirect Export Oc","pass":5,"skip":0},{"elapsed":"00:00:02","fail":0,"id":"s1-s1-s2","label":"Acceptance.210 LegacyBridges.140 Redirect M Qr","name":"140 Redirect M Qr","pass":3,"skip":0},{"elapsed":"00:00:06","fail":0,"id":"s1-s1-s3","label":"Acceptance.210 LegacyBridges.150 Xml Export","name":"150 Xml Export","pass":6,"skip":0},{"elapsed":"00:00:13","fail":0,"id":"s1-s1-s4","label":"Acceptance.210 LegacyBridges.160 Xml Export2","name":"160 Xml Export2","pass":14,"skip":0},{"elapsed":"00:00:05","fail":0,"id":"s1-s1-s5","label":"Acceptance.210 LegacyBridges.170 Xml Export Oc","name":"170 Xml Export Oc","pass":6,"skip":0},{"elapsed":"00:00:04","fail":0,"id":"s1-s1-s6","label":"Acceptance.210 LegacyBridges.180 Json Gkt Search V3","name":"180 Json Gkt Search V3","pass":2,"skip":0},{"elapsed":"00:00:06","fail":0,"id":"s1-s1-s7","label":"Acceptance.210 LegacyBridges.190 Json Gkt Inventory V3","name":"190 Json Gkt Inventory V3","pass":4,"skip":0},{"elapsed":"00:00:10","fail":0,"id":"s1-s1-s8","label":"Acceptance.210 LegacyBridges.200 Login2Secid","name":"200 Login2Secid","pass":7,"skip":0},{"elapsed":"00:00:01","fail":0,"id":"s1-s1-s9","label":"Acceptance.210 LegacyBridges.20 Redirect Adduser","name":"20 Redirect Adduser","pass":2,"skip":0},{"elapsed":"00:00:01","fail":0,"id":"s1-s1-s10","label":"Acceptance.210 LegacyBridges.20 Redirect Longin","name":"20 Redirect Longin","pass":2,"skip":0},{"elapsed":"00:00:19","fail":0,"id":"s1-s1-s11","label":"Acceptance.210 LegacyBridges.210 Ruchy","name":"210 Ruchy","pass":3,"skip":0},{"elapsed":"00:00:02","fail":0,"id":"s1-s1-s12","label":"Acceptance.210 LegacyBridges.220 Redirect Szukaj","name":"220 Redirect Szukaj","pass":2,"skip":0},{"elapsed":"00:00:04","fail":0,"id":"s1-s1-s13","label":"Acceptance.210 LegacyBridges.30 Redirect Obrazki","name":"30 Redirect Obrazki","pass":3,"skip":0},{"elapsed":"00:00:00","fail":0,"id":"s1-s1-s14","label":"Acceptance.210 LegacyBridges.40 Redirect Statipics","name":"40 Redirect Statipics","pass":2,"skip":0},{"elapsed":"00:00:01","fail":0,"id":"s1-s1-s15","label":"Acceptance.210 LegacyBridges.50 Redirect Badges","name":"50 Redirect Badges","pass":2,"skip":0},{"elapsed":"00:00:01","fail":0,"id":"s1-s1-s16","label":"Acceptance.210 LegacyBridges.60 Redirect Medals","name":"60 Redirect Medals","pass":2,"skip":0},{"elapsed":"00:00:01","fail":0,"id":"s1-s1-s17","label":"Acceptance.210 LegacyBridges.70 Redirect Gkt Inventory","name":"70 Redirect Gkt Inventory","pass":2,"skip":0},{"elapsed":"00:00:04","fail":0,"id":"s1-s1-s18","label":"Acceptance.210 LegacyBridges.80 Redirect Konkret","name":"80 Redirect Konkret","pass":6,"skip":0},{"elapsed":"00:00:09","fail":0,"id":"s1-s1-s19","label":"Acceptance.210 LegacyBridges.90 Redirect Mypage","name":"90 Redirect Mypage","pass":9,"skip":0},{"elapsed":"00:00:24","fail":0,"id":"s1-s2","label":"Acceptance.220 UserAuthenticationHistory","name":"220 UserAuthenticationHistory","pass":10,"skip":0},{"elapsed":"00:00:08","fail":0,"id":"s1-s2-s1","label":"Acceptance.220 UserAuthenticationHistory.10 Access","name":"10 Access","pass":6,"skip":0},{"elapsed":"00:00:16","fail":0,"id":"s1-s2-s2","label":"Acceptance.220 UserAuthenticationHistory.20 History","name":"20 History","pass":4,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:03","fail":1,"label":"All Tests","pass":0,"skip":0}],[{"elapsed":"00:00:03","fail":1,"label":"Authentication History","pass":0,"skip":0}],[{"elapsed":"00:00:06","fail":1,"id":"s1","label":"Acceptance","name":"Acceptance","pass":0,"skip":0},{"elapsed":"00:00:03","fail":1,"id":"s1-s1","label":"Acceptance.220 UserAuthenticationHistory","name":"220 UserAuthenticationHistory","pass":0,"skip":0},{"elapsed":"00:00:03","fail":1,"id":"s1-s1-s1","label":"Acceptance.220 UserAuthenticationHistory.20 History","name":"20 History","pass":0,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1793015620856;
+window.output["baseMillis"] = 1793028517789;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 46354;
+window.output["generated"] = 6316;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
 </script>
 <script type="text/javascript">
-window.settings = {"background":{"fail":"#f66","pass":"#9e9","skip":"#fed84f"},"logURL":"log-6.html","rpa":false,"title":""};
+window.settings = {"background":{"fail":"#f66","pass":"#9e9","skip":"#fed84f"},"logURL":"log-rerun-6.html","rpa":false,"title":""};
 </script>
 <title></title>
 </head>
@@ -2241,12 +2278,12 @@ function renderTestDetailsRows(tests, target) {
 }
 
 function configureTableSorter(sortByStatus) {
-    var config = {headers: {3: {sorter: 'status'},
-                            5: {sortInitialOrder: 'desc'},
-                            6: {sorter: 'times'}},
+    var config = {headers: {4: {sorter: 'status'},
+                            6: {sortInitialOrder: 'desc'},
+                            7: {sorter: 'times'}},
                   selectorSort: '.details-col-header'};
     if (sortByStatus)
-        config['sortList'] = [[3, 0]];
+        config['sortList'] = [[4, 0]];
     $('#test-details').tablesorter(config);
 }
 
@@ -2261,18 +2298,24 @@ function toggleDetailsColumn(name) {
     var column = $('.details-col-' + name);
     column.toggleClass('hidden');
     var hidden = column.hasClass('hidden');
+    if (name === 'tags') {
+      column.find('.tags').toggle();
+    }
     storage.set(name, hidden ? 'hidden' : 'visible');
     column.find('.details-col-toggle').html(hidden ? '&hellip;' : '&times;');
 }
 
 function hideHiddenDetailsColumns(elem) {
-    var names = ['doc', 'tags', 'msg', 'elapsed', 'times'];
+    var names = ['doc', 'metadata', 'tags', 'msg', 'elapsed', 'times'];
     for (var i = 0; i < names.length; i++) {
         var name = names[i];
-        if (storage.get(name, 'visible') == 'hidden') {
+        if (storage.get(name, 'visible') === 'hidden') {
             var column = elem.find('.details-col-' + name);
             column.addClass('hidden');
             column.find('.details-col-toggle').html('&hellip;');
+            if (name === 'tags') {
+                column.find('.tags').hide();
+            }
         }
     }
 }
@@ -2679,6 +2722,10 @@ function hideHiddenDetailsColumns(elem) {
           <div class='details-col-toggle' onclick="toggleDetailsColumn('doc')">&times;</div>
           <div class='details-col-header'>Documentation</div>
         </th>
+        <th class="details-col-metadata" title="Metadata">
+          <div class='details-col-toggle' onclick="toggleDetailsColumn('metadata')">&times;</div>
+          <div class='details-col-header'>Metadata</div>
+        </th>
         <th class="details-col-tags" title="Tags">
           <div class='details-col-toggle' onclick="toggleDetailsColumn('tags')">&times;</div>
           <div class='details-col-header'>Tags</div>
@@ -2717,7 +2764,8 @@ function hideHiddenDetailsColumns(elem) {
     </td>
   {{/if}}
     <td class="details-col-doc"><div class="doc details-limited">{{html doc()}}</div></td>
-    <td class="details-col-tags"><div>{{html tags.join(', ')}}</div></td>
+    <td class="details-col-metadata"><div class="details-limited">{{if metadata.length}}<table class="metadata">{{each metadata}}<tr><th>{{html $value[0]}}:</th><td class="doc">{{html $value[1]}}</td></tr>{{/each}}</table>{{/if}}</div></td>
+    <td class="details-col-tags"><div class="tags">{{each tags}}<span class="label">{{html $value}}</span>{{/each}}</div></td>
     <td class="details-col-status"><div><span class="label ${status.toLowerCase()}">${status}</span></div></td>
     <td class="details-col-msg"><div class="message details-limited">{{html message()}}</div></td>
     <td class="details-col-elapsed"><div>${times.elapsedTime}</div></td>
